@@ -10,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-    <title>5G Prime</title>
+    <title>5G Prime Pro</title>
     <!--<base href="/">-->
     <base href=".">
 
@@ -120,12 +120,14 @@
 
 <body class="no-touch">
     <app-root>
-        <div id="backbutton" class="d-flex w-100 justify-content-start align-items-center">
-            <button type="button" class="btn btn-primary"> <a href="~/UserDashboard/Dashboard/" style="color: #fff">Back</a></button>
+        <div id="backbutton" style="display: flex; background-color: #dfe1e3;" class="w-100 justify-content-start align-items-center">
+            <button type="button" class="btn btn-primary" onclick="redirectBack()" style="color: #fff">
+                Back
+            </button>
         </div>
         <app-profile>
             @RenderBody()
-            <div class="footer-bar" style="background-color: #0b315e">
+            <div class="footer-bar" style="background-color: #000000">
                 <div class="container-fluid" style="padding: 15px 0;">
                     @if (Request.IsAuthenticated)
                     {
@@ -138,8 +140,8 @@
                         <div class="col-md-4 mt-2 mt-sm-0">
                             <div class="d-flex justify-content-between justify-content-md-end align-items-center guttar-25px pdt-0-5x pdb-0-5x">
                                 <p class="text-center text-white opacity-5" style="display: flex">
-                                    Copyright © 2020 - 2021 5G Prime  &nbsp;&nbsp;
-                                    <a href="mailto:support@5gprime-ico.com"> Contact Us: support@5gprime-ico.com</a>
+                                    Copyright © 2020 - 2021 5G Prime Pro  &nbsp;&nbsp;
+                                    <a href="mailto:support@5gprimeico-pro.com"> Contact Us: support@5gprimeico-pro.com</a>
                                 </p>
                             </div>
                         </div>
@@ -181,21 +183,11 @@
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
 
-       /* $(window).on(function () {
-            $("#togglemenu").click(function () {
-                myFunction();
-            });
-        }); */
+        function redirectBack() {
+            var url = '@Url.Action("Dashboard", "UserDashboard")';
+            window.location.href = url;
+        };
 
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        document.getElementById('togglemenu').addEventListener('click', function (e) {
-            document.getElementById("myDropdown").classList.toggle("show");
-            alert("AEEEE");
-        });
-
-       
 
         // Close the dropdown if the user clicks outside of it
         window.onclick = function (event) {

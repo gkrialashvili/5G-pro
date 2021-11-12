@@ -1325,8 +1325,13 @@ header.no-sticky {
     right: 0;
 }
 
-header .navbar-nav a {
+header.nav-fixed .navbar-nav a {
     color: #ffffff;
+}
+
+h1.fadeInUp.animated {
+    font-size: 20px;
+    color: #5957cd;
 }
 
 .navbar-expand-lg .navbar-nav > li {
@@ -1600,6 +1605,10 @@ header a:hover,
     transform-origin: right top 0;
     width: 100%;
     z-index: -1;
+}
+
+.table-light {
+    padding: 15px;
 }
 
 .section_banner {

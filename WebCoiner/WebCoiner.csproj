@@ -302,6 +302,7 @@
     <Content Include="assets\home\animate.css" />
     <Content Include="assets\home\banner_bg2.png" />
     <Content Include="assets\home\banner_img2.png" />
+    <Content Include="assets\home\blockchain_technology.jpg" />
     <Content Include="assets\home\bootstrap.min.css" />
     <Content Include="assets\home\bootstrap.min.js" />
     <Content Include="assets\home\bootstrapJs\bootstrap.bundle.js" />
@@ -351,6 +352,7 @@
     <Content Include="assets\home\token_bg.png" />
     <Content Include="assets\home\us.png" />
     <Content Include="assets\home\waypoints.min.js" />
+    <Content Include="assets\images\LogIn.jpg" />
     <Content Include="assets\images\about-img-2.png" />
     <Content Include="assets\images\arrow-left.png" />
     <Content Include="assets\images\arrow-right.png" />
@@ -380,7 +382,6 @@
     <Content Include="assets\images\landscape-horizontal.png" />
     <Content Include="assets\images\landscape-vertical.png" />
     <Content Include="assets\images\linkedin-icon-colored.png" />
-    <Content Include="assets\images\LogIn.jpg" />
     <Content Include="assets\images\logo-small.png" />
     <Content Include="assets\images\logo.png" />
     <Content Include="assets\images\logo_cincodias.gif" />
@@ -772,6 +773,9 @@
     <Content Include="assets\login\jquery.bundle.js" />
     <Content Include="assets\login\script.js" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FTPProfile1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

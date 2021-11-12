@@ -64,7 +64,7 @@
                         <div class="HeaderAllMainInfoOut">
                             <div class="HeaderAllMainInfo">
                                 <div class="HeaderAllMainInfoImg">
-                                    <a href="">
+                                    <a href="@Url.Action("Dashboard", "UserDashboard")">
                                         <img src="~/assets/admin/source/5glogo.png" width="180px">
                                     </a>
                                 </div>
@@ -230,12 +230,12 @@
             <div class="IndexMain ">
                 <div class="TopPafeInfo">
                     <div class="TopPafeInfoElement">
-                        <div class="TopPafeInfoElementIn" style="color: #fff">
+                        <div class="TopPafeInfoElementIn" style="color: #78c189">
                             <div class="TopPafeInfoElementImg">
-                                <img src="~/assets/admin/source/5glogo.png" width="35px">
+                                <img src="~/assets/admin/source/5glogo.png" width="100">
                             </div>
-                            <div class="TopPafeInfoElementText">PRM</div>
-                            <div class="TopPafeInfoElementMoney">0</div>
+                            @*<div class="TopPafeInfoElementText">PRM</div>*@
+                            <div class="TopPafeInfoElementMoney">@Model.Tokens</div>
                         </div>
                     </div>
                 </div>
@@ -454,9 +454,9 @@
                                                 new Chart(document.getElementById("line-chart"), {
                                                     type: 'line',
                                                     data: {
-                                                        labels: ['Private Sale   $0.02', 'Presale $0.05', 'Softcap $0.10', 'Hardcap $0.20'],
+                                                        labels: ['Private Sale   $0.03', 'Presale $0.06', 'Softcap $0.15', 'Hardcap $0.30'],
                                                         datasets: [{
-                                                            data: [0.02, 0.05, 0.10, 0.20],
+                                                            data: [0.03, 0.06, 0.15, 0.30],
                                                             label: "Token Price",
                                                             borderColor: "#3e95cd",
                                                             fill: true
@@ -575,6 +575,10 @@
             $("#token-base-amount").val(values);
 
         })
+
+            document.addEventListener("DOMContentLoaded", function (event) {
+                $("#backbutton").hide();
+            });
         </script>
     }
 </body>

@@ -347,9 +347,12 @@ button:focus {
     z-index: 5;
 }
 .gradient_box {
-	background: -webkit-linear-gradient(right, #87da19 0%,#01b1e6 51%,#87da19 100%) !important;
-	background: linear-gradient(to right, #87da19 0%,#01b1e6 51%,#87da19 100%) !important;
+	background-color: #38b058;
 }
+
+/*.orderFirst {
+	margin-bottom: 245px;
+}*/
 .gradient_box2 {
 	background: -moz-linear-gradient(180deg, rgba(25,61,192,1) 0%, rgba(10,29,149,1) 50%, rgba(25,61,192,1) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(25,61,192,1)), color-stop(50%, rgba(10,29,149,1)), color-stop(100%, rgba(25,61,192,1))); /* safari4+,chrome */
@@ -1122,7 +1125,7 @@ header {
 .nav-fixed,
 header.active,
 .spop {
-	background-color: rgba(66, 65, 184, 0.7);
+	background-color: rgba(58, 87, 165, 0.8);
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 header.nav-fixed {
@@ -1137,8 +1140,17 @@ header.no-sticky {
 	position: absolute;
 	right: 0;
 }
-header .navbar-nav a {
+/*header .navbar-nav a {
 	color: #ffffff;
+}*/
+
+header.nav-fixed .navbar-nav a {
+	color: #ffffff;
+}
+
+h1.fadeInUp.animated {
+	font-size: 22px;
+	color: #3a57a5;
 }
 .navbar-expand-lg .navbar-nav > li {
 	padding: 0 12px;
@@ -1381,10 +1393,18 @@ header a:hover,
 .section_banner {
 	background-position: left bottom;
 	background-size: cover;
-	padding: 200px 0 100px;
+/*	padding: 200px 0 100px;*/
 	position: relative;
 	overflow: hidden;
 }
+
+
+#home_sectionBg {
+	background-image: url(/assets/home/blockchain_technology.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .banner_full_height {
 	min-height: 100vh;
 	height:100%;
@@ -1415,7 +1435,7 @@ header a:hover,
 .banner_image_right {
 	min-width: 690px;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .banner_image_left {
 	left: -25%;
@@ -2319,10 +2339,10 @@ header a:hover,
 	width: 100%;
 }
 .counter_box {
-	color:#fff;
-	display:inline-block;
-	position:relative;
-	width:25%;
+	color: #3a57a5;
+	display: inline-block;
+	position: relative;
+	width: 25%;
 }
 .counter_box .tk_counter {
 	display: block;

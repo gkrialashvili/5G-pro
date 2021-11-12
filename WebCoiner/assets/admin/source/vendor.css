@@ -1589,8 +1589,14 @@ pre code {
 .table-light > th {
   background-color: #fdfdfe;
 }
+.table-light{
+  padding: 15px;
+}
+.fadeInUp {
+    padding: 25px 0;
+}
 .table-hover .table-light:hover {
-  background-color: #ececf6;
+    background-color: #ececf6;
 }
 .table-hover .table-light:hover > td,
 .table-hover .table-light:hover > th {

@@ -136,8 +136,7 @@ button,
 	background-color: #38b158;
 }
 .gradient_box {
-	background-image: -webkit-linear-gradient(left, #87da19 0%,#01b1e6 51%,#87da19 100%) !important;
-	background-image: linear-gradient(to right, #87da19 0%,#01b1e6 51%,#87da19 100%) !important;
+	background-color: #38b058;
 }
 .team_social_s2 {
 	background-image: -webkit-linear-gradient(top, #87da19 0%,#01b1e6 51%,#87da19 100%);

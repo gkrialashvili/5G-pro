@@ -263,9 +263,9 @@
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 500;
-        color: #495463;
+        color: #39b059;
         line-height: 1.4;
-        margin-bottom: 80px;
+        /*        margin-bottom: 80px;*/
     }
 
         .progress-info li span {
@@ -277,11 +277,13 @@
 .progress-bar {
     display: block;
     color: #758698;
-    background: #aebac7;
+    background: #318291;
     height: 6px;
     border-radius: 3px;
     margin: 12px 0 65px;
-    position: relative
+    position: relative;
+    top: 65px;
+    max-width: 550px;
 }
 
 .progress-hcap, .progress-scap, .progress-psale, .progress-percent {
@@ -313,7 +315,7 @@
             width: 2px;
             height: 20px;
             content: '';
-            background: #fff
+            background: #39b159
         }
 
         .progress-hcap > div span, .progress-scap > div span, .progress-psale > div span, .progress-percent > div span {
@@ -322,15 +324,15 @@
         }
 
 .progress-hcap {
-    background: #d2dde9
+    background: #39b159
 }
 
 .progress-scap {
-    background: #ffffff
+    background: #39b159
 }
 
 .progress-psale {
-    background: #8299d3
+    background: #39b159
 }
 
 .progress-percent {
@@ -344,7 +346,7 @@
         top: 50%;
         height: 18px;
         width: 18px;
-        border: 3px solid #2c80ff;
+        border: 3px solid #318291;
         background: #fff;
         border-radius: 50%;
         transform: translate(50%, -50%)
