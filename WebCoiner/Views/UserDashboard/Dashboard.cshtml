@@ -65,7 +65,14 @@
                                     <li><a href="activity.html"><i class="ti ti-eye"></i>Activity</a></li>
                                 </ul>
                                 <ul class="user-links bg-light">
-                                    <li><a href="sign-in.html"><i class="ti ti-power-off"></i>Logout</a></li>
+                                    @if (Request.IsAuthenticated)
+                                    {
+                                        using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                        {
+                                            @Html.AntiForgeryToken()
+                                            <li><a href="javascript:document.getElementById('logoutForm').submit()"><i class="ti ti-power-off"></i>Logout</a></li>
+                                        }
+                                    }
                                 </ul>
                             </div>
                         </li><!-- .topbar-nav-item -->
