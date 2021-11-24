@@ -1396,16 +1396,7 @@ header a:hover,
         padding: 10px 25px;
     }
 
-.dropdown-toggle::after, .dropdown-toggler::after {
-    border: 0 none;
-    content: "";
-    font-family: ionicons;
-    height: auto;
-    line-height: normal;
-    margin-left: 5px;
-    vertical-align: middle;
-    width: auto;
-}
+
 
 .navbar-nav .dropdown-menu {
     background-color: #4241b8;
