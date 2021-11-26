@@ -329,9 +329,9 @@
 
             // The data for our dataset
             data: {
-                labels: ["01 Oct", "02 Oct", "03 Oct", "04 Oct", "05 Oct", "06 Oct", "07 Oct"],
+                labels: ['Private Sale   $0.03', 'Presale $0.06', 'Softcap $0.15', 'Hardcap $0.30'],
                 datasets: [{
-                    label: "",
+                    label: "Token Price",
                     tension:0.4,
                     backgroundColor: 'transparent',
                     borderColor: '#2c80ff',
@@ -344,7 +344,7 @@
                     pointHoverBorderWidth: 2,
                     pointRadius: 6,
                     pointHitRadius: 6,
-                    data: [110, 80, 125, 55, 95, 75, 90],
+                    data: [0.03, 0.06, 0.15, 0.30],
                 }]
             },
 
@@ -357,7 +357,7 @@
                 tooltips: {
                     callbacks: {
                         title: function(tooltipItem, data) {
-                            return 'Date : ' + data['labels'][tooltipItem[0]['index']];
+                            return  data['labels'][tooltipItem[0]['index']];
                         },
                         label: function(tooltipItem, data) {
                             return data['datasets'][0]['data'][tooltipItem['index']] + ' Tokens' ;

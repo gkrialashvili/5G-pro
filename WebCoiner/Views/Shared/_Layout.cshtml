@@ -2,6 +2,11 @@
     string controllerName = Request.CurrentExecutionFilePath;
 }
 
+@*@model WebCoiner.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}*@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,7 +15,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-    <title>5G Prime Pro</title>
+    <title>Prolution</title>
     <!--<base href="/">-->
     <base href=".">
 
@@ -120,34 +125,65 @@
 
 <body class="no-touch">
     <app-root>
-        <div id="backbutton" style="display: flex; background-color: #dfe1e3;" class="w-100 justify-content-start align-items-center">
-            <button type="button" class="btn btn-primary" onclick="redirectBack()" style="color: #fff">
-                Back
-            </button>
-        </div>
+        <div class="topbar-wrap">
+            <div class="topbar is-sticky">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <ul class="topbar-nav d-lg-none">
+                            <li class="topbar-nav-item relative">
+                                <a class="toggle-nav" href="#">
+                                    <div class="toggle-icon">
+                                        <span class="toggle-line"></span>
+                                        <span class="toggle-line"></span>
+                                        <span class="toggle-line"></span>
+                                        <span class="toggle-line"></span>
+                                    </div>
+                                </a>
+                            </li><!-- .topbar-nav-item -->
+                        </ul><!-- .topbar-nav -->
+                        <a class="topbar-logo" href="./">
+                            <img src="/assets/admin/img/logo-light2x.png" srcset="/assets/admin/img/logo-light2x.png 2x" alt="logo">
+                        </a>
+                        <ul class="topbar-nav">
+                            <li class="topbar-nav-item relative">
+                                @*<span class="user-welcome d-none d-lg-inline-block">@Model.AspNetUser.UserName</span>*@
+                                <a class="toggle-tigger user-thumb" href="#"><em class="ti ti-user"></em></a>
+                                <div class="toggle-class dropdown-content dropdown-content-right dropdown-arrow-right user-dropdown">
+                                    <div class="user-status">
+                                    </div>
+                                    <ul class="user-links bg-light">
+                                        @if (Request.IsAuthenticated)
+                                        {
+                                            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+                                                <li><a href="javascript:document.getElementById('logoutForm').submit()"><i class="ti ti-power-off"></i>Logout</a></li>
+                                            }
+                                        }
+                                    </ul>
+                                </div>
+                            </li><!-- .topbar-nav-item -->
+                        </ul><!-- .topbar-nav -->
+                    </div>
+                </div><!-- .container -->
+            </div><!-- .topbar -->
+            <div class="navbar">
+                <div class="container">
+                    <div class="navbar-innr">
+                        <ul class="navbar-menu">
+                            <li><a href="@Url.Action("Dashboard", "UserDashboard")"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
+                            <li><a href="@Url.Action("create", "userdashboard")"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
+                            <li><a href="javascript: void(0)" id="packages-area"><em class="ikon ikon-distribution"></em> Packages</a></li>
+                            <li><a href="@Url.Action("list", "transactions")"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+                            <li><a href="@Url.Action("index", "manage")"><em class="ikon ikon-user"></em> Profile</a></li>
+                            <li><a href="@Url.Action("list", "promocodes")"><em class="ikon ikon-exchange"></em> romocodes</a></li>
+                        </ul>
+                    </div><!-- .navbar-innr -->
+                </div><!-- .container -->
+            </div><!-- .navbar -->
+        </div><!-- .topbar-wrap -->
         <app-profile>
             @RenderBody()
-            <div class="footer-bar" style="background-color: #000000">
-                <div class="container-fluid" style="padding: 15px 0;">
-                    @if (Request.IsAuthenticated)
-                    {
-                        <iframe src="https://s.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22Nasdaq%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22BTC%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22ETH%2FUSD%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A78%2C%22utm_source%22%3A%22www.tradingview.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%7D" height="40px" width="100%"></iframe>
-                    }
-                </div>
-                <div class="container">
-
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-4 mt-2 mt-sm-0">
-                            <div class="d-flex justify-content-between justify-content-md-end align-items-center guttar-25px pdt-0-5x pdb-0-5x">
-                                <p class="text-center text-white opacity-5" style="display: flex">
-                                    Copyright © 2020 - 2021 5G Prime Pro  &nbsp;&nbsp;
-                                    <a href="mailto:support@5gprimeico-pro.com"> Contact Us: support@5gprimeico-pro.com</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </app-profile>
     </app-root>
 
@@ -155,6 +191,17 @@
 
 
     <script>
+
+        // Active page menu when click
+        var CurURL = window.location.href, urlSplit = CurURL.split("#");
+        var $nav_link = $("a");
+        if ($nav_link.length > 0) {
+            $nav_link.each(function () {
+                if (CurURL === (this.href) && (urlSplit[1] !== "")) {
+                    $(this).closest("li").addClass("active").parent().closest("li").addClass("active");
+                }
+            });
+        }
 
         // Set the date we're counting down to
         var countDownDate = new Date("june 25, 2020 15:37:25").getTime();

@@ -5465,8 +5465,9 @@ select.select-sm {
 }
 
 .card-token {
-  background-image: linear-gradient(45deg, #1c65c9 0%, #2c80ff 100%);
-  color: #fff;
+/*    background-image: linear-gradient(45deg, #1c65c9 0%, #2c80ff 100%);*/
+    color: #fff;
+    background-color: #394452;
 }
 
 .card-token .card-sub-title {
