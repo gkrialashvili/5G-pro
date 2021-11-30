@@ -13,7 +13,8 @@
                 <div class="row">
                     <div class="main-content col-lg-8">
                         <div class="d-lg-none">
-                        <a class="btn btn-danger btn-xl btn-between w-100 mgb-1-5x" data-target="#add-wallet" data-toggle="modal" href="#">Add your wallet address before buy <em class="ti ti-arrow-right"></em></a><div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div></div><div class="content-area card">
+                            <a class="btn btn-danger btn-xl btn-between w-100 mgb-1-5x" data-target="#add-wallet" data-toggle="modal" href="#">Add your wallet address before buy <em class="ti ti-arrow-right"></em></a><div class="gaps-1x mgb-0-5x d-lg-none d-none d-sm-block"></div>
+                        </div><div class="content-area card">
                             <div class="card-innr">
 
                                 <div class="token-currency-choose">
@@ -30,7 +31,7 @@
                                 </div><div class="token-contribute">
                                     <div class="token-calc">
                                         <div class="token-pay-amount">
-                                            <input class="input-bordered input-with-hint ng-pristine ng-valid ng-touched" name="btc" id="btc-base-amount" type="text" value="0"><div class="token-pay-currency">
+                                            <input class="input-bordered input-with-hint ng-pristine ng-valid ng-touched btc-base-amount" name="btc" id="btc-base-amount" type="text" value="0"><div class="token-pay-currency">
                                                 <span class="input-hint input-hint-sap">$</span>
                                             </div>
                                         </div>
@@ -158,13 +159,13 @@
 
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+
     <script>
         $("#btc-base-amount").keyup(function () {
-            $("#token-base-amount").text(($(this).val() * 50).toFixed(2));
+            $("#token-base-amount").val(($(this).val() * 50).toFixed(2));
         });
         $("#btc-base-amount1").keyup(function () {
-            $("#token-base-amount1").text(($(this).val() * 10).toFixed(2));
+            $("#token-base-amount1").val(($(this).val() * 10).toFixed(2));
         });
 
 
@@ -202,4 +203,5 @@
             });
         });
     </script>
+    @Scripts.Render("~/bundles/jqueryval")
 }
