@@ -4,6 +4,7 @@
 @{
     ViewBag.Title = "Dashboard";
     double raised = ((double)Model.Raised / 130000000) * 100;
+    int totalRaised = Convert.ToInt32(Model.Raised);
     var mil = Model.Raised / 1000000;
     string controllerName = Request.CurrentExecutionFilePath;
 }
@@ -188,7 +189,7 @@
                                 <div class="token-info">
                                     <img class="token-info-icon" src="/assets/admin/img/logo-sm.png" alt="logo-sm">
                                     <div class="gaps-2x"></div>
-                                    <h1 class="token-info-head text-light">1 PRT = 0.1 USD</h1>
+                                    <h1 class="token-info-head text-light">1 PRT = 0.02 USD</h1>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -198,7 +199,7 @@
                                             <li><span>Token Name:</span>Prolution</li>
                                             <li><span>Ticket Symbol:</span>PRT</li>
                                         </ul>
-                                        <a href="~/Content/5gprime_whitepaper.pdf" class="btn btn-primary"><em class="fas fa-download mr-3"></em>Download Whitepaper</a>
+                                        <a href="~/Content/prolution_whitepaper.pdf" class="btn btn-primary"><em class="fas fa-download mr-3"></em>Download Whitepaper</a>
                                     </div>
                                 </div>
                             </div>
@@ -304,7 +305,7 @@
                             </div>
                             <div class="token-calc">
                                 <div class="token-pay-amount">
-                                    <input id="token-base-amount" class="input-bordered input-with-hint" type="text" value="1">
+                                    <input id="token-base-amount" class="input-bordered input-with-hint" type="text" value="0">
                                     <div class="token-pay-currency">
                                         <a href="" class="link ucap link-light toggle-tigger toggle-caret">$</a>
                                     </div>
@@ -312,7 +313,7 @@
                                 <div class="token-received">
                                     <div class="token-eq-sign">=</div>
                                     <div class="token-received-amount">
-                                        <h5 class="token-amount" id="token-amount">10</h5>
+                                        <h5 class="token-amount" id="token-amount">0</h5>
                                         <div class="token-symbol">PRT</div>
                                     </div>
                                 </div>
@@ -344,25 +345,25 @@
                                 <h4 class="card-title">Token Sales Progress</h4>
                             </div>
                             <ul class="progress-info">
-                                <li><span>Raised</span> 2,758 PRT</li>
-                                <li class="text-right"><span>TOTAL</span> 1,500,000 PRT</li>
+                                <li><span>Raised</span> @totalRaised PRT</li>
+                                <li class="text-right"><span>TOTAL</span> 120,000,000 PRT</li>
                             </ul>
                             <div class="progress-bar">
                                 <div class="progress-hcap" data-percent="98" style="width: 98%;">
                                     <!---->
-                                    <div >Hardcap<span >$130 ML</span></div>
+                                    <div>Hardcap<span>$110 ML</span></div>
                                 </div>
-                                <div class="progress-hcap" data-percent="75" style="width: 75%;">
+                                <div class="progress-hcap" data-percent="65" style="width: 65%;">
                                     <!---->
-                                    <div >Hardcap<span >$110 ML</span></div>
+                                    <div>Softcap<span>$75 ML</span></div>
                                 </div>
-                                <div class="progress-hcap" data-percent="50" style="width: 50%;">
+                                <div class="progress-scap" data-percent="33" style="width: 33%;">
                                     <!---->
-                                    <div >Softcap<span >$75 ML</span></div>
+                                    <div>Pre Sale<span>$30 ML</span></div>
                                 </div>
-                                <div class="progress-scap" data-percent="25" style="width: 25%;">
+                                <div class="progress-scap" data-percent="1" style="width: 1%;">
                                     <!---->
-                                    <div >Pre Sale<span >$30 ML</span></div>
+                                    <div>Private <br/> Sale<span></span></div>
                                 </div>
                                 <div class="progress-percent" data-percent="@Convert.ToInt32(raised)%" style="width: @Convert.ToInt32(raised)%"></div>
                             </div>
@@ -466,7 +467,7 @@
             var milion =@mil;
 
             $("#token-base-amount").keyup(function () {
-                $("#token-amount").text(($(this).val() * 10).toFixed(0));
+                $("#token-amount").text(($(this).val() * 50).toFixed(0));
             });
             $("#token-base-amount1").keyup(function () {
                 $("#token-amount").text(($(this).val() * 0.1).toFixed(2));

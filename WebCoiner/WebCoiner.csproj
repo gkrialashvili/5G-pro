@@ -1100,7 +1100,6 @@
     <Content Include="Content\wc_icon5.png" />
     <Content Include="Content\wc_icon6.png" />
     <Content Include="Content\whitepaper5.png" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="images\banner\banner-bg-2.jpg" />
     <Content Include="images\banner\banner-overlay.png" />
@@ -1108,8 +1107,6 @@
     <Content Include="images\commands.gif" />
     <Content Include="images\commands.png" />
     <Content Include="images\cross-blockchain-scaling.jpg" />
-    <Content Include="images\faircover_logo.png" />
-    <Content Include="images\favicon.png" />
     <Content Include="images\gridnet-foundation.jpeg" />
     <Content Include="images\gridnet-use-cases.jpg" />
     <Content Include="images\RGB_gridnet-combined-white-transparent-194x55.png" />
@@ -1228,6 +1225,7 @@
     <Content Include="assets\fonts\new\ionicons.eot" />
     <Content Include="assets\fonts\new\ionicons.ttf" />
     <Content Include="assets\fonts\new\ionicons.woff" />
+    <Content Include="Content\prolution_whitepaper.pdf" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />

@@ -5086,9 +5086,9 @@ select {
 }
 
 .card-token {
-    /*    background-image: linear-gradient(45deg, #1c65c9 0%, #2c80ff 100%);*/
+    background-image: linear-gradient(45deg, #1c65c9 0%, #394452 100%);
     color: #fff;
-    background-color: #394452;
+    /*    background-color: #394452;*/
 }
 
     .card-token .card-sub-title {
@@ -6662,12 +6662,19 @@ select {
     }
 
 .token-balance-list {
-    display: flex
+    display: flex;
+    margin-top: 35px;
 }
 
-    .token-balance-list li {
-        min-width: 84px
-    }
+.token-balance-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.token-balance-list li {
+    min-width: 84px
+}
 
 .token-balance .lead {
     color: #fff;
@@ -12114,7 +12121,7 @@ p + .timeline-content-info {
     }
 
 .topbar {
-    background: #253992;
+    background: #394452;
     position: relative;
     z-index: 3
 }

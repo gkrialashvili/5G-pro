@@ -1380,7 +1380,7 @@ header a:hover,
 .section_banner {
 	background-position: left bottom;
 	background-size: cover;
-	padding: 200px 0 100px;
+	padding: 130px 0 100px;
 	position: relative;
 	overflow:hidden;
 }
@@ -5382,7 +5382,7 @@ button.btn-white:hover {
 14. ABOUT US PAGE
 *===================================*/
 .section_breadcrumb {
-	padding: 200px 0 100px;
+	padding: 130px 0 100px;
 }
 .breadcrumb li a, 
 .breadcrumb li span {
