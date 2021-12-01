@@ -4,7 +4,8 @@
 
 @*@model WebCoiner.Models.IndexViewModel
 @{
-    ViewBag.Title = "Manage";
+	ViewBag.Title = "Manage";
+	var user = Model.AspNetUser.UserName;
 }*@
 
 <!DOCTYPE html>
@@ -170,14 +171,15 @@
             <div class="navbar">
                 <div class="container">
                     <div class="navbar-innr">
-                        <ul class="navbar-menu">
-                            <li><a href="@Url.Action("Dashboard", "UserDashboard")"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
-                            <li><a href="@Url.Action("create", "userdashboard")"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
-                            <li><a href="javascript: void(0)" id="packages-area"><em class="ikon ikon-distribution"></em> Packages</a></li>
-                            <li><a href="@Url.Action("list", "transactions")"><em class="ikon ikon-transactions"></em> Transactions</a></li>
-                            <li><a href="@Url.Action("index", "manage")"><em class="ikon ikon-user"></em> Profile</a></li>
-                            <li><a href="@Url.Action("list", "promocodes")"><em class="ikon ikon-exchange"></em> romocodes</a></li>
-                        </ul>
+						<ul class="navbar-menu">
+							<li><a href="@Url.Action("Dashboard", "UserDashboard")"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
+							<li><a href="@Url.Action("create", "userdashboard")"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
+							<li><a href="javascript: void(0)" id="packages-area"><em class="ikon ikon-distribution"></em> Packages</a></li>
+							<li><a href="@Url.Action("list", "transactions")"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+							<li><a href="@Url.Action("index", "manage")"><em class="ikon ikon-user"></em> Profile</a></li>
+							<li><a href="@Url.Action("list", "promocodes")"><em class="ikon ikon-exchange"></em> Promocodes</a></li>
+							<li><a href="@Url.Action("list", "users")"><em class="ikon ikon-user"></em> Users</a></li>
+						</ul>
                     </div><!-- .navbar-innr -->
                 </div><!-- .container -->
             </div><!-- .navbar -->
