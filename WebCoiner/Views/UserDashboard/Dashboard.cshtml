@@ -21,14 +21,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prolution</title>
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="/assets/admin/img/favicon.png">
     <!-- Site Title  -->
-    <title>TokenWiz - ICO User Dashboard Admin Template</title>
+    <title>Prolution</title>
     <!-- Vendor Bundle CSS -->
     <link rel="stylesheet" href="~/assets/admin/css/vendor.bundle.css">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="~/assets/admin/css/style.css">
-    <link rel="shortcut icon" href="~/assets/admin/source/5glogo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="~/assets/images/favicon.png" type="image/x-icon">
 
 </head>
 
@@ -155,7 +154,7 @@
                         <div class="card-innr">
                             <div class="token-balance token-balance-with-icon">
                                 <div class="token-balance-icon">
-                                    <img src="/assets/admin/img/logo-light-sm.png" alt="logo">
+                                    <img src="~/assets/images/favicon.png" alt="logo">
                                 </div>
                                 <div class="token-balance-text">
                                     <h6 class="card-sub-title">Tokens Balance</h6>
@@ -187,7 +186,7 @@
                         <div class="row no-gutters height-100">
                             <div class="col-md-6 text-center">
                                 <div class="token-info">
-                                    <img class="token-info-icon" src="/assets/admin/img/logo-sm.png" alt="logo-sm">
+                                    <img class="token-info-icon" src="~/assets/images/favicon.png" alt="logo-sm">
                                     <div class="gaps-2x"></div>
                                     <h1 class="token-info-head text-light">1 PRT = 0.02 USD</h1>
                                 </div>
@@ -346,19 +345,18 @@
                                 <h4 class="card-title">Token Sales Progress</h4>
                             </div>
                             <ul class="progress-info">
-                                <li><span>Raised</span> @totalRaised PRT</li>
-                                <li class="text-right"><span>TOTAL</span> 120,000,000 PRT</li>
+                                <li><span>Raised</span> @totalRaised.ToString("#,##0") ML</li>
                             </ul>
                             <div class="progress-bar">
                                 <div class="progress-hcap" data-percent="98" style="width: 98%;">
                                     <!---->
                                     <div>Hardcap<span>$110 ML</span></div>
                                 </div>
-                                <div class="progress-hcap" data-percent="65" style="width: 65%;">
+                                <div class="progress-hcap" data-percent="68" style="width: 68%;">
                                     <!---->
                                     <div>Softcap<span>$75 ML</span></div>
                                 </div>
-                                <div class="progress-scap" data-percent="33" style="width: 33%;">
+                                <div class="progress-scap" data-percent="26" style="width: 26%;">
                                     <!---->
                                     <div>Pre Sale<span>$30 ML</span></div>
                                 </div>
@@ -370,7 +368,7 @@
                             </div>
 
                             <span class="card-sub-title mgb-0-5x">Sales END IN</span>
-                            <div class="countdown-clock" data-date="2022/04/05">
+                            <div class="countdown-clock" data-date="2022/02/18">
                                 <div>
                                     <span class="countdown-time countdown-time-first">78</span>
                                     <span class="countdown-text">Day</span>
@@ -425,7 +423,6 @@
     @*</app-dashboard>*@
     <!-- JavaScript (include all script here) -->
     <script src="~/assets/admin/js/jquery.bundle.js?ver=104"></script>
-    <script src="~/assets/admin/js/script.js?ver=104"></script>
     <!-- <script type="text/javascript" src="~/assets/admin/source/bundle.js"></script> -->
     <style>
         .tb_button {

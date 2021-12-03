@@ -76,16 +76,19 @@
                             </div>
                             <div class="token-calc">
                                 <div class="token-pay-amount">
-                                    <input id="token-base-amount1" class="input-bordered input-with-hint" type="text" value="0">
+                                    <input class="input-bordered input-with-hint ng-pristine ng-valid ng-touched" id="btc-base-amount1" type="text" value="0">
                                     <div class="token-pay-currency">
-                                        <a href="" class="link ucap link-light toggle-tigger toggle-caret">$</a>
+                                        <a class="link ucap link-light toggle-tigger" href="javascript:void(0)">$</a>
                                     </div>
                                 </div>
                                 <div class="token-received">
                                     <div class="token-eq-sign">=</div>
-                                    <div class="token-received-amount">
-                                        <h5 class="token-amount1" id="token-amount">0</h5>
-                                        <div class="token-symbol">PRT</div>
+                                    <div class="token-received-amount"></div>
+                                </div>
+                                <div class="token-pay-amount">
+                                    <input class="input-bordered input-with-hint ng-untouched ng-pristine ng-valid" disabled="" id="token-base-amount1" type="text" value="0">
+                                    <div class="token-pay-currency">
+                                        <a class="link ucap link-light toggle-tigger" href="javascript:void(0)">$</a>
                                     </div>
                                 </div>
                             </div>
@@ -155,8 +158,8 @@
         $("#btc-base-amount").keyup(function () {
             $("#token-base-amount").val(($(this).val() * 50).toFixed(2));
         });
-		$("#token-base-amount1").keyup(function () {
-			$("#token-amount").text(($(this).val() * 10).toFixed(2));
+        $("#btc-base-amount1").keyup(function () {
+            $("#token-base-amount1").val(($(this).val() * 10).toFixed(2));
 		});
 
 

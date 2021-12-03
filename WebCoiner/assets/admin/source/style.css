@@ -12663,9 +12663,9 @@ p + .timeline-content-info {
 }
 
 .topbar {
-  background: #253992;
-  position: relative;
-  z-index: 3;
+    background: #394452;
+    position: relative;
+    z-index: 3;
 }
 
 .topbar.has-fixed {
