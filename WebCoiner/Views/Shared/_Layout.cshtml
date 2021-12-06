@@ -172,14 +172,17 @@
                 <div class="container">
                     <div class="navbar-innr">
                         <ul class="navbar-menu">
-                            <li><a href="@Url.Action("list", "Dashboard")"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
-                            <li><a href="@Url.Action("create", "userdashboard")"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
-                            <li><a href="javascript: void(0)" id="packages-area"><em class="ikon ikon-distribution"></em> Packages</a></li>
-                            <li><a href="@Url.Action("list", "transactions")"><em class="ikon ikon-transactions"></em> Transactions</a></li>
-                            <li><a href="@Url.Action("index", "manage")"><em class=0"ikon ikon-user"></em> Profile</a></li>
-                            <li><a href="@Url.Action("list", "promocodes")"><em class="ikon ikon-exchange"></em> Promocodes</a></li>
-                            <li><a href="@Url.Action("list", "users")"><em class="ikon ikon-user"></em> Users</a></li>
-                        </ul>
+                            @if (User.IsInRole("administrator"))
+                            {
+                                <li><a href="@Url.Action("list", "Dashboard")"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
+                                <li><a href="@Url.Action("create", "userdashboard")"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
+                                <li><a href="javascript: void(0)" id="packages-area"><em class="ikon ikon-distribution"></em> Packages</a></li>
+                                <li><a href="@Url.Action("list", "transactions")"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+                                <li><a href="@Url.Action("index", "manage")"><em class=0"ikon ikon-user"></em> Profile</a></li>
+                                <li><a href="@Url.Action("list", "promocodes")"><em class="ikon ikon-exchange"></em> Promocodes</a></li>
+                                <li><a href="@Url.Action("list", "users")"><em class="ikon ikon-user"></em> Users</a></li>
+                            }
+                            </ul>
                     </div><!-- .navbar-innr -->
                 </div><!-- .container -->
             </div><!-- .navbar -->
