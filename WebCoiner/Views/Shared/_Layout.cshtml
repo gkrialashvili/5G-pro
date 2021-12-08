@@ -174,15 +174,23 @@
                         <ul class="navbar-menu">
                             @if (User.IsInRole("administrator"))
                             {
-                                <li><a href="@Url.Action("list", "Dashboard")"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
+                                <li><a href="~/dashboard/list/"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
                                 <li><a href="@Url.Action("create", "userdashboard")"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
                                 <li><a href="javascript: void(0)" id="packages-area"><em class="ikon ikon-distribution"></em> Packages</a></li>
-                                <li><a href="@Url.Action("list", "transactions")"><em class="ikon ikon-transactions"></em> Transactions</a></li>
-                                <li><a href="@Url.Action("index", "manage")"><em class=0"ikon ikon-user"></em> Profile</a></li>
-                                <li><a href="@Url.Action("list", "promocodes")"><em class="ikon ikon-exchange"></em> Promocodes</a></li>
-                                <li><a href="@Url.Action("list", "users")"><em class="ikon ikon-user"></em> Users</a></li>
+                                <li><a href="~/transactions/list"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+                                <li><a href="~/manage/index/"><em class=0"ikon ikon-user"></em> Profile</a></li>
+                                <li><a href="~/promocodes/list"><em class="ikon ikon-exchange"></em> Promocodes</a></li>
+                                <li><a href="~/users/list"><em class="ikon ikon-user"></em> Users</a></li>
                             }
-                            </ul>
+                            else if (Request.IsAuthenticated)
+                            {
+                                <li><a href="~/userdashboard/dashboard/"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
+                                <li><a href="@Url.Action("create", "userdashboard")"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
+                                <li><a href="javascript: void(0)" id="packages-area"><em class="ikon ikon-distribution"></em> Packages</a></li>
+                                <li><a href="~/userdashboard/list" aria-current="page"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+                                <li><a href="~/manage/index/"><em class=0"ikon ikon-user"></em> Profile</a></li>
+                            }
+                        </ul>
                     </div><!-- .navbar-innr -->
                 </div><!-- .container -->
             </div><!-- .navbar -->
