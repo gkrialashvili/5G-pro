@@ -322,11 +322,11 @@ button {
 }
 
 .bg_light_dark {
-    background-color: #0b315e;
+    background-color: #121833;
 }
 
 .bg_light_dark_blue {
-    background-color: #0b315e;
+    background-color: #161d3e;
 }
 
 .bg_black_dark,
@@ -1325,13 +1325,8 @@ header.no-sticky {
     right: 0;
 }
 
-header.nav-fixed .navbar-nav a {
+header .navbar-nav a {
     color: #ffffff;
-}
-
-h1.fadeInUp.animated {
-    font-size: 20px;
-    color: #5957cd;
 }
 
 .navbar-expand-lg .navbar-nav > li {
@@ -1605,10 +1600,6 @@ header a:hover,
     transform-origin: right top 0;
     width: 100%;
     z-index: -1;
-}
-
-.table-light {
-    padding: 15px;
 }
 
 .section_banner {
@@ -1937,11 +1928,6 @@ header a:hover,
         height: 50px;
         width: 50px;
     }
-
-.svg {
-    width: 25px;
-    height: 25px;
-}
 
 .vertical_social {
     background-color: #0E082C;
@@ -3011,7 +2997,6 @@ header a:hover,
     position: relative;
     overflow: hidden;
 }
-
 
 .token_list_shape::before {
     background-color: #193dc0;

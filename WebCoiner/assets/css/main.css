@@ -10,10 +10,6 @@
     pointer-events: none !important;
 }
 
-.table-light {
-    padding: 15px;
-}
-
 .row-eq-height {
     display: flex;
 }

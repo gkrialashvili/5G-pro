@@ -10,31 +10,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-    <title>5G Prime Pro</title>
+    <title>FairCover ICO</title>
     <!--<base href="/">-->
     <base href=".">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="~/assets/admin/source/5glogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.26.0/apexcharts.min.css" integrity="sha512-JQIBcZTDAWa1umaHZvCXqHC1xa4jU8NyTWFCV977oIcbcLFdqtRxgoNC1CEv3c9GJWdIj4Vs7jfhgDQSEkpMMQ==" crossorigin="anonymous" />
+    <link rel="icon" href="/Content/themes/jur-theme/dist/images/11111.png" type="image/x-icon">
 
     <link rel="stylesheet" href="~/Content/ico/vendor.bundle.css" id="layoutstyle">
     <link rel="stylesheet" href="~/Content/ico/style.css">
-    <link rel="stylesheet" href="~/assets/admin/source/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png/ico"
-          href="~/assets/admin/source/5glogo.png">
-    <link href="~/assets/admin/source/extractcssone.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-          crossorigin="anonymous" />
-    <link rel="stylesheet" href="~/assets/login/vendor.bundle.css">
-    <link rel="stylesheet" href="~/assets/login/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/index.min.js"></script>
-    <link rel="stylesheet" href="~/assets/admin/source/vendor.css">
-    <link rel="stylesheet" href="~/assets/admin/source/style.css">
-    <link rel="stylesheet" href="~/assets/admin/source/main.css">
 
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>
     @*<script src="~/Content/jquery-1.12.4.min.js"></script>*@
@@ -120,29 +104,194 @@
 
 <body class="no-touch">
     <app-root>
-        <div id="backbutton" style="display: flex; background-color: #dfe1e3;" class="w-100 justify-content-start align-items-center">
-            <button type="button" class="btn btn-primary" onclick="redirectBack()" style="color: #fff">
-                Back
-            </button>
-        </div>
         <app-profile>
-            @RenderBody()
-            <div class="footer-bar" style="background-color: #000000">
-                <div class="container-fluid" style="padding: 15px 0;">
-                    @if (Request.IsAuthenticated)
-                    {
-                        <iframe src="https://s.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22Nasdaq%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22BTC%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22ETH%2FUSD%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A78%2C%22utm_source%22%3A%22www.tradingview.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%7D" height="40px" width="100%"></iframe>
-                    }
-                </div>
-                <div class="container">
 
+            <div class="topbar-wrap" style="padding-top: 66px;">
+                <div class="topbar is-sticky has-fixed">
+                    <div class="container">
+                      
+                        <div class="d-flex justify-content-between align-items-center">
+
+                            <ul class="topbar-nav d-lg-none">
+
+                                <li class="topbar-nav-item relative">
+                                    <a class="toggle-nav" href="#" data-toggle="collapse" data-target="#navbarSupportedContent">
+                                        <div class="toggle-icon">
+                                            <span class="toggle-line"></span>
+                                            <span class="toggle-line"></span>
+                                            <span class="toggle-line"></span>
+                                            <span class="toggle-line"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a class="topbar-logo" href="~/userdashboard/dashboard/">
+                                <img alt="logo" src="~/Content/themes/jur-theme/dist/images/11111.png" srcset="~/Content/themes/jur-theme/dist/images/11111.png">
+                            </a>
+
+                            @if (Request.IsAuthenticated)
+                            {
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn btn-circle car_btn">
+                                        <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Profile-ICon.png" />
+                                    </button>
+                                    @* <img id="togglemenu" class="circular_image" src="https://www.searchpng.com/wp-content/uploads/2019/02/Profile-ICon.png" />*@
+
+                                    <style>
+
+                                        .car_btn {
+                                            width: 50px;
+                                            height: 50px;
+                                            padding: 10px;
+                                            line-height: 50px;
+                                            text-align: left;
+                                            text-indent: 10px;
+                                            font-family: Verdana, Geneva, sans-serif;
+                                            font-size: 16px;
+                                            color: #333;
+                                            border: 1px solid #333;
+                                            background-color: white;
+                                            cursor: pointer;
+                                        }
+
+                                            .car_btn:hover {
+                                                background-color: white;
+                                            }
+
+                                            .car_btn img {
+                                                float: left;
+                                            }
+
+
+                                        .circular_image {
+                                            width: 50px;
+                                            height: 50px;
+                                            border-radius: 50%;
+                                            overflow: hidden;
+                                            background-color: blue;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                        }
+
+                                            .circular_image img {
+                                                width: 100%;
+                                            }
+                                    </style>
+
+                                    <div id="myDropdown" class="dropdown-content">
+
+
+
+
+                                        @if (User.IsInRole("administrator"))
+                                        {
+                                            <div class="@{if (controllerName.ToLower().Contains("/dashboard/list"))
+                                                {@Html.Raw("active") } }"><a href="~/dashboard/list/"><em class="ikon ikon-dashboard"></em> Manage Dashboard</a></div>
+                                            <div class="@{if (controllerName.ToLower().Contains("/transactions/list"))
+                                                {@Html.Raw("active") } }"><a href="~/transactions/list"><em class="ikon ikon-transactions"></em> Transactions</a></div>
+                                            <div class="@{if (controllerName.ToLower().Contains("/users/list"))
+                                                {@Html.Raw("active") } }"><a href="~/users/list"><em class="ikon ikon-user"></em> Users</a></div>
+                                            <div class="@{if (controllerName.ToLower().Contains("/promocodes/list"))
+                                                {@Html.Raw("active") } }"><a href="~/promocodes/list"><em class="ikon ikon-wallet"></em> PromoCodes</a></div>
+                                            <div class="@{if (controllerName.ToLower().Contains("manage/"))
+                                                {@Html.Raw("active") } }">
+                                                 <a href="~/manage/index/"><em class="ikon ikon-user"></em> Profile</a></div>
+                                                }
+                                                else if (Request.IsAuthenticated)
+                                                {
+                                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/dashboard"))
+                                                {@Html.Raw("active") } }"><a href="~/userdashboard/dashboard/"><em class="ikon ikon-dashboard"></em> Dashboard</a></div>
+                                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/create"))
+                                                {@Html.Raw("active") } }"><a href="~/userdashboard/create/"><em class="ikon ikon-coins"></em> Buy Tokens</a></div>
+                                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/list"))
+                                                {@Html.Raw("active") } }"><a href="~/userdashboard/list/"><em class="ikon ikon-transactions"></em> Transactions</a></div>
+                                            <div class="@{if (controllerName.ToLower().Contains("manage/"))
+                                                {@Html.Raw("active") } }"><a href="~/manage/index/"><em class="ikon ikon-user"></em> Profile</a></div>
+                                                }
+                                                <div><a href="~/Content/faircoverWhitepaper.pdf"><em class="ikon ikon-user"></em> Whitepaper</a></div>
+                                        @if (Request.IsAuthenticated)
+                                        {
+                                            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                            {
+                                                @Html.AntiForgeryToken()
+
+                                                <div><a href="javascript:document.getElementById('logoutForm').submit()">Log out</a></div>
+                                                @*  <ul class="topbar-nav">
+                                <li class="topbar-nav-item relative">
+                                    <a class="btn btn-primary btn-radius nav_item"
+                                       href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                                </li>
+                            </ul> *@
+                                            }
+                                        }
+
+                                    </div>
+                                </div>
+                                                }
+
+                            </div>
+
+                        
+
+
+
+                        </div>
+                </div>
+                @if (Request.IsAuthenticated) {
+                <iframe src="https://s.tradingview.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22proName%22%3A%22FOREXCOM%3ASPXUSD%22%2C%22title%22%3A%22S%26P%20500%22%7D%2C%7B%22proName%22%3A%22FOREXCOM%3ANSXUSD%22%2C%22title%22%3A%22Nasdaq%20100%22%7D%2C%7B%22proName%22%3A%22FX_IDC%3AEURUSD%22%2C%22title%22%3A%22EUR%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3ABTCUSD%22%2C%22title%22%3A%22BTC%2FUSD%22%7D%2C%7B%22proName%22%3A%22BITSTAMP%3AETHUSD%22%2C%22title%22%3A%22ETH%2FUSD%22%7D%5D%2C%22showSymbolLogo%22%3Atrue%2C%22colorTheme%22%3A%22light%22%2C%22isTransparent%22%3Afalse%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A78%2C%22utm_source%22%3A%22www.tradingview.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%7D" height="40px" width="100%"></iframe>
+                }
+                <div class="@{ if (Request.Browser.IsMobileDevice) {@Html.Raw("collapse navbar-collapse") } else {@Html.Raw("navbar") } }" id="navbarSupportedContent">
+                    <div class="container">
+
+                        <div class="navbar-innr">
+                            <ul class="navbar-menu">
+
+
+                                @*    @if (User.IsInRole("administrator"))
+                        {
+                            <li class="@{if (controllerName.ToLower().Contains("/dashboard/list"))
+                                    {@Html.Raw("active") } }"><a href="~/dashboard/list/"><em class="ikon ikon-dashboard"></em> Manage Dashboard</a></li>
+                            <li class="@{if (controllerName.ToLower().Contains("/transactions/list"))
+                                    {@Html.Raw("active") } }"><a href="~/transactions/list"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+                            <li class="@{if (controllerName.ToLower().Contains("/users/list"))
+                                    {@Html.Raw("active") } }"><a href="~/users/list"><em class="ikon ikon-user"></em> Users</a></li>
+                            <li class="@{if (controllerName.ToLower().Contains("/promocodes/list"))
+                                    {@Html.Raw("active") } }"><a href="~/promocodes/list"><em class="ikon ikon-wallet"></em> PromoCodes</a></li>
+                            <li class="@{if (controllerName.ToLower().Contains("manage/"))
+                                {@Html.Raw("active") } }"><a href="~/manage/index/"><em class="ikon ikon-user"></em> Profile</a></li>
+
+                        }
+                        else if (Request.IsAuthenticated)
+                        {
+                            <li class="@{if (controllerName.ToLower().Contains("userdashboard/dashboard"))
+                                {@Html.Raw("active") } }"><a href="~/userdashboard/dashboard/"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
+                            <li class="@{if (controllerName.ToLower().Contains("userdashboard/create"))
+                                {@Html.Raw("active") } }"><a href="~/userdashboard/create/"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
+                            <li class="@{if (controllerName.ToLower().Contains("userdashboard/list"))
+                                {@Html.Raw("active") } }"><a href="~/userdashboard/list/"><em class="ikon ikon-transactions"></em> Transactions</a></li>
+                            <li class="@{if (controllerName.ToLower().Contains("manage/"))
+                                {@Html.Raw("active") } }"><a href="~/manage/index/"><em class="ikon ikon-user"></em> Profile</a></li>
+                        }*@
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            @RenderBody()
+            <div class="footer-bar">
+                <div class="container">
                     <div class="row align-items-center justify-content-center">
+                        @*    <div class="col-md-8">
+            <ul class="footer-links">
+                <li><a href="~/content/Gridnet_Whitepaper_Final.pdf" target="_blank">Whitepaper</a></li>
+            </ul>
+        </div> *@
                         <div class="col-md-4 mt-2 mt-sm-0">
                             <div class="d-flex justify-content-between justify-content-md-end align-items-center guttar-25px pdt-0-5x pdb-0-5x">
-                                <p class="text-center text-white opacity-5" style="display: flex">
-                                    Copyright © 2020 - 2021 5G Prime Pro  &nbsp;&nbsp;
-                                    <a href="mailto:support@5gprimeico-pro.com"> Contact Us: support@5gprimeico-pro.com</a>
-                                </p>
+                                <p class="text-center opacity-5" style="margin-top:15%;">Copyright © 2020 - 2021 FairCover  &nbsp;&nbsp;Contact Us: support@faircover-ico.com</p>
                             </div>
                         </div>
                     </div>
@@ -183,11 +332,21 @@
         /* When the user clicks on the button,
         toggle between hiding and showing the dropdown content */
 
-        function redirectBack() {
-            var url = '@Url.Action("Dashboard", "UserDashboard")';
-            window.location.href = url;
-        };
+       /* $(window).on(function () {
+            $("#togglemenu").click(function () {
+                myFunction();
+            });
+        }); */
 
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        document.getElementById('togglemenu').addEventListener('click', function (e) {
+            document.getElementById("myDropdown").classList.toggle("show");
+            alert("AEEEE");
+        });
+
+       
 
         // Close the dropdown if the user clicks outside of it
         window.onclick = function (event) {

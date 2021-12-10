@@ -40,10 +40,6 @@ nav a {
     color: #fff;
 }
 
-.table-light {
-    padding: 15px;
-}
-
     nav a span::after {
         content: '';
         position: absolute;

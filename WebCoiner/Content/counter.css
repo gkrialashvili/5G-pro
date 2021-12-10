@@ -263,9 +263,8 @@
         font-size: 14px;
         text-transform: uppercase;
         font-weight: 500;
-        color: #39b059;
-        line-height: 1.4;
-        /*        margin-bottom: 80px;*/
+        color: #495463;
+        line-height: 1.4
     }
 
         .progress-info li span {
@@ -277,13 +276,11 @@
 .progress-bar {
     display: block;
     color: #758698;
-    background: #318291;
+    background: #aebac7;
     height: 6px;
     border-radius: 3px;
     margin: 12px 0 65px;
-    position: relative;
-    top: 65px;
-    max-width: 550px;
+    position: relative
 }
 
 .progress-hcap, .progress-scap, .progress-psale, .progress-percent {
@@ -303,19 +300,18 @@
         line-height: 14px;
         font-weight: 500;
         padding: 25px 0 0 0;
-        text-transform: uppercase; 
-        top: -83px;
+        text-transform: uppercase
     }
 
         .progress-hcap > div:after, .progress-scap > div:after, .progress-psale > div:after, .progress-percent > div:after {
             position: absolute;
-            top: 54px;
+            top: 0;
             left: 50%;
             margin-left: -2px;
             width: 2px;
             height: 20px;
             content: '';
-            background: #39b159
+            background: rgba(78,92,110,0.3)
         }
 
         .progress-hcap > div span, .progress-scap > div span, .progress-psale > div span, .progress-percent > div span {
@@ -324,15 +320,15 @@
         }
 
 .progress-hcap {
-    background: #fff
+    background: #d2dde9
 }
 
 .progress-scap {
-    background: #fff
+    background: #ffffff
 }
 
 .progress-psale {
-    background: #39b159
+    background: #8299d3
 }
 
 .progress-percent {
@@ -346,7 +342,7 @@
         top: 50%;
         height: 18px;
         width: 18px;
-        border: 3px solid #318291;
+        border: 3px solid #2c80ff;
         background: #fff;
         border-radius: 50%;
         transform: translate(50%, -50%)

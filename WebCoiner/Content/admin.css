@@ -196,8 +196,8 @@
         }
 
 .progress-bar.gradient {
-    background-color: #38b158;
-    background-color: #38b158;
+    background-image: -webkit-linear-gradient(left, #ff67cb 0%,#ffcc67 99%);
+    background-image: linear-gradient(to right, #ff67cb 0%,#ffcc67 99%);
 }
 
 .radio_checkbox input[type="radio"] {
