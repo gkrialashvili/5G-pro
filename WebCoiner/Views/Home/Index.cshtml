@@ -3,12 +3,12 @@
     //decimal currentpercentage = 23;
     Console.WriteLine("STUFF");
     double txRaised = (double)Model.Raised;
-    double raised = ((double)Model.Raised / 130000000) * 100;
+    double raised = (txRaised / 110000000) * 100;
     long num = 0;
     long.TryParse(txRaised.ToString(), out num);
     String finalRaised = num.ToString("N0");
 
-    double percentage = ((double)Model.Raised / 130000000) * 100;
+    double percentage = ((double)Model.Raised / 110000000) * 100;
     //155 = 10M
     double finalRaisedDo = Convert.ToDouble(finalRaised);
     Console.WriteLine("RAISED IS " + finalRaisedDo);
