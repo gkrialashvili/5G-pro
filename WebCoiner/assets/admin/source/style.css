@@ -6529,14 +6529,14 @@ select.select-sm {
 }
 
 .user-thumb {
-  display: inline-block;
-  height: 32px;
-  width: 32px;
-  line-height: 32px;
-  color: #fff;
-  border-radius: 50%;
-  background: #2c80ff;
-  text-align: center;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    color: #fff;
+    border-radius: 50%;
+    background: #f73900 !important;
+    text-align: center;
 }
 
 .user-thumb:hover,
@@ -12756,7 +12756,7 @@ p + .timeline-content-info {
   line-height: 32px;
   padding: 12px 0;
   position: relative;
-  color: #2c80ff;
+  color: #fff;
 }
 
 .navbar-menu > li > a:before {

@@ -5235,6 +5235,7 @@ button.btn-white:hover {
 	color: #ffffff;
 	font-size: 14px;
 	margin: 0;
+	text-align: center;
 }
 .footer_menu {
 	text-align: right;

@@ -6118,7 +6118,7 @@ select {
     line-height: 32px;
     color: #fff;
     border-radius: 50%;
-    background: #2c80ff;
+    background: #f73900 !important;
     text-align: center
 }
 

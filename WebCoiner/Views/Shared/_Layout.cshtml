@@ -127,50 +127,12 @@
 <body class="no-touch">
     <app-root>
         <div class="topbar-wrap">
-            <div class="topbar is-sticky">
-                <div class="container">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <ul class="topbar-nav d-lg-none">
-                            <li class="topbar-nav-item relative">
-                                <a class="toggle-nav" href="#">
-                                    <div class="toggle-icon">
-                                        <span class="toggle-line"></span>
-                                        <span class="toggle-line"></span>
-                                        <span class="toggle-line"></span>
-                                        <span class="toggle-line"></span>
-                                    </div>
-                                </a>
-                            </li><!-- .topbar-nav-item -->
-                        </ul><!-- .topbar-nav -->
-                        <a class="topbar-logo" href="@Url.Action("Dashboard", "UserDashboard")">
-                            <img src="~/assets/images/logo.png" srcset="/assets/images/logo.png 2x" alt="logo">
-                        </a>
-                        <ul class="topbar-nav">
-                            <li class="topbar-nav-item relative">
-                                @*<span class="user-welcome d-none d-lg-inline-block">@Model.AspNetUser.UserName</span>*@
-                                <a class="toggle-tigger user-thumb" href="javascript:void(0)"><em class="ti ti-user"></em></a>
-                                <div class="toggle-class dropdown-content dropdown-content-right dropdown-arrow-right user-dropdown">
-                                    <div class="user-status">
-                                    </div>
-                                    <ul class="user-links bg-light">
-                                        @if (Request.IsAuthenticated)
-                                        {
-                                            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
-                                            {
-                                                @Html.AntiForgeryToken()
-                                                <li><a href="javascript:document.getElementById('logoutForm').submit()"><i class="ti ti-power-off"></i>Logout</a></li>
-                                            }
-                                        }
-                                    </ul>
-                                </div>
-                            </li><!-- .topbar-nav-item -->
-                        </ul><!-- .topbar-nav -->
-                    </div>
-                </div><!-- .container -->
-            </div><!-- .topbar -->
-            <div class="navbar">
-                <div class="container">
-                    <div class="navbar-innr">
+            <div class="navbar" style="background-image: linear-gradient( 120deg, #00e4d0, #5983e8) !important; display: flex; align-items: center">
+                <a class="topbar-logo" href="@Url.Action("Dashboard", "UserDashboard")">
+                    <img src="~/assets/images/logo.png" srcset="/assets/images/logo.png 2x" alt="logo">
+                </a>
+                <div class="container" style="margin: 0; padding: 0">
+                    <div class="navbar-innr" style="justify-content: center">
                         <ul class="navbar-menu">
                             @if (User.IsInRole("administrator"))
                             {
@@ -193,6 +155,26 @@
                         </ul>
                     </div><!-- .navbar-innr -->
                 </div><!-- .container -->
+                <ul class="topbar-nav">
+                    <li class="topbar-nav-item relative">
+                        @*<span class="user-welcome d-none d-lg-inline-block">@Model.AspNetUser.UserName</span>*@
+                        <a class="toggle-tigger user-thumb" href="javascript:void(0)"><em class="ti ti-user"></em></a>
+                        <div class="toggle-class dropdown-content dropdown-content-right dropdown-arrow-right user-dropdown">
+                            <div class="user-status">
+                            </div>
+                            <ul class="user-links bg-light">
+                                @if (Request.IsAuthenticated)
+                                {
+                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <li><a href="javascript:document.getElementById('logoutForm').submit()"><i class="ti ti-power-off"></i>Logout</a></li>
+                                    }
+                                }
+                            </ul>
+                        </div>
+                    </li><!-- .topbar-nav-item -->
+                </ul><!-- .topbar-nav -->
             </div><!-- .navbar -->
         </div><!-- .topbar-wrap -->
         <app-profile>
