@@ -76,20 +76,7 @@ Version      : 1.6
 	} );
 	
 	
-	//Hide Navbar Dropdown After Click On Links
-	var navBar = $(".header_wrap");
-	var navbarLinks = navBar.find(".navbar-collapse ul li a.nav_item");
 
-    $.each( navbarLinks, function( i, val ) {
-
-      var navbarLink = $(this);
-
-        navbarLink.on('click', function () {
-          navBar.find(".navbar-collapse").collapse('hide');
-		  $("header").removeClass("active");
-        });
-
-    });
 	
 	//Main navigation Active Class Add Remove
 	$('.navbar-toggler').on('click', function() {

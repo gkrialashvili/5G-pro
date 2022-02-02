@@ -55,19 +55,19 @@ jQuery(function($) {
             /*Line Chart*/
         if($("#line-chartjs").length){
             var randomScalingFactor = function() {
-                return Math.round(Math.random() * 100)
+                return Math.round(Math.random() * 10)
             };
             var lineChartData = {
-                labels: ["January", "February", "March", "April", "May", "June", "July", "August", "Sept"],
+                labels: ['Private Sale   $0.02', 'Presale $0.06', 'Softcap $0.12', 'Hardcap $0.24'],
                 datasets: [{
-                    label: "My First dataset",
+                    label: "Token Price",
                     fillColor: "rgba(63,81,181,0.5)",
                     strokeColor: "rgba(63,81,181,1)",
                     pointColor: "rgba(63,81,181,1)",
                     pointStrokeColor: "#fff",
                     pointHighlightFill: "#fff",
                     pointHighlightStroke: "rgba(63,81,181,1)",
-                    data: [20, 35, 30, 39, 29, 45, 35, 50, 45]
+                    data: [0.03, 0.06, 0.15, 0.30]
                 }],
 
             }

@@ -105,8 +105,8 @@ options: {
 
 
 window.onload = function() {
-var ctx = document.getElementById('token_sale').getContext('2d');
-window.myPie = new Chart(ctx, config);
-var ctx2 = document.getElementById('token_dist').getContext('2d');
-window.myPie = new Chart(ctx2, config2);
+//var ctx = document.getElementById('token_sale').getContext('2d');
+//window.myPie = new Chart(ctx, config);
+//var ctx2 = document.getElementById('token_dist').getContext('2d');
+//window.myPie = new Chart(ctx2, config2);
 };

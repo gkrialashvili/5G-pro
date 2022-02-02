@@ -94,8 +94,8 @@ header a:hover,
 	border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #40f8a6;
 }
 .btn-default {
-	background-image: -webkit-linear-gradient(left, #40f8a6 0%,#43B1FB 51%,#40f8a6);
-	background-image: linear-gradient(to right, #40f8a6 0%,#43B1FB 51%,#40f8a6);
+	background-image: -webkit-linear-gradient(left, #287093 0%,#5eb7d2 51%,#7fd4e7);
+	background-image: linear-gradient(to right, #287093 0%,#5eb7d2 51%,#7fd4e7);
 }
 .btn-default.active.focus, 
 .btn-default.active:focus, 
