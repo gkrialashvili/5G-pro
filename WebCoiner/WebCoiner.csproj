@@ -378,6 +378,8 @@
     <Content Include="assets\admin\source\trans.png" />
     <Content Include="assets\admin\source\vendor.css" />
     <Content Include="assets\admin\source\wp.png" />
+    <Content Include="assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\js\bootstrap.min.js" />
     <Content Include="assets\color\theme-green.css" />
     <Content Include="assets\color\theme-lightgreen.css" />
     <Content Include="assets\color\theme-lightpurple.css" />
@@ -655,6 +657,7 @@
     <Content Include="assets\images\home_banner_bg.png" />
     <Content Include="assets\images\investment-projects.png" />
     <Content Include="assets\images\investment_network.png" />
+    <Content Include="assets\images\log.jpg" />
     <Content Include="assets\images\LogIn.jpg" />
     <Content Include="assets\images\about-img-2.png" />
     <Content Include="assets\images\arrow-left.png" />

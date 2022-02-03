@@ -282,6 +282,10 @@ button:focus {
 .blue_light_bg,
 .v_blue_pro {
 	background-color: #5957cd;
+	background-image: url(/assets/images/log.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 .light_blue_dark_bg {
 	background-color: #4a49bf;
@@ -755,15 +759,15 @@ button:focus {
 .btn:focus,
 .btn.active:not(:disabled):not(.disabled), 
 .btn:active:not(:disabled):not(.disabled) {
-	background-image: -webkit-linear-gradient(left, #ff67cb 0%,#ffcc67 51%,#ff67cb);
-	background-image: linear-gradient(to right, #ff67cb 0%,#ffcc67 51%,#ff67cb);
+	background-image: -webkit-linear-gradient(left, #7fd4e7 0%,#398fb1 51%,#215473));
+	background-image: linear-gradient(to right, #7fd4e7 0%,#398fb1 51%,#215473));
 	box-shadow:none;
 	outline:none;
 }
 .btn-default {
 	background-size: 200% auto;
-	background-image: -webkit-linear-gradient(left, #ff67cb 0%,#ffcc67 51%,#ff67cb);
-	background-image: linear-gradient(to right, #ff67cb 0%,#ffcc67 51%,#ff67cb);
+	background-image: -webkit-linear-gradient(left, #7fd4e7 0%,#398fb1 51%,#215473));
+	background-image: linear-gradient(to right, #7fd4e7 0%,#398fb1 51%,#215473));
 	border: 0;
 	color: #fff;
 	outline:none;
@@ -5383,7 +5387,7 @@ button.btn-white:hover {
 14. ABOUT US PAGE
 *===================================*/
 .section_breadcrumb {
-	padding: 130px 0 100px;
+	padding: 160px 0 100px;
 }
 .breadcrumb li a, 
 .breadcrumb li span {

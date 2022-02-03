@@ -338,6 +338,7 @@ button {
 .blue_light_bg,
 .v_blue_pro {
 	background-color: #5957cd;
+	background-image: url(/assets/images/log.jpg)
 }
 
 .light_blue_dark_bg {
