@@ -764,54 +764,55 @@
             <div class="wrapper main-wrapper row" style="">
                 <div class="clearfix"></div>
                 <!-- MAIN CONTENT AREA STARTS -->
-                <div class="col-lg-3">
-                    <div class="profile-balance gradient-blue mb-15">
-                        <div class="profile-bal-head">
-                            <h3>Tokens Balance</h3>
+                <div class="dashboard-info">
+                    <div class="col-lg-3 dashboard-info__cat">
+                        <div class="profile-balance gradient-blue mb-15">
+                            <div class="profile-bal-head">
+                                <h3>Tokens Balance</h3>
+                            </div>
+                            <div class="profile-bal-body">
+                                <h2>@Model.Tokens.ToString("#,##0")<small>BTR</small></h2>
+                                <p class="mb-0 w-text"></p>
+                            </div>
                         </div>
-                        <div class="profile-bal-body">
-                            <h2>@Model.Tokens.ToString("#,##0")<small>BTR</small></h2>
-                            <p class="mb-0 w-text"></p>
+                    </div>
+                    <div class="col-lg-3 dashboard-info__cat">
+                        <div class="profile-balance gradient-blue mb-15">
+                            <div class="profile-bal-head">
+                                <h3>Your Portfolio</h3>
+                            </div>
+                            <div class="profile-bal-body">
+                                <h2>$@Model.InvestmentAmount.ToString("#,##0")</h2>
+                                <p class="mb-0 w-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 dashboard-info__cat">
+                        <div class="profile-balance gradient-blue mb-15">
+                            <div class="profile-bal-head">
+                                <h3>Current Balance</h3>
+                            </div>
+                            <div class="profile-bal-body">
+                                <h2>$@Model.CurrentBalance.ToString("#,##0")</h2>
+                                <p class="mb-0 g-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 dashboard-info__cat">
+                        <div class="profile-balance gradient-blue mb-15">
+                            <div class="profile-bal-head">
+                                <h3>Profit</h3>
+                            </div>
+                            <div class="profile-bal-body">
+                                <h2>$@((Model.CurrentBalance - Model.InvestmentAmount).ToString("#,##0"))</h2>
+                                <p class="mb-0 g-text"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="profile-balance gradient-blue mb-15">
-                        <div class="profile-bal-head">
-                            <h3>Your Portfolio</h3>
-                        </div>
-                        <div class="profile-bal-body">
-                            <h2>$@Model.InvestmentAmount.ToString("#,##0")</h2>
-                            <p class="mb-0 w-text"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="profile-balance gradient-blue mb-15">
-                        <div class="profile-bal-head">
-                            <h3>Current Balance</h3>
-                        </div>
-                        <div class="profile-bal-body">
-                            <h2>$@Model.CurrentBalance.ToString("#,##0")</h2>
-                            <p class="mb-0 g-text"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="profile-balance gradient-blue mb-15">
-                        <div class="profile-bal-head">
-                            <h3>Profit</h3>
-                        </div>
-                        <div class="profile-bal-body">
-                            <h2>$@((Model.CurrentBalance - Model.InvestmentAmount).ToString("#,##0"))</h2>
-                            <p class="mb-0 g-text"></p>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="clearfix"></div>
                 <div style="display: flex; justify-content: center; width: 100%">
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <section class="box ">
                             <header class="panel_header">
                                 <h2 class="title pull-left">Total Token Earnings</h2>
@@ -827,125 +828,91 @@
                             </div>
                         </section>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="r1_graph1 db_box db_box_large mt-15 text-center">
-                                    <div class="invest-img relative">
-                                        <img src="~/assets/data/crypto-dash/invest-img.png" class="center-block img-responsive" alt="">
-                                        <div class="invest-data">
-                                            <h5 class="boldy mt-0">Investment Split</h5>
-                                            <h2 class="boldy">45%</h2>
-                                            <p class="mb-0">On Ethereum</p>
+                    <div class="col-lg-5" style="display: flex">
+                        <div class="col-lg-12 dash-scale">
+                            <div class="ref-num-box statistics-box mt-15 text-center pt0 pb30">
+                                <h4 class="boldy mt-30 mb-5">The Funds Rasied </h4>
+                                <p class="mb-0 text-muted boldy mb-30">@totalRaised.ToString("#,##0") ML</p>
+                                <!-- Countdown  -->
+                                <div class="ico-progress">
+                                    <ul class="list-unstyled list-inline clearfix mb-10">
+                                        <li class="title"></li>
+                                        <li class="title one ">33m</li>
+                                        <li class="title two">33m</li>
+                                        <li class="strength">75m</li>
+                                    </ul>
+                                    <!-- skill strength -->
+                                    <div class="current-progress relative">
+                                        <div class="cur-prog-line two"></div>
+                                        <div class="cur-prog-line three"></div>
+                                        <div class="cur-prog-line four"></div>
+                                        <div class="progress progress-lg">
+                                            <div class="progress-bar gradient-blue" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: @Convert.ToInt32(raised)%" "></div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-lg-6 no-pr">
-                                            <div class="text-left">
-                                                <h5><i class="fa fa-dot-circle-o p-text mr-10"></i>Bitcoin <span class="mb-0 green-text">24.98%</span></h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 no-pr">
-                                            <div class="text-left">
-                                                <h5><i class="fa fa-dot-circle-o blue-text mr-10"></i>Litecoin <span class="mb-0 green-text">19.98%</span></h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 no-pr">
-                                            <div class="text-left">
-                                                <h5><i class="fa fa-dot-circle-o red-text mr-10"></i>Dashcoin <span class="mb-0 green-text">19.36%</span></h5>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 no-pr">
-                                            <div class="text-left">
-                                                <h5><i class="fa fa-dot-circle-o green-text mr-10"></i>Monero <span class="mb-0 green-text">9.05%</span></h5>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <span class="pull-left">Softcap in 103 days</span>
+                                    <span class="pull-middle">PRE SALE</span>
+                                    <span class="pull-middle-two">SOFTCAP</span>
+                                    <span class="pull-right">Token Hardcap</span>
                                 </div>
 
                             </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="pricing-item ">
-                        <h4>Round 1</h4>
-                        <h3><strong class="xzc-1-month">0.96$</strong></h3>
-                        <span>1 ETH = 500 Token</span>
-                        <div class="pricing">15,000,000 Token</div>
-                        <label><strong>42% bonus</strong></label>
+                <div class="packages">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="pricing-item ">
+                            <h4>BASIC</h4>
+                            <h3><strong class="xzc-1-month">1%</strong></h3>
+                            <span>Basic Membership</span>
+                            <div class="pricing">Prolution tokens in portfolio</div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="pricing-item ">
-                        <h4>Round 2</h4>
-                        <h3><strong class="xzc-1-month">1.25$</strong></h3>
-                        <span>1 ETH = 500 Token</span>
-                        <div class="pricing">15,000,000 Token</div>
-                        <label><strong>30% bonus</strong></label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="pricing-item ">
+                            <h4>SILVER</h4>
+                            <h3><strong class="xzc-1-month">1%- 5%</strong></h3>
+                            <span>Silver Membership</span>
+                            <div class="pricing">
+                                Prolution tokens in portfolio
+                                <br />
+                                Minimum portfolio: $100,000
+                            </div>
+                            <a href="/userdashboard/create/" class="btn btn-primary-outline btn-md lis-rounded-circle-50" data-abc="true">Invest Now</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="pricing-item ">
-                        <h4>Round 3</h4>
-                        <h3><strong class="xzc-1-month">1.50$</strong></h3>
-                        <span>1 ETH = 500 Token</span>
-                        <div class="pricing">15,000,000 Token</div>
-                        <label><strong>25% bonus</strong></label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="pricing-item ">
+                            <h4>GOLD</h4>
+                            <h3><strong class="xzc-1-month">6% - 12%</strong></h3>
+                            <span>Gold Membership</span>
+                            <div class="pricing">
+                                Prolution tokens in portfolio  <br />
+                                Minimum portfolio: $250,000
+                            </div>
+                            <a href="/userdashboard/create/" class="btn btn-primary-outline btn-md lis-rounded-circle-50" data-abc="true">Invest Now</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="pricing-item ">
-                        <h4>Round 4</h4>
-                        <h3><strong class="xzc-1-month">1.96$</strong></h3>
-                        <span>1 ETH = 500 Token</span>
-                        <div class="pricing">15,000,000 Token</div>
-                        <label><strong>15% bonus</strong></label>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="pricing-item ">
+                            <h4>PLATINUM</h4>
+                            <h3><strong class="xzc-1-month">12%-20%</strong></h3>
+                            <span>Platinum Membership</span>
+                            <div class="pricing">
+                                Prolution tokens in portfolio <br />
+                                Minimum portfolio: $500,000
+                            </div>
+                            <a href="/userdashboard/create/" class="btn btn-primary-outline btn-md lis-rounded-circle-50" data-abc="true">Invest Now</a>
+                        </div>
                     </div>
                 </div>
 
                 <div class="clearfix"></div>
 
 
-                <div class="col-lg-12 dash-scale">
-                    <div class="col-lg-4">
-                        <div class="dotted-wrapper mt-15">
-                            <div class="ref-payout">
-                                <img src="~/assets/data/crypto-dash/coin1.png" alt=""><span class="w-text">BTC Payout Address</span>
-                            </div>
-                            <div class="payout-address mt-30">
-                                <div class="input-group primary mb-30">
-                                    <input type="text" class="form-control text-left transparent" value="Xy734-34093jksd90sk-JKAOOEI900" aria-describedby="basic-addon1">
-                                    <span class="input-group-addon orange-bg" id="basic-addon1"><span class="arrow"></span><i class="fa fa-edit"></i></span>
-                                </div>
-                                <button type="button" class="btn btn-primary btn-lg gradient-orange"> Withdraw BTC Funds</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ref-num-box statistics-box mt-15 text-center pt0 pb30">
-                        <h4 class="boldy mt-30 mb-5">The Funds Rasied </h4>
-                        <p class="mb-0 text-muted boldy mb-30">@totalRaised.ToString("#,##0") ML</p>
-                        <!-- Countdown  -->
-                        <div class="ico-progress">
-                            <ul class="list-unstyled list-inline clearfix mb-10">
-                                <li class="title">33m</li>
-                                <li class="strength">75m</li>
-                            </ul>
-                            <!-- skill strength -->
-                            <div class="current-progress relative">
-                                <div class="progress progress-lg">
-                                    <div class="progress-bar gradient-blue" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: @raised%" ;"></div>
-                                </div>
-                            </div>
-                            <span class="pull-left">Softcap in 103 days</span>
-                            <span class="pull-right">Token Hardcap</span>
-                        </div>
 
-                    </div>
-                </div>
 
                 <div class="clearfix"></div>
                 <!-- MAIN CONTENT AREA ENDS -->

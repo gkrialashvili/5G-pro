@@ -116,7 +116,8 @@ fieldset {
 }
 section {
 	padding: 100px 0;
-	position:relative;
+	position: relative;
+	background-color: #e9ebed;
 }
 .no-padding { 
 	padding: 0
@@ -285,7 +286,7 @@ button:focus {
 	background-image: url(/assets/images/log.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: top;
 }
 .light_blue_dark_bg {
 	background-color: #4a49bf;

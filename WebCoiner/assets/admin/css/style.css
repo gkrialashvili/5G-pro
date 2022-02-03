@@ -9404,14 +9404,33 @@ ul.info p {
 .profile-balance .profile-bal-body{
     padding: 10px 15px 
 }
-.profile-balance .profile-bal-body h2{
+.btn-primary-outline {
+    background-image: linear-gradient(117deg, #724eff, #5187ff);
+    color: #fff;
+}
+    .btn-primary-outline:hover {
+        background-image: linear-gradient(117deg, #5187ff, #724eff);
+        transition: 0.5s linear;
+        color: #fff;
+        font-weight: bold;
+    }
+.profile-balance .profile-bal-body h2 {
     position: relative;
     color: #fff;
-    font-size: 40px;
+    font-size: 25px;
     display: inline-block;
     font-weight: 700;
 }
-.profile-balance .profile-bal-body small{
+.dashboard-info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.dashboard-info__cat {
+    max-width: 250px;
+    margin: 0 70px;
+}
+.profile-balance .profile-bal-body small {
     position: absolute;
     font-size: 16px;
     right: -35px;
@@ -9488,8 +9507,9 @@ ul.info p {
     display: inline-block;
     width: 100%;
     padding: 30px 0 20px;
-    margin: 15px 0 ;
+    margin: 15px 0;
     cursor: pointer;
+    min-height: 250px;
 }
 .pricing-item h4{
     font-size: 14px;
@@ -9500,11 +9520,19 @@ ul.info p {
     margin: 0 0 20px;
 }
 .pricing-item h3{
-    font-size: 52px;
+    font-size: 30px;
     font-weight: 400;
     color: #fff;
     line-height: 0.92;
     margin: 0 0 10px;
+}
+.packages {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.packages > div {
+    max-width: 350px;
 }
 .pricing-item .pricing {
     font-size: 15px;
@@ -9570,9 +9598,25 @@ ul.info p {
 }
 .ico-progress li.title {
     float: left;
-    padding-left: 10%;
     font-size: 20px;
     font-weight: 600;
+    position: relative;
+}
+
+.ico-progress li.title.one {
+    left: 28%;
+}
+
+    .ico-progress li.title.two {
+        left: 62%
+    }
+.pull-middle {
+    position: absolute;
+    left: 28%;
+}
+.pull-middle-two {
+    position: absolute;
+    left: 67%;
 }
 .ico-progress li.strength {
     float: right;
@@ -9585,7 +9629,31 @@ ul.info p {
     width: 4px;
     height: 50px;
     bottom: -5px;
-    left: 12%;
+    left: 1%;
+    background: #ffba00;
+}
+.cur-prog-line.two {
+    position: absolute;
+    width: 4px;
+    height: 50px;
+    bottom: -5px;
+    left: 30%;
+    background: #ffba00;
+}
+.cur-prog-line.three {
+    position: absolute;
+    width: 4px;
+    height: 50px;
+    bottom: -5px;
+    left: 70%;
+    background: #ffba00;
+}
+.cur-prog-line.four {
+    position: absolute;
+    width: 4px;
+    height: 50px;
+    bottom: -5px;
+    left: 98%;
     background: #ffba00;
 }
 .pay-bt{
