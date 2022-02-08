@@ -58,7 +58,7 @@ jQuery(function($) {
                 return Math.round(Math.random() * 10)
             };
             var lineChartData = {
-                labels: ['Private Sale   $0.02', 'Presale $0.06', 'Softcap $0.12', 'Hardcap $0.24'],
+                labels: ['Private Sale   $0.02', 'Presale $0.04', 'Softcap $0.10', 'Hardcap $0.20'],
                 datasets: [{
                     label: "Token Price",
                     fillColor: "rgba(63,81,181,0.5)",

@@ -329,7 +329,7 @@
 
             // The data for our dataset
             data: {
-                labels: ['Private Sale   $0.02', 'Presale $0.06', 'Softcap $0.12', 'Hardcap $0.24'],
+                labels: ['Private Sale   $0.02', 'Presale $0.04', 'Softcap $0.10', 'Hardcap $0.20'],
                 datasets: [{
                     label: "Token Price",
                     tension:0.4,

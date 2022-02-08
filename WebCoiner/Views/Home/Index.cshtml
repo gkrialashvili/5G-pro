@@ -3,12 +3,12 @@
     //decimal currentpercentage = 23;
     Console.WriteLine("STUFF");
     double txRaised = (double)Model.Raised;
-    double raised = (txRaised / 110000000) * 100;
+    double raised = (txRaised / 125000000) * 100;
     long num = 0;
     long.TryParse(txRaised.ToString(), out num);
     String finalRaised = num.ToString("N0");
 
-    double percentage = ((double)Model.Raised / 110000000) * 100;
+    double percentage = ((double)Model.Raised / 125000000) * 100;
     //155 = 10M
     double finalRaisedDo = Convert.ToDouble(finalRaised);
     Console.WriteLine("RAISED IS " + finalRaisedDo);
@@ -147,7 +147,7 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title>Bitreal</title>
+    <title>Bitreal ICO </title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -434,10 +434,9 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12 order-lg-first">
                     <div class="banner_text text_md_center">
-                        <h1 class="animation text-white" data-animation="fadeInUp" data-animation-delay="1.1s">The Number of Token Sales Keeps Rising</h1>
-                        <p class="animation text-white" data-animation="fadeInUp" data-animation-delay="1.3s">The mining starts immediately after confirmed payment. First payouts within 24 hours. </p>
+                        <h1 class="animation text-white" data-animation="fadeInUp" data-animation-delay="1.1s">Blockchain in Real Estate: How the Technology is Revolutionizing the Industry</h1>
                         <div class="btn_group animation" data-animation="fadeInUp" data-animation-delay="1.4s">
-                            <a href="#whitepaper" class="btn btn-default nav-link content-popup"><i class="fa fa-file-word-o"></i>Whitepaper</a>
+                            <a href="Content/BitRealWhitepaper.pdf" target="_blank" class="btn btn-default"><i class="fa fa-file-word-o"></i>Whitepaper</a>
                             <a href="account/login" class="btn btn-border-white"><i class="fa fa-ge"></i>Buy Token</a>
                         </div>
                         <div id="whitepaper" class="team_pop mfp-hide">
@@ -448,7 +447,7 @@
                                             <h4>Download Whitepaper</h4>
                                             <p>A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution.Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.</p>
                                             <p>The network timestamps transactions by hashing them into an ongoing chain of hash-based proof-of-work, forming a record that cannot be changed without redoing the proof-of-work.</p>
-                                            <a href="#" class="btn btn-default">Download Now <i class="ion-ios-arrow-thin-right"></i></a>
+                                            <a href="Content/BitRealWhitepaper.pdf" class="btn btn-default">Download Now <i class="ion-ios-arrow-thin-right"></i></a>
 
                                         </div>
                                     </div>
@@ -464,13 +463,14 @@
                 <div class="col-lg-5 offset-lg-1 col-md-8 offset-md-2 col-sm-12 order-first">
                     <div class="banner_inner res_md_mb_50 res_xs_mb_30">
                         <div class="tk_countdown transparent_bg tk_border_white rounded-0 text-center animation" data-animation="fadeIn" data-animation-delay="1.1s">
+                            <span class="progress_label" style="color: #fff; font-weight: bold">Total Raised: @Model.Raised.ToString("#,##0")</span>
                             <div class="banner_text tk_counter_inner">
-                                <div class="tk_countdown_time p-0 transparent_bg box_shadow_none animation" data-animation="fadeInUp" data-animation-delay="1.2s" data-time="2022/03/12 00:00:00"></div>
+                                <div class="tk_countdown_time p-0 transparent_bg box_shadow_none animation" data-animation="fadeInUp" data-animation-delay="1.2s" data-time="2022/03/31 00:00:00"></div>
                                 <div class="progress animation" data-animation="fadeInUp" data-animation-delay="1.3s">
                                     <div class="progress-bar progress-bar-striped gradient" role="progressbar" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100" style="width:@Convert.ToInt32(raised)%"> @Convert.ToInt32(raised)% </div>
-                                    <span class="progress_label bg-white" style="left: 26%"> <strong> 30 mln </strong></span>
-                                    <span class="progress_label bg-white" style="left: 68%"> <strong> 75 mln  </strong></span>
-                                    <span class="progress_label bg-white" style="left: 98%"> <strong> 110 mln  </strong></span>
+                                    <span class="progress_label bg-white" style="left: 20%"> <strong> 25 mln </strong></span>
+                                    <span class="progress_label bg-white" style="left: 63%"> <strong> 80 mln  </strong></span>
+                                    <span class="progress_label bg-white" style="left: 98%"> <strong> 125 mln  </strong></span>
                                     <span class="progress_min_val">Private Sale</span>
                                     <span class="progress_min_val" style="left: 26%">Pre Sale</span>
                                     <span class="progress_min_val" style="left: 57%">Softcap</span>
@@ -505,9 +505,9 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 res_md_mt_40 res_sm_mt_40 res_xs_mt_30">
                     <div class="title_dark title_border text_md_center">
-                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">About The Cryptocash</h4>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Cryptocash is one of the most transformative technologies since the invention of the Internet. Cryptocash stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network. </p>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.8s">which empowers people to not be marginalized by governments and financial institutions. Bitcoin is freedom.If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">About The BitReal</h4>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">BitReal has been positioned as a global real estate blockchain platform since its preparation stage. Its goal is to integrate global real estate markets with the blockchain mechanism. Through merging blockchain and real estate, the real estate developer, financial institutions, and their users can be connected and the transaction of real estate can be made a part of “digital credit society”, therefore constituting a pivotal supporting part of the economic development. </p>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.8s">In a greater sense of BitReal's future blueprint, all assets that have trading value will be integrated into the BitReal blockchain platform such as aircraft rental,artwork, antiques, and bonds.</p>
                     </div>
                 </div>
             </div>
@@ -521,7 +521,7 @@
                 <div class="col-lg-4">
                     <div class="title_default_light title_border">
                         <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">How It Works?</h4>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Bitcoin Mining is a peer-to-peer computer process used to secure and verify bitcoin transactions—ayments from one user to another on a decentralized network.</p>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">BTRL system uses its own smart contract and distributed technology to establish a strong connection between the system and the asset/financial institution side.</p>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -532,8 +532,8 @@
                                     <i class="ion ion-android-download"></i>
                                 </div>
                                 <div class="work_inner">
-                                    <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Download a Wallet</h4>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Bitcoin is received, stored, and sent using software known as a Bitcoin Wallet. Download the official Bitcoin Wallet for free.</p>
+                                    <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Irreversibility</h4>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">BitReal is developed in a way that it contains a certain and authenticable record of each and every transaction made on the system, which reduces the risk of fraud, abuse, and manipulation of transactions.</p>
                                 </div>
                             </div>
                         </div>
@@ -543,30 +543,8 @@
                                     <i class="ion-ios-locked"></i>
                                 </div>
                                 <div class="work_inner">
-                                    <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Safe & Secure</h4>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">We take careful measures to ensure that your bitcoin is as safe as possible. Offline storage provides an important security measure against theft or loss. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="work_box mt-4">
-                                <div class="work_icon animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                                    <i class="ion ion-android-cart"></i>
-                                </div>
-                                <div class="work_inner">
-                                    <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Buy & Sell</h4>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Blockchain works with exchange partners all around the world to make buying bitcoin in your wallet both a seamless and secure experience.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="work_box mt-4">
-                                <div class="work_icon animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                                    <i class="ion-android-exit"></i>
-                                </div>
-                                <div class="work_inner">
-                                    <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">A Better User Interface</h4>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Bitcoin Core wallet has features most other wallets don't have. But if you don't need them, you can use several other wallets on top of Bitcoin.</p>
+                                    <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Near real-time</h4>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">The BitReal enables near real-time settlement of recorded transactions, removing friction and reducing risk, but also limited ability to chargeback or cancel transactions. </p>
                                 </div>
                             </div>
                         </div>
@@ -602,8 +580,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="title_dark title_border">
-                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Digital Global Network</h4>
-                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Cryptocash has great features that  make it the best place. Odit, itaque, deserunt corporis vero ipsum eius odio natus ullam quia eos.</p>
+                        <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Real estate</h4>
+                        <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">transactions are facing a huge problem in making asset transactions light, simple, and transparent</p>
                     </div>
                     <ul class="list_info list_info_half list_none">
                         <li class="animation" data-animation="fadeInUp" data-animation-delay="0.5s">
@@ -674,14 +652,14 @@
                 <div class="col-md-12 pl-0 pr-0">
                     <div class="roadmap owl-carousel small_space">
                         <div class="item">
-                            <div class="roadmap_box rd_complete">
+                            <div class="roadmap_box rd_complete current">
                                 <div class="roadmap_inner">
                                     <div class="icon_roadmap">
                                         <i class="fa fa-bullhorn animation" data-animation="fadeInDown" data-animation-delay="0.2s"></i>
                                     </div>
                                     <div class="roadmap_icon"></div>
-                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Aprile 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Inotial Coin Distribution &amp; maketing</p>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Q4 2020</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">BitReal chain development, supporting ETH and ERC20 tokens</p>
                                 </div>
                             </div>
                         </div>
@@ -692,68 +670,68 @@
                                         <i class="fa fa-refresh animation" data-animation="fadeInDown" data-animation-delay="0.4s"></i>
                                     </div>
                                     <div class="roadmap_icon"></div>
-                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">February 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Exchange Cryptocash to Bitcoin</p>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Q1 2021</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Supporting new cryptocurrency payment options & decentralized Identifiers (DID)</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="roadmap_box">
+                            <div class="roadmap_box rd_complete current">
                                 <div class="roadmap_inner">
                                     <div class="icon_roadmap">
                                         <i class="fa fa-money animation" data-animation="fadeInDown" data-animation-delay="0.6s"></i>
                                     </div>
                                     <div class="roadmap_icon"></div>
-                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">March 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">BTCC mode of payment in Cryptocash </p>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Q2 2021</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Contract updates — automate rental income distribution using ERC20 tokens, improving ownership voting rights, lower transaction fees</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="roadmap_box">
+                            <div class="roadmap_box rd_complete current">
                                 <div class="roadmap_inner">
                                     <div class="icon_roadmap">
                                         <i class="fa fa-recycle animation" data-animation="fadeInDown" data-animation-delay="0.8s"></i>
                                     </div>
                                     <div class="roadmap_icon"></div>
-                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">June 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Send-Receive coin Cryptocash & mobile</p>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Q3 2021</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Sarting BTRL token mining pool creation</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="roadmap_box">
+                            <div class="roadmap_box rd_complete current">
                                 <div class="roadmap_inner">
                                     <div class="icon_roadmap">
                                         <i class="fa fa-globe animation" data-animation="fadeInDown" data-animation-delay="1s"></i>
                                     </div>
                                     <div class="roadmap_icon"></div>
-                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">October 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Coin Marketcap, World Coin Index</p>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Q4 2021</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Data feed for real estate intelligence — Stream data feeds via BitReal node to provide useful real estate statistics and information</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="roadmap_box">
+                            <div class="roadmap_box rd_complete current">
                                 <div class="roadmap_inner">
                                     <div class="icon_roadmap">
                                         <i class="fa fa-sitemap animation" data-animation="fadeInDown" data-animation-delay="1.2s"></i>
                                     </div>
                                     <div class="roadmap_icon"></div>
-                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">December 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Online & Trading ICO Token Sale</p>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Q1 2022</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Decentralized financial application updates (DeFi) — Increase liquidity pools</p>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="roadmap_box">
+                            <div class="roadmap_box rd_complete current">
                                 <div class="roadmap_inner">
                                     <div class="icon_roadmap">
                                         <i class="fa fa-user-circle animation" data-animation="fadeInDown" data-animation-delay="1.4s"></i>
                                     </div>
                                     <div class="roadmap_icon"></div>
-                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">December 2018</h6>
-                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Deposit Bitcoin from your account</p>
+                                    <h6 class="animation" data-animation="fadeInUp" data-animation-delay="0.3s">Q2 2022</h6>
+                                    <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Launching the ICO project</p>
                                 </div>
                             </div>
                         </div>
@@ -1101,9 +1079,7 @@
                 <div class="row" style="justify-content: center">
                     <div class="col-lg-4 col-md-12">
                         <div class="footer_logo mb-3 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
-                            <a href="#home_section" class="page-scroll">
-                                <img alt="logo" src="~/assets/images/New/logo.png" style="width: 250px">
-                            </a>
+                           
                         </div>
                         <div class="footer_desc">
                             <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Cryptocash stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network.</p>
@@ -1133,7 +1109,10 @@
         <div id="contact" class="bottom_footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 d-flex flex-column justify-content-center">
+                        <a href="#home_section" class="page-scroll d-flex justify-content-center mb-3" >
+                            <img alt="logo" src="~/assets/images/New/logo.png" style="width: 250px">
+                        </a>
                         <p class="copyright"> Copyright &copy; 2022 All Rights Reserved <span style="margin-left: 50px">Contact: support@bitreal-ico.com</span> </p>
                     </div>
                 </div>

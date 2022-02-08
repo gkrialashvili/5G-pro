@@ -3,7 +3,7 @@
 
 @{
     ViewBag.Title = "Dashboard";
-    double raised = ((double)Model.Raised / 130000000) * 100;
+    double raised = ((double)Model.Raised / 125000000) * 100;
     int totalRaised = Convert.ToInt32(Model.Raised);
     var mil = Model.Raised / 1000000;
     string controllerName = Request.CurrentExecutionFilePath;
@@ -830,6 +830,37 @@
                     </div>
                     <div class="col-lg-5" style="display: flex">
                         <div class="col-lg-12 dash-scale">
+                            <div class="col-xl-4 col-lg-12 token-calculator card card-full-height">
+                                <div class="token-calculator card card-full-height">
+                                    <div class="card-innr">
+                                        <div class="card-head">
+                                            <h4 class="card-title">Profit Calculator</h4>
+                                            <p class="card-title-text">Enter amount to calculate profit.</p>
+                                        </div>
+                                        <div class="token-calc">
+                                            <div class="token-pay-amount">
+                                                <input class="input-bordered input-with-hint ng-pristine ng-valid ng-touched" id="btc-base-amount1" type="text" value="0">
+                                                <div class="token-pay-currency">
+                                                    <a class="link ucap link-light toggle-tigger" href="javascript:void(0)">$</a>
+                                                </div>
+                                            </div>
+                                            <div class="token-received">
+                                                <div class="token-eq-sign">=</div>
+                                                <div class="token-received-amount"></div>
+                                            </div>
+                                            <div class="token-pay-amount">
+                                                <input class="input-bordered input-with-hint ng-untouched ng-pristine ng-valid" disabled="" id="token-base-amount1" type="text" value="0">
+                                                <div class="token-pay-currency">
+                                                    <a class="link ucap link-light toggle-tigger" href="javascript:void(0)">$</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @*<div class="token-buy">
+                                    <a href="/userdashboard/create/" class="btn btn-primary">Buy Tokens</a>
+                                </div>*@
+                                    </div>
+                                </div>
+                            </div>
                             <div class="ref-num-box statistics-box mt-15 text-center pt0 pb30">
                                 <h4 class="boldy mt-30 mb-5">The Funds Rasied </h4>
                                 <p class="mb-0 text-muted boldy mb-30">@totalRaised.ToString("#,##0") ML</p>
@@ -837,9 +868,9 @@
                                 <div class="ico-progress">
                                     <ul class="list-unstyled list-inline clearfix mb-10">
                                         <li class="title"></li>
-                                        <li class="title one ">33m</li>
-                                        <li class="title two">33m</li>
-                                        <li class="strength">75m</li>
+                                        <li class="title one ">25m</li>
+                                        <li class="title two">80m</li>
+                                        <li class="strength">125m</li>
                                     </ul>
                                     <!-- skill strength -->
                                     <div class="current-progress relative">
@@ -850,7 +881,7 @@
                                             <div class="progress-bar gradient-blue" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: @Convert.ToInt32(raised)%" "></div>
                                         </div>
                                     </div>
-                                    <span class="pull-left">Softcap in 103 days</span>
+                                    <span class="pull-left">Softcap</span>
                                     <span class="pull-middle">PRE SALE</span>
                                     <span class="pull-middle-two">SOFTCAP</span>
                                     <span class="pull-right">Token Hardcap</span>
@@ -861,54 +892,56 @@
                     </div>
                 </div>
                 <div class="clearfix"></div>
-                <div class="packages">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="pricing-item ">
-                            <h4>BASIC</h4>
-                            <h3><strong class="xzc-1-month">1%</strong></h3>
-                            <span>Basic Membership</span>
-                            <div class="pricing">Prolution tokens in portfolio</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="pricing-item ">
-                            <h4>SILVER</h4>
-                            <h3><strong class="xzc-1-month">1%- 5%</strong></h3>
-                            <span>Silver Membership</span>
-                            <div class="pricing">
-                                Prolution tokens in portfolio
-                                <br />
-                                Minimum portfolio: $100,000
+                <div class="packages-container w-100 d-flex flex-column align-center">
+                    <div class="title">PACKAGES</div>
+                    <div id="packages" class="packages">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pricing-item ">
+                                <h4>BASIC</h4>
+                                <h3><strong class="xzc-1-month">1%</strong></h3>
+                                <span>Basic Membership</span>
+                                <div class="pricing">BitReal tokens in portfolio</div>
                             </div>
-                            <a href="/userdashboard/create/" class="btn btn-primary-outline btn-md lis-rounded-circle-50" data-abc="true">Invest Now</a>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="pricing-item ">
-                            <h4>GOLD</h4>
-                            <h3><strong class="xzc-1-month">6% - 12%</strong></h3>
-                            <span>Gold Membership</span>
-                            <div class="pricing">
-                                Prolution tokens in portfolio  <br />
-                                Minimum portfolio: $250,000
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pricing-item ">
+                                <h4>SILVER</h4>
+                                <h3><strong class="xzc-1-month">1%- 5%</strong></h3>
+                                <span>Silver Membership</span>
+                                <div class="pricing">
+                                    BitReal tokens in portfolio
+                                    <br />
+                                    Minimum portfolio: $100,000
+                                </div>
+                                <a href="/userdashboard/create/" class="btn btn-primary-outline btn-md lis-rounded-circle-50" data-abc="true">Invest Now</a>
                             </div>
-                            <a href="/userdashboard/create/" class="btn btn-primary-outline btn-md lis-rounded-circle-50" data-abc="true">Invest Now</a>
                         </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="pricing-item ">
-                            <h4>PLATINUM</h4>
-                            <h3><strong class="xzc-1-month">12%-20%</strong></h3>
-                            <span>Platinum Membership</span>
-                            <div class="pricing">
-                                Prolution tokens in portfolio <br />
-                                Minimum portfolio: $500,000
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pricing-item ">
+                                <h4>GOLD</h4>
+                                <h3><strong class="xzc-1-month">6% - 12%</strong></h3>
+                                <span>Gold Membership</span>
+                                <div class="pricing">
+                                    BitReal tokens in portfolio  <br />
+                                    Minimum portfolio: $250,000
+                                </div>
+                                <a href="/userdashboard/create/" class="btn btn-primary-outline btn-md lis-rounded-circle-50" data-abc="true">Invest Now</a>
                             </div>
-                            <a href="/userdashboard/create/" class="btn btn-primary-outline btn-md lis-rounded-circle-50" data-abc="true">Invest Now</a>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pricing-item ">
+                                <h4>PLATINUM</h4>
+                                <h3><strong class="xzc-1-month">12%-20%</strong></h3>
+                                <span>Platinum Membership</span>
+                                <div class="pricing">
+                                    BitReal tokens in portfolio <br />
+                                    Minimum portfolio: $500,000
+                                </div>
+                                <a href="/userdashboard/create/" class="btn btn-primary-outline btn-md lis-rounded-circle-50" data-abc="true">Invest Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="clearfix"></div>
 
 
@@ -1153,11 +1186,11 @@
         <script>
             var milion =@mil;
 
-            $("#token-base-amount").keyup(function () {
-                $("#token-amount").text(($(this).val() * 50).toFixed(0));
+            $("#btc-base-amount").keyup(function () {
+                $("#token-base-amount").val(($(this).val() * 50).toFixed(2));
             });
-            $("#token-base-amount1").keyup(function () {
-                $("#token-amount").text(($(this).val() * 0.1).toFixed(2));
+            $("#btc-base-amount1").keyup(function () {
+                $("#token-base-amount1").val(($(this).val() * 10).toFixed(2));
             });
 
         //$("#btc-base-amount").on("keyup", function () {

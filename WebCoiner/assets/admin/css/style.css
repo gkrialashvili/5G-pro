@@ -1232,6 +1232,11 @@ section header .title {
     font-weight: 400;
     display: inline-block;
 }
+.packages-container {
+    font-size:30px; 
+    font-weight: bold;
+    text-decoration: underline;
+}
 section .content-body {
     padding: 5px 20px 30px 20px;
     border: 1px solid #e8e8e8;
@@ -3117,7 +3122,6 @@ strong.coin-code {
 /* --------------------------------------------------- */
 .card {
     max-width: 100%;
-    padding: 15px;
     margin-bottom: 30px;
     background: #fff;
     border: 0px;
@@ -7703,6 +7707,7 @@ border-left: 3px solid transparent;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .statistics-box {
     min-height: 100px;
@@ -9428,7 +9433,7 @@ ul.info p {
 }
 .dashboard-info__cat {
     max-width: 250px;
-    margin: 0 70px;
+    margin: 0 94px;
 }
 .profile-balance .profile-bal-body small {
     position: absolute;
@@ -9533,6 +9538,7 @@ ul.info p {
 }
 .packages > div {
     max-width: 350px;
+    margin: 0 26px;
 }
 .pricing-item .pricing {
     font-size: 15px;
@@ -9604,19 +9610,19 @@ ul.info p {
 }
 
 .ico-progress li.title.one {
-    left: 28%;
+    left: 18%;
 }
 
-    .ico-progress li.title.two {
-        left: 62%
-    }
+.ico-progress li.title.two {
+        left: 50%
+}
 .pull-middle {
     position: absolute;
-    left: 28%;
+    left: 20%;
 }
 .pull-middle-two {
     position: absolute;
-    left: 67%;
+    left: 56%;
 }
 .ico-progress li.strength {
     float: right;
@@ -9637,7 +9643,7 @@ ul.info p {
     width: 4px;
     height: 50px;
     bottom: -5px;
-    left: 30%;
+    left: 20%;
     background: #ffba00;
 }
 .cur-prog-line.three {
@@ -9645,7 +9651,7 @@ ul.info p {
     width: 4px;
     height: 50px;
     bottom: -5px;
-    left: 70%;
+    left: 60%;
     background: #ffba00;
 }
 .cur-prog-line.four {

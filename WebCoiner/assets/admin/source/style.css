@@ -5349,7 +5349,6 @@ select.select-sm {
   background: #fff;
   transition: all 0.4s;
   vertical-align: top;
-  min-height: 300px;
 }
 
 .card-shadow {
@@ -5369,7 +5368,6 @@ select.select-sm {
 }
 
 .card-innr {
-  padding: 16px 20px;
   border-color: #e6effb !important;
 }
 
@@ -5558,7 +5556,6 @@ select.select-sm {
   }
 
   .card-innr {
-    padding: 25px 30px;
   }
 
   .card-innr-fix {
