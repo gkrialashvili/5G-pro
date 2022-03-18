@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WebCoiner</RootNamespace>
     <AssemblyName>WebCoiner</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,6 +71,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
@@ -80,8 +82,7 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
@@ -100,9 +101,7 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -120,6 +119,7 @@
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -573,7 +573,6 @@
     <Content Include="Content\themes\jur-theme\dist\images\env-box-3-m.svg" />
     <Content Include="Content\themes\jur-theme\dist\images\env-box-3.gif" />
     <Content Include="Content\themes\jur-theme\dist\images\env-box-3.svg" />
-    <Content Include="Content\themes\jur-theme\dist\images\favicon.png" />
     <Content Include="Content\themes\jur-theme\dist\images\forbes.png" />
     <Content Include="Content\themes\jur-theme\dist\images\hackernoon.png" />
     <Content Include="Content\themes\jur-theme\dist\images\ico-wp.svg" />
@@ -659,7 +658,6 @@
     <Content Include="Content\wc_icon5.png" />
     <Content Include="Content\wc_icon6.png" />
     <Content Include="Content\whitepaper5.png" />
-    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="images\banner\banner-bg-2.jpg" />
     <Content Include="images\banner\banner-overlay.png" />
@@ -668,7 +666,6 @@
     <Content Include="images\commands.png" />
     <Content Include="images\cross-blockchain-scaling.jpg" />
     <Content Include="images\faircover_logo.png" />
-    <Content Include="images\favicon.png" />
     <Content Include="images\gridnet-foundation.jpeg" />
     <Content Include="images\gridnet-use-cases.jpg" />
     <Content Include="images\RGB_gridnet-combined-white-transparent-194x55.png" />

@@ -147,13 +147,13 @@
 <html lang="en-us">
 <head>
     <meta charset="utf-8">
-    <title>5G Prime Pro</title>
+    <title>5G Prime-coin</title>
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Blockchain scaling and interoperability">
-    <meta name="author" content="5G Prime Pror">
+    <meta name="author" content="5G Prime-coinr">
     <meta name="generator" content="Hugo 0.57.2" />
     <!-- Animation CSS -->
     <link rel="stylesheet" href="~/assets/home/animate.css">
@@ -362,7 +362,7 @@
         location.replace(`https:${location.href.substring(location.protocol.length)}`);
     }*@
 </script>
-<body style="background-color: #3a57a5;">
+<body style="background-color: #0c0e27;">
     <div class="parallax-mirror"
          style="visibility: hidden; z-index: 1; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 396px; width: 1903px;">
         <img class="parallax-slider" src="~/assets/home/footer_bg.png"
@@ -452,7 +452,7 @@
                         </li>
                         <li class="animation animated fadeInDown" data-animation="fadeInDown" data-animation-delay="2s"
                             style="animation-delay: 2s; opacity: 1;">
-                            <a class="btn btn-default btn-radius nav_item"
+                            <a style="visibility: hidden" class="btn btn-default btn-radius nav_item"
                                href="account/login">Login</a>
                         </li>
                     </ul>
@@ -462,101 +462,34 @@
     </header>
     <!-- END HEADER -->
     <!-- START SECTION BANNER -->
-    <section id="home_sectionBg" class="section_banner bg_black_dark" data-z-index="1" data-parallax="scroll"
+    <section style="padding: 200px 0 100px;" id="home_section" class="section_banner bg_black_dark" data-z-index="1" data-parallax="scroll"
              data-image-src="assets/images/banner_bg2.png">
-        @*<div id="banner_bg_effect" class="banner_effect">
+        <div id="banner_bg_effect" class="banner_effect">
             <canvas class="particles-js-canvas-el" width="1903" height="889"
                     style="width: 100%; height: 100%;"></canvas>
-        </div>*@
-        <div class="container-fluid" style="max-width: 1600px; padding: 15px 50px">
-            <div class="row align-items-center flex-lg-row-reverse">
-                <div class="col-lg-6 col-md-12 col-sm-12 order-lg-last" style="position: relative; top: 55px;">
-                    <div class="banner_text_s2 text_md_center d-flex flex-column justify-content-around">
-                        <div class="banner_image_right res_md_mb_50 res_xs_mb_30 animation animated fadeInRight"
-                             data-animation-delay="1.5s" data-animation="fadeInRight" style=" animation-delay: 1.5s; opacity: 1;">
-                            @*<img alt="banner_vector2" src="~/assets/admin/source/main.png">*@
-                        </div>
-                        <h1 class="animation animated fadeInUp position-relative" data-animation="fadeInUp" data-animation-delay="1.1s"
+        </div>
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-lg-6 col-md-12 col-sm-12 order-lg-first mt-5">
+                    <div class="banner_text_s2 text_md_center">
+                        <h1 class="animation text-white animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1.1s"
                             style="animation-delay: 1.1s; opacity: 1;">
-                            <strong style="font-size: 35px;">Blockchain for 5G.</strong><br><br>
-                            Combination of two revolutionary innovations
-                            <br>
+                            <strong>Blockchain for 5G.<br></strong> Combination of two revolutionary innovations,
                             <strong>The Blockchain System and 5G Go Beyond Networks</strong>
                         </h1>
-                        <ul class="progress-info">
-                            <!---->
-                            <li><span>Raised</span> @Model.Raised.ToString("C2")</li>
-                        </ul>
-                        <div style="color: #3ab55a !important" class="progress-bar">
-                            <div class="progress-hcap" data-percent="98" style="width: 98%;">
-                                <!---->
-                                <div style="color:#39b159;">Hardcap<span style="color:#39b159;">$120 ML</span></div>
-                            </div>
-                            <div class="progress-hcap" data-percent="50" style="width: 56%;">
-                                <!---->
-                                <div style="color:#39b159;">Softcap<span style="color:#39b159;">$70 ML</span></div>
-                            </div>
-                            <div class="progress-scap" data-percent="25" style="width: 25%;">
-                                <!---->
-                                <div style="color:#39b159;">Pre Sale<span style="color:#39b159;">$25 ML</span></div>
-                            </div>
-
-                            <div class="progress-scap" data-percent="0" style="width: 0%;">
-                                <!---->
-                                <div style="color:#39b159;">Private Sale<span style="color:#39b159;"></span></div>
-                            </div>
-
-                            <div class="progress-percent" data-percent="5" style="width: @raised%;"></div>
-                        </div>
-                        <h5 class="animation presale_txt animated fadeInUp" data-animation="fadeInUp"
-                            data-animation-delay="1.3s" style="animation-delay: 1.3s; color: #3a57a5 !important; margin-top: 20px; opacity: 1;">
-                            Token Sale  <mark class="gradient_box">Live</mark>
-                        </h5>
-                        <div class="transparent_bg tk_counter_inner m-lg-0 banner_token text-center px-0 animation animated fadeIn"
-                             data-animation="fadeIn" data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;">
-                            @*timer*@
-                            <div class="tk_countdown_time transparent_bg box_shadow_none border counter_medium animation animated fadeInUp"
-                                 data-animation="fadeInUp" data-animation-delay="1.2s" data-time="2022/01/25 00:00:00"
-                                 style="animation-delay: 1.2s; opacity: 1;">
-                                <span class="counter_box">
-                                    <span class="tk_counter days">
-                                        43
-                                    </span><span class="tk_text">Days</span>
-                                </span><span class="counter_box">
-                                    <span class="tk_counter hours">09</span><span class="tk_text">Hours</span>
-                                </span><span class="counter_box">
-                                    <span class="tk_counter minutes">50</span><span class="tk_text">Minutes</span>
-                                </span><span class="counter_box">
-                                    <span class="tk_counter seconds">46</span><span class="tk_text">Seconds</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="btn_group pt-2 pb-3 animation animated fadeInUp" data-animation="fadeInUp"
-                             data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;">
-                            <a href="~/Content/5gprime_whitepaper.pdf" class="btn btn-default btn-radius nav-link ">
-                                Whitepaper <img style="width: 25px" src="~/assets/admin/source/wp.png" />
-                            </a>
-                            <a href="account/register" class="btn btn-border btn-radius">
-                                Buy Token Now! <img style="width: 25px" src="~/assets/admin/source/buy.png" />
-                            </a>
-                        </div>
-                        <span class="icon_title animation animated fadeInUp" data-animation="fadeInUp"
-                              data-animation-delay="1.4s" style="animation-delay: 1.4s;color: #3a57a5 !important;opacity: 1;">We accept :</span>
-                        <ul class="list_none currency_icon">
-                            <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1.5s"
-                                style="animation-delay: 1.5s; opacity: 1;">
-                                <img class="svg" style="width: 25px" alt="Bitcoin" src="~/assets/images/bitcoin.svg">
-                                <span style="color: #3a57a5 !important">Bitcoin</span>
-                            </li>
-                            <li class="animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="1.6s"
-                                style="animation-delay: 1.6s; opacity: 1;">
-                                <img class="svg" alt="ethereum" src="~/assets/images/ethereum.svg" style="width: 25px">
-                                <span style="color: #3a57a5 !important">Ethereum </span>
-                            </li>
-                        </ul>
+                    </div>
+                    <div class="btn_group pt-2 pb-3 animation animated fadeInUp" data-animation="fadeInUp"
+                         data-animation-delay="1.4s" style="animation-delay: 1.4s; opacity: 1;">
+                        <a href="~/Content/5gprime_whitepaper.pdf" class="btn btn-default btn-radius nav-link ">
+                            Whitepaper <img style="width: 25px" src="~/assets/admin/source/wp.png" />
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 order-lg-first orderFirst">
+                <div class="col-lg-6 col-md-12 col-sm-12 order-first">
+                    <div class="banner_image_right res_md_mb_50 res_xs_mb_30 animation animated fadeInRight"
+                         data-animation-delay="1.5s" data-animation="fadeInRight" style="animation-delay: 1.5s; opacity: 1;">
+                        <img alt="banner_vector2" src="~/assets/admin/source/main.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -682,7 +615,7 @@
                     <div class="title_default_light title_border">
                         <h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s"
                             style="animation-delay: 0.2s; opacity: 1;">
-                            About 5G Prime Pro
+                            About 5G Prime-coin
                         </h4>
                         <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s"
                            style="animation-delay: 0.4s; opacity: 1;">
@@ -814,9 +747,9 @@
                                 <a class="active" data-toggle="tab" href="#tab1" style="color: #3ab55a; font-size:25px; font-weight:bold">General</a>
                             </li>
                             @*<li class="nav-item animation" data-animation="fadeInUp" data-animation-delay="0.6s"
-                                style="animation-delay: 0.6s; opacity: 1;">
-                                <a data-toggle="tab" href="#tab2">DeFi related </a>
-                            </li>*@
+                                    style="animation-delay: 0.6s; opacity: 1;">
+                                    <a data-toggle="tab" href="#tab2">DeFi related </a>
+                                </li>*@
                         </ul>
                         <div class="tab-content half_tab">
                             <div class="tab-pane fade show active" id="tab1" role="tabpanel">
@@ -847,13 +780,13 @@
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseTwo"
                                                            aria-expanded="false" aria-controls="collapseTwo">
                                                             Can
-                                                            I make money from 5G Prime Pro ?
+                                                            I make money from 5G Prime-coin ?
                                                         </a>
                                                     </h6>
                                                 </div>
                                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
                                                     <div class="card-body">
-                                                        Yes you can make money from 5G Prime Pro.
+                                                        Yes you can make money from 5G Prime-coin.
 
                                                         You may stake (a process of investing your funds and locking it up and earning interest).
 
@@ -874,7 +807,7 @@
                                                 <div class="card-header" id="headingThree">
                                                     <h6 class="mb-0">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseThree"
-                                                           aria-expanded="false" aria-controls="collapseThree">How do I save my 5G Prime Pro ?</a>
+                                                           aria-expanded="false" aria-controls="collapseThree">How do I save my 5G Prime-coin ?</a>
                                                     </h6>
                                                 </div>
                                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
@@ -892,7 +825,7 @@
                                                 <div class="card-header" id="headingFour">
                                                     <h6 class="mb-0">
                                                         <a class="collapsed" data-toggle="collapse" href="#collapseFour"
-                                                           aria-expanded="false" aria-controls="collapseFour">When do I sell my 5G Prime Pro ?</a>
+                                                           aria-expanded="false" aria-controls="collapseFour">When do I sell my 5G Prime-coin ?</a>
                                                     </h6>
                                                 </div>
                                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion1">
@@ -921,26 +854,26 @@
                                         </div>
                                     </div>
                                     @*<div class="col-md-6">
-                                        <div id="accordion2" class="faq_content">
-                                            <div class="card animation" data-animation="fadeInUp" data-animation-delay="0.4s"
-                                                 style="animation-delay: 0.4s; opacity: 1;">
-                                                <div class="card-header" id="headingFive">
-                                                    <h6 class="mb-0">
-                                                        <a data-toggle="collapse" href="#collapseFive" aria-expanded="true"
-                                                           aria-controls="collapseFive">How does the value grow ?</a>
-                                                    </h6>
-                                                </div>
-                                                <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
-                                                     data-parent="#accordion2">
-                                                    <div class="card-body">
-                                                        Tokens value grow due to usage and transactions by the community,
-                                                        continue development programmes and milestones hit by moderators and developers of the
-                                                        project.
+                                            <div id="accordion2" class="faq_content">
+                                                <div class="card animation" data-animation="fadeInUp" data-animation-delay="0.4s"
+                                                     style="animation-delay: 0.4s; opacity: 1;">
+                                                    <div class="card-header" id="headingFive">
+                                                        <h6 class="mb-0">
+                                                            <a data-toggle="collapse" href="#collapseFive" aria-expanded="true"
+                                                               aria-controls="collapseFive">How does the value grow ?</a>
+                                                        </h6>
+                                                    </div>
+                                                    <div id="collapseFive" class="collapse show" aria-labelledby="headingFive"
+                                                         data-parent="#accordion2">
+                                                        <div class="card-body">
+                                                            Tokens value grow due to usage and transactions by the community,
+                                                            continue development programmes and milestones hit by moderators and developers of the
+                                                            project.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>*@
+                                        </div>*@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="tab2" role="tabpanel">
@@ -1073,12 +1006,12 @@
                     <div class="col-lg-12 col-md-12 d-flex flex-column align-items-center justify-content-center">
                         <div class="footer_logo mb-3 animation" data-animation="fadeInUp" data-animation-delay="0.2s"
                              style="animation-delay: 0.2s; opacity: 1;">
-                             <img alt="logo" src="~/assets/admin/source/5glogo.png" style="max-width: 25px">
+                            <img alt="logo" src="~/assets/admin/source/5glogo.png" style="max-width: 25px">
                         </div>
                         <div class="footer_desc">
                             <p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s"
                                style="animation-delay: 0.4s; opacity: 1;">
-                                5G Prime Pro Defi
+                                5G Prime-coin Defi
 
                                 Power Exchange decentralized finance platform built on and powered by Ethereum.
                             </p>
@@ -1087,8 +1020,8 @@
                 </div>
                 <div class="col-md-12 d-flex justify-content-center flex-column align-items-center">
                     <p class="text-center text-white opacity-5">
-                        Copyright © 2020 - 2021 5G Prime Pro  &nbsp;&nbsp;
-                        <a href="mailto:support@5gprimeico-pro.com Primer-ico.com"> Contact Us: support@5gprimeico-pro.com</a>
+                        Copyright © 2022 5G Prime-coin  &nbsp;&nbsp;
+                        <a href="mailto:support@5gprime-coin.com Primer-ico.com"> Contact Us: support@5gprime-coin.com</a>
                     </p>
                 </div>
             </div>
@@ -1102,7 +1035,6 @@
     <!-- Latest jQuery -->
     <script src="~/assets/home/jquery-3.6.0.min.js"></script>
     <!-- Latest compiled and minified Bootstrap -->
-    <script src="~/assets/home/bootstrapJs/bootstrap.bundle.min.js"></script>
     <script src="~/assets/home/bootstrapJs/bootstrap.bundle.min.js"></script>
     <!-- owl-carousel min js  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
@@ -1118,14 +1050,13 @@
     <script src="~/assets/home/jquery.countdown.min.js"></script>
     <script src="https://kit.fontawesome.com/a9545f17e8.js" crossorigin="anonymous"></script>
     <!-- particles min js  -->
-    <script src="~/assets/home/particles.min.js"></script>
+    @*<script src="~/assets/home/particles.min.js"></script>*@
     <!-- scripts js -->
     <script src="~/assets/home/jquery.dd.min.js"></script>
     <!-- jquery.counterup.min js -->
     <script src="~/assets/home/jquery.counterup.min.js"></script>
     <!-- scripts js -->
     <script src="~/assets/home/scripts.js"></script>
-    <script src="~/plugins/TweenMax.min.js"></script>
 
     <script id="rendered-js">
         // Create Countdown
@@ -1319,7 +1250,7 @@
     <script>
 
         // Set the date we're counting down to
-        var countDownDate = new Date("jan 25, 2022 23:59:00").getTime();
+        var countDownDate = new Date("may 10, 2021 15:37:25").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function () {
