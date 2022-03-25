@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WebCoiner</RootNamespace>
     <AssemblyName>WebCoiner</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -26,6 +26,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -70,6 +71,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.3.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.5.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
@@ -80,8 +82,7 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
@@ -100,9 +101,7 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -120,6 +119,7 @@
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -272,31 +272,18 @@
     <Content Include="assets\admin\source\trans.png" />
     <Content Include="assets\admin\source\vendor.css" />
     <Content Include="assets\admin\source\wp.png" />
-    <Content Include="assets\css\main.css" />
-    <Content Include="assets\css\screens\1024.css" />
-    <Content Include="assets\css\screens\1280.css" />
-    <Content Include="assets\css\screens\1360.css" />
-    <Content Include="assets\css\screens\1600.css" />
-    <Content Include="assets\css\screens\1920.css" />
-    <Content Include="assets\css\screens\mobile.css" />
-    <Content Include="assets\css\screens\tablet.css" />
-    <Content Include="assets\css\vendor\bootstrap\bootstrap-col-1-5.css" />
-    <Content Include="assets\css\vendor\bootstrap\bootstrap-col-1-7.css" />
-    <Content Include="assets\css\vendor\bootstrap\bootstrap.min.css" />
-    <Content Include="assets\fonts\HKKontrastBold\HKKontrastBold.html" />
-    <Content Include="assets\fonts\HKKontrastBold\HKKontrastBold.svg" />
-    <Content Include="assets\fonts\HKKontrastBold\styles.css" />
-    <Content Include="assets\fonts\RobotoBold\RobotoBold.svg" />
-    <Content Include="assets\fonts\RobotoBold\styles.css" />
-    <Content Include="assets\fonts\RobotoLight\RobotoLight.html" />
-    <Content Include="assets\fonts\RobotoLight\RobotoLight.svg" />
-    <Content Include="assets\fonts\RobotoLight\styles.css" />
-    <Content Include="assets\fonts\RobotoMedium\RobotoMedium.html" />
-    <Content Include="assets\fonts\RobotoMedium\RobotoMedium.svg" />
-    <Content Include="assets\fonts\RobotoMedium\styles.css" />
-    <Content Include="assets\fonts\RobotoRegular\RobotoRegular.html" />
-    <Content Include="assets\fonts\RobotoRegular\RobotoRegular.svg" />
-    <Content Include="assets\fonts\RobotoRegular\styles.css" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\flaticon.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\fonts.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\owl.carousel.css" />
+    <Content Include="assets\css\owl.theme.default.css" />
+    <Content Include="assets\css\responsive.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="assets\home\about_img2.png" />
     <Content Include="assets\home\analytics.js" />
     <Content Include="assets\home\animate.css" />
@@ -352,6 +339,97 @@
     <Content Include="assets\home\token_bg.png" />
     <Content Include="assets\home\us.png" />
     <Content Include="assets\home\waypoints.min.js" />
+    <Content Include="assets\images\content\about_buy_bg.jpg" />
+    <Content Include="assets\images\content\about_down.png" />
+    <Content Include="assets\images\content\bit_coin_bg.jpg" />
+    <Content Include="assets\images\content\blog\admin_img.jpg" />
+    <Content Include="assets\images\content\blog\blog_post_img1.jpg" />
+    <Content Include="assets\images\content\blog\blog_post_img2.jpg" />
+    <Content Include="assets\images\content\blog\blog_post_img3.jpg" />
+    <Content Include="assets\images\content\blog\bs_img1.jpg" />
+    <Content Include="assets\images\content\blog\bs_img2.jpg" />
+    <Content Include="assets\images\content\blog\b_img1.jpg" />
+    <Content Include="assets\images\content\blog\b_img2.jpg" />
+    <Content Include="assets\images\content\blog\b_img3.jpg" />
+    <Content Include="assets\images\content\blog\b_img4.jpg" />
+    <Content Include="assets\images\content\blog\comment_img1.jpg" />
+    <Content Include="assets\images\content\blog\comment_img2.jpg" />
+    <Content Include="assets\images\content\blog\comment_img3.jpg" />
+    <Content Include="assets\images\content\blog\comment_img4.jpg" />
+    <Content Include="assets\images\content\blog\ser1.jpg" />
+    <Content Include="assets\images\content\blog\ser2.jpg" />
+    <Content Include="assets\images\content\blog\ser3.jpg" />
+    <Content Include="assets\images\content\blog\ser4.jpg" />
+    <Content Include="assets\images\content\blog\ser5.jpg" />
+    <Content Include="assets\images\content\blog\ser6.jpg" />
+    <Content Include="assets\images\content\blog_img1.jpg" />
+    <Content Include="assets\images\content\blog_img2.jpg" />
+    <Content Include="assets\images\content\blog_img3.jpg" />
+    <Content Include="assets\images\content\buy_sell_bg.jpg" />
+    <Content Include="assets\images\content\contact_bg.jpg" />
+    <Content Include="assets\images\content\currency_bg.jpg" />
+    <Content Include="assets\images\content\exchange\1.png" />
+    <Content Include="assets\images\content\exchange\2.png" />
+    <Content Include="assets\images\content\exchange\3.png" />
+    <Content Include="assets\images\content\exchange\4.png" />
+    <Content Include="assets\images\content\exchange\5.png" />
+    <Content Include="assets\images\content\exchange\6.png" />
+    <Content Include="assets\images\content\exchange\7.png" />
+    <Content Include="assets\images\content\exchange\8.png" />
+    <Content Include="assets\images\content\footer_logo.png" />
+    <Content Include="assets\images\content\mac.png" />
+    <Content Include="assets\images\content\p1.jpg" />
+    <Content Include="assets\images\content\p2.jpg" />
+    <Content Include="assets\images\content\p3.jpg" />
+    <Content Include="assets\images\content\p4.jpg" />
+    <Content Include="assets\images\content\p5.jpg" />
+    <Content Include="assets\images\content\p6.jpg" />
+    <Content Include="assets\images\content\pricing_bg.jpg" />
+    <Content Include="assets\images\content\services\ser1.jpg" />
+    <Content Include="assets\images\content\services\ser2.jpg" />
+    <Content Include="assets\images\content\services\ser3.jpg" />
+    <Content Include="assets\images\content\services\ser4.jpg" />
+    <Content Include="assets\images\content\services\ser5.jpg" />
+    <Content Include="assets\images\content\services\ser6.jpg" />
+    <Content Include="assets\images\content\service_bg.jpg" />
+    <Content Include="assets\images\content\service_img.jpg" />
+    <Content Include="assets\images\content\shop\adver_img.jpg" />
+    <Content Include="assets\images\content\shop\s1.jpg" />
+    <Content Include="assets\images\content\shop\s2.jpg" />
+    <Content Include="assets\images\content\shop\s3.jpg" />
+    <Content Include="assets\images\content\shop\s4.jpg" />
+    <Content Include="assets\images\content\shop\s5.jpg" />
+    <Content Include="assets\images\content\shop\s6.jpg" />
+    <Content Include="assets\images\content\shop\s7.jpg" />
+    <Content Include="assets\images\content\shop\s8.jpg" />
+    <Content Include="assets\images\content\shop\s9.jpg" />
+    <Content Include="assets\images\content\shop\ss1.jpg" />
+    <Content Include="assets\images\content\shop\ss2.jpg" />
+    <Content Include="assets\images\content\shop\ss3.jpg" />
+    <Content Include="assets\images\content\shop\ss4.jpg" />
+    <Content Include="assets\images\content\shop\ss_small-2.jpg" />
+    <Content Include="assets\images\content\shop\ss_small-3.jpg" />
+    <Content Include="assets\images\content\shop\ss_small-4.jpg" />
+    <Content Include="assets\images\content\shop\ss_small.jpg" />
+    <Content Include="assets\images\content\shop\tab_img.jpg" />
+    <Content Include="assets\images\content\team1.jpg" />
+    <Content Include="assets\images\content\team2.jpg" />
+    <Content Include="assets\images\content\team3.jpg" />
+    <Content Include="assets\images\content\team4.jpg" />
+    <Content Include="assets\images\content\team5.jpg" />
+    <Content Include="assets\images\content\team6.jpg" />
+    <Content Include="assets\images\content\team7.jpg" />
+    <Content Include="assets\images\content\team8.jpg" />
+    <Content Include="assets\images\content\testi_img1.jpg" />
+    <Content Include="assets\images\content\testi_img2.jpg" />
+    <Content Include="assets\images\content\testi_img3.jpg" />
+    <Content Include="assets\images\content\tittle_bg.jpg" />
+    <Content Include="assets\images\header\bitcoin-globe.gif" />
+    <Content Include="assets\images\header\favicon.ico" />
+    <Content Include="assets\images\header\logo.png" />
+    <Content Include="assets\images\header\slider_img-2.jpg" />
+    <Content Include="assets\images\header\slider_img-3.jpg" />
+    <Content Include="assets\images\header\slider_img.jpg" />
     <Content Include="assets\images\LogIn.jpg" />
     <Content Include="assets\images\about-img-2.png" />
     <Content Include="assets\images\arrow-left.png" />
@@ -420,8 +498,35 @@
     <Content Include="assets\images\usage-7.png" />
     <Content Include="assets\images\usage-8.png" />
     <Content Include="assets\images\what-is-enod.png" />
+    <Content Include="assets\js\bit_timer.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\Chart.bundle.js" />
+    <Content Include="assets\js\chart.js" />
+    <Content Include="assets\js\custom.js" />
     <Content Include="assets\js\form-validation.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\jquery_min.js" />
     <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\megnify.js" />
+    <Content Include="assets\js\modernizr.js" />
+    <Content Include="assets\js\owl.carousel.js" />
+    <Content Include="assets\js\parallax.min.js" />
+    <Content Include="assets\js\plugin\fonts\revicons\revicons.svg" />
+    <Content Include="assets\js\plugin\rs_slider\jquery.themepunch.revolution.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\jquery.themepunch.tools.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\layers.css" />
+    <Content Include="assets\js\plugin\rs_slider\navigation.css" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.addon.snow.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.extension.actions.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.extension.carousel.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.extension.kenburn.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.extension.layeranimation.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.extension.migration.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.extension.navigation.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.extension.parallax.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.extension.slideanims.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\revolution.extension.video.min.js" />
+    <Content Include="assets\js\plugin\rs_slider\settings.css" />
     <Content Include="assets\js\vendor\aos\aos.js" />
     <Content Include="assets\js\vendor\jquery\jquery-3.2.1.min.js" />
     <Content Include="assets\js\vendor\particles.min.js" />
@@ -709,21 +814,6 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
-    <Content Include="assets\fonts\HKKontrastBold\HKKontrastBold.eot" />
-    <Content Include="assets\fonts\HKKontrastBold\HKKontrastBold.ttf" />
-    <Content Include="assets\fonts\HKKontrastBold\HKKontrastBold.woff" />
-    <Content Include="assets\fonts\RobotoBold\RobotoBold.eot" />
-    <Content Include="assets\fonts\RobotoBold\RobotoBold.ttf" />
-    <Content Include="assets\fonts\RobotoBold\RobotoBold.woff" />
-    <Content Include="assets\fonts\RobotoLight\RobotoLight.eot" />
-    <Content Include="assets\fonts\RobotoLight\RobotoLight.ttf" />
-    <Content Include="assets\fonts\RobotoLight\RobotoLight.woff" />
-    <Content Include="assets\fonts\RobotoMedium\RobotoMedium.eot" />
-    <Content Include="assets\fonts\RobotoMedium\RobotoMedium.ttf" />
-    <Content Include="assets\fonts\RobotoMedium\RobotoMedium.woff" />
-    <Content Include="assets\fonts\RobotoRegular\RobotoRegular.eot" />
-    <Content Include="assets\fonts\RobotoRegular\RobotoRegular.ttf" />
-    <Content Include="assets\fonts\RobotoRegular\RobotoRegular.woff" />
     <Content Include="fonts\ionicons.woff2" />
     <Content Include="Scripts\chart.js" />
     <Content Include="assets\home\bootstrapJs\bootstrap.bundle.js.map" />
@@ -772,6 +862,29 @@
     <Content Include="Content\5gprime_whitepaper.pdf" />
     <Content Include="assets\login\jquery.bundle.js" />
     <Content Include="assets\login\script.js" />
+    <Content Include="assets\fonts\Flaticon.eot" />
+    <Content Include="assets\fonts\Flaticon.ttf" />
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\fonts\_flaticon.scss" />
+    <Content Include="assets\images\content\blog\Thumbs.db" />
+    <Content Include="assets\images\content\exchange\Thumbs.db" />
+    <Content Include="assets\images\content\services\Thumbs.db" />
+    <Content Include="assets\images\content\shop\Thumbs.db" />
+    <Content Include="assets\images\content\Thumbs.db" />
+    <Content Include="assets\images\header\Thumbs.db" />
+    <Content Include="assets\js\plugin\fonts\revicons\index.php" />
+    <Content Include="assets\js\plugin\fonts\revicons\revicons.eot" />
+    <Content Include="assets\js\plugin\fonts\revicons\revicons.ttf" />
+    <Content Include="assets\js\plugin\fonts\revicons\revicons.woff" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
