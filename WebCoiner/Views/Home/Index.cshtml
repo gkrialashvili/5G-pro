@@ -146,32 +146,36 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <meta charset="utf-8" />
-    <title>Bit Money Responsive HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta name="description" content="Bit Money" />
-    <meta name="keywords" content="Bit Money" />
-    <meta name="author" content="" />
-    <meta name="MobileOptimized" content="320" />
-    <!--srart theme style -->
-    <link rel="stylesheet" type="text/css" href="~/assets/css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/css/flaticon.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/css/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/css/owl.theme.default.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/js/plugin/rs_slider/layers.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/js/plugin/rs_slider/navigation.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/js/plugin/rs_slider/settings.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="~/assets/css/responsive.css" />
-    <!-- favicon links -->
-    <link rel="shortcut icon" type="image/png" href="~/assets/images/header/favicon.ico" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" async="" src="~/assets/home/analytics.js"></script>
-    <script async="" src=" ~/assets/home/js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bit Money Html Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- all css here -->
+    <!-- bootstrap v3.3.6 css -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="~/assets/css/animate.css">
+    <!-- jquery-ui.min css -->
+    <link rel="stylesheet" href="~/assets/css/jquery-ui.min.css">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="~/assets/css/meanmenu.min.css">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <!-- bxslider css -->
+    <!--flaticon css -->
+    <link rel="stylesheet" href="~/assets/css/flaticon.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
+    <link href="~/assets/css/video-js.css" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="~/assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="~/assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -182,1021 +186,1378 @@
 
 </head>
 <body>
+    <a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
     <!-- preloader Start -->
     <div id="preloader">
         <div id="status">
-            <img src="~/assets/images/header/bitcoin-globe.gif" id="preloader_image" alt="loader">
+            <img src="~/assets/images/banner/loader.gif" id="preloader_image" alt="loader">
         </div>
     </div>
-    <!-- btc top header wrapper Start -->
-    <div class="btc_top_header_main_wrapper">
-        <div class="container-fluid">
-            <div class="btc_left_top_header_wrapper">
-                <p class="btc_topheader_welcome_pera">Welcome to Bitcoin Crypto Currency</p>
-                <div id="ticker_window">
-                    <div id="day_and_time">
-                        <p id="date" class="hidden-xs"></p>
-                        <p id="clock" class="hidden-xs"></p>
-                        <ul id="ticker">
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="btc_right_top_header_wrapper">
-                <ul>
-                    <li class="btc_topheader_welcome_pera"><i class="flaticon-phone-call"></i> Toll Free Number: +91-123456789</li>
-                    <li><a href="account/login"><i class="flaticon-profile"></i> LOGIN</a></li>
-                    <li>
-                        <p><i class="flaticon-internet"></i><span> English <i class="fa fa-angle-down" aria-hidden="true"></i></span></p>
-                        <div class="ss_opener">
-                            <span> English</span>
-                            <span> Hebrew</span>
-                            <span> Russian</span>
-                            <span> Spanish</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- btc top header wrapper End -->
-    <!-- Header Wrapper Start -->
-    <div class="gc_main_menu_wrapper">
-        <div class="container-fluid">
-            <div id="search_open" class="gc_search_box">
-                <input type="text" placeholder="Search here">
-                <button><i class="fa fa-search" aria-hidden="true"></i></button>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 hidden-xs">
-                    <div class="gc_header_wrapper">
-                        <div class="gc_logo">
-                            <a href="index.html"><img src=~/assets/images/header/logo.png" alt="Logo" title="Bit Money"></a>
+    <!--Header area start here-->
+    <div section-scroll='0' class="wd_scroll_wrap">
+        <header class="gc_main_menu_wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
+                        <div class="logo-area">
+                            <a href="index.html"><img src="~/assets/images/logo/logo.png" alt="logo" /></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-                    <div class="header-area hidden-menu-bar stick" id="sticker">
-                        <!-- mainmenu start -->
-                        <div class="gc_right_menu hidden-xs">
-                            <ul>
-                                <li id="search_button">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_2" x="0px" y="0px" viewBox="0 0 451 451" style="enable-background:new 0 0 451 451;" xml:space="preserve"><g><path id="search" d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z" fill="#000000" /></g></svg>
-                                </li>
-                                <li class="btc_join_navi_btn"><a href="#">JOIN US</a></li>
-                            </ul>
+                    <!-- Mobile Menu  Start -->
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-6">
+                        <div class="menu-area  hidden-xs">
+                            <nav class="wd_single_index_menu btc_main_menu">
+                                <ul>
+                                    <li><a href="0">Home</a></li>
+                                    <li><a href="1">About</a></li>
+                                    <li><a href="2">Features</a></li>
+                                    <li><a href="3">Project</a></li>
+                                    <li><a href="4">Steps</a></li>
+                                    <li><a href="5">Road Map</a></li>
+                                    <li><a href="6">Tokens</a></li>
+                                    <li><a href="7">News</a></li>
+                                </ul>
+                            </nav>
+                            <div class="language">
+                                <span class="lng-in"><img src="~/assets/images/icons/12.png" alt="" /></span>
+                                <ul class="lng-out">
+                                    <li><img src="~/assets/images/icons/12.png" alt="" /></li>
+                                    <li><img src="~/assets/images/icons/12.png" alt="" /></li>
+                                </ul>
+                            </div>
+                            <div class="login-btn">
+                                <a href="account/login" class="btn1"><i class="fa fa-user"></i><span>Login</span></a>
+                            </div>
                         </div>
-                        <div class="mainmenu hidden-xs">
-                            <ul>
-                                <li class="gc_main_navigation parent"><a href="index.html" class="gc_main_navigation">Home</a></li>
-                                <li class="has-mega gc_main_navigation">
-                                    <a href="#" class="gc_main_navigation">  Buy & Sell</a>
-                                    <!-- mega menu start -->
-                                    <ul>
-                                        <li class="parent"><a href="about.html">About</a></li>
-                                        <li class="parent"><a href="shop.html">Shop</a></li>
-                                        <li class="parent"><a href="shop_single.html">Shop-Single</a></li>
-                                        <li class="parent"><a href="team.html">Team</a></li>
-
-
-                                    </ul>
-                                </li>
-
-
-                                <li class="gc_main_navigation parent"><a href="exchange.html" class="gc_main_navigation">Exchange</a></li>
-
-                                <li class="gc_main_navigation parent"><a href="services.html" class="gc_main_navigation">Services</a></li>
-                                <li class="has-mega gc_main_navigation">
-                                    <a href="#" class="gc_main_navigation">  Blog</a>
-                                    <!-- mega menu start -->
-                                    <ul>
-                                        <li class="parent"><a href="blog_categories.html">Blog-Category</a></li>
-                                        <li class="parent"><a href="blog_single.html">Blog-Single</a></li>
-
-                                    </ul>
-                                </li>
-                                <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <!-- mainmenu end -->
                         <!-- mobile menu area start -->
                         <div class="rp_mobail_menu_main_wrapper visible-xs">
                             <div class="row">
-                                <div class="col-xs-6">
-                                    <div class="gc_logo">
-                                        <a href="index.html"><img src="~/assets/images/header/logo.png" alt="Logo" title="Bit Money"></a>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
+                                <div class="col-xs-12">
                                     <div id="toggle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177" style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px"><g><g><path class="menubar" d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z" fill="#000000" /></g><g><path class="menubar" d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z" fill="#000000" /></g><g><path class="menubar" d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z" fill="#000000" /></g><g><path class="menubar" d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z" fill="#000000" /></g><g><path class="menubar" d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z" fill="#000000" /></g></g></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177" style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px">
+                                        <g>
+                                        <g>
+                                        <path class="menubar" d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z" fill="#fff" />
+                                                </g>
+                                        <g>
+                                        <path class="menubar" d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z" fill="#fff" />
+                                                </g>
+                                        <g>
+                                        <path class="menubar" d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z" fill="#fff" />
+                                                </g>
+                                        <g>
+                                        <path class="menubar" d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z" fill="#fff" />
+                                                </g>
+                                        <g>
+                                        <path class="menubar" d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z" fill="#fff" />
+                                                </g>
+                                            </g>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
-
                             <div id="sidebar">
                                 <h1><a href="#">Bit Money</a></h1>
                                 <div id="toggle_close">&times;</div>
-                                <div id='cssmenu'>
+                                <div id='cssmenu' class="wd_single_index_menu">
                                     <ul>
-                                        <li><a href='index.html'>Home</a></li>
-                                        <li class='has-sub'>
-                                            <a href='#'>Buy & Sell</a>
-                                            <ul>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop_single.html">Shop-Single</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href='exchange.html'>Exchange</a></li>
-                                        <li><a href='services.html'>Services</a></li>
-                                        <li class='has-sub'>
-                                            <a href='#'>Blog</a>
-                                            <ul>
-                                                <li><a href="blog_categories.html">Blog-Category</a></li>
-                                                <li><a href="blog_single.html">Blog-Single</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li><a href='contact.html'>Contact</a></li>
-                                        <li><a href='contact.html'>Login</a></li>
-                                        <li class='has-sub'>
-                                            <a href='#'>English</a>
-                                            <ul>
-                                                <li><a href="blog_categories.html">English</a></li>
-                                                <li><a href="blog_single.html">English</a></li>
-                                                <li><a href="blog_single.html">English</a></li>
-                                                <li><a href="blog_single.html">English</a></li>
-                                                <li><a href="blog_single.html">English</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="0">Home</a></li>
+                                        <li><a href="1">About</a></li>
+                                        <li><a href="2">Features</a></li>
+                                        <li><a href="3">Project</a></li>
+                                        <li><a href="4">Steps</a></li>
+                                        <li><a href="5">Road Map</a></li>
+                                        <li><a href="6">Tokens</a></li>
+                                        <li><a href="7">News</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        <!-- Mobile Menu  End -->
                     </div>
                 </div>
-                <!-- mobile menu area end -->
             </div>
-        </div>
-    </div>
-    <!-- Header Wrapper End -->
-    <!-- CC slider Wrapper Start -->
-    <div class="btc_main_slider_main_wrapper">
-        <div id="rev_slider_24_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="website-intro" data-source="gallery" style="background:#000000;padding:0px;">
-            <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
-            <div id="rev_slider_24_1" class="rev_slider fullscreenbanner tiny_bullet_slider" style="display:none;" data-version="5.4.1">
-                <ul>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-67" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="600" data-thumb="../../assets/images/woman2-100x50.jpg" data-rotate="0"
-                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 0px 0px transparent">
-                        <!-- MAIN IMAGE -->
-                        <img src="~/assets/images/header/slider_img.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power2.easeInOut" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="20" data-blurend="0"
-                             data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 14 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper " id="slide-67-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full"
-                             data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":10,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 18;background-color:rgba(0, 0, 0, 0.5);">
+        </header>
+        <!--Header area end here-->
+        <!--Slider area start here-->
+        <section class="slider-area">
+            <canvas>
+                <script src="~/assets/jsthree.js"></script>
+                <script src="~/assets/jsstats.min.js"></script>
+                <script src="~/assets/jsProjector.js"></script>
+                <script src="~/assets/jsCanvasRenderer.js"></script>
+            </canvas>
+            <div id="particles-js">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="carousel-captions caption-1">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                            <div class="slider-content">
+                                                <ul>
+                                                    <li data-animation="animated bounceInDown" class="slider_social_icon1"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li data-animation="animated bounceInDown" class="slider_social_icon2"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li data-animation="animated bounceInDown" class="slider_social_icon3"><a href="#"><i class="fa fa-send-o"></i></a></li>
+                                                    <li data-animation="animated bounceInDown" class="slider_social_icon4"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
+                                                    <li data-animation="animated bounceInDown" class="slider_social_icon5"><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                                </ul>
+                                                <h2 data-animation="animated bounceInLeft">Bit Money - Lending & <br>Investment Platform</h2>
+                                                <div class="buttons">
+                                                    <a href="#" class="btn1" data-animation="animated bounceInUp">WHITEPAPER</a>
+                                                    <a href="#" class="btn2" data-animation="animated bounceInUp">Buy Tokens Now!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs hidden-sm">
+                                            <div class="btc_timer_section_wrapper">
+                                                <div id="clockdiv">
+                                                    <div>
+                                                        <span class="days"></span>
+                                                        <div class="smalltext">Days</div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="hours"></span>
+                                                        <div class="smalltext">Hours</div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="minutes"></span>
+                                                        <div class="smalltext">Minutes</div>
+                                                    </div>
+                                                    <div>
+                                                        <span class="seconds"></span>
+                                                        <div class="smalltext">Seconds</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <!-- LAYER NR. 15 -->
-                        <div class="tp-caption   tp-resizeme btc_slider_left_border" id="slide-68-layer-2" data-x="['left','left','center','center']" data-hoffset="['1','1','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-70']" data-fontsize="['54','54','30','20']"
-                             data-lineheight="['60','60','35','25']" data-width="['none','none','481','360']" data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['left','left','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 19; white-space: nowrap; font-size: 90px; line-height: 90px; font-weight: 500; color: #ffffff; letter-spacing: 1px;font-family: 'Raleway', sans-serif;">Bit Money is World’s<br> Popular Bitcoin Company</div>
-
-
-
-
-                        <!-- LAYER NR. 16 -->
-                        <div class="tp-caption   tp-resizeme " id="slide-69-layer-3" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['50','50','60','30']" data-fontsize="['22','22','22','22']"
-                             data-lineheight="['30','30','30','30']" data-width="['480','480','480','360']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['left','left','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20; min-width: 480px; max-width: 480px; white-space: normal; font-size: 22px; line-height: 30px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family: 'Lato', sans-serif;">We Make it Easy to Buy, Sell, Store, Use and Accept Bitcoin Best Exchange venue & of bitcoin CC.</div>
-
-                        <!-- LAYER NR. 17 -->
-                        <a class="tp-caption rev-btn  tp-resizeme" href="#" target="_blank" id="slide-70-layer-7" data-x="['left','left','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','150','160','120']"
-                           data-width="210" data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
-                           data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 21; min-width: 210px; max-width: 210px; white-space: nowrap; font-size: 16px; line-height: 50px; font-weight: 900; color: #ffffff; letter-spacing: 2px;font-family: 'Lato', sans-serif;background-color:#ff880e;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;text-transform:uppercase;">open account </a>
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-66" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="600" data-thumb="../../assets/images/deskbg-100x50.jpg" data-rotate="0"
-                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 0px 0px transparent">
-                        <!-- MAIN IMAGE -->
-                        <img src="~/assets/images/header/slider_img-2.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power2.easeInOut" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="20"
-                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 31 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper " id="slide-71-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full"
-                             data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":10,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 18;background-color:rgba(0, 0, 0, 0.5);">
-                        </div>
-
-
-
-                        <div class="tp-caption   tp-resizeme btc_slider_second_left_border" id="slide-72-layer-2" data-x="['center','center','center','center']" data-hoffset="['1','1','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-70']"
-                             data-fontsize="['54','54','30','20']" data-lineheight="['60','60','35','25']" data-width="['none','none','481','360']" data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']" data-type="text" data-responsive_offset="on"
-                             data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 19; white-space: nowrap; font-size: 90px; line-height: 90px; font-weight: 500; color: #ffffff; letter-spacing: 1px;font-family: 'Raleway', sans-serif;">Bit Money is World’s<br> Popular Bitcoin Company</div>
-
-                        <!-- LAYER NR. 32 -->
-                        <!-- LAYER NR. 16 -->
-                        <div class="tp-caption   tp-resizeme " id="slide-73-layer-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['50','50','60','30']" data-fontsize="['22','22','22','22']"
-                             data-lineheight="['30','30','30','30']" data-width="['480','480','480','360']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20; min-width: 480px; max-width: 480px; white-space: normal; font-size: 22px; line-height: 30px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family: 'Lato', sans-serif;">We Make it Easy to Buy, Sell, Store, Use and Accept Bitcoin Best Exchange venue & of bitcoin CC.</div>
-
-
-                        <!-- LAYER NR. 34 -->
-                        <a class="tp-caption rev-btn  tp-resizeme" href="#" target="_blank" id="slide-74-layer-7" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','150','160','120']"
-                           data-width="210" data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
-                           data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 21; min-width: 210px; max-width: 210px; white-space: nowrap; font-size: 16px; line-height: 50px; font-weight: 900; color: #ffffff; letter-spacing: 2px;font-family: 'Lato', sans-serif;background-color:#ff880e;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;text-transform:uppercase;">open account </a>
-                    </li>
-                    <!-- SLIDE  -->
-                    <li data-index="rs-68" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="600" data-thumb="../../assets/images/reachout_bg-100x50.jpg" data-rotate="0"
-                        data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" data-slicey_shadow="0px 0px 0px 0px transparent">
-                        <!-- MAIN IMAGE -->
-                        <img src="~/assets/images/header/slider_img-3.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="5000" data-ease="Power2.easeInOut" data-scalestart="100" data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="20"
-                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
-                        <!-- LAYERS -->
-                        <!-- LAYER NR. 48 -->
-                        <div class="tp-caption tp-shape tp-shapewrapper " id="slide-75-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full"
-                             data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"delay":10,"speed":500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
-                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 18;background-color:rgba(0, 0, 0, 0.5);">
-                        </div>
-
-                        <!-- LAYER NR. 49 -->
-                        <div class="tp-caption   tp-resizeme btc_slider_left_border btc_slider_third_left_border" id="slide-76-layer-2" data-x="['right','right','center','center']" data-hoffset="['1','1','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-70']"
-                             data-fontsize="['54','54','30','20']" data-lineheight="['60','60','35','25']" data-width="['none','none','481','360']" data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']" data-type="text" data-responsive_offset="on"
-                             data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['right','right','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 19; white-space: nowrap; font-size: 90px; line-height: 90px; font-weight: 500; color: #ffffff; letter-spacing: 1px;font-family: 'Raleway', sans-serif;">Bit Money is World’s<br> Popular Bitcoin Company</div>
-
-
-                        <!-- LAYER NR. 16 -->
-                        <div class="tp-caption   tp-resizeme " id="slide-77-layer-2" data-x="['right','right','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['50','50','60','30']" data-fontsize="['22','22','22','22']"
-                             data-lineheight="['30','30','30','30']" data-width="['480','480','480','360']" data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"}]'
-                             data-textAlign="['right','right','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20; min-width: 480px; max-width: 480px; white-space: normal; font-size: 22px; line-height: 30px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family: 'Lato', sans-serif;">We Make it Easy to Buy, Sell, Store, Use and Accept Bitcoin Best Exchange venue & of bitcoin CC.</div>
-
-                        <!-- LAYER NR. 51 -->
-                        <!-- LAYER NR. 34 -->
-                        <a class="tp-caption rev-btn  tp-resizeme" href="#" target="_blank" id="slide-78-layer-7" data-x="['right','right','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['150','150','160','120']"
-                           data-width="210" data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on" data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:0.9;sY:0.9;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"sX:0.9;sY:0.9;opacity:0;fb:20px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
-                           data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 21; min-width: 210px; max-width: 210px; white-space: nowrap; font-size: 16px; line-height: 50px; font-weight: 900; color: #ffffff; letter-spacing: 2px;font-family: 'Lato', sans-serif;background-color:#ff880e;border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;text-transform:uppercase;">open account </a>
-                    </li>
-                </ul>
-                <div class="tp-bannertimer tp-bottom" style="height: 5px; background: rgba(204,204,204,0.5);"></div>
-            </div>
-        </div>
-        <!-- END REVOLUTION SLIDER -->
-    </div>
-    <!-- rs slider Wrapper End -->
-    <!-- Testimonials Wrapper Start -->
-    <div class="btc_testimonial_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="btc_testimonial_info">
-                    <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-                        <!-- Bottom Carousel Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#quote-carousel" data-slide-to="0" class="active">
-                                <img class="img-responsive " src="~/assets/images/content/testi_img1.jpg" alt="test">
-                            </li>
-                            <li data-target="#quote-carousel" data-slide-to="1">
-                                <img class="img-responsive" src="~/assets/images/content/testi_img2.jpg" alt="test">
-                            </li>
-                            <li data-target="#quote-carousel" data-slide-to="2">
-                                <img class="img-responsive" src="~/assets/images/content/testi_img3.jpg" alt="test">
-                            </li>
-
-                        </ol>
-
-                        <!-- Carousel Slides / Quotes -->
-                        <div class="carousel-inner text-center">
-                            <div class="btc_center_line"></div>
-                            <!-- Quote 1 -->
-                            <div class="item active">
+                        <div class="item">
+                            <div class="container">
                                 <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-2 col-xs-offset-2 btc_testi_padding_zero">
-                                        <div class="btc_testi_quote_wrapper1"></div>
-                                        <div class="btc_testi_quote_wrapper2"></div>
-                                        <p>
-                                            “Donec feugiat id augue consequat vulputate Suspendisse at magna mattis dignissim libero fringilla leo aiquam veh. ultrices fringilla est tortor sollicitudin. This is Photoshop's version of Lorem Ipsum. Proin graida
-                                            nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.”
-                                        </p>
-                                        <div class="btc_testi_cont_bottom_line"></div>
-                                        <h1>by Akshay Handge (webstrot)</h1>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="slider-content">
+                                            <ul>
+                                                <li data-animation="animated bounceInDown" class="slider_social_icon1"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li data-animation="animated bounceInDown" class="slider_social_icon2"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li data-animation="animated bounceInDown" class="slider_social_icon3"><a href="#"><i class="fa fa-send-o"></i></a></li>
+                                                <li data-animation="animated bounceInDown" class="slider_social_icon4"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
+                                                <li data-animation="animated bounceInDown" class="slider_social_icon5"><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                            </ul>
+                                            <h2 data-animation="animated bounceInLeft">Bit Money - Lending & <br>Investment Platform</h2>
+                                            <div class="buttons">
+                                                <a href="#" class="btn1" data-animation="animated bounceInUp">WHITEPAPER</a>
+                                                <a href="#" class="btn2" data-animation="animated bounceInUp">Buy Tokens Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  hidden-xs hidden-sm">
+                                        <div class="btc_timer_section_wrapper">
+                                            <div id="clockdiv2">
+                                                <div>
+                                                    <span class="days"></span>
+                                                    <div class="smalltext">Days</div>
+                                                </div>
+                                                <div>
+                                                    <span class="hours"></span>
+                                                    <div class="smalltext">Hours</div>
+                                                </div>
+                                                <div>
+                                                    <span class="minutes"></span>
+                                                    <div class="smalltext">Minutes</div>
+                                                </div>
+                                                <div>
+                                                    <span class="seconds"></span>
+                                                    <div class="smalltext">Seconds</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Quote 2 -->
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-2 col-xs-offset-2 btc_testi_padding_zero">
-                                        <div class="btc_testi_quote_wrapper1"></div>
-                                        <div class="btc_testi_quote_wrapper2"></div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                        </p>
-                                        <div class="btc_testi_cont_bottom_line"></div>
-                                        <h1>by Akshay Handge (webstrot)</h1>
-                                    </div>
+                        </div>
+                        <div class="carousel-nevigation">
+                            <a class="prev" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a class="next" href="#carousel-example-generic" role="button" data-slide="next">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Slider area end here-->
+        <section class="currency-area">
+            <div class="container-fliud">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="rete-list bt_title wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <div class="con">
+                                    <h2><img src="~/assets/images/icons/1.png" alt=""><span>Bitcoin</span></h2>
+                                    <button class="btn3">4.160651 BTC</button>
                                 </div>
                             </div>
-                            <!-- Quote 3 -->
-                            <div class="item">
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-2 col-xs-offset-2 btc_testi_padding_zero">
-                                        <div class="btc_testi_quote_wrapper1"></div>
-                                        <div class="btc_testi_quote_wrapper2"></div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. .
-                                        </p>
-                                        <div class="btc_testi_cont_bottom_line"></div>
-                                        <h1>by Akshay Handge (webstrot)</h1>
-                                    </div>
+                        </div>
+                        <div class="rete-list bt_title wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <div class="con">
+                                    <h2><img src="~/assets/images/icons/2.png" alt=""><span>Ethereum</span></h2>
+                                    <button class="btn3">3.245000 ETH</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rete-list bt_title wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <div class="con">
+                                    <h2><img src="~/assets/images/icons/3.png" alt=""><span>Dollar (USD)</span></h2>
+                                    <button class="btn3">58634.000 USD</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rete-list bt_title wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <div class="con">
+                                    <h2><img src="~/assets/images/icons/4.png" alt=""><span>Total USD</span></h2>
+                                    <button class="btn3">111969.062 USD</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rete-list hidden-md   wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <div class="con">
+                                    <h2><img src="~/assets/images/icons/5.png" alt=""><span>Token Sale</span></h2>
+                                    <button class="btn3">346636.775</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-    <!-- btc Testimonials Wrapper End -->
-    <!-- btc steps Wrapper Start -->
-    <div class="btc_steps_main_wrapper" data-parallax="scroll" data-image-src="~/assets/images/content/service_bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="btc_steps_heading_wrapper">
-                        <p>How to use Bitcoin</p>
-                        <h1>Simple Steps to Get Started</h1>
-                        <span>#</span>
-                        <h5>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,<br> nisi elit consequat ipsum, nec sagittis sem nibh id elit duis sed odio sit.</h5>
+    <!--About area start here-->
+    <div section-scroll='1' class="wd_scroll_wrap">
+        <section class="about-area pd-t70 pd-b100 jarallax bg-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="about-content">
+                            <h2 class="f-40 fw-400 wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">About The Project</h2>
+                            <p class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">Bit Money is a lending and investment, multicurrency and multifunctional online platform based on blockchain technology. There investors and borrowers meet each other and have the opportunity to lend money on mutually beneficial.</p>
+                            <p class="wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">Bit Money is a unique service that allows individuals to access loans from the comfort of their home in fiat currencies or crypto-currencies.</p>
+                            <p class="wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">Bit Money is a multi-functional platform which allows each participant to keep money in a multi-currency online wallet, buy and sell currency on the exchange, invest money, get a loan in a convenient currency.</p>
+                            <div class="buttons">
+                                <a href="#" class="btn1">WHITEPAPER</a>
+                                <a href="#" class="btn3">Buy Tokens Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="about-img wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                            <img src="~/assets/images/about/1.png" alt="" />
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <ul class="nav nav-pills">
-                        <li class="active"><a data-toggle="pill" href="#home">How to use</a></li>
-                        <li><a data-toggle="pill" href="#menu1">How to accept</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="tab-content">
-                        <div id="home" class="tab-pane fade in active">
-                            <div class="row btc_steps_wrappers">
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="btc_steps_main_box_wrapper btc_steps_main_box_wrapper1">
-                                        <div class="btc_step_icon_wrapper">
-                                            <div class="btc_step_hover_effect">
-                                                <i class="flaticon-user"></i>
-                                                <div class="btc_step_overlay"></div>
-                                            </div>
-                                        </div>
-                                        <div class="btc_step_icon_cont_wrapper">
-                                            <h2><a href="#">Inform Yourself</a></h2>
-                                            <p>Bitcoin is different than what you know and use every day. Before you start using..</p>
-                                            <h4><a href="#">read more</a></h4>
-                                            <span>1</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="btc_steps_main_box_wrapper btc_steps_main_box_wrapper2">
-                                        <div class="btc_step_icon_wrapper">
-                                            <div class="btc_step_hover_effect">
-                                                <i class="flaticon-wallet"></i>
-                                                <div class="btc_step_overlay"></div>
-                                            </div>
-                                        </div>
-                                        <div class="btc_step_icon_cont_wrapper">
-                                            <h2><a href="#">Choose Your Wallet</a></h2>
-                                            <p>Bitcoin is different than what you know and use every day. Before you start using..</p>
-                                            <h4><a href="#">read more</a></h4>
-                                            <span>2</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="btc_steps_main_box_wrapper btc_steps_main_box_wrapper3">
-                                        <div class="btc_step_icon_wrapper">
-                                            <div class="btc_step_hover_effect">
-                                                <i class="flaticon-money-1"></i>
-                                                <div class="btc_step_overlay"></div>
-                                            </div>
-                                        </div>
-                                        <div class="btc_step_icon_cont_wrapper">
-                                            <h2><a href="#">Get Bitcoin</a></h2>
-                                            <p>Bitcoin is different than what you know and use every day. Before you start using..</p>
-                                            <h4><a href="#">read more</a></h4>
-                                            <span>3</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="btc_steps_main_box_wrapper btc_steps_main_box_wrapper4">
-                                        <div class="btc_step_icon_wrapper">
-                                            <div class="btc_step_hover_effect">
-                                                <i class="flaticon-coins"></i>
-                                                <div class="btc_step_overlay"></div>
-                                            </div>
-                                        </div>
-                                        <div class="btc_step_icon_cont_wrapper">
-                                            <h2><a href="#">Spend Bitcoin</a></h2>
-                                            <p>Bitcoin is different than what you know and use every day. Before you start using..</p>
-                                            <h4><a href="#">read more</a></h4>
-                                            <span>4</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="btc_steps_bottom_line_wrapper"></div>
+            </div>
+        </section>
+        <!--About area end here-->
+        <div class="sud">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #10122d;
+                }
+</style>
+            <g>
+            <path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+                     c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
+                     c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
+                     c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
+                     c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div section-scroll='2' class="wd_scroll_wrap">
+        <section class="features-area section">
+            <div id="features-js">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-heading2 wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                                <h2>Our Features</h2>
                             </div>
-
                         </div>
-                        <div id="menu1" class="tab-pane fade">
-                            <div class="row btc_steps_wrappers">
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="btc_steps_main_box_wrapper btc_steps_main_box_wrapper1">
-                                        <div class="btc_step_icon_wrapper">
-                                            <div class="btc_step_hover_effect">
-                                                <i class="flaticon-user"></i>
-                                                <div class="btc_step_overlay"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="featured-lists">
+                                <ul>
+                                    <li>
+                                        <div class="col-sm-6 pd-0 hidden-xs wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                            <div class="contents-l mr-b30">
+                                                <h2>Lending</h2>
+                                                <p>
+                                                    Unique platform for lending and investment with a safety fund
+                                                    <br>and cooperation with world-wide arbitration.
+                                                </p>
+                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
-                                        <div class="btc_step_icon_cont_wrapper">
-                                            <h2><a href="#">Inform Yourself</a></h2>
-                                            <p>Bitcoin is different than what you know and use every day. Before you start using..</p>
-                                            <h4><a href="#">read more</a></h4>
-                                            <span>1</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="btc_steps_main_box_wrapper btc_steps_main_box_wrapper2">
-                                        <div class="btc_step_icon_wrapper">
-                                            <div class="btc_step_hover_effect">
-                                                <i class="flaticon-wallet"></i>
-                                                <div class="btc_step_overlay"></div>
+                                        <div class="col-sm-6 pd-0 wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                            <div class="imgs-l">
+                                                <figure><img src="~/assets/images/features/1.png" alt="" /></figure>
                                             </div>
                                         </div>
-                                        <div class="btc_step_icon_cont_wrapper">
-                                            <h2><a href="#">Choose Your Wallet</a></h2>
-                                            <p>Bitcoin is different than what you know and use every day. Before you start using..</p>
-                                            <h4><a href="#">read more</a></h4>
-                                            <span>2</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="btc_steps_main_box_wrapper btc_steps_main_box_wrapper3">
-                                        <div class="btc_step_icon_wrapper">
-                                            <div class="btc_step_hover_effect">
-                                                <i class="flaticon-money-1"></i>
-                                                <div class="btc_step_overlay"></div>
+                                        <div class="col-sm-6 pd-0 visible-xs  wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                            <div class="contents-l mr-b30">
+                                                <h2>Lending</h2>
+                                                <p>
+                                                    Unique platform for lending and investment with a safety fund
+                                                    <br>and cooperation with world-wide arbitration.
+                                                </p>
+                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
-                                        <div class="btc_step_icon_cont_wrapper">
-                                            <h2><a href="#">Get Bitcoin</a></h2>
-                                            <p>Bitcoin is different than what you know and use every day. Before you start using..</p>
-                                            <h4><a href="#">read more</a></h4>
-                                            <span>3</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                    <div class="btc_steps_main_box_wrapper btc_steps_main_box_wrapper4">
-                                        <div class="btc_step_icon_wrapper">
-                                            <div class="btc_step_hover_effect">
-                                                <i class="flaticon-coins"></i>
-                                                <div class="btc_step_overlay"></div>
+                                    </li>
+                                    <li class="rl">
+                                        <div class="col-sm-6 pd-0 floatright mr-b30 hidden-xs wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                                            <div class="contents-r">
+                                                <h2>Exchange Money</h2>
+                                                <p>
+                                                    Exchange between all popular currencies with a couple of clicks.
+                                                    <br>Instant send from one currency to another.
+                                                </p>
+                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
-                                        <div class="btc_step_icon_cont_wrapper">
-                                            <h2><a href="#">Spend Bitcoin</a></h2>
-                                            <p>Bitcoin is different than what you know and use every day. Before you start using..</p>
-                                            <h4><a href="#">read more</a></h4>
-                                            <span>4</span>
+                                        <div class="col-sm-6 pd-0 wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                                            <div class="imgs-r">
+                                                <figure><img src="~/assets/images/features/2.png" alt="" /></figure>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="btc_steps_bottom_line_wrapper"></div>
+                                        <div class="col-sm-6 pd-0 floatright mr-b30 visible-xs wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                                            <div class="contents-r">
+                                                <h2>Exchange Money</h2>
+                                                <p>
+                                                    Exchange between all popular currencies with a couple of clicks.
+                                                    <br>Instant send from one currency to another.
+                                                </p>
+                                                <a href="#" class="btn1">read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-sm-6 pd-0 hidden-xs wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                                            <div class="contents-l mr-b30">
+                                                <h2>Investment</h2>
+                                                <p>
+                                                    Improved system of borrower's verification. Providing
+                                                    <br>verification services for other services.
+                                                </p>
+                                                <a href="#" class="btn1">read more</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pd-0 wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                                            <div class="imgs-l">
+                                                <figure><img src="~/assets/images/features/3.png" alt="" /></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pd-0 visible-xs wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                                            <div class="contents-l mr-b30">
+                                                <h2>Investment</h2>
+                                                <p>
+                                                    Improved system of borrower's verification. Providing
+                                                    <br>verification services for other services.
+                                                </p>
+                                                <a href="#" class="btn1">read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="rl">
+                                        <div class="col-sm-6 pd-0 floatright mr-b30 hidden-xs wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                                            <div class="contents-r">
+                                                <h2>Online Wallet</h2>
+                                                <p>
+                                                    Keep your money, exchange your money, invest your money, pay
+                                                    <br>services and make purchases.
+                                                </p>
+                                                <a href="#" class="btn1">read more</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pd-0 wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                                            <div class="imgs-r">
+                                                <figure><img src="~/assets/images/features/4.png" alt="" /></figure>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 pd-0 floatright mr-b30 visible-xs wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                                            <div class="contents-r">
+                                                <h2>Online Wallet</h2>
+                                                <p>
+                                                    Keep your money, exchange your money, invest your money, pay
+                                                    <br>services and make purchases.
+                                                </p>
+                                                <a href="#" class="btn1">read more</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-    <!-- btc steps Wrapper End -->
-    <!-- btc currency Wrapper Start -->
-    <div class="btc_currency_main_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-offset-5 col-lg-7 col-md-offset-5 col-md-7 col-sm-offset-4 col-sm-8 col-xs-12">
-                    <div class="btc_currency_heading_wrapper">
-                        <h5>WHAT IS BITCOIN</h5>
-                        <h3>New Currency - New Lifestyle!</h3>
-                        <span>#</span>
-                        <p>
-                            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                            ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
-                            erat justo.<br><br>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum..
-                        </p>
+    <div section-scroll='3' class="wd_scroll_wrap">
+        <section class="projects bg-img pd-t100 pd-b70 jarallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <div class="section-heading">
+                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Advantage of the Project</h2>
+                        </div>
                     </div>
-                    <div class="btc_currency_boxes_main_wrapper">
-                        <div class="btc_currency_box1">
-                            <i class="flaticon-progress-report"></i>
-                            <h5><a href="#">Licensed</a></h5>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="~/assets/images/icons/6.png" alt="" /></span>
+                                <h3>Blockchain <br>Technology</h3>
+                            </div>
                         </div>
-                        <div class="btc_currency_box2">
-                            <i class="flaticon-wallet"></i>
-                            <h5><a href="#">Wallet</a></h5>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="~/assets/images/icons/7.png" alt="" /></span>
+                                <h3>Advanced <br>Security System</h3>
+                            </div>
                         </div>
-                        <div class="btc_currency_box3">
-                            <i class="flaticon-shuffle"></i>
-                            <h5><a href="#">Exchange</a></h5>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="~/assets/images/icons/8.png" alt="" /></span>
+                                <h3>Multicurrency <br>Coins</h3>
+                            </div>
                         </div>
-                        <div class="btc_currency_box4">
-                            <i class="flaticon-shield"></i>
-                            <h5><a href="#">Secure</a></h5>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="~/assets/images/icons/9.png" alt="" /></span>
+                                <h3>Internal <br>Exchange</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="~/assets/images/icons/10.png" alt="" /></span>
+                                <h3>Safety <br>Fund</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="project-list wow  fadeInUp animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: fadeInUp;">
+                            <div class="content">
+                                <span class="icons"><img src="~/assets/images/icons/11.png" alt="" /></span>
+                                <h3>Cooperation <br>With Arbitration</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-    <!-- btc currency Wrapper End -->
-    <!-- btc calcultor Wrapper Start -->
-    <div class="btc_calc_main_wrapper">
-        <div class="btc_calc_img_overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="btc_calc_heading_wrapper">
-                        <h5>Cryptocurrency Price Value Today</h5>
-                        <h3>Bitcoin Currency Calculator</h3>
-                        <span>#</span>
-                        <p>
-                            Nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
-                            consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo.
-                        </p>
+    <div section-scroll='4' class="wd_scroll_wrap">
+        <section class="steps-area section">
+            <div id="steps-js">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
+                            <div class="steps-heading">
+                                <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Few Steps For a Loan</h2>
+                                <div class="right-con">
+                                    <span>Scroll Down</span>
+                                    <a data-scroll data-options='{ "speed": 100 }' href="#steps"><i class="fa fa-angle-down"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="divider_30">
-                        <div class="cal-convertor">
-                            <script>
-                                baseUrl = "https://widgets.cryptocompare.com/";
-                                var scripts = document.getElementsByTagName("script");
-                                var embedder = scripts[scripts.length - 1];
-                                var cccTheme = { "General": { "headerText": "" }, "Form": { "labelFrom": "Enter amount", "labelTo": "Enter amount to get" } };
-                                (function () {
-                                    var appName = encodeURIComponent(window.location.hostname);
-                                    if (appName == "") { appName = "local"; }
-                                    var s = document.createElement("script");
-                                    s.type = "text/javascript";
-                                    s.async = true;
-                                    var theUrl = baseUrl + 'serve/v1/coin/converter?fsym=BTC&tsyms=USD,EUR,CNY,GBP';
-                                    s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-                                    embedder.parentNode.appendChild(s);
-                                })();
-                            </script>
+            </div>
+        </section>
+        <section id="steps" class="steps-details bg-mg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1">
+                        <div class="steps-cont">
+                            <ul>
+                                <li class="l-con">
+                                    <div class="cont wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                                        <h2>01. Registration On The Platform</h2>
+                                        <p>
+                                            Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                            <br>nulla. Cras sodales eu nibh vel scelerisque.
+                                        </p>
+                                    </div>
+                                    <span><i class="fa fa-users"></i></span>
+                                </li>
+                                <li class="r-con">
+                                    <div class="cont wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                        <h2>02. Passing Verification</h2>
+                                        <p>
+                                            Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                            <br>nulla. Cras sodales eu nibh vel scelerisque.
+                                        </p>
+                                    </div>
+                                    <span><i class="fa fa-check-square-o"></i></span>
+                                </li>
+                                <li class="l-con">
+                                    <div class="cont wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                                        <h2>03. Creating An Application For a Loan</h2>
+                                        <p>
+                                            Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                            <br>nulla. Cras sodales eu nibh vel scelerisque.
+                                        </p>
+                                    </div>
+                                    <span><i class="fa fa-edit "></i></span>
+                                    <div class="mid-icons"></div>
+                                </li>
+                                <li class="r-con">
+                                    <div class="cont wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                                        <h2>04. Financing a Loan</h2>
+                                        <p>
+                                            Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                            <br>nulla. Cras sodales eu nibh vel scelerisque.
+                                        </p>
+                                    </div>
+                                    <span><i class="fa fa-university"></i></span>
+                                </li>
+                                <li class="l-con">
+                                    <div class="cont wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                                        <h2>05. Activating a Loan</h2>
+                                        <p>
+                                            Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                            <br>nulla. Cras sodales eu nibh vel scelerisque.
+                                        </p>
+                                    </div>
+                                    <span><i class="fa fa-bell"></i></span>
+                                </li>
+                                <li class="r-con">
+                                    <div class="cont wow  fadeInUp animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration:2.4s; animation-name: fadeInUp;">
+                                        <h2>06. Receiving Funds</h2>
+                                        <p>
+                                            Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
+                                            <br>nulla. Cras sodales eu nibh vel scelerisque.
+                                        </p>
+                                    </div>
+                                    <span><i class="fa fa-paw"></i></span>
+                                </li>
+                            </ul>
                         </div>
-                        <ul>
-                            <li><a href="#">buy now</a></li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sud">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #10122d;
+                }
+</style>
+            <g>
+            <path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+                     c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
+                     c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
+                     c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
+                     c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
+                </g>
+            </svg>
+        </div>
+    </div>
+    <div section-scroll='5' class="wd_scroll_wrap">
+        <section class="video-area section">
+            <div id="video-js">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="videos-heding">
+                                <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Development of Bit Money Platform<br>(Road Map)</h2>
+                                <div class="videos-box">
+                                    <video id="my-video" class="video-js" controls preload="auto" width="770" height="400" poster="~/assets/images/video/1.png" data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/Gc2en3nHxA4"}], "youtube": { "customVars": { "wmode": "transparent" } } }'>
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wd_scroll_wrap">
+            <section class="video-des bg-img ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="deslidt">
+                                <ul>
+                                    <li>
+                                        <span class="years"><span class="con">2020</span></span>
+                                        <div class="serials">
+                                            <span class="cre"></span>
+                                            <div class="col-sm-6 col-xs-12 left-con wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                                                <div class="box-con">
+                                                    <div class="dbox">
+                                                        <div class="dleft">
+                                                            <div class="imgs"><img src="~/assets/images/video/2.png" alt="" /></div>
+                                                        </div>
+                                                        <div class="dright">
+                                                            <div class="content">
+                                                                <h3>Idea</h3>
+                                                                <p>(September - October)</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-12 right-con  wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                                <div class="box-con">
+                                                    <div class="dbox">
+                                                        <div class="dleft">
+                                                            <div class="content">
+                                                                <h3>Market Research</h3>
+                                                                <p>(October - December)</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dright">
+                                                            <div class="imgs"><img src="~/assets/images/video/3.png" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="years"><span class="con">2020</span></span>
+                                        <div class="serials">
+                                            <span class="cre"></span>
+                                            <div class="col-sm-6 col-xs-12 left-con wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                                                <div class="box-con">
+                                                    <div class="dbox">
+                                                        <div class="dleft">
+                                                            <div class="imgs"><img src="~/assets/images/video/3.png" alt="" /></div>
+                                                        </div>
+                                                        <div class="dright">
+                                                            <div class="content">
+                                                                <p>(1Q 2020)</p>
+                                                                <h3>Formation of foundersteam Business plan</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-12 right-con wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                                                <div class="box-con">
+                                                    <div class="dbox">
+                                                        <div class="dleft">
+                                                            <div class="content">
+                                                                <p>(2Q 2020)</p>
+                                                                <h3>Start of Platform<br> Development</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dright">
+                                                            <div class="imgs"><img src="~/assets/images/video/4.png" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="serials">
+                                            <span class="cre"></span>
+                                            <div class="col-sm-6 col-xs-12 left-con wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                                                <div class="box-con">
+                                                    <div class="dbox">
+                                                        <div class="dleft">
+                                                            <div class="imgs"><img src="~/assets/images/video/5.png" alt="" /></div>
+                                                        </div>
+                                                        <div class="dright">
+                                                            <div class="content">
+                                                                <p>(3Q 2020)</p>
+                                                                <h3>WhitePaper<br> Landing page</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-12 right-con wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                                                <div class="box-con">
+                                                    <div class="dbox">
+                                                        <div class="dleft">
+                                                            <div class="content">
+                                                                <p>(4Q 2020)</p>
+                                                                <h3>Pre-Sale<br>Launch Platform<br>in beta test mode</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dright">
+                                                            <div class="imgs"><img src="~/assets/images/video/6.png" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="years"><span class="con">2020</span></span>
+                                        <div class="serials">
+                                            <span class="cre"></span>
+                                            <div class="col-sm-6 col-xs-12 left-con  wow  fadeInUp animated" data-wow-duration="2.3s" style="visibility: visible; animation-duration: 2.3s; animation-name: fadeInUp;">
+                                                <div class="box-con">
+                                                    <div class="dbox">
+                                                        <div class="dleft">
+                                                            <div class="imgs"><img src="~/assets/images/video/7.png" alt="" /></div>
+                                                        </div>
+                                                        <div class="dright">
+                                                            <div class="content">
+                                                                <p>(1Q 2020)</p>
+                                                                <h3>ICO Launch<br>Identification<br>Systemsand work<br>with API Partners</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-12 right-con wow  fadeInUp animated" data-wow-duration="2.3s" style="visibility: visible; animation-duration: 2.3s; animation-name: fadeInUp;">
+                                                <div class="box-con">
+                                                    <div class="dbox">
+                                                        <div class="dleft">
+                                                            <div class="content">
+                                                                <p>(2Q 2020)</p>
+                                                                <h3>Launch the<br>Platform in<br>Full mode</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="dright">
+                                                            <div class="imgs"><img src="~/assets/images/video/8.png" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="serials">
+                                            <div class="col-sm-12 col-xs-12 center-con wow  fadeInUp animated" data-wow-duration="2.5s" style="visibility: visible; animation-duration: 2.5s; animation-name: fadeInUp;">
+                                                <div class="box-con">
+                                                    <div class="dbox">
+                                                        <div class="dleft">
+                                                            <div class="imgs"><img src="~/assets/images/video/9.png" alt="" /></div>
+                                                        </div>
+                                                        <div class="dright">
+                                                            <div class="content">
+                                                                <p>(4Q 2020)</p>
+                                                                <h3>Establishing<br>Representative<br>Office</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
                         </ul>
                     </div>
                 </div>
-            </div>
+        </div>
+        </section>
+        <div class="sud">
+            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #10122d;
+                }
+</style>
+            <g>
+            <path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+                        c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
+                        c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
+                        c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
+                        c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
+                </g>
+            </svg>
         </div>
     </div>
-    <!-- btc calcultor Wrapper End -->
-    <!-- btc Video Wrapper Start -->
-    <div class="btc_video_main_wrapper">
-        <div class="container">
-            <div class="btc_video_left_wrapper">
-                <h1>Learn How to <span>Earn Money</span> with Bitcoin.<br> The Easiest Ways to Get Free <span>Bitcoins</span> Are Here!</h1>
-            </div>
-            <div class="btc_video_right_wrapper">
-                <ul>
-                    <li><a href="#">play video</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
-    <!-- btc Video Wrapper End -->
-    <!-- btc Services Wrapper Start -->
-    <div class="btc_services_main_wrapper" data-parallax="scroll" data-image-src="~/assets/images/content/service_bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="btc_services_heading_main_wrapper">
-                        <div class="btc_services_heading_wrapper">
-                            <p>Our Services</p>
-                            <h1>Why Choose Bitcoin</h1>
-                            <span>#</span>
-                            <h5>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,<br> nisi elit consequat ipsum, nec sagittis sem nibh id elit duis sed odio sit.</h5>
+    <div section-scroll='6' class="wd_scroll_wrap">
+        <section class="tokens-area section">
+            <div id="token-js">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-heading2">
+                                <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Rounds of Sale of Tokens</h2>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="btc_left_service_main_wrapper">
-                        <div class="btc_left_ser_icon_wrapper">
-                            <i class="flaticon-money"></i>
-                        </div>
-                        <div class="btc_left_ser_icon_cont_wrapper">
-                            <h1>Safe & Secure</h1>
-                            <p>Be sure in your account security and your funds safety</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="btc_left_service_main_wrapper btc_left_service_main_wrapper2">
-                        <div class="btc_left_ser_icon_wrapper">
-                            <i class="flaticon-exchange"></i>
-                        </div>
-                        <div class="btc_left_ser_icon_cont_wrapper">
-                            <h1>Mobile Apps</h1>
-                            <p>Be sure in your account security and your funds safety</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                    <div class="btc_left_service_main_wrapper btc_left_service_main_wrapper2">
-                        <div class="btc_left_ser_icon_wrapper">
-                            <i class="flaticon-bitcoin-pocket-or-wallet"></i>
-                        </div>
-                        <div class="btc_left_ser_icon_cont_wrapper">
-                            <h1>Wallet</h1>
-                            <p>Be sure in your account security and your funds safety</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="btc_ser_center_img_wrapper">
-                        <img src="~/assets/images/content/service_img.jpg" class="img-responsive" alt="service_img" />
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="btc_right_service_main_wrapper">
-                        <div class="btc_right_ser_icon_cont_wrapper">
-                            <h1>Experts Support</h1>
-                            <p>Be sure in your account security and your funds safety</p>
-                            <a href="#">Read More</a>
-                        </div>
-                        <div class="btc_right_ser_icon_wrapper">
-                            <i class="flaticon-support"></i>
-                        </div>
-                    </div>
-                    <div class="btc_right_service_main_wrapper btc_right_service_main_wrapper2">
-                        <div class="btc_right_ser_icon_cont_wrapper">
-                            <h1>Instant Exchange</h1>
-                            <p>Be sure in your account security and your funds safety</p>
-                            <a href="#">Read More</a>
-                        </div>
-                        <div class="btc_right_ser_icon_wrapper">
-                            <i class="flaticon-technology"></i>
-                        </div>
-                    </div>
-                    <div class="btc_right_service_main_wrapper btc_right_service_main_wrapper2">
-                        <div class="btc_right_ser_icon_cont_wrapper">
-                            <h1>Recuring Buys</h1>
-                            <p>Be sure in your account security and your funds safety</p>
-                            <a href="#">Read More</a>
-                        </div>
-                        <div class="btc_right_ser_icon_wrapper">
-                            <i class="flaticon-bitcoin"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- btc Services Wrapper End -->
-    <!-- btc chart Wrapper Start -->
-    <div class="btc_chart_main_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="btc_chart_heading_main_wrapper">
-                        <div class="btc_chart_heading_wrapper">
-                            <p>Cryptocurrency Prices</p>
-                            <h1>Bitcoin Market Data</h1>
-                            <span>#</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="sales-chart">
-                        <canvas id="team-chart"></canvas>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- btc cart Wrapper End -->
-    <!-- btc Sell Wrapper Start -->
-    <div class="btc_sell_main_wrapper">
-        <div class="btc_sell_img_overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="btc_sell_left_cont_wrapper">
-                        <h5>A New Kind of Money</h5>
-                        <h3>Buy and Sell Bitcoin</h3>
-                        <span>#</span>
-                        <p>
-                            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                            ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in
-                            erat justo.<br><br>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum..
-                        </p>
-                        <a href="#">SING UP</a>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-                    <div class="btc_sell_right_side_wrapper">
-                        <img src="~/assets/images/content/mac.png" alt="buy_img">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- btc Sell Wrapper End -->
-    <!-- btc team Wrapper Start -->
-    <div class="btc_team_main_wrapper" data-parallax="scroll" data-image-src="~/assets/images/content/service_bg.jpg">
-        <div class="container">
-            <div class="btc_team_left_wrapper">
-                <h5>Team Member</h5>
-                <h3>Our Experts</h3>
-                <span>#</span>
-                <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bdum auctor, nisi elit consequat ipsum, nec sagittis sem.</p>
-            </div>
-            <div class="btc_team_right_wrapper">
-                <div class="btc_team_slider_wrapper">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="btc_team_slider_cont_main_wrapper">
-                                <div class="btc_team_img_wrapper">
-                                    <img src="~/assets/images/content/team1.jpg" alt="team_img1">
-                                    <div class="btc_team_social_wrapper">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
+                        <div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                <div class="tokens mr-l50">
+                                    <div class="token-name">Pre-sale</div>
+                                    <div class="token-body">
+                                        <p>Target – to Raise USD 500,000</p>
+                                        <button class="left-btn">Price 1 BIT – $0.25</button>
+                                        <span class="easypiechart skill-circle">
+                                            <span class="percent head-font">20</span>
+                                            <br>
+                                            <span class="con">Special Bonus</span>
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="btc_team_img_cont_wrapper">
-                                    <h4><a href="#">Ajay Suryavanshi</a></h4>
-                                    <p>(Consultant)</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                                <div class="tokens mr-r50">
+                                    <div class="token-name">ICO</div>
+                                    <div class="token-body">
+                                        <p>Target – to Raise USD 20,000,000</p>
+                                        <button class="right-btn">Price 1 BIT - $1.00</button>
+                                        <div class="prices">
+                                            <h3 class="f-20">Bonus for ICO :</h3>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Time</th>
+                                                        <th>bonus</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1day</td>
+                                                        <td>35%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2 - 4 Days </td>
+                                                        <td>20%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5 - 13 Days</td>
+                                                        <td>10%</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>14 - 31 Day</td>
+                                                        <td>0%</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                <p class="token-con wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">The sale of tokens It is a long established fact that a reader will be distracted by the<span> readable content of a page when looking at its layout.</span>There are many variations of passages of Lorem Ipsum available. There are many variations of passages. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="token-details section bg-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-heading">
+                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Distribution of Tokens</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
+                        <div class="tokes-chart-slider wow animate fadeIn" data-wow-duration="1s">
+                            <div class="cart-list">
+                                <div class="chart col-sm-6">
+                                    <div id="e_chart_3" class="" style="height:400px;"></div>
+                                    <div class="imgs"><img src="~/assets/images/icons/l.png" alt="" /></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="label-chatrs">
+                                        <div class="lsits">
+                                            <span class="clabels-text">85%</span>
+                                            <p>For participants of Pre-Sale and ICO</p>
+                                        </div>
+                                        <div class="lsits">
+                                            <span class="clabels-text">8%</span>
+                                            <p>Reserved for the team.</p>
+                                        </div>
+                                        <div class="lsits">
+                                            <span class="clabels-text">4%</span>
+                                            <p>Reserved for the consultants.</p>
+                                        </div>
+                                        <div class="lsits">
+                                            <span class="clabels-text">3%</span>
+                                            <p>Bounty campaign</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-list">
+                                <div class="chart col-sm-6">
+                                    <div id="e_chart_2" class="" style="height:400px;"></div>
+                                    <div class="imgs"><img src="~/assets/images/icons/l.png" alt="" /></div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="label-chatrs">
+                                        <div class="lsits">
+                                            <span class="clabels-text">85%</span>
+                                            <p>For participants of Pre-Sale and ICO</p>
+                                        </div>
+                                        <div class="lsits">
+                                            <span class="clabels-text">8%</span>
+                                            <p>Reserved for the team.</p>
+                                        </div>
+                                        <div class="lsits">
+                                            <span class="clabels-text">4%</span>
+                                            <p>Reserved for the consultants.</p>
+                                        </div>
+                                        <div class="lsits">
+                                            <span class="clabels-text">3%</span>
+                                            <p>Bounty campaign</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="btc_team_slider_cont_main_wrapper">
-                                <div class="btc_team_img_wrapper">
-                                    <img src="~/assets/images/content/team2.jpg" alt="team_img1">
-                                    <div class="btc_team_social_wrapper">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
+                        <div class="contents text-center">
+                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">The issued tokens will be distributed as follows:</h2>
+                            <a href="#" class="btn1 wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">Download WhitePaper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="sud">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #10122d;
+                }
+</style>
+            <g>
+            <path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+                     c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
+                     c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
+                     c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
+                     c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
+                </g>
+            </svg>
+        </div>
+        <section class="team-area pd-t100 pd-b50">
+            <div id="particles-team">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="section-heading2">
+                                <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Core Team</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                            <div class="team-list">
+                                <div class="conte">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <img src="~/assets/images/team/1.png" alt="" />
+                                        </div>
+                                        <div class="dright">
+                                            <div class="content">
+                                                <h3>Ajay Suryavanshi</h3>
+                                                <span>(Co-Founder & CEO)</span>
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="btc_team_img_cont_wrapper">
-                                    <h4><a href="#">Jenifer Doe</a></h4>
-                                    <p>(Consultant)</p>
+                                    <div class="con">
+                                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="btc_team_slider_cont_main_wrapper">
-                                <div class="btc_team_img_wrapper">
-                                    <img src="~/assets/images/content/team3.jpg" alt="team_img1">
-                                    <div class="btc_team_social_wrapper">
-                                        <ul>
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                        </ul>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                            <div class="team-list">
+                                <div class="conte">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <img src="~/assets/images/team/2.png" alt="" />
+                                        </div>
+                                        <div class="dright">
+                                            <div class="content">
+                                                <h3>Jeniffer Doe</h3>
+                                                <span>(Co-Founder & CEO)</span>
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="con">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
                                     </div>
                                 </div>
-                                <div class="btc_team_img_cont_wrapper">
-                                    <h4><a href="#">Akshay Handge</a></h4>
-                                    <p>(Consultant)</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                            <div class="team-list">
+                                <div class="conte">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <img src="~/assets/images/team/3.png" alt="" />
+                                        </div>
+                                        <div class="dright">
+                                            <div class="content">
+                                                <h3>Akshay Handge</h3>
+                                                <span>(Co-Founder & CEO)</span>
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="con">
+                                        <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                            <div class="team-list">
+                                <div class="conte">
+                                    <div class="dbox">
+                                        <div class="dleft">
+                                            <img src="~/assets/images/team/4.png" alt="" />
+                                        </div>
+                                        <div class="dright">
+                                            <div class="content">
+                                                <h3>Maria Willium</h3>
+                                                <span>(Co-Founder & CEO)</span>
+                                                <ul>
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="con">
+                                        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. There are many variations of passages.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- btc team Wrapper End -->
-    <!-- btc pricing Wrapper Start -->
-    <div class="btc_pricing_main_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="btc_pricing_heading_main_wrapper">
-                        <div class="btc_pricing_heading_wrapper">
-                            <p>Our Pricing</p>
-                            <h1>Choose a Bitcoin Wallet</h1>
-                            <span>#</span>
-                            <h5>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,<br> nisi elit consequat ipsum, nec sagittis sem nibh id elit duis sed odio sit.</h5>
+        </section>
+        <section class="team2-area pd-t100 pd-b50 bg-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-heading">
+                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Our Advisors</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="btc_pricing_box_wrapper">
-                        <div class="btc_pricing_icon_wrapper">
-                            <div class="btc_pricing_hover_effect">
-                                <i class="flaticon-bitcoin-pocket-or-wallet"></i>
-                                <div class="btc_step_overlay"></div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                        <div class="team-list">
+                            <div class="conte">
+                                <div class="dbox">
+                                    <div class="dleft">
+                                        <img src="~/assets/images/team/5.png" alt="" />
+                                    </div>
+                                    <div class="dright">
+                                        <div class="content">
+                                            <h3>Mason Liam</h3>
+                                            <span>(Co-Founder & CEO)</span>
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="btc_pricing_cont_wrapper">
-                            <h3>Desktop Wallet</h3>
-                            <div class="btc_pricing_cont_bottom_line"></div>
-                            <div class="btc_pricing_cont_bottom_line_state"></div>
-                            <p>Protection 80%</p>
-                            <ul>
-                                <li><i class="fa fa-key"></i> Control over your money</li>
-                                <li><i class="fa fa-cogs"></i> Full validation</li>
-                                <li><i class="fa fa-search"></i> Complete transparency</li>
-                                <li><i class="fa fa-laptop"></i> Vulnerable environment</li>
-                                <li><i class="fa fa-user"></i> Improved privacy</li>
-                                <li><i class="fa fa-usd"></i> Full control over fees</li>
-                            </ul>
-                            <h4><a href="#">get started</a></h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="btc_pricing_box_wrapper">
-                        <div class="btc_pricing_icon_wrapper">
-                            <div class="btc_pricing_hover_effect">
-                                <i class="flaticon-exchange"></i>
-                                <div class="btc_step_overlay"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                        <div class="team-list">
+                            <div class="conte">
+                                <div class="dbox">
+                                    <div class="dleft">
+                                        <img src="~/assets/images/team/6.png" alt="" />
+                                    </div>
+                                    <div class="dright">
+                                        <div class="content">
+                                            <h3>Jammy Doe</h3>
+                                            <span>(Co-Founder & CEO)</span>
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="btc_pricing_cont_wrapper">
-                            <h3>Mobile Wallet</h3>
-                            <div class="btc_pricing_cont_bottom_line"></div>
-                            <div class="btc_pricing_cont_bottom_line_state"></div>
-                            <p>Protection 80%</p>
-                            <ul>
-                                <li><i class="fa fa-key"></i> Control over your money</li>
-                                <li><i class="fa fa-cogs"></i> Full validation</li>
-                                <li><i class="fa fa-search"></i> Complete transparency</li>
-                                <li><i class="fa fa-laptop"></i> Vulnerable environment</li>
-                                <li><i class="fa fa-user"></i> Improved privacy</li>
-                                <li><i class="fa fa-usd"></i> Full control over fees</li>
-                            </ul>
-                            <h4><a href="#">get started</a></h4>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="btc_pricing_box_wrapper">
-                        <div class="btc_pricing_icon_wrapper">
-                            <div class="btc_pricing_hover_effect">
-                                <i class="flaticon-desktop-computer-screen-with-arrow-to-the-left-and-coin-stack"></i>
-                                <div class="btc_step_overlay"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                        <div class="team-list">
+                            <div class="conte">
+                                <div class="dbox">
+                                    <div class="dleft">
+                                        <img src="~/assets/images/team/7.png" alt="" />
+                                    </div>
+                                    <div class="dright">
+                                        <div class="content">
+                                            <h3>Daniel Matthew</h3>
+                                            <span>(Co-Founder & CEO)</span>
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="btc_pricing_cont_wrapper">
-                            <h3>Web Wallet</h3>
-                            <div class="btc_pricing_cont_bottom_line"></div>
-                            <div class="btc_pricing_cont_bottom_line_state"></div>
-                            <p>Protection 80%</p>
-                            <ul>
-                                <li><i class="fa fa-key"></i> Control over your money</li>
-                                <li><i class="fa fa-cogs"></i> Full validation</li>
-                                <li><i class="fa fa-search"></i> Complete transparency</li>
-                                <li><i class="fa fa-laptop"></i> Vulnerable environment</li>
-                                <li><i class="fa fa-user"></i> Improved privacy</li>
-                                <li><i class="fa fa-usd"></i> Full control over fees</li>
-                            </ul>
-                            <h4><a href="#">get started</a></h4>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                        <div class="team-list">
+                            <div class="conte">
+                                <div class="dbox">
+                                    <div class="dleft">
+                                        <img src="~/assets/images/team/8.png" alt="" />
+                                    </div>
+                                    <div class="dright">
+                                        <div class="content">
+                                            <h3>Henry Jack</h3>
+                                            <span>(Co-Founder & CEO)</span>
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="con">
+                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <div class="sud">
+            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
+            <style type="text/css">
+                .st0 {
+                    fill-rule: evenodd;
+                    clip-rule: evenodd;
+                    fill: #10122d;
+                }
+</style>
+            <g>
+            <path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+                     c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
+                     c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
+                     c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
+                     c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
+                </g>
+            </svg>
         </div>
     </div>
-    <!-- btc pricing Wrapper End -->
-    <!-- btc contact Wrapper Start -->
-    <div class="btc_contact_main_wrapper">
-        <div class="btc_contact_img_overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="btc_contact_form_box">
+    <div section-scroll='7' class="wd_scroll_wrap">
+        <section class="blog-area section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-heading2">
+                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Latest News</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="blog-slider">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="blog wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                <figure><img src="~/assets/images/blog/1.jpg" alt="" /></figure>
+                                <div class="content">
+                                    <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
+                                    <h4><a href="#">Report about the team's trip to the road show</a></h4>
+                                    <p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
+                                    <a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="blog wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                                <figure><img src="~/assets/images/blog/2.jpg" alt="" /></figure>
+                                <div class="content">
+                                    <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
+                                    <h4><a href="#">Report about the team's trip to the road show</a></h4>
+                                    <p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
+                                    <a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="blog wow  fadeInUp animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeInUp;">
+                                <figure><img src="~/assets/images/blog/3.jpg" alt="" /></figure>
+                                <div class="content">
+                                    <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
+                                    <h4><a href="#">Report about the team's trip to the road show</a></h4>
+                                    <p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
+                                    <a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <figure><img src="~/assets/images/blog/1.jpg" alt="" /></figure>
+                                <div class="content">
+                                    <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
+                                    <h4><a href="#">Report about the team's trip to the road show</a></h4>
+                                    <p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
+                                    <a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <figure><img src="~/assets/images/blog/2.jpg" alt="" /></figure>
+                                <div class="content">
+                                    <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
+                                    <h4><a href="#">Report about the team's trip to the road show</a></h4>
+                                    <p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
+                                    <a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="blog">
+                                <figure><img src="~/assets/images/blog/3.jpg" alt="" /></figure>
+                                <div class="content">
+                                    <span><i class="fa  fa-calendar-o"></i>January 29, 2020</span>
+                                    <h4><a href="#">Report about the team's trip to the road show</a></h4>
+                                    <p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
+                                    <a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-btn">
+                        <a href="#">All News</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="media-area section bg-img jarallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="section-heading">
+                            <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Press (Media)</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
+                        <div class="mediabrand">
+                            <ul>
+                                <li class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
+                                    <a href="#"><img src="~/assets/images/media/1.png" alt="" /></a>
+                                </li>
+                                <li class="wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
+                                    <a href="#"><img src="~/assets/images/media/2.png" alt="" /></a>
+                                </li>
+                                <li class="wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
+                                    <a href="#"><img src="~/assets/images/media/3.png" alt="" /></a>
+                                </li>
+                                <li class="wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
+                                    <a href="#"><img src="~/assets/images/media/4.png" alt="" /></a>
+                                </li>
+                                <li class="wow  fadeInUp animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: fadeInUp;">
+                                    <a href="#"><img src="~/assets/images/media/5.png" alt="" /></a>
+                                </li>
+                                <li class="wow  fadeInUp animated" data-wow-duration="2.7s" style="visibility: visible; animation-duration: 2.7s; animation-name: fadeInUp;">
+                                    <a href="#"><img src="~/assets/images/media/6.png" alt="" /></a>
+                                </li>
+                                <li class="wow  fadeInUp animated" data-wow-duration="2.7s" style="visibility: visible; animation-duration: 2.7s; animation-name: fadeInUp;">
+                                    <a href="#"><img src="~/assets/images/media/7.png" alt="" /></a>
+                                </li>
+                                <li class="wow  fadeInUp animated" data-wow-duration="2.7s" style="visibility: visible; animation-duration: 2.7s; animation-name: fadeInUp;">
+                                    <a href="#"><img src="~/assets/images/media/8.png" alt="" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Footer area start here-->
+        <footer class="top-foo">
+            <div id="footer-js">
+                <div class="footer-top section">
+                    <div class="container">
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="btc_contact_heading_wrapper">
-                                    <h3>Open an <span>Account</span></h3>
-                                    <div class="btc_contact_cont_bottom_line"></div>
-                                    <div class="btc_contact_cont_bottom_line_state"></div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="btc_contact_input_form1">
-                                    <input type="text" placeholder="Full Name*">
-                                    <i class="fa fa-user-o"></i>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="btc_contact_input_form2">
-                                    <input type="email" placeholder="Your Email*">
-                                    <i class="fa fa-envelope-o"></i>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="btc_contact_input_form2">
-                                    <input type="password" placeholder="Password*">
-                                    <i class="fa fa-key"></i>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="btc_contact_btn_wrapper">
-                                    <a href="#">sign up</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="btc_contact_btn_pera_wrapper">
-                                    <p>To Open a Free Bitcoin Wallet account, enter<br> your name, email & choose a password.<br><br>If already you have an account? &nbsp;<a href="#">LOGIN</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="btc_contact_accordi_wrapper">
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="btc_contact_accord_heading_wrapper">
-                                    <h5>Start Now</h5>
-                                    <h3>Ready to Earn with Bitcoin?</h3>
-                                    <span>#</span>
-                                    <p>Proin gravida nibh vel velit auctor et. Aenean sollicitudin, lorem quis bdum auctor, nisi elit consequat ipsum, nec sagittis sem.</p>
-                                </div>
-                                <div class="trucking_faq_wrapeer">
-                                    <div class="accordionFifteen">
-                                        <div class="panel-group" id="accordionFifteenLeft" role="tablist">
-                                            <div class="panel panel-default truck_pannel">
-                                                <div class="panel-heading desktop">
-                                                    <h4 class="panel-title">
-                                                        <a data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftone" aria-expanded="true"> How Cryptocurrency Begun and Its Impact To Financial ?</a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseFifteenLeftone" class="panel-collapse collapse in" aria-expanded="true" role="tabpanel">
-                                                    <div class="panel-body">
-                                                        <div class="panel_cont">
-                                                            <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
-                                                        </div>
-                                                    </div>
+                                <div class="con">
+                                    <h2 class="wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">Subscribe to us!</h2>
+                                    <ul>
+                                        <li class="wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="wow  fadeInUp animated" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5; animation-name: fadeInUp;"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;"><a href="#"><i class="fa fa-send-o"></i></a></li>
+                                        <li class="wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
+                                        <li class="wow  fadeInUp animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: fadeInUp;"><a href="#"><i class="fa fa-envelope"></i></a></li>
+                                    </ul>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="search_btm wow  fadeInUp animated" data-wow-duration="2.6s" style="visibility: visible; animation-duration: 2.6s; animation-name: fadeInUp;">
+                                                <div class="search_main">
+                                                    <input type="text" placeholder="enter your email address">
+                                                    <button type="submit">subscribe</button>
                                                 </div>
                                             </div>
-                                            <!-- /.panel-default -->
-                                            <div class="panel panel-default truck_pannel">
-                                                <div class="panel-heading horn">
-                                                    <h4 class="panel-title">
-                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftTwo" aria-expanded="false">Cryptocurrency - Who Are Involved With It ?</a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseFifteenLeftTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;" role="tabpanel">
-                                                    <div class="panel-body">
-                                                        <div class="panel_cont">
-                                                            <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- /.panel-default -->
-                                            <div class="panel panel-default truck_pannel">
-                                                <div class="panel-heading bell">
-                                                    <h4 class="panel-title">
-                                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftThree" aria-expanded="false">Risks & Rewards Of Investing In Bitcoin ?</a>
-                                                    </h4>
-                                                </div>
-                                                <div id="collapseFifteenLeftThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;" role="tabpanel">
-                                                    <div class="panel-body">
-                                                        <div class="panel_cont">
-                                                            <p>Morbi accumsan ipsum velit. Nam nec aks tel lus a odio tincidunt auctor. Proi gravida nibh vel velit auctor.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- /.panel-default -->
                                         </div>
-                                        <!--end of /.panel-group-->
                                     </div>
                                 </div>
                             </div>
@@ -1204,250 +1565,69 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- btc contact Wrapper End -->
-    <!-- btc blog Wrapper Start -->
-    <div class="btc_blog_index_main_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="btc_blog_index_heading_main_wrapper">
-                        <div class="btc_blog_index_heading_wrapper">
-                            <p>Our Blog</p>
-                            <h1>Latest Market News</h1>
-                            <span>#</span>
-                            <h5>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,<br> nisi elit consequat ipsum, nec sagittis sem nibh id elit duis sed odio sit.</h5>
+        </footer>
+        <footer class="foo-bot">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="copyright wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                                <p>
+                                    © 2020-2021 <a href="#"><span>Bit Money</span></a> | All rights reserved. Design by
+                                    <a href="http://webstrot.com/" target="_blank"> <span>webstrot</span></a>
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="btc_blog_indx_box_wrapper">
-                        <div class="btc_blog_indx_img_wrapper">
-                            <img src="~/assets/images/content/blog_img1.jpg" alt="blog_img">
-                            <div class="btc_blog_indx_date_wrapper">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="foo-link wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
                                 <ul>
-                                    <li>25</li>
-                                    <li>DEC</li>
+                                    <li><a href="#">WhitePaper</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="btc_blog_indx_cont_wrapper">
-                            <h5>How Cryptocurrency Begun and Its Impact To Financial</h5>
-                            <p>Primarily this would be the first thought of most people especially those who are not familiar with the currently..</p>
-                            <h4><a href="#">read more</a></h4>
-                        </div>
-                        <div class="btc_blog_indx_cont_bottom">
-                            <div class="btc_blog_indx_cont_bottom_left">
-                                <p><i class="fa fa-user"></i> &nbsp;<a href="#">by Akshay</a></p>
-                            </div>
-                            <div class="btc_blog_indx_cont_bottom_right">
-                                <p><i class="fa fa-comments-o"></i> &nbsp;<a href="#">04 Comm.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="btc_blog_indx_box_wrapper">
-                        <div class="btc_blog_indx_img_wrapper">
-                            <img src="~/assets/images/content/blog_img2.jpg" alt="blog_img">
-                            <div class="btc_blog_indx_date_wrapper">
-                                <ul>
-                                    <li>25</li>
-                                    <li>DEC</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="btc_blog_indx_cont_wrapper">
-                            <h5>How Cryptocurrency Begun and Its Impact To Financial</h5>
-                            <p>Primarily this would be the first thought of most people especially those who are not familiar with the currently..</p>
-                            <h4><a href="#">read more</a></h4>
-                        </div>
-                        <div class="btc_blog_indx_cont_bottom">
-                            <div class="btc_blog_indx_cont_bottom_left">
-                                <p><i class="fa fa-user"></i> &nbsp;<a href="#">by Akshay</a></p>
-                            </div>
-                            <div class="btc_blog_indx_cont_bottom_right">
-                                <p><i class="fa fa-comments-o"></i> &nbsp;<a href="#">04 Comm.</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="btc_blog_indx_box_wrapper">
-                        <div class="btc_blog_indx_img_wrapper">
-                            <img src="~/assets/images/content/blog_img3.jpg" alt="blog_img">
-                            <div class="btc_blog_indx_date_wrapper">
-                                <ul>
-                                    <li>25</li>
-                                    <li>DEC</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="btc_blog_indx_cont_wrapper">
-                            <h5>How Cryptocurrency Begun and Its Impact To Financial</h5>
-                            <p>Primarily this would be the first thought of most people especially those who are not familiar with the currently..</p>
-                            <h4><a href="#">read more</a></h4>
-                        </div>
-                        <div class="btc_blog_indx_cont_bottom">
-                            <div class="btc_blog_indx_cont_bottom_left">
-                                <p><i class="fa fa-user"></i> &nbsp;<a href="#">by Akshay</a></p>
-                            </div>
-                            <div class="btc_blog_indx_cont_bottom_right">
-                                <p><i class="fa fa-comments-o"></i> &nbsp;<a href="#">04 Comm.</a></p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- btc blog Wrapper End -->
-    <!-- btc partner slider Wrapper Start -->
-    <div class="btc_partner_slider_main_wrapper" data-parallax="scroll" data-image-src="~/assets/images/content/service_bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="btc_partner_slider_heading_wrapper">
-                        <h5>finances minister</h5>
-                        <h3>Our Banking Partners</h3>
-                        <span>#</span>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="btc_partner_slider_wrapper">
-                        <div class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="btc_partner_img">
-                                    <img src="~/assets/images/content/p1.jpg" alt="partner_img" />
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="btc_partner_img">
-                                    <img src="~/assets/images/content/p2.jpg" alt="partner_img" />
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="btc_partner_img">
-                                    <img src="~/assets/images/content/p3.jpg" alt="partner_img" />
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="btc_partner_img">
-                                    <img src="~/assets/images/content/p4.jpg" alt="partner_img" />
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="btc_partner_img">
-                                    <img src="~/assets/images/content/p5.jpg" alt="partner_img" />
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="btc_partner_img">
-                                    <img src="~/assets/images/content/p6.jpg" alt="partner_img" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- btc partner slider Wrapper End -->
-    <!-- btc Newsletter Wrapper Start -->
-    <div class="btc_newsletter_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                    <div class="btc_newsletter_text">
-                        <i class="flaticon-money-1"></i>
-                        <h1>Get <span>FREE</span> Marketing Help</h1>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
-                    <div class="btc_newsletter_field">
-                        <i class="fa fa-envelope-o"></i><input type="text" placeholder="Enter Your Email"><button type="submit">Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- btc Newsletter Wrapper End -->
-    <!-- btc footer Wrapper Start -->
-    <div class="btc_footer_main_wrapper">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                    <div class="btc_footer_logo_left">
-                        <a href="#"><img src="~/assets/images/content/footer_logo.png" alt="logo" /></a>
-                    </div>
-                    <div class="btc_footer_logo_right">
-                        <p>123, A block, Street Name, City Name, Country Name , Zip 1234567</p>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 col-lg-offset-1 col-md-offset-1">
-                    <div class="btc_footer_email_wrapper">
-                        <p>Phone : (555) 2346-789</p>
-                        <p class="btc_email_footer">Email : <a href="#">support@example.com</a></p>
-                    </div>
-                    <div class="btc_footer_social_wrapper">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-btc"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- btc footer Wrapper End -->
-    <!-- btc bottom footer Wrapper Start -->
-    <div class="btc_bottom_footer_main_wrapper">
-        <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;"><span class="fa fa-angle-double-up"></span></a>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="btc_bottom_footer_left">
-                        <p>© Copyright 2020-21 by Bit Money. All Right Reserved</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-                    <div class="btc_bottom_footer_right">
-                        <ul>
-                            <li>Licensed No. : NI099999</li>
-                            <li>Terms and Condition</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </footer>
     </div>
     <!-- END FOOTER SECTION -->
-    <!--main js file start-->
-    <script src="~/assets/js/jquery_min.js"></script>
-    <script src="~/assets/js/bootstrap.js"></script>
-    <script src="~/assets/js/modernizr.js"></script>
-    <script src="~/assets/js/parallax.min.js"></script>
-    <script src="~/assets/js/owl.carousel.js"></script>
-    <script src="~/assets/js/bit_timer.js"></script>
-    <script src="~/assets/js/Chart.bundle.js"></script>
-    <script src="~/assets/js/chart.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/jquery.themepunch.tools.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/jquery.themepunch.revolution.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.addon.snow.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.extension.actions.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.extension.carousel.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.extension.kenburn.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.extension.layeranimation.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.extension.migration.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.extension.navigation.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.extension.parallax.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.extension.slideanims.min.js"></script>
-    <script src="~/assets/js/plugin/rs_slider/revolution.extension.video.min.js"></script>
-    <script src="~/assets/js/custom.js"></script>
+    <!--Footer area end here-->
+    <!-- all js here -->
+    <!-- jquery latest version -->
+    <script src="~/assets/js/vendor/jquery-3.2.1.min.js"></script>
+    <!-- tether js -->
+    <script src="~/assets/js/tether.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <!-- meanmenu js -->
+    <script src="~/assets/js/jquery.meanmenu.js"></script>
+    <!-- jquery-ui js -->
+    <script src="~/assets/js/jquery-ui.min.js"></script>
+    <!-- easypiechart js -->
+    <script src="~/assets/js/jquery.easypiechart.min.js"></script>
+    <!-- particles js -->
+    <!-- wow js -->
+    <script src="~/assets/js/wow.min.js"></script>
+    <!-- smooth-scroll js -->
+    <script src="~/assets/js/smooth-scroll.min.js"></script>
+    <!-- plugins js -->
+    <script src="~/assets/js/plugins.js"></script>
+    <!-- EChartJS JavaScript -->
+    <script src="~/assets/js/echarts-en.min.js"></script>
+    <script src="~/assets/js/echarts-liquidfill.min.js"></script>
+    <script src="~/assets/js/vc_round_chart.min.js"></script>
+    <script src="~/assets/js/videojs-ie8.min.js"></script>
+    <script src="~/assets/js/video.js"></script>
+    <script src="~/assets/js/Youtube.min.js"></script>
+    <!-- main js -->
+    <script src="~/assets/js/main.js"></script>
 
     <!--main js file end-->
+    <script>
     // Create Countdown
     var Countdown = {
 
