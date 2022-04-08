@@ -203,12 +203,105 @@
                         <div class="menu-text d-sm-block d-none">username@account.com</div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
-                        <a class="dropdown-item d-flex align-items-center" href="profile.html">PROFILE <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i></a>
-                        <a class="dropdown-item d-flex align-items-center" href="email_inbox.html">INBOX <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i></a>
-                        <a class="dropdown-item d-flex align-items-center" href="calendar.html">CALENDAR <i class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i></a>
-                        <a class="dropdown-item d-flex align-items-center" href="settings.html">SETTINGS <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i></a>
+                        @if (User.IsInRole("administrator"))
+                        {
+                            <div class="@{if (controllerName.ToLower().Contains("/dashboard/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/dashboard/list/">
+                                    DASHBOARD
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/transactions/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center HeaderAllMainMenuActiveLink" aria-current="page" href="~/transactions/list">
+                                    TRANSACTIONS
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/users/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/users/list">
+                                    USERS
+                                    <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/promocodes/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/promocodes/list">
+                                    PROMOCODES
+                                    <i class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("manage/"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/manage/index/">
+                                    PROFILE
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/userdashboard/create"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/create/">
+                                    BUY TOKENS
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+
+                        }
+                        else if (Request.IsAuthenticated)
+                        {
+                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/dashboard/"))
+                                                {@Html.Raw("active") } }">
+
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/dashboard/">
+                                        DASHBOARD
+                                        <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/create"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/create/">
+                                        BUY TOKENS
+                                        <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+
+
+                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/list/">
+                                        TRANSACTIONS
+                                        <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+
+                                </a>
+                            </div>
+
+                            <div class="@{if (controllerName.ToLower().Contains("manage/"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/manage/index/">
+                                    PROFILE
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+
+
+                        }
+
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item d-flex align-items-center" href="page_login.html">LOGOUT <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
+                        @if (Request.IsAuthenticated)
+                        {
+                            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <a class="dropdown-item LogOutButton d-flex align-items-center" href="javascript:document.getElementById('logoutForm').submit()">
+                                    LOGOUT
+                                    <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            }
+                        }
                     </div>
                 </div>
             </div>
