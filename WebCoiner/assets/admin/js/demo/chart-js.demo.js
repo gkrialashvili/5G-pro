@@ -21,6 +21,7 @@ var handleRenderChartJs = function() {
 	
 	
 	var ctx = document.getElementById('lineChart');
+	debugger
 	lineChart = new Chart(ctx, {
 		type: 'line',
 		data: {
