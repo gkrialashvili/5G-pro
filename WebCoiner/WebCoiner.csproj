@@ -5545,7 +5545,6 @@
     <Content Include="assets\admin\plugins\datatables.net-autofill\License.txt" />
     <Content Include="assets\admin\plugins\datatables.net-bs5\css\dataTables.bootstrap5.css" />
     <Content Include="assets\admin\plugins\datatables.net-bs5\css\dataTables.bootstrap5.min.css" />
-    <Content Include="assets\admin\plugins\datatables.net-bs5\images\favicon.ico" />
     <Content Include="assets\admin\plugins\datatables.net-bs5\images\sort_asc.png" />
     <Content Include="assets\admin\plugins\datatables.net-bs5\images\sort_asc_disabled.png" />
     <Content Include="assets\admin\plugins\datatables.net-bs5\images\sort_both.png" />
@@ -6890,7 +6889,6 @@
     <Content Include="assets\admin\plugins\photoswipe\website\index.html" />
     <Content Include="assets\admin\plugins\photoswipe\website\site-assets\site.css" />
     <Content Include="assets\admin\plugins\photoswipe\website\test\apple-touch-icon-144x144.png" />
-    <Content Include="assets\admin\plugins\photoswipe\website\test\favicon.ico" />
     <Content Include="assets\admin\plugins\photoswipe\website\test\fullscreen-laptop.jpg" />
     <Content Include="assets\admin\plugins\photoswipe\website\test\grunt-logo.png" />
     <Content Include="assets\admin\plugins\photoswipe\website\test\high-dpi-icons.png" />
@@ -7293,6 +7291,7 @@
     <Content Include="assets\css\jquery-ui.min.css" />
     <Content Include="assets\css\meanmenu.min.css" />
     <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\progres\progress.css" />
     <Content Include="assets\css\responsive.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\css\video-js.css" />

@@ -170,7 +170,6 @@
     <link rel="stylesheet" href="~/Content/counter.css" media="screen">
     <!--Favicon-->
     <link rel="shortcut icon" href="~/assets/admin/source/5glogo.png" type="image/x-icon">
-    <link rel="icon" href="~/assets/admin/source/5glogo.png" type="image/x-icon">
 
 
     <style>
@@ -434,7 +433,7 @@
                                     <div style="color:white;">Private Sale<span style="color:white;"></span></div>
                                 </div>
 
-                                <div class="progress-percent" data-percent="5" style="width: @raised%;"></div>
+                                <div class="progress-percent" data-percent="5" style="width: @Convert.ToInt32(raised)%;"></div>
                             </div>
                             <app-sale-starts _nghost-c4="">
                                 <span class="card-sub-title mgb-0-5x" style="font-size: 10px;color:white;">Public Exchange Trading: Waiting for listing</span>
