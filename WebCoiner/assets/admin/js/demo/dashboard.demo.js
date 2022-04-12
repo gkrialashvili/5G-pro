@@ -17,7 +17,7 @@ try {
 	var lineChart = new Chart(ctx, {
 		type: 'line',
 		data: {
-			labels: ['Private Sale   $0.01', 'Presale $0.03', 'Softcap $0.065', 'Hardcap $0.12'],
+			labels: ['Private Sale   $0.01', 'Presale $0.03', 'Softcap $0.06', 'Hardcap $0.12'],
 			datasets: [{
 				color: app.color.theme,
 				backgroundColor: 'rgba(' + app.color.themeRgb + ', .2)',

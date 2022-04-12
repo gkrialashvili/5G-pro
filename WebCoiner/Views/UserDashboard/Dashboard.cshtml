@@ -200,9 +200,10 @@
                                 <span class="menu-text">Dashboard</span>
                             </a>
                         </div>
-                        <div class="menu-item has-sub">
+                        <div class="menu-item">
                             <a href="~/manage/index/" class="menu-link">
-                                <span class="menu-icon"><i class="bi bi-people"></i></span>
+                                <span class="menu-icon">
+                                <i class="bi bi-people"></i></span>
                                 <span class="menu-text">Profile</span>
                             </a>
                         </div>
@@ -218,7 +219,7 @@
                                 <span class="menu-text">Transactions</span>
                             </a>
                         </div>
-                        <div class="menu-item has-sub">
+                        <div class="menu-item">
                             <a href="~/userdashboard/create/" class="menu-link">
                                 <span class="menu-icon"><i class="bi bi-pie-chart"></i></span>
                                 <span class="menu-text">Buy Tokens</span>
@@ -230,7 +231,7 @@
                                 <span class="menu-text">Promocodes</span>
                             </a>
                         </div>
-                        <div class="menu-item has-sub">
+                        <div class="menu-item">
                             <a href="#" class="menu-link">
                                 <span class="menu-icon"><i class="bi bi-layout-sidebar"></i></span>
                                 <span class="menu-text">Whitepaper</span>
@@ -311,7 +312,7 @@
                             <!-- BEGIN stat-lg -->
                             <div class="row align-items-center mb-2">
                                 <div class="col-7">
-                                    <h3 class="mb-0">Total Investment</h3>
+                                    <h3 class="mb-0" style="font-size: 18px">Total Investment</h3>
                                 </div>
                                 <div class="col-5">
                                     <h3>$@Model.InvestmentAmount.ToString("#,##0")</h3>
@@ -347,7 +348,7 @@
                             <!-- BEGIN stat-lg -->
                             <div class="row align-items-center mb-2">
                                 <div class="col-7">
-                                    <h3 class="mb-0">Current Balance</h3>
+                                    <h3 class="mb-0" style="font-size: 18px">Current Balance</h3>
                                 </div>
                                 <div class="col-5">
                                     <h3>$@Model.CurrentBalance.ToString("#,##0")</h3>
@@ -383,8 +384,8 @@
                             <!-- BEGIN stat-lg -->
                             <div class="row align-items-center mb-2">
                                 <div class="col-7">
-                                    <h3 class="mb-0">
-                                        Total <br /> Profit
+                                    <h3 class="mb-0" style="font-size: 18px">
+                                        Total Profit
                                     </h3>
                                 </div>
                                 <div class="col-5">
@@ -421,7 +422,7 @@
                             <!-- BEGIN stat-lg -->
                             <div class="row align-items-center mb-2">
                                 <div class="col-7">
-                                    <h3 class="mb-0">Token <br/> Amount</h3>
+                                    <h3 class="mb-0" style="font-size: 18px">Token  Amount</h3>
                                 </div>
                                 <div class="col-5">
                                     <h3>@Model.Tokens</h3>
@@ -522,8 +523,8 @@
                                                 <td class="text-end">9.72%</td>
                                             </tr>
                                             <tr>
-                                                <td>BELGIUM</td>
-                                                <td class="text-end">3.22</td>
+                                                <td>Belgium</td>
+                                                <td class="text-end">3.22%</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -843,11 +844,12 @@
                                     <input type="checkbox" id="water" />
                                     <label for="water">
                                         <div id="fill" style="width: @raised%;">
-                                            <span style="color: black; font-weight: bold; font-size: 20px; margin-bottom: 20px" id="progress">@Convert.ToInt32(raised)%</span>
+
                                         </div>
+                                        <span style="left: calc(@Convert.ToInt32(raised)% - 8%)" id="progress-counter">@Convert.ToInt32(raised)%</span>
                                     </label>
                                     <span>Progress</span>
-                                    <span style="color: black; font-weight: bold; font-size: 20px; margin-bottom: 20px" id="progress">@Convert.ToInt32(raised)%</span>
+                                    <span style="" id="progress">@Convert.ToInt32(raised)%</span>
 
                                 </div>
                             </div>

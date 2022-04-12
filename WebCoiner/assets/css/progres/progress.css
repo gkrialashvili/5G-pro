@@ -10,6 +10,15 @@ input {
     display: none;
 }
 
+#progress-counter {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: -6px;
+}
+
 label {
     position: relative;
     display: block;
@@ -55,5 +64,5 @@ span {
 }
 
     span:last-child {
-        float: left;
+        float: right;
     }

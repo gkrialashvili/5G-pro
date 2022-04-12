@@ -36,6 +36,11 @@
     <link rel="stylesheet" href="~/assets/admin/source/style.css">
     <link rel="stylesheet" href="~/assets/admin/source/main.css">
 
+    <link href="~/assets/admin/css/vendor.min.css" rel="stylesheet" />
+
+    <!-- ================== END page-css ================== -->
+    <link rel="stylesheet" href="~/assets/admin/css/app.css" />
+
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>
     @*<script src="~/Content/jquery-1.12.4.min.js"></script>*@
 
@@ -120,10 +125,148 @@
 
 <body class="no-touch">
     <app-root>
-        <div id="backbutton" style="display: flex; background-color: #dfe1e3;" class="w-100 justify-content-start align-items-center">
-            <button type="button" class="btn btn-primary" onclick="redirectBack()" style="color: #fff">
-                Back
-            </button>
+        <div id="header" style="position: static" class="app-header">
+            <!-- BEGIN desktop-toggler -->
+            <!-- BEGIN desktop-toggler -->
+            <!-- BEGIN mobile-toggler -->
+            <div class="mobile-toggler">
+                <button type="button" class="menu-toggler" data-toggle-class="app-sidebar-mobile-toggled" data-toggle-target=".app">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <!-- END mobile-toggler -->
+            <!-- BEGIN brand -->
+            <div class="brand">
+                <a href="/userdashboard/dashboard" class="brand-logo">
+                    <img style="width: 140px" src="~/assets/images/logo/white.png" />
+                </a>
+            </div>
+            <!-- END brand -->
+            <!-- BEGIN menu -->
+            <div class="menu">
+                <div class="menu-item dropdown dropdown-mobile-full">
+                    <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+                        <div class="menu-icon"><i class="bi bi-grid-3x3-gap nav-icon"></i></div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
+                        @if (User.IsInRole("administrator"))
+                        {
+                            <div class="@{if (controllerName.ToLower().Contains("/dashboard/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/dashboard/list/">
+                                    DASHBOARD
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/transactions/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center HeaderAllMainMenuActiveLink" aria-current="page" href="~/transactions/list">
+                                    TRANSACTIONS
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/users/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/users/list">
+                                    USERS
+                                    <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/promocodes/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/promocodes/list">
+                                    PROMOCODES
+                                    <i class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("manage/"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/manage/index/">
+                                    PROFILE
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/userdashboard/create"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/create/">
+                                    BUY TOKENS
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+
+                        }
+                        else if (Request.IsAuthenticated)
+                        {
+                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/dashboard/"))
+                                                {@Html.Raw("active") } }">
+
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/dashboard/">
+                                    DASHBOARD
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/create"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/create/">
+                                    BUY TOKENS
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+
+
+                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/list"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/list/">
+                                    TRANSACTIONS
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+
+                                </a>
+                            </div>
+
+                            <div class="@{if (controllerName.ToLower().Contains("manage/"))
+                                                {@Html.Raw("active") } }">
+                                <a class="dropdown-item d-flex align-items-center" href="~/manage/index/">
+                                    PROFILE
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+
+
+                        }
+
+                        <div class="dropdown-divider"></div>
+                        @if (Request.IsAuthenticated)
+                        {
+                            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <a class="dropdown-item LogOutButton d-flex align-items-center" href="javascript:document.getElementById('logoutForm').submit()">
+                                    LOGOUT
+                                    <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+            <!-- END menu -->
+            <!-- BEGIN menu-search -->
+            <form class="menu-search" method="POST" name="header_search_form">
+                <div class="menu-search-container">
+                    <div class="menu-search-icon"><i class="bi bi-search"></i></div>
+                    <div class="menu-search-input">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search menu..." />
+                    </div>
+                    <div class="menu-search-icon">
+                        <a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app"><i class="bi bi-x-lg"></i></a>
+                    </div>
+                </div>
+            </form>
+            <!-- END menu-search -->
         </div>
         <app-profile>
             @RenderBody()
@@ -153,6 +296,8 @@
 
     @RenderSection("scripts", required: false)
 
+    <script src="~/assets/admin/js/app.min.js"></script>
+    <script src="~/assets/admin/js/vendor.min.js"></script>
 
     <script>
 
