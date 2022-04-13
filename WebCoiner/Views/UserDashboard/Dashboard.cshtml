@@ -37,6 +37,122 @@
 <body>
     <!-- BEGIN #app -->
     <div id="app" class="app">
+        <div class="modal fade show" id="myModal" style="display: none; background-color: rgba(152, 152, 152, 0.8); overflow: hidden" aria-modal="true">
+            <div class="modal-dialog" style=" width: 90%; max-width: 1200px; min-height: 100%;">
+                <div class="modal-content" style="background: black;">
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <section class="lis-bg-light">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-10 text-center">
+                                        <div class="heading pb-4">
+                                            <h2>Choose Your Package</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                         style="visibility: visible; animation-name: fadeInUp;">
+                                        <div class="price-table">
+                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light" style="background: black;">
+                                                <h5 class="text-uppercase lis-latter-spacing-2">Basic</h5>
+                                                <h1 class="display-4 lis-font-weight-500">1<small>%</small></h1>
+                                                <p class="mb-0">Basic Membership</p>
+                                            </div>
+                                            <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                <ul class="list-unstyled lis-line-height-3">
+                                                    <li style="color: black">Oileum-ico tokens in portfolio</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                         style="visibility: visible; animation-name: fadeInUp;">
+                                        <div class="price-table" style="color: black">
+                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                                 style="background-color:#e6e4e2; color: black">
+                                                <h5 class="text-uppercase lis-latter-spacing-2">Silver</h5>
+                                                <h1 class="display-4 lis-font-weight-500" >
+                                                    1<small>%</small>-
+                                                    5<small>%</small>
+                                                </h1>
+                                                <p class="mb-0">Silver Membership</p>
+                                            </div>
+                                            <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom" >
+                                                <ul class="list-unstyled lis-line-height-3">
+                                                    <li>Oileum-ico tokens in portfolio</li>
+                                                    <li>Minimum portfolio: $100,000</li>
+                                                </ul>
+                                                <a href="/userdashboard/create/" style="background-color: #28c189;"
+                                                   class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                                   data-abc="true">Top Up Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                         style="visibility: visible; animation-name: fadeInUp;">
+                                        <div class="price-table" style="color: black">
+                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                                 style="background-color:#F3AF4C;">
+                                                <h5 class="text-uppercase lis-latter-spacing-2">Gold</h5>
+                                                <h1 class="display-4 lis-font-weight-500">
+                                                    6<small>%</small> -
+                                                    12<small>%</small>
+                                                </h1>
+                                                <p class="mb-0">Gold Membership</p>
+                                            </div>
+                                            <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                <ul class="list-unstyled lis-line-height-3">
+                                                    <li>Oileum-ico tokens in portfolio</li>
+                                                    <li>Minimum portfolio: $250,000</li>
+                                                </ul>
+                                                <a href="/userdashboard/create/" style="background-color: #28c189;"
+                                                   class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                                   data-abc="true">Top Up Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                         style="visibility: visible; animation-name: fadeInUp;">
+                                        <div class="price-table" style="color: black">
+                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                                 style="        background-color:#a0b2c6;">
+
+                                                <h5 class="text-uppercase lis-latter-spacing-2">Platinum</h5>
+                                                <h1 class="display-4 lis-font-weight-500">
+                                                    12<small>%</small>-20<small>%</small>
+                                                </h1>
+                                                <p class="mb-0">Platinum Membership</p>
+                                            </div>
+                                            <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                <ul class="list-unstyled lis-line-height-3">
+
+
+                                                    <li>Oileum-ico tokens in portfolio</li>
+                                                    <li>Minimum portfolio: $500,000</li>
+
+                                                </ul>
+                                                <a href="/userdashboard/create/" style="background-color: #28c189;"
+                                                   class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                                   data-abc="true">Top Up Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="close-modal"
+                                data-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- BEGIN #header -->
         <div id="header" class="app-header">
             <!-- BEGIN desktop-toggler -->
@@ -73,87 +189,87 @@
                     <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
                         @if (User.IsInRole("administrator"))
                         {
-                        <div class="@{if (controllerName.ToLower().Contains("/dashboard/list"))
+                            <div class="@{if (controllerName.ToLower().Contains("/dashboard/list"))
                                                 {@Html.Raw("active") } }">
-                            <a class="dropdown-item d-flex align-items-center" href="~/dashboard/list/">
-                                DASHBOARD
-                                <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
-                            </a>
-                        </div>
-                        <div class="@{if (controllerName.ToLower().Contains("/transactions/list"))
+                                <a class="dropdown-item d-flex align-items-center" href="~/dashboard/list/">
+                                    DASHBOARD
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/transactions/list"))
                                                 {@Html.Raw("active") } }">
-                            <a class="dropdown-item d-flex align-items-center HeaderAllMainMenuActiveLink" aria-current="page" href="~/transactions/list">
-                                TRANSACTIONS
-                                <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+                                <a class="dropdown-item d-flex align-items-center HeaderAllMainMenuActiveLink" aria-current="page" href="~/transactions/list">
+                                    TRANSACTIONS
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
 
-                            </a>
-                        </div>
-                        <div class="@{if (controllerName.ToLower().Contains("/users/list"))
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/users/list"))
                                                 {@Html.Raw("active") } }">
-                            <a class="dropdown-item d-flex align-items-center" href="~/users/list">
-                                USERS
-                                <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i>
-                            </a>
-                        </div>
-                        <div class="@{if (controllerName.ToLower().Contains("/promocodes/list"))
+                                <a class="dropdown-item d-flex align-items-center" href="~/users/list">
+                                    USERS
+                                    <i class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/promocodes/list"))
                                                 {@Html.Raw("active") } }">
-                            <a class="dropdown-item d-flex align-items-center" href="~/promocodes/list">
-                                PROMOCODES
-                                <i class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i>
-                            </a>
-                        </div>
-                        <div class="@{if (controllerName.ToLower().Contains("manage/"))
+                                <a class="dropdown-item d-flex align-items-center" href="~/promocodes/list">
+                                    PROMOCODES
+                                    <i class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("manage/"))
                                                 {@Html.Raw("active") } }">
-                            <a class="dropdown-item d-flex align-items-center" href="~/manage/index/">
-                                PROFILE
-                                <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
-                            </a>
-                        </div>
-                        <div class="@{if (controllerName.ToLower().Contains("/userdashboard/create"))
+                                <a class="dropdown-item d-flex align-items-center" href="~/manage/index/">
+                                    PROFILE
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("/userdashboard/create"))
                                                 {@Html.Raw("active") } }">
-                            <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/create/">
-                                BUY TOKENS
-                                <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
-                            </a>
-                        </div>
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/create/">
+                                    BUY TOKENS
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
 
                         }
                         else if (Request.IsAuthenticated)
                         {
-                        <div class="@{if (controllerName.ToLower().Contains("userdashboard/dashboard/"))
+                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/dashboard/"))
                                                 {@Html.Raw("active") } }">
 
-                            <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/dashboard/">
-                                DASHBOARD
-                                <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
-                            </a>
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/dashboard/">
+                                    DASHBOARD
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
 
-                        </div>
-                        <div class="@{if (controllerName.ToLower().Contains("userdashboard/create"))
+                            </div>
+                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/create"))
                                                 {@Html.Raw("active") } }">
-                            <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/create/">
-                                BUY TOKENS
-                                <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
-                            </a>
-                        </div>
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/create/">
+                                    BUY TOKENS
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
 
 
-                        <div class="@{if (controllerName.ToLower().Contains("userdashboard/list"))
+                            <div class="@{if (controllerName.ToLower().Contains("userdashboard/list"))
                                                 {@Html.Raw("active") } }">
-                            <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/list/">
-                                TRANSACTIONS
-                                <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
+                                <a class="dropdown-item d-flex align-items-center" href="~/userdashboard/list/">
+                                    TRANSACTIONS
+                                    <i class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i>
 
-                            </a>
-                        </div>
+                                </a>
+                            </div>
 
-                        <div class="@{if (controllerName.ToLower().Contains("manage/"))
+                            <div class="@{if (controllerName.ToLower().Contains("manage/"))
                                                 {@Html.Raw("active") } }">
-                            <a class="dropdown-item d-flex align-items-center" href="~/manage/index/">
-                                PROFILE
-                                <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
-                            </a>
-                        </div>
+                                <a class="dropdown-item d-flex align-items-center" href="~/manage/index/">
+                                    PROFILE
+                                    <i class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
+                            </div>
 
 
                         }
@@ -163,11 +279,11 @@
                         {
                             using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
                             {
-                        @Html.AntiForgeryToken()
-                        <a class="dropdown-item LogOutButton d-flex align-items-center" href="javascript:document.getElementById('logoutForm').submit()">
-                            LOGOUT
-                            <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i>
-                        </a>
+                                @Html.AntiForgeryToken()
+                                <a class="dropdown-item LogOutButton d-flex align-items-center" href="javascript:document.getElementById('logoutForm').submit()">
+                                    LOGOUT
+                                    <i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i>
+                                </a>
                             }
                         }
                     </div>
@@ -198,96 +314,96 @@
                     <div class="menu-header">Components</div>
                     @if (User.IsInRole("administrator"))
                     {
-                    <div class="menu-item">
-                        <a href="~/dashboard/list/" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-columns-gap"></i></span>
-                            <span class="menu-text">Dashboard</span>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="~/manage/index/" class="menu-link">
-                            <span class="menu-icon">
-                                <i class="bi bi-people"></i>
-                            </span>
-                            <span class="menu-text">Profile</span>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="~/users/list" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-people"></i></span>
-                            <span class="menu-text">Users</span>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="~/transactions/list" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-calendar4"></i></span>
-                            <span class="menu-text">Transactions</span>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="~/userdashboard/create/" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-pie-chart"></i></span>
-                            <span class="menu-text">Buy Tokens</span>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="~/promocodes/list" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-compass"></i></span>
-                            <span class="menu-text">Promocodes</span>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="#" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-layout-sidebar"></i></span>
-                            <span class="menu-text">Whitepaper</span>
-                        </a>
-                    </div>
-                    <div class="menu-item has-sub">
-                        <a href="#" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-collection"></i></span>
-                            <span class="menu-text">Packages</span>
-                        </a>
-                    </div>
+                        <div class="menu-item">
+                            <a href="~/dashboard/list/" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-columns-gap"></i></span>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="~/manage/index/" class="menu-link">
+                                <span class="menu-icon">
+                                    <i class="bi bi-people"></i>
+                                </span>
+                                <span class="menu-text">Profile</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="~/users/list" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-people"></i></span>
+                                <span class="menu-text">Users</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="~/transactions/list" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-calendar4"></i></span>
+                                <span class="menu-text">Transactions</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="~/userdashboard/create/" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-pie-chart"></i></span>
+                                <span class="menu-text">Buy Tokens</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="~/promocodes/list" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-compass"></i></span>
+                                <span class="menu-text">Promocodes</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="#" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-layout-sidebar"></i></span>
+                                <span class="menu-text">Whitepaper</span>
+                            </a>
+                        </div>
+                        <div class="menu-item has-sub">
+                            <a href="#" class="menu-link" id="modalShow">
+                                <span class="menu-icon"><i class="bi bi-collection"></i></span>
+                                <span class="menu-text">Packages</span>
+                            </a>
+                        </div>
                     }
 
                     else if (Request.IsAuthenticated)
                     {
-                    <div class="menu-item">
-                        <a href="~/userdashboard/dashboard/" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-columns-gap"></i></span>
-                            <span class="menu-text">Dashboard</span>
-                        </a>
-                    </div>
-                    <div class="menu-item has-sub">
-                        <a href="~/manage/index/" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-people"></i></span>
-                            <span class="menu-text">Profile</span>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="~/userdashboard/list/" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-calendar4"></i></span>
-                            <span class="menu-text">Transactions</span>
-                        </a>
-                    </div>
-                    <div class="menu-item has-sub">
-                        <a href="~/userdashboard/create/" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-pie-chart"></i></span>
-                            <span class="menu-text">Buy Tokens</span>
-                        </a>
-                    </div>
-                    <div class="menu-item has-sub">
-                        <a href="#" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-layout-sidebar"></i></span>
-                            <span class="menu-text">Whitepaper</span>
-                        </a>
-                    </div>
-                    <div class="menu-item has-sub">
-                        <a href="#" class="menu-link">
-                            <span class="menu-icon"><i class="bi bi-collection"></i></span>
-                            <span class="menu-text">Packages</span>
-                        </a>
-                    </div>
+                        <div class="menu-item">
+                            <a href="~/userdashboard/dashboard/" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-columns-gap"></i></span>
+                                <span class="menu-text">Dashboard</span>
+                            </a>
+                        </div>
+                        <div class="menu-item has-sub">
+                            <a href="~/manage/index/" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-people"></i></span>
+                                <span class="menu-text">Profile</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
+                            <a href="~/userdashboard/list/" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-calendar4"></i></span>
+                                <span class="menu-text">Transactions</span>
+                            </a>
+                        </div>
+                        <div class="menu-item has-sub">
+                            <a href="~/userdashboard/create/" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-pie-chart"></i></span>
+                                <span class="menu-text">Buy Tokens</span>
+                            </a>
+                        </div>
+                        <div class="menu-item has-sub">
+                            <a href="#" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-layout-sidebar"></i></span>
+                                <span class="menu-text">Whitepaper</span>
+                            </a>
+                        </div>
+                        <div class="menu-item has-sub">
+                            <a href="#" class="menu-link">
+                                <span class="menu-icon"><i class="bi bi-collection"></i></span>
+                                <span class="menu-text">Packages</span>
+                            </a>
+                        </div>
                     }
                 </div>
                 <!-- END menu -->
@@ -541,66 +657,66 @@
                                     <div class="card">
                                         <!-- BEGIN card-body -->
                                         @*<div class="card-body py-2">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="w-70px">
-                                                        <div data-render="apexchart" data-type="donut" data-height="70"></div>
-                                                    </div>
-                                                    <div class="flex-1 ps-2">
-                                                        <table class="w-100 small mb-0 text-white text-opacity-60">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="d-flex align-items-center">
-                                                                            <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-95"></div> FEED
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="text-end">25.70%</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="d-flex align-items-center">
-                                                                            <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-75"></div> ORGANIC
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="text-end">24.30%</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="d-flex align-items-center">
-                                                                            <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-55"></div> REFERRAL
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="text-end">23.05%</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="d-flex align-items-center">
-                                                                            <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-35"></div> DIRECT
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="text-end">14.85%</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="d-flex align-items-center">
-                                                                            <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-15"></div> EMAIL
-                                                                        </div>
-                                                                    </td>
-                                                                    <td class="text-end">7.35%</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="w-70px">
+                                                    <div data-render="apexchart" data-type="donut" data-height="70"></div>
                                                 </div>
-                                            </div>*@
+                                                <div class="flex-1 ps-2">
+                                                    <table class="w-100 small mb-0 text-white text-opacity-60">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-95"></div> FEED
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-end">25.70%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-75"></div> ORGANIC
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-end">24.30%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-55"></div> REFERRAL
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-end">23.05%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-35"></div> DIRECT
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-end">14.85%</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="d-flex align-items-center">
+                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-15"></div> EMAIL
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-end">7.35%</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>*@
                                         <!-- END card-body -->
                                         <!-- BEGIN card-arrow -->
                                         @*<div class="card-arrow">
-                                                <div class="card-arrow-top-left"></div>
-                                                <div class="card-arrow-top-right"></div>
-                                                <div class="card-arrow-bottom-left"></div>
-                                                <div class="card-arrow-bottom-right"></div>
-                                            </div>*@
+                                            <div class="card-arrow-top-left"></div>
+                                            <div class="card-arrow-top-right"></div>
+                                            <div class="card-arrow-bottom-left"></div>
+                                            <div class="card-arrow-bottom-right"></div>
+                                        </div>*@
                                         <!-- END card-arrow -->
                                     </div>
                                     <!-- END card -->
@@ -940,7 +1056,7 @@
     </style>
     @section Scripts {
         <script>
-        var milion =@mil;
+            var milion =@mil;
 
         $("#btc-base-amount").on("keyup", function () {
             var inputvalue = $(this).val()
@@ -948,7 +1064,7 @@
 
             //values = values * 12;
 
-            //TODO Raised from http://5G PRIME-ico.com/dashboard/list/ ...
+            //TODO Raised from http://Oileum-ico-ico.com/dashboard/list/ ...
             //var milion = 14;
 
             if (milion < 15)
@@ -987,6 +1103,20 @@
             });
         </script>
     }
+
+    <script>
+        $("#close-modal").on('click', function () {
+
+            $("#myModal").hide();
+
+        })
+
+        $("#modalShow").on('click', function () {
+
+            $("#myModal").show();
+
+        })
+    </script>
 </body>
 
 </html>
