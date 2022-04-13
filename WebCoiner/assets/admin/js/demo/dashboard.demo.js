@@ -373,7 +373,15 @@ var handleRenderMap = function() {
 			{ latLng: [38, -97], name: 'United States'},
 			{ latLng: [54, -2], name: 'United Kingdom'},
 			{ latLng: [51, 10], name: 'Germany'},
-			{ latLng: [50.8333, 4], name: 'Belgium'},
+			{ latLng: [50.8333, 4], name: 'Belgium' },
+			{ latLng: [60.1282, 18.6435], name: 'Scandinavia' },
+			{ latLng: [56.9, 9.5], name: 'Denmark' },
+			{ latLng: [47.52, 14.55], name: 'Austria' },
+			{ latLng: [46.8, 8.2], name: 'Switzerland' },
+			{ latLng: [46.2, 2.2], name: 'France' },
+
+
+
 		]
 	});
 }

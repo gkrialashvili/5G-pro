@@ -17,10 +17,13 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>oileum-ico</title>
+    <title>oilbeam-ico</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+
+    <link rel="icon" href="~/assets/images/logo/icon.png" type="image/x-icon">
+
 
     <!-- ================== BEGIN core-css ================== -->
     <link href="~/assets/css/progres/progress.css" rel="stylesheet" />
@@ -39,7 +42,7 @@
     <div id="app" class="app">
         <div class="modal fade show" id="myModal" style="display: none; background-color: rgba(152, 152, 152, 0.8); overflow: hidden" aria-modal="true">
             <div class="modal-dialog" style=" width: 90%; max-width: 1200px; min-height: 100%;">
-                <div class="modal-content" style="background: black;">
+                <div class="modal-content" style="background: rgba(0, 0, 0, 0.5);">
                     <!-- Modal body -->
                     <div class="modal-body">
                         <section class="lis-bg-light">
@@ -62,7 +65,7 @@
                                             </div>
                                             <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
                                                 <ul class="list-unstyled lis-line-height-3">
-                                                    <li style="color: black">Oileum-ico tokens in portfolio</li>
+                                                    <li style="color: black">oilbeam-ico tokens in portfolio</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -81,7 +84,7 @@
                                             </div>
                                             <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom" >
                                                 <ul class="list-unstyled lis-line-height-3">
-                                                    <li>Oileum-ico tokens in portfolio</li>
+                                                    <li>oilbeam-ico tokens in portfolio</li>
                                                     <li>Minimum portfolio: $100,000</li>
                                                 </ul>
                                                 <a href="/userdashboard/create/" style="background-color: #28c189;"
@@ -104,7 +107,7 @@
                                             </div>
                                             <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
                                                 <ul class="list-unstyled lis-line-height-3">
-                                                    <li>Oileum-ico tokens in portfolio</li>
+                                                    <li>oilbeam-ico tokens in portfolio</li>
                                                     <li>Minimum portfolio: $250,000</li>
                                                 </ul>
                                                 <a href="/userdashboard/create/" style="background-color: #28c189;"
@@ -129,7 +132,7 @@
                                                 <ul class="list-unstyled lis-line-height-3">
 
 
-                                                    <li>Oileum-ico tokens in portfolio</li>
+                                                    <li>oilbeam-ico tokens in portfolio</li>
                                                     <li>Minimum portfolio: $500,000</li>
 
                                                 </ul>
@@ -183,9 +186,7 @@
             <!-- BEGIN menu -->
             <div class="menu">
                 <div class="menu-item dropdown dropdown-mobile-full">
-                    <a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
-                        <div class="menu-icon"><i class="bi bi-grid-3x3-gap nav-icon"></i></div>
-                    </a>
+
                     <div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
                         @if (User.IsInRole("administrator"))
                         {
@@ -358,11 +359,24 @@
                                 <span class="menu-text">Whitepaper</span>
                             </a>
                         </div>
-                        <div class="menu-item has-sub">
+                        <div class="menu-item">
                             <a href="#" class="menu-link" id="modalShow">
                                 <span class="menu-icon"><i class="bi bi-collection"></i></span>
                                 <span class="menu-text">Packages</span>
                             </a>
+                        </div>
+                        <div class="menu-item">
+                            @if (Request.IsAuthenticated)
+                            {
+                                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <a href="javascript:document.getElementById('logoutForm').submit()" class="menu-link">
+                                        <span class="menu-icon"><i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></span>
+                                        <span class="menu-text"> LOGOUT</span>
+                                    </a>
+                                }
+                            }
                         </div>
                     }
 
@@ -398,11 +412,24 @@
                                 <span class="menu-text">Whitepaper</span>
                             </a>
                         </div>
-                        <div class="menu-item has-sub">
+                        <div class="menu-item">
                             <a href="#" class="menu-link">
                                 <span class="menu-icon"><i class="bi bi-collection"></i></span>
                                 <span class="menu-text">Packages</span>
                             </a>
+                        </div>
+                        <div class="menu-item">
+                            @if (Request.IsAuthenticated)
+                            {
+                                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <a href="javascript:document.getElementById('logoutForm').submit()" class="menu-link" id="modalShow">
+                                        <span class="menu-icon"><i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></span>
+                                        <span class="menu-text"> LOGOUT</span>
+                                    </a>
+                                }
+                            }
                         </div>
                     }
                 </div>
@@ -419,22 +446,18 @@
             <!-- BEGIN row -->
             <div class="row">
                 <!-- BEGIN col-3 -->
-                <div class="col-xl-3 col-lg-6">
+                <div class="col-xl-3 col-lg-6 mb-3">
                     <!-- BEGIN card -->
                     <div class="card mb-3">
                         <!-- BEGIN card-body -->
-                        <div class="card-body">
+                        <div class="card-body1">
                             <!-- BEGIN title -->
                             <div class="d-flex fw-bold small mb-3">
-                                <span class="flex-grow-1">SITE VISITORS</span>
-                                <a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
+                                <span class="flex-grow-1">Total Investment</span>
                             </div>
                             <!-- END title -->
                             <!-- BEGIN stat-lg -->
                             <div class="row align-items-center mb-2">
-                                <div class="col-7">
-                                    <h3 class="mb-0" style="font-size: 18px">Total Investment</h3>
-                                </div>
                                 <div class="col-5">
                                     <h3>$@Model.InvestmentAmount.ToString("#,##0")</h3>
                                 </div>
@@ -455,22 +478,18 @@
                 </div>
                 <!-- END col-3 -->
                 <!-- BEGIN col-3 -->
-                <div class="col-xl-3 col-lg-6">
+                <div class="col-xl-3 col-lg-6 mb-3">
                     <!-- BEGIN card -->
                     <div class="card mb-3">
                         <!-- BEGIN card-body -->
-                        <div class="card-body">
+                        <div class="card-body1">
                             <!-- BEGIN title -->
                             <div class="d-flex fw-bold small mb-3">
-                                <span class="flex-grow-1">STORE SALES</span>
-                                <a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
+                                <span class="flex-grow-1">Current Balance</span>
                             </div>
                             <!-- END title -->
                             <!-- BEGIN stat-lg -->
                             <div class="row align-items-center mb-2">
-                                <div class="col-7">
-                                    <h3 class="mb-0" style="font-size: 18px">Current Balance</h3>
-                                </div>
                                 <div class="col-5">
                                     <h3>$@Model.CurrentBalance.ToString("#,##0")</h3>
                                 </div>
@@ -491,24 +510,18 @@
                 </div>
                 <!-- END col-3 -->
                 <!-- BEGIN col-3 -->
-                <div class="col-xl-3 col-lg-6">
+                <div class="col-xl-3 col-lg-6 mb-3">
                     <!-- BEGIN card -->
                     <div class="card mb-3">
                         <!-- BEGIN card-body -->
-                        <div class="card-body">
+                        <div class="card-body1">
                             <!-- BEGIN title -->
                             <div class="d-flex fw-bold small mb-3">
-                                <span class="flex-grow-1">NEW MEMBERS</span>
-                                <a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
+                                <span class="flex-grow-1">Total Profit</span>
                             </div>
                             <!-- END title -->
                             <!-- BEGIN stat-lg -->
                             <div class="row align-items-center mb-2">
-                                <div class="col-7">
-                                    <h3 class="mb-0" style="font-size: 18px">
-                                        Total Profit
-                                    </h3>
-                                </div>
                                 <div class="col-5">
                                     <h3>$@((Model.CurrentBalance - Model.InvestmentAmount).ToString("#,##0"))</h3>
                                 </div>
@@ -529,22 +542,18 @@
                 </div>
                 <!-- END col-3 -->
                 <!-- BEGIN col-3 -->
-                <div class="col-xl-3 col-lg-6">
+                <div class="col-xl-3 col-lg-6 mb-3">
                     <!-- BEGIN card -->
                     <div class="card mb-3">
                         <!-- BEGIN card-body -->
-                        <div class="card-body">
+                        <div class="card-body1">
                             <!-- BEGIN title -->
                             <div class="d-flex fw-bold small mb-3">
-                                <span class="flex-grow-1">BANDWIDTH</span>
-                                <a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
+                                <span class="flex-grow-1">Token  Amount</span>
                             </div>
                             <!-- END title -->
                             <!-- BEGIN stat-lg -->
                             <div class="row align-items-center mb-2">
-                                <div class="col-7">
-                                    <h3 class="mb-0" style="font-size: 18px">Token  Amount</h3>
-                                </div>
                                 <div class="col-5">
                                     <h3>@Model.Tokens</h3>
 
@@ -570,7 +579,7 @@
                     <!-- BEGIN card -->
                     <div class="card mb-3" style="height: 523px;">
                         <!-- BEGIN card-body -->
-                        <div class="card-body">
+                        <div class="card-body" style="position: relative">
                             <!-- BEGIN title -->
                             <div class="d-flex fw-bold small mb-3">
                                 <span class="flex-grow-1"></span>
@@ -584,6 +593,19 @@
                             <!-- END chart -->
                             <!-- BEGIN row -->
                             <!-- END row -->
+                            <div id="container">
+                                <span class="flex-grow-1">@Model.Raised.ToString("C2")</span>
+                                <input type="checkbox" id="water" />
+                                <label for="water">
+                                    <div id="fill" style="width: @raised%;">
+
+                                    </div>
+                                    <span style="left: calc(@Convert.ToInt32(raised)% - 8%)" id="progress-counter">@Convert.ToInt32(raised)%</span>
+                                </label>
+                                <span>Progress</span>
+                                <span style="font-size: 15px" id="progress">@Convert.ToInt32(raised)%</span>
+
+                            </div>
                         </div>
                         <!-- END card-body -->
                         <!-- BEGIN card-arrow -->
@@ -629,15 +651,15 @@
                                         <tbody>
                                             <tr>
                                                 <td>United States</td>
-                                                <td class="text-end">8.97%</td>
+                                                <td class="text-end">10.41%</td>
                                             </tr>
                                             <tr>
                                                 <td>Canada</td>
-                                                <td class="text-end">5.87%</td>
+                                                <td class="text-end">9.85%</td>
                                             </tr>
-                                            <tr class="text-theme fw-bold">
+                                            <tr>
                                                 <td>Great Britain</td>
-                                                <td class="text-end">14.72%</td>
+                                                <td class="text-end">8.14%</td>
                                             </tr>
                                             <tr>
                                                 <td>Germany</td>
@@ -654,71 +676,34 @@
                                 <!-- BEGIN col-6 -->
                                 <div class="col-lg-6">
                                     <!-- BEGIN card -->
-                                    <div class="card">
-                                        <!-- BEGIN card-body -->
-                                        @*<div class="card-body py-2">
-                                            <div class="d-flex align-items-center">
-                                                <div class="w-70px">
-                                                    <div data-render="apexchart" data-type="donut" data-height="70"></div>
-                                                </div>
-                                                <div class="flex-1 ps-2">
-                                                    <table class="w-100 small mb-0 text-white text-opacity-60">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-95"></div> FEED
-                                                                    </div>
-                                                                </td>
-                                                                <td class="text-end">25.70%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-75"></div> ORGANIC
-                                                                    </div>
-                                                                </td>
-                                                                <td class="text-end">24.30%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-55"></div> REFERRAL
-                                                                    </div>
-                                                                </td>
-                                                                <td class="text-end">23.05%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-35"></div> DIRECT
-                                                                    </div>
-                                                                </td>
-                                                                <td class="text-end">14.85%</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>
-                                                                    <div class="d-flex align-items-center">
-                                                                        <div class="w-6px h-6px rounded-pill me-2 bg-theme bg-opacity-15"></div> EMAIL
-                                                                    </div>
-                                                                </td>
-                                                                <td class="text-end">7.35%</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>*@
-                                        <!-- END card-body -->
-                                        <!-- BEGIN card-arrow -->
-                                        @*<div class="card-arrow">
-                                            <div class="card-arrow-top-left"></div>
-                                            <div class="card-arrow-top-right"></div>
-                                            <div class="card-arrow-bottom-left"></div>
-                                            <div class="card-arrow-bottom-right"></div>
-                                        </div>*@
-                                        <!-- END card-arrow -->
-                                    </div>
+                                    <table class="w-100 small mb-0 text-truncate text-white text-opacity-60">
+                                        <tbody>
+                                            <tr class="fw-bold text-theme">
+                                                <td>Scandinavia (FIN, SWE, NDR)</td>
+                                                <td class="text-end">16.8%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Denmark</td>
+                                                <td class="text-end">3.85%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Austria</td>
+                                                <td class="text-end">7.06%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Switzerland</td>
+                                                <td class="text-end">6.21%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>France</td>
+                                                <td class="text-end">2.89%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Other...</td>
+                                                <td class="text-end">21.85%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                     <!-- END card -->
                                 </div>
                                 <!-- END col-6 -->
@@ -739,19 +724,19 @@
                 </div>
                 <!-- END col-6 -->
                 <!-- BEGIN col-6 -->
-                <div class="col-xl-6">
+                <!--<div class="col-xl-6">-->
                     <!-- BEGIN card -->
-                    <div class="card mb-3">
+                    <!--<div class="card mb-3">-->
                         <!-- BEGIN card-body -->
-                        <div class="card-body">
+                        <!--<div class="card-body">-->
                             <!-- BEGIN title -->
-                            <div class="d-flex fw-bold small mb-3">
+                            <!--<div class="d-flex fw-bold small mb-3">
                                 <span class="flex-grow-1">TOP PRODUCTS</span>
                                 <a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
-                            </div>
+                            </div>-->
                             <!-- END title -->
                             <!-- BEGIN table -->
-                            <div class="table-responsive">
+                            <!--<div class="table-responsive">
                                 <table class="w-100 mb-0 small align-middle text-nowrap">
                                     <tbody>
                                         <tr>
@@ -931,36 +916,36 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
+                            </div>-->
                             <!-- END table -->
-                        </div>
+                        <!--</div>-->
                         <!-- END card-body -->
                         <!-- BEGIN card-arrow -->
-                        <div class="card-arrow">
+                        <!--<div class="card-arrow">
                             <div class="card-arrow-top-left"></div>
                             <div class="card-arrow-top-right"></div>
                             <div class="card-arrow-bottom-left"></div>
                             <div class="card-arrow-bottom-right"></div>
-                        </div>
+                        </div>-->
                         <!-- END card-arrow -->
-                    </div>
+                    <!--</div>-->
                     <!-- END card -->
-                </div>
+                <!--</div>-->
                 <!-- END col-6 -->
                 <!-- BEGIN col-6 -->
-                <div class="col-xl-6">
+                <!--<div class="col-xl-6">-->
                     <!-- BEGIN card -->
-                    <div class="card mb-3">
+                    <!--<div class="card mb-3">-->
                         <!-- BEGIN card-body -->
-                        <div class="card-body">
+                        <!--<div class="card-body">-->
                             <!-- BEGIN title -->
-                            <div class="d-flex fw-bold small mb-3">
+                            <!--<div class="d-flex fw-bold small mb-3">
                                 <span class="flex-grow-1">@Model.Raised.ToString("C2")</span>
                                 <a href="#" data-toggle="card-expand" class="text-white text-opacity-50 text-decoration-none"><i class="bi bi-fullscreen"></i></a>
-                            </div>
+                            </div>-->
                             <!-- END title -->
                             <!-- BEGIN table -->
-                            <div class="table-responsive" style="display: flex; width: 100%; height: 348px;">
+                            <!--<div class="table-responsive" style="display: flex; width: 100%; height: 348px;">
                                 <div id="container">
                                     <input type="checkbox" id="water" />
                                     <label for="water">
@@ -970,24 +955,24 @@
                                         <span style="left: calc(@Convert.ToInt32(raised)% - 8%)" id="progress-counter">@Convert.ToInt32(raised)%</span>
                                     </label>
                                     <span>Progress</span>
-                                    <span style="" id="progress">@Convert.ToInt32(raised)%</span>
+                                    <span style="font-size: 17px" id="progress">@Convert.ToInt32(raised)%</span>
 
                                 </div>
-                            </div>
+                            </div>-->
                             <!-- END table -->
-                        </div>
+                        <!--</div>-->
                         <!-- END card-body -->
                         <!-- BEGIN card-arrow -->
-                        <div class="card-arrow">
+                        <!--<div class="card-arrow">
                             <div class="card-arrow-top-left"></div>
                             <div class="card-arrow-top-right"></div>
                             <div class="card-arrow-bottom-left"></div>
                             <div class="card-arrow-bottom-right"></div>
-                        </div>
+                        </div>-->
                         <!-- END card-arrow -->
-                    </div>
+                    <!--</div>-->
                     <!-- END card -->
-                </div>
+                <!--</div>-->
                 <!-- END col-6 -->
             </div>
             <!-- END row -->
@@ -1064,7 +1049,7 @@
 
             //values = values * 12;
 
-            //TODO Raised from http://Oileum-ico-ico.com/dashboard/list/ ...
+            //TODO Raised from http://oilbeam-ico-ico.com/dashboard/list/ ...
             //var milion = 14;
 
             if (milion < 15)

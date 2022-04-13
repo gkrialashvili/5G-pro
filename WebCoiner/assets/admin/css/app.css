@@ -2894,6 +2894,25 @@ textarea.form-control-lg {
     background-color: #fbee4a;
     border-color: #fbee4a;
 }
+
+.card-body1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body1 .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-body1 .row h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .btn-check:focus+.btn-yellow, .btn-yellow:focus {
     color: #000;
     background-color: #fbee4a;
@@ -18493,6 +18512,7 @@ to {
     --bs-border-color: #FFFFFF;
     position: relative;
     border: none;
+    height: 97%;
 }
 .card.card-expand {
     position: fixed;
