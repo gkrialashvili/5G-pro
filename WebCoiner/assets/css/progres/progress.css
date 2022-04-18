@@ -98,7 +98,7 @@ label {
 
 
 
-span {
+.progresi span {
     display: inline-block;
     color: #4f9cc0;
     text-transform: uppercase;
@@ -106,6 +106,6 @@ span {
     font-weight: bold;
 }
 
-    span:last-child {
-        float: right;
-    }
+.progresi span:last-child {
+    float: right;
+}

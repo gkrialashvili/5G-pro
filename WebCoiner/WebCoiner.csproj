@@ -7659,6 +7659,7 @@
     <Content Include="Content\wc_icon5.png" />
     <Content Include="Content\wc_icon6.png" />
     <Content Include="Content\whitepaper5.png" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="images\banner\banner-bg-2.jpg" />
     <Content Include="images\banner\banner-overlay.png" />
@@ -7671,6 +7672,7 @@
     <Content Include="images\gridnet-foundation.jpeg" />
     <Content Include="images\gridnet-use-cases.jpg" />
     <Content Include="images\RGB_gridnet-combined-white-transparent-194x55.png" />
+    <Content Include="Logic\favicon.ico" />
     <Content Include="plugins\bootstrap\bootstrap.min.css" />
     <Content Include="plugins\bootstrap\bootstrap.min.js" />
     <Content Include="plugins\fontawesome\font-awesome.min.css" />
