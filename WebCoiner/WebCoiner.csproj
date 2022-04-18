@@ -7557,8 +7557,6 @@
     <Content Include="Content\team_img7.png" />
     <Content Include="Content\theme.css" />
     <Content Include="Content\themes\jur-theme\dist\css\theme.min.css" />
-    <Content Include="Content\themes\jur-theme\dist\images\111.png" />
-    <Content Include="Content\themes\jur-theme\dist\images\11111.png" />
     <Content Include="Content\themes\jur-theme\dist\images\6NKPrhO.png" />
     <Content Include="Content\themes\jur-theme\dist\images\AgyneKA.png" />
     <Content Include="Content\themes\jur-theme\dist\images\balance.png" />
@@ -7668,7 +7666,7 @@
     <Content Include="images\commands.gif" />
     <Content Include="images\commands.png" />
     <Content Include="images\cross-blockchain-scaling.jpg" />
-    <Content Include="images\faircover_logo.png" />
+    <Content Include="images\favicon.ico" />
     <Content Include="images\favicon.png" />
     <Content Include="images\gridnet-foundation.jpeg" />
     <Content Include="images\gridnet-use-cases.jpg" />

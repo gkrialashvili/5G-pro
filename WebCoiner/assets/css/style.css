@@ -2030,7 +2030,6 @@ background: linear-gradient(to right, rgba(45,193,201,1) 0%, rgba(57,100,208,1) 
 .btc_timer_section_wrapper{
 	float:left;
 	width:100%;
-	padding-top: 80px;
 }
 div#clockdiv .smalltext {
     padding-bottom: 20px;

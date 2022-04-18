@@ -234,7 +234,7 @@ owl active
 
 
 // CountDown Js
-		var deadline = 'dec 14 2021 11:59:00 GMT-0400'; 
+	var deadline = 'june 26 2022 11:59:00 GMT-0400';
 		function time_remaining(endtime){
 			var t = Date.parse(endtime) - Date.parse(new Date());
 			var seconds = Math.floor( (t/1000) % 60 );
@@ -269,7 +269,7 @@ owl active
 		run_clock('clockdiv',deadline);
 		
 		// CountDown Js
-	var deadline = 'september 1 2018 11:59:00 GMT-0400';
+	var deadline = 'june 26 2022 11:59:00 GMT-0400';
 		function time_remaining(endtime){
 			var t = Date.parse(endtime) - Date.parse(new Date());
 			var seconds = Math.floor( (t/1000) % 60 );

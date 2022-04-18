@@ -2,8 +2,8 @@
 
 @{
     ViewBag.Title = "Dashboard";
-    double raised = ((double)Model.Raised / 90000000) * 100;
-    var mil = Model.Raised / 1000000;
+    double raised = ((double)Model.Raised / 110000000) * 100;
+    var mil = Model.Raised / 110000000;
     string controllerName = Request.CurrentExecutionFilePath;
 }
 
@@ -58,7 +58,7 @@
                                     <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
                                          style="visibility: visible; animation-name: fadeInUp;">
                                         <div class="price-table">
-                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light" style="background: black;">
+                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light" style="background: #747474;">
                                                 <h5 class="text-uppercase lis-latter-spacing-2">Basic</h5>
                                                 <h1 class="display-4 lis-font-weight-500">1<small>%</small></h1>
                                                 <p class="mb-0">Basic Membership</p>
@@ -424,7 +424,7 @@
                                 using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
                                 {
                                     @Html.AntiForgeryToken()
-                                    <a href="javascript:document.getElementById('logoutForm').submit()" class="menu-link" id="modalShow">
+                                    <a href="javascript:document.getElementById('logoutForm').submit()" class="menu-link">
                                         <span class="menu-icon"><i class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></span>
                                         <span class="menu-text"> LOGOUT</span>
                                     </a>

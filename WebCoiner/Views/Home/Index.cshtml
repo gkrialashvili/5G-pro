@@ -3,12 +3,12 @@
     //decimal currentpercentage = 23;
     Console.WriteLine("STUFF");
     double txRaised = (double)Model.Raised;
-    double raised = ((double)Model.Raised / 120000000) * 100;
+    double raised = ((double)Model.Raised / 110000000) * 100;
     long num = 0;
     long.TryParse(txRaised.ToString(), out num);
     String finalRaised = num.ToString("N0");
 
-    double percentage = ((double)Model.Raised / 120000000) * 100;
+    double percentage = ((double)Model.Raised / 110000000) * 100;
     //155 = 10M
     double finalRaisedDo = Convert.ToDouble(finalRaised);
     Console.WriteLine("RAISED IS " + finalRaisedDo);
@@ -176,6 +176,7 @@
     <link rel="stylesheet" href="~/assets/css/style.css">
     <!-- responsive css -->
     <link rel="stylesheet" href="~/assets/css/responsive.css">
+    <link rel="stylesheet" href="~/assets/css/progres/progress.css" />
     <!-- modernizr css -->
     <script src="~/assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script>
@@ -290,7 +291,9 @@
                                             <div class="slider-content">
                                                 <h2 data-animation="animated bounceInLeft">Bit Money - Lending & <br>Investment Platform</h2>
                                                 <div class="buttons">
-                                                    <a  href="~/Content/OilBeam_Whitepaper.pdf" class="btn1" data-animation="animated bounceInUp">WHITEPAPER</a>
+                                                    <a href="~/Content/OilBeam_Whitepaper.pdf" class="btn1" data-animation="animated bounceInUp">WHITEPAPER</a>
+                                                    <a href="account/login" class="btn3">Buy Tokens Now!</a>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -314,6 +317,39 @@
                                                         <div class="smalltext">Seconds</div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                            <div>
+                                                <span class="flex-grow-1">@Model.Raised.ToString("C2")</span>
+                                                <div class="bottom">
+                                                    <span class="one">$0.00</span>
+                                                    <span class="two">$20mil</span>
+                                                    <span class="three">$50mil</span>
+                                                    <span class="four">$100mil</span>
+                                                </div>
+                                                <input type="checkbox" id="water" />
+                                                <label for="water">
+                                                    <div id="fill" style="width: @raised%;">
+                                                    </div>
+                                                    <span style="left: calc(@Convert.ToInt32(raised)% - 8%)" id="progress-counter">@Convert.ToInt32(raised)%</span>
+                                                    <div class="segment one">
+                                                    </div>
+                                                    <div class="segment two">
+                                                    </div>
+                                                    <div class="segment three">
+                                                    </div>
+                                                    <div class="segment four">
+                                                    </div>
+
+                                                </label>
+                                                <div class="bottom">
+                                                    <span class="one">Privete Sale</span>
+                                                    <span class="two">Pre Sale</span>
+                                                    <span class="three">Soft Cap</span>
+                                                    <span class="four">Hard Cap</span>
+                                                </div>
+                                                <span style="font-size: 12px">Progress</span>
+                                                <span style="font-size: 12px" id="progress">@Convert.ToInt32(raised)%</span>
+
                                             </div>
                                         </div>
                                     </div>
@@ -383,6 +419,7 @@
                             <p class="wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">Bit Money is a multi-functional platform which allows each participant to keep money in a multi-currency online wallet, buy and sell currency on the exchange, invest money, get a loan in a convenient currency.</p>
                             <div class="buttons">
                                 <a href="~/Content/OilBeam_Whitepaper.pdf" class="btn1">WHITEPAPER</a>
+                                <a href="account/login" class="btn3">Buy Tokens Now!</a>
                             </div>
                         </div>
                     </div>
@@ -437,7 +474,6 @@
                                                     Unique platform for lending and investment with a safety fund
                                                     <br>and cooperation with world-wide arbitration.
                                                 </p>
-                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 pd-0 wow  fadeInUp animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeInUp;">
@@ -452,7 +488,6 @@
                                                     Unique platform for lending and investment with a safety fund
                                                     <br>and cooperation with world-wide arbitration.
                                                 </p>
-                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
                                     </li>
@@ -464,7 +499,6 @@
                                                     Exchange between all popular currencies with a couple of clicks.
                                                     <br>Instant send from one currency to another.
                                                 </p>
-                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 pd-0 wow  fadeInUp animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeInUp;">
@@ -479,7 +513,6 @@
                                                     Exchange between all popular currencies with a couple of clicks.
                                                     <br>Instant send from one currency to another.
                                                 </p>
-                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
                                     </li>
@@ -491,7 +524,6 @@
                                                     Improved system of borrower's verification. Providing
                                                     <br>verification services for other services.
                                                 </p>
-                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 pd-0 wow  fadeInUp animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeInUp;">
@@ -506,7 +538,6 @@
                                                     Improved system of borrower's verification. Providing
                                                     <br>verification services for other services.
                                                 </p>
-                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
                                     </li>
@@ -518,7 +549,6 @@
                                                     Keep your money, exchange your money, invest your money, pay
                                                     <br>services and make purchases.
                                                 </p>
-                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 pd-0 wow  fadeInUp animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeInUp;">
@@ -533,7 +563,6 @@
                                                     Keep your money, exchange your money, invest your money, pay
                                                     <br>services and make purchases.
                                                 </p>
-                                                <a href="#" class="btn1">read more</a>
                                             </div>
                                         </div>
                                     </li>
