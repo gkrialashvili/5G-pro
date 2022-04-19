@@ -7291,6 +7291,7 @@
     <Content Include="assets\css\jquery-ui.min.css" />
     <Content Include="assets\css\meanmenu.min.css" />
     <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\progres\progresshome.css" />
     <Content Include="assets\css\progres\progress.css" />
     <Content Include="assets\css\responsive.css" />
     <Content Include="assets\css\style.css" />

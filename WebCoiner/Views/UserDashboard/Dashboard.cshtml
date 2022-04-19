@@ -26,7 +26,7 @@
 
 
     <!-- ================== BEGIN core-css ================== -->
-    <link href="~/assets/css/progres/progress.css" rel="stylesheet" />
+    <link href="~/assets/css/progres/progresshome.css" rel="stylesheet" />
 
     <link href="~/assets/admin/css/vendor.min.css" rel="stylesheet" />
     <link href="~/assets/admin/css/app.css" rel="stylesheet" />
@@ -412,7 +412,7 @@
                                 <span class="menu-text">Whitepaper</span>
                             </a>
                         </div>
-                        <div class="menu-item">
+                        <div class="menu-item" id="modalShow">
                             <a href="#" class="menu-link">
                                 <span class="menu-icon"><i class="bi bi-collection"></i></span>
                                 <span class="menu-text">Packages</span>
@@ -577,7 +577,7 @@
                 <!-- BEGIN col-6 -->
                 <div class="col-xl-6">
                     <!-- BEGIN card -->
-                    <div class="card mb-3" style="height: 523px;">
+                    <div class="card mb-3" style="height: 600px;">
                         <!-- BEGIN card-body -->
                         <div class="card-body" style="position: relative">
                             <!-- BEGIN title -->
@@ -593,17 +593,37 @@
                             <!-- END chart -->
                             <!-- BEGIN row -->
                             <!-- END row -->
-                            <div id="container">
+                            <div class="progresi" style="margin-top: 67px;">
                                 <span class="flex-grow-1">@Model.Raised.ToString("C2")</span>
+                                <div class="bottom">
+                                    <span class="one">$0.00</span>
+                                    <span class="two">$20mil</span>
+                                    <span class="three">$50mil</span>
+                                    <span class="four">$100mil</span>
+                                </div>
                                 <input type="checkbox" id="water" />
                                 <label for="water">
                                     <div id="fill" style="width: @raised%;">
-
                                     </div>
                                     <span style="left: calc(@Convert.ToInt32(raised)% - 8%)" id="progress-counter">@Convert.ToInt32(raised)%</span>
+                                    <div class="segment one">
+                                    </div>
+                                    <div class="segment two">
+                                    </div>
+                                    <div class="segment three">
+                                    </div>
+                                    <div class="segment four">
+                                    </div>
+
                                 </label>
-                                <span style="font-size: 12px">Progress</span>
-                                <span style="font-size: 12px" id="progress">@Convert.ToInt32(raised)%</span>
+                                <div class="bottom">
+                                    <span class="one">Privete Sale</span>
+                                    <span class="two">Pre Sale</span>
+                                    <span class="three">Soft Cap</span>
+                                    <span class="four">Hard Cap</span>
+                                </div>
+                                <span style="font-size: 15px">Progress</span>
+                                <span style="font-size: 15px; float: right" id="progress">@Convert.ToInt32(raised)%</span>
 
                             </div>
                         </div>
@@ -679,7 +699,7 @@
                                     <table class="w-100 small mb-0 text-truncate text-white text-opacity-60">
                                         <tbody>
                                             <tr class="fw-bold text-theme">
-                                                <td>Scandinavia (FIN, SWE, NOW)</td>
+                                                <td>Scandinavia (FIN, SWE, NOR)</td>
                                                 <td class="text-end">16.8%</td>
                                             </tr>
                                             <tr>

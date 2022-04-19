@@ -5030,6 +5030,7 @@ textarea.form-control-lg {
     border: 1px solid rgba(255, 255, 255, .3);
     border-radius: 0;
     background: transparent;
+    justify-content: center;
 }
 .card>hr {
     margin-right: 0;
@@ -17871,7 +17872,7 @@ body:before {
 }
 .app-sidebar .app-sidebar-content .menu .menu-header {
     padding: 1rem 1rem .5rem;
-    font-size: .65625rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: rgba(255, 255, 255, .3);
 }
@@ -18580,6 +18581,9 @@ to {
 .card>:not(.card-arrow):not(.card-img-overlay):not(.card-img):not(.hljs-container) {
     position: relative;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .card .card-arrow {
     position: absolute;
