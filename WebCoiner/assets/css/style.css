@@ -3756,8 +3756,9 @@ background: linear-gradient(to right, rgba(57,100,208,1) 0%, rgba(45,193,201,1) 
   }
 }
 .features-area .featured-lists ul li .contents-r p {
-  color: #8486a6;
-  margin: 0 0 20px;
+    color: #fff;
+    font-size: 19px;
+    margin: 10px 0 0 20px;
 }
 .features-area .featured-lists ul li .contents-r a {
   font-size: 14px;

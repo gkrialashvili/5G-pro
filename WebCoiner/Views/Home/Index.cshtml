@@ -203,7 +203,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-6">
                         <div class="logo-area">
-                            <a href="index.html"><img style="width: 150px;" src="~/assets/images/logo/logo.png" alt="logo" /></a>
+                            <a href="home/index"><img style="width: 150px;" src="~/assets/images/logo/logo.png" alt="logo" /></a>
                         </div>
                     </div>
                     <!-- Mobile Menu  Start -->
@@ -320,7 +320,10 @@
                                                 </div>
                                             </div>
                                             <div class="progresi">
-                                                <span class="flex-grow-1">@Model.Raised.ToString("C2")</span>
+                                                <div class="d-flex">
+                                                    <span>Raised:</span>
+                                                    <span class="flex-grow-1">@Model.Raised.ToString("C2")</span>
+                                                </div>
                                                 <div class="bottom">
                                                     <span class="one">$0.00</span>
                                                     <span class="two">$20mil</span>
