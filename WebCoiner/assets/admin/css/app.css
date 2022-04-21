@@ -6440,7 +6440,7 @@ textarea.form-control-lg {
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: none;
+    background-color: #1e2936;
     background-clip: padding-box;
     border: 1px solid rgba(255, 255, 255, .3);
     border-radius: 0;
@@ -18583,7 +18583,7 @@ to {
     z-index: 10;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .card .card-arrow {
     position: absolute;
