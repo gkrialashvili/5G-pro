@@ -3,12 +3,12 @@
     //decimal currentpercentage = 23;
     Console.WriteLine("STUFF");
     double txRaised = (double)Model.Raised;
-    double raised = (txRaised / 125000000) * 100;
+    double raised = (txRaised / 85000000) * 100;
     long num = 0;
     long.TryParse(txRaised.ToString(), out num);
     String finalRaised = num.ToString("N0");
 
-    double percentage = ((double)Model.Raised / 125000000) * 100;
+    double percentage = ((double)Model.Raised / 85000000) * 100;
     //155 = 10M
     double finalRaisedDo = Convert.ToDouble(finalRaised);
     Console.WriteLine("RAISED IS " + finalRaisedDo);
@@ -149,9 +149,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arda - Bitcoin and Cryptocurrency ICO Template</title>
-    <meta name="description" content="Arda is a Bitcoin and Cryptocurrency ICO Template by tempload." />
-    <meta name="keywords" content="bitcoin, ethereum, monero, ico, token, free token, btc, eth" />
+    <title>SynchSpace</title>
     <meta name="author" content="tempload" />
 
     <!-- Favicon -->
@@ -188,46 +186,19 @@
                 <div class="col-12 position-relative">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <img src="~/assets/home/images/logos/transparent-logo-dark.svg" class="light-logo" alt="Arda ICO" />
-                            <img src="~/assets/home/images/logos/white-logo-dark.svg" class="dark-logo" alt="Arda ICO" />
+                        <a href="index" class="logo" style="max-width: 200px; display: flex">
+                            <img src="~/images/logos/logo_new.png" class="light-logo" style="max-width: 200px;" alt="Arda ICO" />
+                            <img src="~/images/logos/logo.png" class="dark-logo" style="max-width: 200px;" alt="Arda ICO" />
                         </a>
                         <!-- ***** Logo End ***** -->
-                        <!-- ***** Lang Start ***** -->
-                        <div class="lang">
-                            <div class="selected">
-                                <img src="~/assets/home/images/flags/en.png" alt="">
-                                <i class="fa fa-angle-down"></i>
-                            </div>
-                            <ul class="flag-list">
-                                <li>
-                                    <a href="#">
-                                        <img src="~/assets/home/images/flags/en.png" alt=""><span>EN</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="~/assets/home/images/flags/ru.png" alt=""><span>RU</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="~/assets/home/images/flags/br.png" alt=""><span>BR</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- ***** Lang End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="#what-is-ico">WHAT IS ICO</a></li>
+                            <li><a href="#what-is-ico">ABOUT US</a></li>
                             <li><a href="#token-sale">TOKEN SALE</a></li>
                             <li><a href="#roadmap">ROADMAP</a></li>
-                            <li><a href="#apps">APPS</a></li>
-                            <li><a href="#team">TEAM</a></li>
                             <li><a href="#faq">FAQ</a></li>
                             <li><a href="#contact">CONTACT</a></li>
-                            <li><a href="#" class="btn-nav-box">SIGN UP</a></li>
+                            <li><a href="account/login" class="btn-nav-box">SIGN IN</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -245,9 +216,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-self-center">
-                        <h1>ARDA Decentralized Blockchain Platform</h1>
-                        <p>Arda makes it easy creation and deployment of decentralized applications, that can be downloaded by end-users from the application store.</p>
-                        <a href="#" class="btn-secondary-box">Download Whitepaper</a>
+                        <h1>SynchSpace - Cryptocurrency without internet</h1>
+                        <p>Storing your cryopto assets has never been so easy and secured!
+                        Using the hard device with the eliminating internet connection, easily accessible from any place around the world</p>
+                        <a href="~/Content/syncspace_wp.pdf" class="btn-secondary-box">Download Whitepaper</a>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12 align-self-center">
                         <div class="box">
@@ -277,7 +249,7 @@
                                 </ul>
                                 <!-- ***** Countdown End ***** -->
                                 <div class="token-payment">
-                                    <span>Select Payment Method</span>
+                                    <span>Accepted Payment Methods</span>
                                     <div class="radios">
                                         <div class="form-radio">
                                             <input type="radio" id="ncheck1" name="payment2" checked="" />
@@ -288,7 +260,7 @@
                                         <div class="form-radio">
                                             <input type="radio" id="ncheck2" name="payment2" />
                                             <label for="ncheck2">
-                                                <i class="fa fa-paypal"></i>
+                                                <img src="~/assets/images/ether.svg"  style="height: 20px"/>
                                             </label>
                                         </div>
                                         <div class="form-radio">
@@ -297,8 +269,14 @@
                                                 <i class="fa fa-cc-visa"></i>
                                             </label>
                                         </div>
+                                        <div class="form-radio">
+                                            <input type="radio" id="ncheck4" name="payment2" />
+                                            <label for="ncheck4">
+                                                <i class="fa fa-cc-mastercard"></i>
+                                            </label>
+                                        </div>
                                     </div>
-                                    <a href="dark-block-explorer.html" class="btn-primary-line">PURCHASE TOKEN NOW</a>
+                                    <a href="account/login" class="btn-primary-line">PURCHASE TOKEN NOW</a>
                                 </div>
                             </div>
                         </div>
@@ -323,8 +301,8 @@
                         <div class="icon">
                             <img src="~/assets/home/images/icon/1.svg" alt="">
                         </div>
-                        <h5 class="features-title">Easy Token Integration</h5>
-                        <p>Morbi pharetra sapien ut mattis viverra. Curabitur sit amet mattis magna lipsum at.</p>
+                        <h5 class="features-title">Energy Effective </h5>
+                        <p>Minimizing and saving systemic and construction costs</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
@@ -333,7 +311,7 @@
                             <img src="~/assets/home/images/icon/2.svg" alt="">
                         </div>
                         <h5 class="features-title">Advanced Security</h5>
-                        <p>Donec pellentesque turpis utium lorem imperdiet semper. Ut mat viverra mattis.</p>
+                        <p>Information accumulated in the SSP ecosystem only can be the subject of demonstration in the blockchain system.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12"
@@ -343,7 +321,7 @@
                             <img src="~/assets/home/images/icon/3.svg" alt="">
                         </div>
                         <h5 class="features-title">Decentralized</h5>
-                        <p>Proin arcu ligula, malesuada id tincidunt laoreet, facilisis at justo. Sed at lorem.</p>
+                        <p>Terrestrial servers presented by our team offer the highest security and reliability level by eliminating the internet network.</p>
                     </div>
                 </div>
             </div>
@@ -356,16 +334,14 @@
                     </div>
                     <div class="left-text">
                         <p class="dark">
-                            ARDA (ARD) is an open source, Bitcoin-like digital currency which uses a proof of
-                            work script algorithm.
+                            About Us
                         </p>
                         <p>
-                            The genesis block was mined on March 1st, 2014. The total number of mineable ARD is 245,465,283.
-                            The mining of Arda is divided into Epochs: each Epoch mines 36000 blocks of coins and is
-                            targeted to last approximately 25 days.
+                            We unlock the value in communications infrastructure using our proprietary, multi-vendor technology platform. 8Leveraging these unique,
+                            technology-driven networks creates value for service providers, to improve the quality and availability of services to end users.
                         </p>
                     </div>
-                    <a href="#" class="btn-secondary-line mobile-bottom-fix">Download Whitepaper</a>
+                    <a href="~/Content/syncspace_wp.pdf" class="btn-secondary-line mobile-bottom-fix">Download Whitepaper</a>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
                     <img src="~/assets/home/images/theme-1-about.svg" class="img-fluid float-right" alt="Arda ICO">
@@ -386,7 +362,7 @@
                 </div>
                 <div class="offset-lg-3 col-lg-6">
                     <div class="center-text colored">
-                        <p>Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat. </p>
+                        @*<p>Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat. </p>*@
                     </div>
                 </div>
             </div>
@@ -404,15 +380,18 @@
                                             <strong>0</strong>
                                             <span>Start</span>
                                         </li>
-                                        <li class="item complate" data-position="25%">
-                                            <strong>$2 M</strong>
+                                        <li class="item complate" data-position="17%">
+                                            <strong>$15 M</strong>
                                             <span>Pre Sale</span>
                                         </li>
-                                        <li class="item complate" data-position="48%">
-                                            <strong>$12 M</strong>
+                                        <li class="item complate" data-position="52%">
+                                            <strong>$45 M</strong>
                                             <span>Soft Cap</span>
                                         </li>
-                                        <li class="item" data-position="73%"></li>
+                                        <li class="item" data-position="99%">
+                                            <strong>$85 M</strong>
+                                            <span>Hard Cap</span>
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- ***** Token Progress End ***** -->
@@ -424,23 +403,15 @@
                                     </div>
                                     <div class="item">
                                         <strong>Token Supply</strong>
-                                        <span>100.000.000 ARD ETH</span>
+                                        <span>1.000.000.000</span>
                                     </div>
                                     <div class="item">
                                         <strong>Accepted Tokens</strong>
-                                        <span>BTC, ETH, ETC, NEM, EOS</span>
+                                        <span>BTC, ETH</span>
                                     </div>
                                     <div class="item">
                                         <strong>Project Protocol</strong>
-                                        <span>ETH, ETC - ARD 20</span>
-                                    </div>
-                                    <div class="item">
-                                        <strong>Circulation Supply</strong>
-                                        <span>37.000.000 ARD ETH</span>
-                                    </div>
-                                    <div class="item">
-                                        <strong>Maximum Cap</strong>
-                                        <span>60 M USD</span>
+                                        <span>ETH, ETH - ERC20</span>
                                     </div>
                                 </div>
                                 <!-- ***** Token Info Table End ***** -->
@@ -477,25 +448,31 @@
                                         <span>Select Payment Method</span>
                                         <div class="radios">
                                             <div class="form-radio">
-                                                <input type="radio" id="check1" name="payment" checked="" />
-                                                <label for="check1">
+                                                <input type="radio" id="ncheck1" name="payment2" checked="" />
+                                                <label for="ncheck1">
                                                     <i class="fa fa-bitcoin"></i>
                                                 </label>
                                             </div>
                                             <div class="form-radio">
-                                                <input type="radio" id="check2" name="payment" />
-                                                <label for="check2">
-                                                    <i class="fa fa-paypal"></i>
+                                                <input type="radio" id="ncheck2" name="payment2" />
+                                                <label for="ncheck2">
+                                                    <img src="~/assets/images/ether.svg" style="height: 20px"/>
                                                 </label>
                                             </div>
                                             <div class="form-radio">
-                                                <input type="radio" id="check3" name="payment" />
-                                                <label for="check3">
+                                                <input type="radio" id="ncheck3" name="payment2" />
+                                                <label for="ncheck3">
                                                     <i class="fa fa-cc-visa"></i>
                                                 </label>
                                             </div>
+                                            <div class="form-radio">
+                                                <input type="radio" id="ncheck4" name="payment2" />
+                                                <label for="ncheck4">
+                                                    <i class="fa fa-cc-mastercard"></i>
+                                                </label>
+                                            </div>
                                         </div>
-                                        <a href="dark-block-explorer.html" class="btn-primary-line">PURCHASE TOKEN NOW</a>
+                                        <a href="account/login" class="btn-primary-line">PURCHASE TOKEN NOW</a>
                                     </div>
                                 </div>
                             </div>
@@ -518,7 +495,6 @@
                 </div>
                 <div class="offset-lg-3 col-lg-6">
                     <div class="center-text">
-                        <p>Cras at leo et lacus laoreet euismod. Nulla malesuada tortor ac scelerisque sollicitudin. </p>
                     </div>
                 </div>
             </div>
@@ -530,55 +506,56 @@
                         <div class="roadmap-modern">
                             <div class="header">
                                 <div class="status complate"></div>
-                                <h6 class="date">04 2018</h6>
+                                <h6 class="date">Q1 2021</h6>
                             </div>
                             <div class="text">
-                                <p>Development of a desktop application for Windows, Android Wallet. Connecting Sidechain + Secure Sandbox. Opportunity to create decentralized applications on the ARD platform.</p>
+                                <p>Ethereum – Bitcoin Blockchain testnet deployment</p>
                             </div>
                         </div>
                         <div class="roadmap-modern">
                             <div class="header">
                                 <div class="status complate"></div>
-                                <h6 class="date">05 2018</h6>
+                                <h6 class="date">Q2 2021</h6>
                             </div>
                             <div class="text">
-                                <p>Running the delegate system. As soon as the system of delegates on the platform is launched, the documentation on how to start the delegate will be available in the FAQ section</p>
+                                <p>Ethereum – Bitcoin Blockchain mainnet inner development, supporting ETH & ERC20 tokens</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-modern">
+                            <div class="header">
+                                <div class="status complate"></div>
+                                <h6 class="date">Q3 2021</h6>
+                            </div>
+                            <div class="text">
+                                <p>The team started working on the group of satellite systems with mathematical experts,
+                                engineers, and analysts from different countries to evolve algorithms & terrestrials </p>
+                            </div>
+                        </div>
+                        <div class="roadmap-modern">
+                            <div class="header">
+                                <div class="status complate"></div>
+                                <h6 class="date">Q4 2021 </h6>
+                            </div>
+                            <div class="text">
+                                <p>A couple of major Blockchain integrated companies are hired to develop SyncSpace ICO</p>
+                            </div>
+                        </div>
+                        <div class="roadmap-modern">
+                            <div class="header">
+                                <div class="status complate"></div>
+                                <h6 class="date">Q1 2022</h6>
+                            </div>
+                            <div class="text">
+                                <p>SyncSpace ICO gets integrated with Blockchain and terrestrial servers.</p>
                             </div>
                         </div>
                         <div class="roadmap-modern">
                             <div class="header">
                                 <div class="status"></div>
-                                <h6 class="date">06 2018</h6>
+                                <h6 class="date">Q2 2022</h6>
                             </div>
                             <div class="text">
-                                <p>Placement of Arda on exchanges. The list of exchanges that placed ARD will be constantly updated, please, kindly check our site.</p>
-                            </div>
-                        </div>
-                        <div class="roadmap-modern">
-                            <div class="header">
-                                <div class="status"></div>
-                                <h6 class="date">07 2018</h6>
-                            </div>
-                            <div class="text">
-                                <p>Updating the consensus of the Delegates. Increase in decentralization, through the distribution of a portion of the delegate's income to those who vote for them.</p>
-                            </div>
-                        </div>
-                        <div class="roadmap-modern">
-                            <div class="header">
-                                <div class="status"></div>
-                                <h6 class="date">08 2018</h6>
-                            </div>
-                            <div class="text">
-                                <p>Adding additional crypto currencies to the wallet. Priority: Bitcoin, Litecoin, Dash, Zcash and Monero. The rest will be added during voting.</p>
-                            </div>
-                        </div>
-                        <div class="roadmap-modern">
-                            <div class="header">
-                                <div class="status"></div>
-                                <h6 class="date">09 2018</h6>
-                            </div>
-                            <div class="text">
-                                <p>Creating a DAO module. Increase the effectiveness of the community through the creation of a special section of decision-making and budget management.</p>
+                                <p>The platform goes public</p>
                             </div>
                         </div>
                     </div>
@@ -587,138 +564,6 @@
         </div>
     </section>
     <!-- ***** Roadmap End ***** -->
-    <!-- ***** Apps Start ***** -->
-    <section class="section gradient" id="apps">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center mobile-bottom-fix">
-                    <div class="left-heading light">
-                        <h2 class="section-title">Apps</h2>
-                    </div>
-                    <div class="left-text light m-bottom-0">
-                        <p>Maecenas et consequat nunc. Duis faucibus orci eu varius sagittis. In quam elit, euismod a urna quis</p>
-                        <ul>
-                            <li>ARD Wallet</li>
-                            <li>Transaction info</li>
-                            <li>My account</li>
-                            <li>Blockchain Explorer</li>
-                            <li>Transfer</li>
-                            <li>Connected peers to network ARD</li>
-                        </ul>
-                        <a class="app-download" href="#"><img src="~/assets/home/images/store-btn-apple.svg" alt=""></a>
-                        <a class="app-download" href="#"><img src="~/assets/home/images/store-btn-google.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
-                    <img src="~/assets/home/images/mockups/dark.png" class="img-fluid float-right" alt="App">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Apps End ***** -->
-    <!-- ***** Team Start ***** -->
-    <section class="section bg-bottom" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title">Team</h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                    <div class="team-square">
-                        <div class="profile">
-                            <div class="img">
-                                <img src="~/assets/home/images/1-1.jpg" class="img-fluid" alt="">
-                                <ul class="social">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <h3 class="team-name">Lance Bogrol</h3>
-                        <span>CEO & Lead Blockchain</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                    <div class="team-square">
-                        <div class="profile">
-                            <div class="img">
-                                <img src="~/assets/home/images/2-2.jpg" class="img-fluid" alt="">
-                                <ul class="social">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <h3 class="team-name">Brian Cumin</h3>
-                        <span>CTO & Senior Developer</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                    <div class="team-square">
-                        <div class="profile">
-                            <div class="img">
-                                <img src="~/assets/home/images/3-3.jpg" class="img-fluid" alt="">
-                                <ul class="social">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <h3 class="team-name">Jackson Pot</h3>
-                        <span>Blockchain App Developer</span>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.8s">
-                    <div class="team-square">
-                        <div class="profile">
-                            <div class="img">
-                                <img src="~/assets/home/images/4-4.jpg" class="img-fluid" alt="">
-                                <ul class="social">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <h3 class="team-name">Douglas Lyphe</h3>
-                        <span>Community Management</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Team End ***** -->
-    <!-- ***** Telegram Parallax Start ***** -->
-    <section class="parallax">
-        <div class="parallax-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="section-title">Join Us On Telegram</h1>
-                    </div>
-                    <div class="offset-lg-3 col-lg-6">
-                        <p>Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</p>
-                    </div>
-                    <div class="offset-lg-3 col-lg-6">
-                        <a href="#" class="btn-white-line">Join Us On Telegram</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Telegram Parallax End ***** -->
     <!-- ***** FAQ Start ***** -->
     <section class="section bg-top" id="faq">
         <div class="container">
@@ -730,7 +575,6 @@
                 </div>
                 <div class="offset-lg-3 col-lg-6">
                     <div class="center-text">
-                        <p>Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</p>
                     </div>
                 </div>
             </div>
@@ -740,91 +584,106 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-1">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">
-                                    <span class="badge">1</span> What are the benefits of digital currency?
+                                    <span class="badge">1</span>What is cryptocurrency?
                                 </button>
                             </h2>
                             <div id="collapse-1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                                    <p> The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                    <span class="badge">2</span> How long has digital currency existed?
+                                    <span class="badge">2</span> Which cryptocurrency is best to buy today?
                                 </button>
                             </h2>
                             <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                                    <p> The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                                    <span class="badge">3</span> How will digital currency affect daily life in the US and around the world?
+                                    <span class="badge">3</span> How about day trading crypto?
                                 </button>
                             </h2>
                             <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                                    <p>
+                                        While profits are possible trading cryptocurrencies, so are losses. My first year involved me spending hundreds of hours trading Bitcoin with a result of losing over $5,000 with nothing to show for it. Simply trading digital currencies is very similar to gambling because no one really knows what is going to happen next although anyone can guess! While I was lucky to do nothing expect lose money when I started, the worst thing that can happen
+                                        is to get lucky right away and get a big ego about what an amazing cryptocurrency trader we are.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                                    <span class="badge">4</span> Why should I use ARD currency and how is it different from other currencies?
+                                    <span class="badge">4</span> When to sell a cryptocurrency?
                                 </button>
                             </h2>
                             <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                                    <p>
+                                        Before Steem I was all in an another altcoin and really excited about it. When I first bought the price was low and made payments to me every week just for holding it. As I tried to participate in the community over the next several months, I was consistently met with a mix of excitement and hostility. When I began talking openly about this, the negative emotions won over in the community and in me.
+                                        Originally I had invested and been happy to hold no matter what the price which quickly went up after I bought it.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-5">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
-                                    <span class="badge">5</span> How is ARD and Arda helping entrepreneurs?
+                                    <span class="badge">5</span> How does one acquire bitcoins?
                                 </button>
                             </h2>
                             <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                                    <p> The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-6">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
-                                    <span class="badge">6</span> What benefits can I get from joining the ARD crowd funding platform?
+                                    <span class="badge">6</span> Can I make money with Bitcoin?
                                 </button>
                             </h2>
                             <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                                    <p> You should never expect to get rich with Bitcoin or any emerging technology. It is always important to be wary of any thing that sounds too good to be true or disobeys basic </p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="heading-7">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
-                                    <span class="badge">7</span> How do I convert my ARD currency into US dollars or other currencies?
+                                    <span class="badge">7</span> What happens when bitcoins are lost?
                                 </button>
                             </h2>
                             <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="heading-7" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <p>Donec tempus sodales dolor, at efficitur enim posuere auctor. Nam et nisi eu purus tempor faucibus aliquet vitae orci. Curabitur sollicitudin leo et magna pharetra efficitur. Nullam et scelerisque lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus sit amet odio eget scelerisque. Mauris dictum cursus ornare.</p>
-                                    <p>Ut vehicula blandit tellus. Sed sit amet bibendum leo, non sagittis neque. Nam fringilla fermentum tortor, ac gravida velit facilisis id. Donec congue ullamcorper velit, at malesuada arcu faucibus pretium. Donec rhoncus magna sit amet massa venenatis, ut convallis justo ultricies.</p>
+                                    <p> While profits are possible trading cryptocurrencies, so are losses. My first year involved me spending hundreds of hours trading Bitcoin with a result of losing over $5,000 with nothing to show for it. Simply trading digital currencies is very similar to gambling because no one really knows what is going to happen next although anyone can guess! While I was lucky to do nothing expect lose money when I started, the worst thing that can happen is to get lucky right away and get a big ego about what an amazing cryptocurrency trader we are. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-8">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+                                    <span class="badge">8</span> Where is the invest my bitcoin?
+                                </button>
+                            </h2>
+                            <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="heading-8" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>  Before Steem I was all in an another altcoin and really excited about it.
+                                    When I first bought the price was low and made payments to me every week just for holding it. 
+                                    As I tried to participate in the community over the next several months,
+                                    I was consistently met with a mix of excitement and hostility. When I began talking openly about this,
+                                    the negative emotions won over in the community and in me. Originally I had invested and been happy to hold no matter what the price which quickly went up after I bought it.  </p>
                                 </div>
                             </div>
                         </div>
@@ -838,24 +697,7 @@
     <footer id="contact">
         <div class="footer-top">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 col-sm-12">
-                        <div class="contact">
-                            <h3 class="section-title">Get In Touch</h3>
-                            <p>Fusce placerat pretium mauris, vel sollicitudin elit lacinia vitae. Quisque sit amet nisi erat.</p>
-                            <ul class="list">
-                                <li><i class="fa fa-envelope-o"></i><a href="mailto:support@myicosite.com">support@myicosite.com</a></li>
-                                <li><i class="fa fa-phone"></i><span>+44 0123 4567</span></li>
-                                <li><i class="fa fa-paper-plane-o"></i><a href="#">Join us on Telegram</a></li>
-                            </ul>
-                            <ul class="social">
-                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                                <li><a href="#"><i class="fa fa-github-square"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="row justify-content-center">
                     <div class="offset-lg-1 col-lg-6 col-md-12 col-sm-12">
                         <div class="contact-form">
                             <h3 class="section-title">Say Something</h3>
@@ -880,7 +722,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5">
-                        <p class="copyright">2021 © Arda - Bitcoin and Cryptocurrency ICO Template - theme by Tempload</p>
+                        <p class="copyright">©2022  Copyright -All rights reserved by SyncSpace ICO</p>
                     </div>
                 </div>
             </div>

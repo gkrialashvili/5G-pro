@@ -699,6 +699,7 @@ token box
   color: #3B566E;
   margin-bottom: 2px;
   padding-left: 3px;
+  min-width: 51px;
 }
 .box .token-progress ul li.item span {
   display: block;
@@ -2623,8 +2624,10 @@ footer & contact
 --------------------------------------------- 
 */
 footer .footer-top {
-  height: 440px;
+  height: 550px;
   background: #F7F9FB;
+  display: flex;
+  align-items: center;
 }
 footer .footer-top .contact {
   margin-top: 90px;
@@ -2693,7 +2696,6 @@ footer .footer-top .contact-form {
   box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   padding: 40px;
-  margin-top: 100px;
   position: relative;
   z-index: 2;
 }
