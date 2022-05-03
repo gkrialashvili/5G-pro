@@ -742,6 +742,7 @@
     <Content Include="assets\admin\plugins\jvectormap-next\jquery-jvectormap.min.js" />
     <Content Include="assets\css\animate.css" />
     <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\faq.css" />
     <Content Include="assets\css\flaticon.css" />
     <Content Include="assets\css\font-awesome.min.css" />
     <Content Include="assets\css\grabbing.png" />

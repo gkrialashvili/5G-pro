@@ -169,6 +169,9 @@
     <!-- bxslider css -->
     <!--flaticon css -->
     <link rel="stylesheet" href="~/assets/css/flaticon.css">
+
+    <link href="~/assets/css/faq.css" rel="stylesheet" />
+
     <!-- font-awesome css -->
     <link rel="stylesheet" href="~/assets/css/font-awesome.min.css">
     <link href="~/assets/css/video-js.css" rel="stylesheet">
@@ -216,6 +219,8 @@
                                     <li><a href="2">Features</a></li>
                                     <li><a href="3">Project</a></li>
                                     <li><a href="5">Road Map</a></li>
+                                    <li><a href="7">FAQ</a></li>
+
                                 </ul>
                             </nav>
                             <div class="login-btn">
@@ -289,8 +294,12 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                             <div class="slider-content">
-                                                <h2 data-animation="animated bounceInLeft">Oilbeam - a project to convert all types of sedimentary biomass in raw material,
-                                                that can be used to produce oil and gas without atmospheric emissions & harmful impact on the environment.</h2>
+                                                <h2 data-animation="animated bounceInLeft">
+                                                    Oilbeam - <span style="font-weight: normal">
+                                                    a project to convert all types of sedimentary biomass in raw material,
+                                                    that can be used to produce oil and gas without atmospheric emissions & harmful impact on the environment.
+                                                </span>
+                                                </h2>
                                                 <div class="buttons">
                                                     <a href="~/Content/OilBeam_Whitepaper.pdf" class="btn1" data-animation="animated bounceInUp">WHITEPAPER</a>
                                                     <a href="account/login" class="btn3">Buy Tokens Now!</a>
@@ -401,12 +410,12 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Slider area end here-->
+    </div>
+    </section>
+    <!--Slider area end here-->
     </div>
     <!--About area start here-->
     <div section-scroll='1' class="wd_scroll_wrap">
@@ -807,30 +816,145 @@
                             </div>
 
                         </div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <div class="sud">
-            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
-            <style type="text/css">
-                .st0 {
-                    fill-rule: evenodd;
-                    clip-rule: evenodd;
-                    fill: #10122d;
-                }
-            </style>
-            <g>
-            <path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
+            </section>
+            <div class="sud">
+                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
+                <style type="text/css">
+                    .st0 {
+                        fill-rule: evenodd;
+                        clip-rule: evenodd;
+                        fill: #10122d;
+                    }
+</style>
+                <g>
+                <path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
                         c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
                         c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
                         c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
                         c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
                 </g>
             </svg>
+            </div>
         </div>
     </div>
+    <section class="faq-section wd_scroll_wrap" section-scroll="7"  id="FAQ">
+        <div class="container">
+            <div class="row" style="display: flex; flex-direction: column; width: 100%; align-items: center;">
+                <!-- ***** FAQ Start ***** -->
+                <div class="col-md-6 offset-md-3">
+
+                    <div class="faq-title text-center pb-3">
+                        <h2>FAQ</h2>
+                    </div>
+                </div>
+                <div class="col-md-10 offset-md-3">
+                    <div class="faq" id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-1">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-1" data-aria-expanded="true" data-aria-controls="faqCollapse-1">
+                                        <span class="badge">1</span>What is OilBeam?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-1" class="collapse" aria-labelledby="faqHeading-1" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>This is a project aimed at the production of equipment to process and recycle oil wastes. OilBeam is token which is issued and used to account for material resources and user interaction. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-2">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-2" data-aria-expanded="false" data-aria-controls="faqCollapse-2">
+                                        <span class="badge">2</span> Is OilBeam backed with anything?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-2" class="collapse" aria-labelledby="faqHeading-2" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>OILBEAM is connected to drilling mud processing market price, which is $132. Therefore, future contracts of Oil&Gas companies, that will be processing their wastes, will back the token. The manufactured machinery, as well as technological and intellectual property will be reflected on the final balance sheet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-3">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-3" data-aria-expanded="false" data-aria-controls="faqCollapse-3">
+                                        <span class="badge">3</span>Who can become an investor?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-3" class="collapse" aria-labelledby="faqHeading-3" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Since it’s a crowdfunding project, anyone has a chance to become an investor. Transparency and simplicity of investment making is the #1 priority. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-4">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-4" data-aria-expanded="false" data-aria-controls="faqCollapse-4">
+                                        <span class="badge">4</span> What level of production output are you targeting?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-4" class="collapse" aria-labelledby="faqHeading-4" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The first stage is set to be the manufacturing of two SR-3 complexes that will be able to process 1930 cubic meters on a monthly basis. Our desire is to apply commission on oil well site and carry out industrial testing, and after that our plan is tom have the plant upgraded for it to be able to manufacture 30 complexes every 2 months.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-5">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-5" data-aria-expanded="false" data-aria-controls="faqCollapse-5">
+                                        <span class="badge">5</span>Are there any agreements with oil companies to put into operation two SR3 complexes?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-5" class="collapse" aria-labelledby="faqHeading-5" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p> There are standing agreements with the oil companies. Full documentation and contracts will be available on the final balance sheet. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="faqHeading-6">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-6" data-aria-expanded="false" data-aria-controls="faqCollapse-6">
+                                        <span class="badge">6</span> When will token be available in the exchanges?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-6" class="collapse" aria-labelledby="faqHeading-6" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>The token will be available on the exchange when Hard Cap is raised </p>
+                                </div>
+                            </div>
+                        </div>
+                        @*<div class="card">
+                            <div class="card-header" id="faqHeading-7">
+                                <div class="mb-0">
+                                    <h5 class="faq-title" data-toggle="collapse" data-target="#faqCollapse-7" data-aria-expanded="false" data-aria-controls="faqCollapse-7">
+                                        <span class="badge">7</span> Why do we use it?
+                                    </h5>
+                                </div>
+                            </div>
+                            <div id="faqCollapse-7" class="collapse" aria-labelledby="faqHeading-7" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                </div>
+                            </div>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
         </div>
-    <div section-scroll='7' class="wd_scroll_wrap">
+    </section>
+    <div section-scroll='8' class="wd_scroll_wrap">
         <section class="media-area section bg-img jarallax">
             <div class="container">
                 <div class="row">
@@ -890,14 +1014,14 @@
                             </div>
                         </div>
                         @*<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="foo-link wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
-                                <ul>
-                                    <li><a href="#">WhitePaper</a></li>
-                                    <li><a href="#">Terms of Service</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>*@
+                                <div class="foo-link wow  fadeInUp animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeInUp;">
+                                    <ul>
+                                        <li><a href="#">WhitePaper</a></li>
+                                        <li><a href="#">Terms of Service</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>*@
                     </div>
                 </div>
             </div>
@@ -939,193 +1063,193 @@
 
     <!--main js file end-->
     <script>
-    // Create Countdown
-    var Countdown = {
+        // Create Countdown
+        var Countdown = {
 
-    // Backbone-like structure
-    $el: $('.countdown'),
+            // Backbone-like structure
+            $el: $('.countdown'),
 
-    // Params
-    countdown_interval: null,
-    total_seconds: 0,
+            // Params
+            countdown_interval: null,
+            total_seconds: 0,
 
-    // Initialize the countdown
-    init: function () {
+            // Initialize the countdown
+            init: function () {
 
-    // DOM
-    this.$ = {
-    days: this.$el.find('.bloc-time.days .figure'),
-    hours: this.$el.find('.bloc-time.hours .figure'),
-    minutes: this.$el.find('.bloc-time.min .figure'),
-    seconds: this.$el.find('.bloc-time.sec .figure')
-    };
+                // DOM
+                this.$ = {
+                    days: this.$el.find('.bloc-time.days .figure'),
+                    hours: this.$el.find('.bloc-time.hours .figure'),
+                    minutes: this.$el.find('.bloc-time.min .figure'),
+                    seconds: this.$el.find('.bloc-time.sec .figure')
+                };
 
-    var countDownDate = new Date("june 25, 2020 15:37:25").getTime();
-    // Get todays date and time
-    var now = new Date().getTime();
+                var countDownDate = new Date("june 25, 2020 15:37:25").getTime();
+                // Get todays date and time
+                var now = new Date().getTime();
 
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
 
-    //  Time calculations for days, hours, minutes and seconds
-    var days_se = Math.floor(distance / (1000 * 60 * 60 * 24));
+                //  Time calculations for days, hours, minutes and seconds
+                var days_se = Math.floor(distance / (1000 * 60 * 60 * 24));
 
-    var hours_se = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var hours_se = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
-    var minutes_se = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var minutes_se = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-    var seconds_se = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-    // Init countdown values
-    this.values = {
-    days: days_se,
-    hours: hours_se,
-    minutes: minutes_se,
-    seconds: seconds_se
-    };
+                var seconds_se = Math.floor((distance % (1000 * 60)) / 1000);
 
 
-    // Initialize total seconds
-    this.total_seconds = this.values.hours * 60 * 60 + this.values.minutes * 60 + this.values.seconds;
-
-    // Animate countdown to the end
-    this.count();
-    },
-
-    count: function () {
-
-    var that = this,
-    $days_1 = this.$.days.eq(0),
-    $days_2 = this.$.days.eq(1),
-    $days_3 = this.$.days.eq(2),
-    $hour_1 = this.$.hours.eq(0),
-    $hour_2 = this.$.hours.eq(1),
-    $min_1 = this.$.minutes.eq(0),
-    $min_2 = this.$.minutes.eq(1),
-    $sec_1 = this.$.seconds.eq(0),
-    $sec_2 = this.$.seconds.eq(1);
-
-    console.log(this.$.days)
+                // Init countdown values
+                this.values = {
+                    days: days_se,
+                    hours: hours_se,
+                    minutes: minutes_se,
+                    seconds: seconds_se
+                };
 
 
-    this.countdown_interval = setInterval(function () {
+                // Initialize total seconds
+                this.total_seconds = this.values.hours * 60 * 60 + this.values.minutes * 60 + this.values.seconds;
 
-    if (that.total_seconds > 0) {
+                // Animate countdown to the end
+                this.count();
+            },
 
-    --that.values.seconds;
+            count: function () {
 
-    if (that.values.minutes >= 0 && that.values.seconds < 0) {
+                var that = this,
+                    $days_1 = this.$.days.eq(0),
+                    $days_2 = this.$.days.eq(1),
+                    $days_3 = this.$.days.eq(2),
+                    $hour_1 = this.$.hours.eq(0),
+                    $hour_2 = this.$.hours.eq(1),
+                    $min_1 = this.$.minutes.eq(0),
+                    $min_2 = this.$.minutes.eq(1),
+                    $sec_1 = this.$.seconds.eq(0),
+                    $sec_2 = this.$.seconds.eq(1);
 
-    that.values.seconds = 59;
-    --that.values.minutes;
-    }
-
-    if (that.values.hours >= 0 && that.values.minutes < 0) {
-
-    that.values.minutes = 59;
-    --that.values.hours;
-    }
-
-
-    // Update DOM values
-    //Days
-    that.checkHour(that.values.days, $days_1, $days_2, $days_3);
-
-    // Hours
-    that.checkHour(that.values.hours, $hour_1, $hour_2);
-
-    // Minutes
-    that.checkHour(that.values.minutes, $min_1, $min_2);
-
-    // Seconds
-    that.checkHour(that.values.seconds, $sec_1, $sec_2);
-
-    --that.total_seconds;
-    } else {
-    clearInterval(that.countdown_interval);
-    }
-    }, 1000);
-    },
-
-    animateFigure: function ($el, value) {
-
-    var that = this,
-    $top = $el.find('.top'),
-    $bottom = $el.find('.bottom'),
-    $back_top = $el.find('.top-back'),
-    $back_bottom = $el.find('.bottom-back');
-
-    // Before we begin, change the back value
-    $back_top.find('span').html(value);
-
-    // Also change the back bottom value
-    $back_bottom.find('span').html(value);
-
-    // Then animate
-    TweenMax.to($top, 0.8, {
-    rotationX: '-180deg',
-    transformPerspective: 300,
-    ease: Quart.easeOut,
-    onComplete: function () {
-
-    $top.html(value);
-
-    $bottom.html(value);
-
-    TweenMax.set($top, { rotationX: 0 });
-    }
-    });
+                console.log(this.$.days)
 
 
-    TweenMax.to($back_top, 0.8, {
-    rotationX: 0,
-    transformPerspective: 300,
-    ease: Quart.easeOut,
-    clearProps: 'all'
-    });
+                this.countdown_interval = setInterval(function () {
 
-    },
+                    if (that.total_seconds > 0) {
 
-    checkHour: function (value, $el_1, $el_2, $el_3) {
+                        --that.values.seconds;
 
-    var val_1 = value.toString().charAt(0);
-    var val_2 = value.toString().charAt(1);
+                        if (that.values.minutes >= 0 && that.values.seconds < 0) {
 
-    if ($el_3 != null)
-    var val_3 = value.toString().charAt(2);
+                            that.values.seconds = 59;
+                            --that.values.minutes;
+                        }
 
-    var fig_1_value = $el_1.find('.top').html();
-    var fig_2_value = $el_2.find('.top').html();
+                        if (that.values.hours >= 0 && that.values.minutes < 0) {
 
-    if ($el_3 != null)
-    var fig_3_value = $el_3.find('.top').html();
-
-    if (value >= 10) {
-
-    // Animate only if the figure has changed
-    if (fig_1_value !== val_1) this.animateFigure($el_1, val_1);
-    if (fig_2_value !== val_2) this.animateFigure($el_2, val_2);
-
-    if ($el_3 != null)
-    if (fig_3_value !== val_3)
-    this.animateFigure($el_3, val_3);
-
-    } else {
-
-    // If we are under 10, replace first figure with 0
-    if (fig_1_value !== '0') this.animateFigure($el_1, 0);
-    if (fig_2_value !== val_1) this.animateFigure($el_2, val_1);
-    if ($el_3 != null)
-    if (fig_3_value !== val_1) this.animateFigure($el_2, val_1);
-    }
-    }
-    };
+                            that.values.minutes = 59;
+                            --that.values.hours;
+                        }
 
 
-    // Let's go !
-    Countdown.init();
-    //# sourceURL=pen.js
+                        // Update DOM values
+                        //Days
+                        that.checkHour(that.values.days, $days_1, $days_2, $days_3);
+
+                        // Hours
+                        that.checkHour(that.values.hours, $hour_1, $hour_2);
+
+                        // Minutes
+                        that.checkHour(that.values.minutes, $min_1, $min_2);
+
+                        // Seconds
+                        that.checkHour(that.values.seconds, $sec_1, $sec_2);
+
+                        --that.total_seconds;
+                    } else {
+                        clearInterval(that.countdown_interval);
+                    }
+                }, 1000);
+            },
+
+            animateFigure: function ($el, value) {
+
+                var that = this,
+                    $top = $el.find('.top'),
+                    $bottom = $el.find('.bottom'),
+                    $back_top = $el.find('.top-back'),
+                    $back_bottom = $el.find('.bottom-back');
+
+                // Before we begin, change the back value
+                $back_top.find('span').html(value);
+
+                // Also change the back bottom value
+                $back_bottom.find('span').html(value);
+
+                // Then animate
+                TweenMax.to($top, 0.8, {
+                    rotationX: '-180deg',
+                    transformPerspective: 300,
+                    ease: Quart.easeOut,
+                    onComplete: function () {
+
+                        $top.html(value);
+
+                        $bottom.html(value);
+
+                        TweenMax.set($top, { rotationX: 0 });
+                    }
+                });
+
+
+                TweenMax.to($back_top, 0.8, {
+                    rotationX: 0,
+                    transformPerspective: 300,
+                    ease: Quart.easeOut,
+                    clearProps: 'all'
+                });
+
+            },
+
+            checkHour: function (value, $el_1, $el_2, $el_3) {
+
+                var val_1 = value.toString().charAt(0);
+                var val_2 = value.toString().charAt(1);
+
+                if ($el_3 != null)
+                    var val_3 = value.toString().charAt(2);
+
+                var fig_1_value = $el_1.find('.top').html();
+                var fig_2_value = $el_2.find('.top').html();
+
+                if ($el_3 != null)
+                    var fig_3_value = $el_3.find('.top').html();
+
+                if (value >= 10) {
+
+                    // Animate only if the figure has changed
+                    if (fig_1_value !== val_1) this.animateFigure($el_1, val_1);
+                    if (fig_2_value !== val_2) this.animateFigure($el_2, val_2);
+
+                    if ($el_3 != null)
+                        if (fig_3_value !== val_3)
+                            this.animateFigure($el_3, val_3);
+
+                } else {
+
+                    // If we are under 10, replace first figure with 0
+                    if (fig_1_value !== '0') this.animateFigure($el_1, 0);
+                    if (fig_2_value !== val_1) this.animateFigure($el_2, val_1);
+                    if ($el_3 != null)
+                        if (fig_3_value !== val_1) this.animateFigure($el_2, val_1);
+                }
+            }
+        };
+
+
+        // Let's go !
+        Countdown.init();
+        //# sourceURL=pen.js
     </script>
     <script>
 
