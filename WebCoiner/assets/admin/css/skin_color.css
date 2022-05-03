@@ -181,7 +181,7 @@ File: scss
 
 /*---Dark skin---*/
 body.dark-skin {
-  background-color: #1a233a;
+  background-color: #fff;
   color: #8a99b5; }
   body.dark-skin .navbar-nav > .user-menu > .dropdown-menu > .user-body {
     border-color: rgba(255, 255, 255, 0.12); }
