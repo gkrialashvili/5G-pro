@@ -9996,6 +9996,7 @@
     <Content Include="assets\login\logo.png" />
     <Content Include="assets\login\style.css" />
     <Content Include="assets\login\vendor.bundle.css" />
+    <Content Include="assets\old\app.css" />
     <Content Include="assets\owlcarousel\css\owl.carousel.min.css" />
     <Content Include="assets\owlcarousel\css\owl.theme.css" />
     <Content Include="assets\owlcarousel\css\owl.theme.default.min.css" />

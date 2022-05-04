@@ -72,7 +72,29 @@ $(function () {
         };
 
         var chart = new ApexCharts(document.querySelector("#summary-chart"), options);
-        chart.render();
+	chart.render();
+
+
+
+
+    new Chart(document.getElementById("line-chart"), {
+        type: 'line',
+        data: {
+            labels: ['Private Sale   $0.03', 'Presale $0.06', 'Softcap $0.15', 'Hardcap $0.30'],
+            datasets: [{
+                data: [0.03, 0.06, 0.15, 0.30],
+                label: "Token Price",
+                borderColor: "#3e95cd",
+                fill: true
+            },
+            ]
+        },
+        options: {
+            title: {
+                display: false,
+            }
+        }
+    });
 	
 	
 	

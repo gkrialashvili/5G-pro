@@ -28,6 +28,8 @@
 
     <title>SyncSpace Dashboard </title>
 
+    <link rel="stylesheet" href="~/assets/old/app.css" />
+
     <!-- Bootstrap 4.0-->
     <link rel="stylesheet" href="~/assets/admin/assets/vendor_components/bootstrap/dist/css/bootstrap.css">
 
@@ -53,18 +55,129 @@
 <body class="layout-top-nav dark-skin theme-classic">
 
     <div class="wrapper">
+        <div class="modal fade show" id="myModal" style="display: none; background-color: rgba(152, 152, 152, 0.8); overflow: hidden" aria-modal="true">
+            <div class="modal-dialog" style=" width: 90%; max-width: 1200px; min-height: 100%;">
+                <div class="modal-content" style="background: rgba(0, 0, 0, 0.5);">
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <section class="lis-bg-light">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-md-10 text-center">
+                                        <div class="heading pb-4">
+                                            <h2>Choose Your Package</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                         style="visibility: visible; animation-name: fadeInUp;">
+                                        <div class="price-table">
+                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light" style="background: #747474;">
+                                                <h5 class="text-uppercase lis-latter-spacing-2">Basic</h5>
+                                                <h1 class="display-4 lis-font-weight-500">1<small>%</small></h1>
+                                                <p class="mb-0">Basic Membership</p>
+                                            </div>
+                                            <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                <ul class="list-unstyled lis-line-height-3">
+                                                    <li style="color: black">oilbeam-ico tokens in portfolio</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                         style="visibility: visible; animation-name: fadeInUp;">
+                                        <div class="price-table" style="color: black">
+                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                                 style="background-color:#e6e4e2; color: black">
+                                                <h5 class="text-uppercase lis-latter-spacing-2">Silver</h5>
+                                                <h1 class="display-4 lis-font-weight-500">
+                                                    1<small>%</small>-
+                                                    5<small>%</small>
+                                                </h1>
+                                                <p class="mb-0">Silver Membership</p>
+                                            </div>
+                                            <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                <ul class="list-unstyled lis-line-height-3">
+                                                    <li>oilbeam-ico tokens in portfolio</li>
+                                                    <li>Minimum portfolio: $100,000</li>
+                                                </ul>
+                                                <a href="/userdashboard/create/" style="background-color: #28c189;"
+                                                   class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                                   data-abc="true">Top Up Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                         style="visibility: visible; animation-name: fadeInUp;">
+                                        <div class="price-table" style="color: black">
+                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                                 style="background-color:#F3AF4C;">
+                                                <h5 class="text-uppercase lis-latter-spacing-2">Gold</h5>
+                                                <h1 class="display-4 lis-font-weight-500">
+                                                    6<small>%</small> -
+                                                    12<small>%</small>
+                                                </h1>
+                                                <p class="mb-0">Gold Membership</p>
+                                            </div>
+                                            <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                <ul class="list-unstyled lis-line-height-3">
+                                                    <li>oilbeam-ico tokens in portfolio</li>
+                                                    <li>Minimum portfolio: $250,000</li>
+                                                </ul>
+                                                <a href="/userdashboard/create/" style="background-color: #28c189;"
+                                                   class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                                   data-abc="true">Top Up Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                         style="visibility: visible; animation-name: fadeInUp;">
+                                        <div class="price-table" style="color: black">
+                                            <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                                 style="        background-color:#a0b2c6;">
+
+                                                <h5 class="text-uppercase lis-latter-spacing-2">Platinum</h5>
+                                                <h1 class="display-4 lis-font-weight-500">
+                                                    12<small>%</small>-20<small>%</small>
+                                                </h1>
+                                                <p class="mb-0">Platinum Membership</p>
+                                            </div>
+                                            <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                <ul class="list-unstyled lis-line-height-3">
+
+
+                                                    <li>oilbeam-ico tokens in portfolio</li>
+                                                    <li>Minimum portfolio: $500,000</li>
+
+                                                </ul>
+                                                <a href="/userdashboard/create/" style="background-color: #28c189;"
+                                                   class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                                   data-abc="true">Top Up Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" id="close-modal"
+                                data-dismiss="modal">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <header class="main-header">
             <div class="inside-header">
                 <div class="d-flex align-items-center logo-box justify-content-between">
-                    <a href="index.html" class="logo">
-                        <div class="logo-mini">
-                            <span class="light-logo"><img src="~/assets/admin/images/logo-light.png" alt="logo"></span>
-                            <span class="dark-logo"><img src="~/assets/admin/images/logo-light.png" alt="logo"></span>
-                        </div>
+                    <a href="@Url.Action("Dashboard", "UserDashboard")" class="logo">
                         <div class="logo-lg">
-                            <span class="light-logo"><img src="~/assets/admin/images/logo-light-text.png" alt="logo"></span>
-                            <span class="dark-logo"><img src="~/assets/admin/images/logo-light-text.png" alt="logo"></span>
+                            <span class="light-logo"><img src="~/images/logos/logo_new.png" alt="logo"></span>
                         </div>
                     </a>
                 </div>
@@ -72,347 +185,24 @@
                 <nav class="navbar navbar-static-top">
                     <!-- Sidebar toggle button-->
                     <div>
-                        <a href="#" data-provide="fullscreen" class="sidebar-toggle d-lg-inline-flex d-none" title="Full Screen">
-                            <i class="mdi mdi-crop-free"></i>
-                        </a>
+
 
                     </div>
 
                     <div class="navbar-custom-menu r-side">
                         <ul class="nav navbar-nav">
-                            <!-- full Screen -->
-                            <li class="search-bar">
-                                <div class="lookup lookup-circle lookup-right">
-                                    <input type="text" name="s">
-                                </div>
-                            </li>
-                            <!-- Messages -->
-                            <li class="dropdown messages-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Messages">
-                                    <i class="mdi mdi-email"></i>
-                                </a>
-                                <ul class="dropdown-menu animated bounceIn">
-
-                                    <li class="header">
-                                        <div class="p-20">
-                                            <div class="flexbox">
-                                                <div>
-                                                    <h4 class="mb-0 mt-0">Messages</h4>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="text-danger">Clear All</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <!-- inner menu: contains the actual data -->
-                                        <ul class="menu sm-scrol">
-                                            <li>
-                                                <!-- start message -->
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="~/assets/admin/images/user2-160x160.jpg" class="rounded-circle" alt="User Image">
-                                                    </div>
-                                                    <div class="mail-contnet">
-                                                        <h4>
-                                                            Lorem Ipsum
-                                                            <small><i class="fa fa-clock-o"></i> 15 mins</small>
-                                                        </h4>
-                                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end message -->
-                                            <li>
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="~/assets/admin/images/user3-128x128.jpg" class="rounded-circle" alt="User Image">
-                                                    </div>
-                                                    <div class="mail-contnet">
-                                                        <h4>
-                                                            Nullam tempor
-                                                            <small><i class="fa fa-clock-o"></i> 4 hours</small>
-                                                        </h4>
-                                                        <span>Curabitur facilisis erat quis metus congue viverra.</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="~/assets/admin/images/user4-128x128.jpg" class="rounded-circle" alt="User Image">
-                                                    </div>
-                                                    <div class="mail-contnet">
-                                                        <h4>
-                                                            Proin venenatis
-                                                            <small><i class="fa fa-clock-o"></i> Today</small>
-                                                        </h4>
-                                                        <span>Vestibulum nec ligula nec quam sodales rutrum sed luctus.</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="~/assets/admin/images/user3-128x128.jpg" class="rounded-circle" alt="User Image">
-                                                    </div>
-                                                    <div class="mail-contnet">
-                                                        <h4>
-                                                            Praesent suscipit
-                                                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                                        </h4>
-                                                        <span>Curabitur quis risus aliquet, luctus arcu nec, venenatis neque.</span>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="~/assets/admin/images/user4-128x128.jpg" class="rounded-circle" alt="User Image">
-                                                    </div>
-                                                    <div class="mail-contnet">
-                                                        <h4>
-                                                            Donec tempor
-                                                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                        </h4>
-                                                        <span>Praesent vitae tellus eget nibh lacinia pretium.</span>
-                                                    </div>
-
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="footer">
-                                        <a href="#">See all e-Mails</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Notifications -->
-                            <li class="dropdown notifications-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Notifications">
-                                    <i class="mdi mdi-bell"></i>
-                                </a>
-                                <ul class="dropdown-menu animated bounceIn">
-
-                                    <li class="header">
-                                        <div class="p-20">
-                                            <div class="flexbox">
-                                                <div>
-                                                    <h4 class="mb-0 mt-0">Notifications</h4>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="text-danger">Clear All</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <!-- inner menu: contains the actual data -->
-                                        <ul class="menu sm-scrol">
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et nisi
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero dictum fermentum.
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-user text-primary"></i> Nunc fringilla lorem
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="footer">
-                                        <a href="#">View all</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Tasks -->
-                            <li class="dropdown messages-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Tasks">
-                                    <i class="mdi mdi-comment-alert"></i>
-                                </a>
-                                <ul class="dropdown-menu animated bounceIn">
-
-                                    <li class="header">
-                                        <div class="p-20">
-                                            <div class="flexbox">
-                                                <div>
-                                                    <h4 class="mb-0 mt-0">You have 6 tasks</h4>
-                                                </div>
-                                                <div>
-                                                    <a href="#" class="text-danger">Clear All</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <!-- inner menu: contains the actual data -->
-                                        <ul class="menu sm-scrol">
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h6>
-                                                        Lorem ipsum dolor sit amet
-                                                        <small class="pull-right">30%</small>
-                                                    </h6>
-                                                    <div class="progress xs mb-0">
-                                                        <div class="progress-bar progress-bar-primary" style="width: 30%" role="progressbar"
-                                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">30% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h6>
-                                                        Vestibulum nec ligula
-                                                        <small class="pull-right">20%</small>
-                                                    </h6>
-                                                    <div class="progress xs mb-0">
-                                                        <div class="progress-bar progress-bar-danger" style="width: 20%" role="progressbar"
-                                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">20% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h6>
-                                                        Donec id leo ut ipsum
-                                                        <small class="pull-right">70%</small>
-                                                    </h6>
-                                                    <div class="progress xs mb-0">
-                                                        <div class="progress-bar progress-bar-info" style="width: 70%" role="progressbar"
-                                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">70% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h6>
-                                                        Praesent vitae tellus
-                                                        <small class="pull-right">40%</small>
-                                                    </h6>
-                                                    <div class="progress xs mb-0">
-                                                        <div class="progress-bar progress-bar-warning" style="width: 40%" role="progressbar"
-                                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">40% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h6>
-                                                        Nam varius sapien
-                                                        <small class="pull-right">80%</small>
-                                                    </h6>
-                                                    <div class="progress xs mb-0">
-                                                        <div class="progress-bar progress-bar-danger" style="width: 80%" role="progressbar"
-                                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">80% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h6>
-                                                        Nunc fringilla
-                                                        <small class="pull-right">90%</small>
-                                                    </h6>
-                                                    <div class="progress xs mb-0">
-                                                        <div class="progress-bar progress-bar-primary" style="width: 90%" role="progressbar"
-                                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">90% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="footer">
-                                        <a href="#">View all tasks</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <!-- User Account-->
-                            <li class="dropdown user user-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="User">
-                                    <img src="~/assets/admin/images/avatar/7.jpg" class="user-image rounded-circle" alt="User Image">
-                                </a>
-                                <ul class="dropdown-menu animated flipInX">
-                                    <!-- User image -->
-                                    <li class="user-header bg-img" style="background-image: url(~/assets/admin/images/user-info.jpg)" data-overlay="3">
-                                        <div class="flexbox align-self-center">
-                                            <img src="~/assets/admin/images/avatar/7.jpg" class="float-left rounded-circle" alt="User Image">
-                                            <h4 class="user-name align-self-center">
-                                                <span>Samuel Brus</span>
-                                                <small>samuel@gmail.com</small>
-                                            </h4>
-                                        </div>
-                                    </li>
-                                    <!-- Menu Body -->
-                                    <li class="user-body">
-                                        <a class="dropdown-item" href="javascript:void(0)"><i class="ion ion-person"></i> My Profile</a>
-                                        <a class="dropdown-item" href="javascript:void(0)"><i class="ion ion-bag"></i> My Balance</a>
-                                        <a class="dropdown-item" href="javascript:void(0)"><i class="ion ion-email-unread"></i> Inbox</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="javascript:void(0)"><i class="ion ion-settings"></i> Account Setting</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="javascript:void(0)"><i class="ion-log-out"></i> Logout</a>
-                                        <div class="dropdown-divider"></div>
-                                        <div class="p-10"><a href="javascript:void(0)" class="btn btn-sm btn-rounded btn-success">View Profile</a></div>
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                            <!-- Control Sidebar Toggle Button -->
-                            <li>
-                                <a href="#" data-toggle="control-sidebar" title="Setting"><i class="fa fa-cog fa-spin"></i></a>
+                            <li class="d-flex align-items-center">
+                                @if (Request.IsAuthenticated)
+                                {
+                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <a style="width: 84px" href="javascript:document.getElementById('logoutForm').submit()" data-toggle="control-sidebar" title="Setting">
+                                            <i class="fa fa-cog fa-spin"></i>
+                                            <dvi>Log Out</dvi>
+                                        </a>
+                                    }
+                                }
                             </li>
 
                         </ul>
@@ -430,243 +220,71 @@
             </label>
 
             <!-- Sample menu definition -->
-            <ul id="main-menu" class="sm sm-blue">
-                <li><a href="index.html"><i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>Dashboard</a></li>
-                <li>
-                    <a href="#"><i class="icon-Equalizer"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>Reports</a>
-                    <ul>
-                        <li><a href="reports_transactions.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Transactions Reports</a></li>
-                        <li><a href="reports_top_gainers_losers.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Top Gainers/Losers</a></li>
-                        <li><a href="reports_market_capitalizations.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Market Capitalizations</a></li>
-                        <li><a href="reports_crypto_stats.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Crypto Stats</a></li>
+            <ul id="main-menu" class="sm sm-blue d-flex justify-content-around">
+                @if (User.IsInRole("administrator"))
+                {
+                    <li>
+                        <a href="~/dashboard/list/">
+                            <i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/transactions/list">
+                            <i class="icon-Equalizer"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>Transactions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/users/list"><i class="icon-Group"><span class="path1"></span><span class="path2"></span></i>Users</a>
+                    </li>
+                    <li>
+                        <a href="~/promocodes/list"><i class="icon-Arrows-h"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Promocodes</a>
+                    </li>
+                    <li>
+                        <a href="~/manage/index/"><i class="icon-Chart-line"><span class="path1"></span><span class="path2"></span></i>Profile</a>
+                    </li>
+                    <li>
+                        <a href="~/userdashboard/create/">
+                            <i class="icon-Dollar">
+                                <span class="path1"></span>
+                                <span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                            </i>Buy Tokens
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="modalShow"><i class="icon-Box"><span class="path1"></span><span class="path2"></span></i>Packages</a>
+                    </li>
+                }
 
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Transactions</a>
-                            <ul>
-                                <li><a href="transactions_tables.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Transactions Tables</a></li>
-                                <li><a href="transaction_search.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Transactions Search</a></li>
-                                <li><a href="transaction_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Single Transaction</a></li>
-                                <li><a href="transactions_counter.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Transactions Counter</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-Chart-pie"><span class="path1"></span><span class="path2"></span></i>ICO</a>
-                    <ul>
-                        <li><a href="ico_distribution_countdown.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Countdown</a></li>
-                        <li><a href="ico_roadmap_timeline.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Roadmap/Timeline</a></li>
-                        <li><a href="ico_progress.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Progress Bar</a></li>
-                        <li><a href="ico_details.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Details</a></li>
-                        <li><a href="ico_listing.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>ICO Listing</a></li>
-                        <li><a href="ico_filter.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>ICO Listing - Filters</a></li>
-                    </ul>
-                </li>
-                <li><a href="currency_exchange.html"><i class="icon-Repeat"><span class="path1"></span><span class="path2"></span></i>Currency</a></li>
-                <li>
-                    <a href="#"><i class="icon-Group"><span class="path1"></span><span class="path2"></span></i>Members</a>
-                    <ul>
-                        <li><a href="members.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Members Grid</a></li>
-                        <li><a href="members_list.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Members List</a></li>
-                        <li><a href="member_profile.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Member Profile</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-Arrows-h"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Tickers</a>
-                    <ul>
-                        <li><a href="tickers.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Ticker</a></li>
-                        <li><a href="tickers_live_pricing.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Live Crypto Prices</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-Chart-line"><span class="path1"></span><span class="path2"></span></i>Charts</a>
-                    <ul>
-                        <li><a href="charts_chartjs.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>ChartJS</a></li>
-                        <li><a href="charts_flot.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Flot</a></li>
-                        <li><a href="charts_inline.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Inline charts</a></li>
-                        <li><a href="charts_morris.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Morris</a></li>
-                        <li><a href="charts_peity.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Peity</a></li>
-                        <li><a href="charts_chartist.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Chartist</a></li>
-                        <li><a href="charts_rickshaw.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Rickshaw Charts</a></li>
-                        <li><a href="charts_nvd3.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>NVD3 Charts</a></li>
-                        <li><a href="charts_echart.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>eChart</a></li>
-                        <li><a href="charts_amcharts.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>amCharts Charts</a></li>
-                        <li><a href="charts_amstock_charts.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>amCharts Stock Charts</a></li>
-                        <li><a href="charts_ammaps.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>amCharts Maps</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-Flower"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>Apps</a>
-                    <ul>
-                        <li><a href="app_chat.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Chat app</a></li>
-                        <li><a href="app_contact.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Contact / Employee</a></li>
-                        <li><a href="app_userlist_grid.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Userlist Grid</a></li>
-                        <li><a href="app_userlist.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Userlist</a></li>
-                        <li><a href="app_ticket.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Support Ticket</a></li>
-                        <li><a href="app_calendar.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Calendar</a></li>
-                        <li><a href="app_profile.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Profile</a></li>
-                        <li><a href="app_taskboard.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Project DashBoard</a></li>
-                        <li><a href="app_project_table.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Project</a></li>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Mailbox</a>
-                            <ul>
-                                <li><a href="mailbox_inbox.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Inbox</a></li>
-                                <li><a href="mailbox_compose.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Compose</a></li>
-                                <li><a href="mailbox_read_mail.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Read</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-Bucket"><span class="path1"></span><span class="path2"></span></i>UI</a>
-                    <ul>
-                        <li><a href="ui_badges.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Badges</a></li>
-                        <li><a href="ui_border_utilities.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Border</a></li>
-                        <li><a href="ui_buttons.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Buttons</a></li>
-                        <li><a href="ui_color_utilities.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Color</a></li>
-                        <li><a href="ui_dropdown.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dropdown</a></li>
-                        <li><a href="ui_dropdown_grid.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dropdown Grid</a></li>
-                        <li><a href="ui_typography.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Typography</a></li>
-                        <li><a href="ui_progress_bars.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Progress Bars</a></li>
-                        <li><a href="ui_grid.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Grid</a></li>
-                        <li><a href="ui_ribbons.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Ribbons</a></li>
-                        <li><a href="ui_sliders.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Sliders</a></li>
-                        <li><a href="ui_tab.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Tabs</a></li>
-                        <li><a href="ui_timeline.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Timeline</a></li>
-                        <li><a href="ui_timeline_horizontal.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Horizontal Timeline</a></li>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Components</a>
-                            <ul>
-                                <li><a href="component_bootstrap_switch.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Bootstrap Switch</a></li>
-                                <li><a href="component_date_paginator.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Date Paginator</a></li>
-                                <li><a href="component_media_advanced.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Advanced Medias</a></li>
-                                <li><a href="component_modals.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Modals</a></li>
-                                <li><a href="component_nestable.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Nestable</a></li>
-                                <li><a href="component_notification.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Notification</a></li>
-                                <li><a href="component_portlet_draggable.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Draggable Portlets</a></li>
-                                <li><a href="component_sweatalert.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Sweet Alert</a></li>
-                                <li><a href="component_rangeslider.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Range Slider</a></li>
-                                <li><a href="component_rating.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Ratings</a></li>
-                                <li><a href="component_animations.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Animations</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Box Cards</a>
-                            <ul>
-                                <li><a href="box_cards.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>User Card</a></li>
-                                <li><a href="box_advanced.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Advanced Card</a></li>
-                                <li><a href="box_basic.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Basic Card</a></li>
-                                <li><a href="box_color.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Card Color</a></li>
-                                <li><a href="box_group.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Card Group</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Icons</a>
-                            <ul>
-                                <li><a href="icons_fontawesome.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Font Awesome</a></li>
-                                <li><a href="icons_glyphicons.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Glyphicons</a></li>
-                                <li><a href="icons_material.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Material Icons</a></li>
-                                <li><a href="icons_themify.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Themify Icons</a></li>
-                                <li><a href="icons_simpleline.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Simple Line Icons</a></li>
-                                <li><a href="icons_cryptocoins.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Cryptocoins Icons</a></li>
-                                <li><a href="icons_flag.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Flag Icons</a></li>
-                                <li><a href="icons_weather.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Weather Icons</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-Layers"><span class="path1"></span><span class="path2"></span></i>Widgets</a>
-                    <ul>
-                        <li><a href="widgets_blog.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Blog</a></li>
-                        <li><a href="widgets_chart.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Chart</a></li>
-                        <li><a href="widgets_list.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>List</a></li>
-                        <li><a href="widgets_social.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Social</a></li>
-                        <li><a href="widgets_statistic.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Statistic</a></li>
-                        <li><a href="widgets_weather.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Weather</a></li>
-                        <li><a href="widgets.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Widgets</a></li>
-                        <li><a href="email_index.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Emails</a></li>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Maps</a>
-                            <ul>
-                                <li><a href="map_google.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Google Map</a></li>
-                                <li><a href="map_vector.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Vector Map</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Extension</a>
-                            <ul>
-                                <li><a href="extension_fullscreen.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Fullscreen</a></li>
-                                <li><a href="extension_pace.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Pace</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-File"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Forms & Table</a>
-                    <ul>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Forms</a>
-                            <ul>
-                                <li><a href="forms_advanced.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Advanced Elements</a></li>
-                                <li><a href="forms_code_editor.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Code Editor</a></li>
-                                <li><a href="forms_editor_markdown.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Markdown</a></li>
-                                <li><a href="forms_editors.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Editors</a></li>
-                                <li><a href="forms_validation.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Form Validation</a></li>
-                                <li><a href="forms_wizard.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Form Wizard</a></li>
-                                <li><a href="forms_general.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>General Elements</a></li>
-                                <li><a href="forms_mask.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Formatter</a></li>
-                                <li><a href="forms_xeditable.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Xeditable Editor</a></li>
-                                <li><a href="forms_dropzone.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Dropzone</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Tables</a>
-                            <ul>
-                                <li><a href="tables_simple.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Simple tables</a></li>
-                                <li><a href="tables_data.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Data tables</a></li>
-                                <li><a href="tables_editable.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Editable Tables</a></li>
-                                <li><a href="tables_color.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Table Color</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="icon-Duplicate"><span class="path1"></span><span class="path2"></span></i>Pages</a>
-                    <ul>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Authentication</a>
-                            <ul>
-                                <li><a href="auth_login.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Login</a></li>
-                                <li><a href="auth_register.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Register</a></li>
-                                <li><a href="auth_lockscreen.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Lockscreen</a></li>
-                                <li><a href="auth_user_pass.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Recover password</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Error Pages</a>
-                            <ul>
-                                <li><a href="error_404.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Error 404</a></li>
-                                <li><a href="error_500.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Error 500</a></li>
-                                <li><a href="error_maintenance.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Maintenance</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Sample Pages</a>
-                            <ul>
-                                <li><a href="sample_blank.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Blank</a></li>
-                                <li><a href="sample_coming_soon.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Coming Soon</a></li>
-                                <li><a href="sample_custom_scroll.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Custom Scrolls</a></li>
-                                <li><a href="sample_faq.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>FAQ</a></li>
-                                <li><a href="sample_gallery.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Gallery</a></li>
-                                <li><a href="sample_lightbox.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Lightbox Popup</a></li>
-                                <li><a href="sample_pricing.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Pricing</a></li>
-                                <li><a href="sample_invoice.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Invoice</a></li>
-                                <li><a href="sample_invoicelist.html"><i class="icon-Commit"><span class="path1"></span><span class="path2"></span></i>Invoice List</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+                else if (Request.IsAuthenticated)
+                {
+                    <li>
+                        <a href="~/userdashboard/dashboard/">
+                            <i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/userdashboard/list/"><i class="icon-Equalizer"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>Transactions</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon-Chart-pie"><span class="path1"></span><span class="path2"></span></i>ICO</a>
+                    </li>
+                    <li><a href="currency_exchange.html"><i class="icon-Repeat"><span class="path1"></span><span class="path2"></span></i>Currency</a></li>
+                    <li>
+                        <a href="~/users/list"><i class="icon-Group"><span class="path1"></span><span class="path2"></span></i>Users</a>
+                    </li>
+                    <li>
+                        <a href="~/promocodes/list"><i class="icon-Arrows-h"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Promocodes</a>
+                    </li>
+                    <li>
+                        <a href="~/manage/index/"><i class="icon-Chart-line"><span class="path1"></span><span class="path2"></span></i>Profile</a>
+                    </li>
+                    <li>
+                        <a href="~/userdashboard/create/"><i class="icon-Flower"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>Buy Tokens</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon-Bucket"><span class="path1"></span><span class="path2"></span></i>UI</a>
+                    </li>
+                }
             </ul>
         </nav>
 
@@ -674,7 +292,6 @@
         <div class="content-wrapper">
             <div class="container-full">
                 <!-- Content Header (Page header) -->
-
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
@@ -682,52 +299,18 @@
                             <div class="box">
                                 <div class="box-body">
                                     <div class="row justify-content-between">
-                                        <div class="col-xxxl-4 col-xl-5 col-12">
-                                            <div class="pl-md-30 pt-md-30 pr-md-80 pb-md-30 p-0">
-                                                <h5 class="text-uppercase font-weight-700">Balance Details</h5>
-                                                <h1 class="font-weight-900 text-white mt-30">$2,128,022.00</h1>
-                                                <p class="mb-50">3.30142057 BTC</p>
-                                                <div class="d-md-flex d-block justify-content-between align-items-center">
-                                                    <div>
-                                                        <div class="d-flex align-items-center gap-items-3">
-                                                            <div class="w-70 h-70 bg-success-light rounded20 l-h-80 text-center">
-                                                                <i class="text-success ti-arrow-down font-size-24"></i>
-                                                            </div>
-                                                            <div>
-                                                                <h3 class="my-0 text-white font-weight-700">$3,256.00</h3>
-                                                                <p class="mb-0">Income</p>
-                                                            </div>
-                                                        </div>
-                                                        <a href="#" class="btn btn-success mt-30 d-block mb-md-0 mb-30">Receive</a>
-                                                    </div>
-                                                    <div>
-                                                        <div class="d-flex align-items-center gap-items-3">
-                                                            <div class="w-70 h-70 bg-primary-light rounded20 l-h-80 text-center">
-                                                                <i class="text-primary ti-arrow-up font-size-24"></i>
-                                                            </div>
-                                                            <div>
-                                                                <h3 class="my-0 text-white font-weight-700">$1,289.00</h3>
-                                                                <p class="mb-0">Expense</p>
-                                                            </div>
-                                                        </div>
-                                                        <a href="#" class="btn btn-primary mt-30 d-block">Send</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="col-xxxl-8 col-xl-7 col-12">
+
+                                        <div class="col-xxxl-12 col-xl-12 col-12">
                                             <div class="row">
                                                 <div class="col-md-3 col-12">
                                                     <div class="box bg-warning bg-brick-dark rounded30 mb-md-30 mt-30 mb-0">
                                                         <div class="box-body">
                                                             <div>
-                                                                <i class="cc BTC text-white" title="BTC"></i>
-                                                                <h4 class="text-white">Bitcoin</h4>
+                                                                <h4 class="text-white">TOTAL INVESTMENT</h4>
                                                             </div>
-                                                            <div class="mt-150">
-                                                                <h3 class="font-weight-700 text-white">$3,256.00</h3>
-                                                                <p>3.30142057 BTC</p>
+                                                            <div class="mt-5">
+                                                                <h3 class="font-weight-700 text-white">$@Model.InvestmentAmount.ToString("#,##0")</h3>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -736,12 +319,12 @@
                                                     <div class="box bg-primary bg-brick-dark rounded30 mb-md-30 mt-30 mb-0">
                                                         <div class="box-body">
                                                             <div>
-                                                                <i class="cc XRP text-white" title="XRP"></i>
-                                                                <h4 class="text-white">Ripple</h4>
+                                                                <h4 class="text-white">
+                                                                    CURRENT BALANCE
+                                                                </h4>
                                                             </div>
-                                                            <div class="mt-150">
-                                                                <h3 class="font-weight-700 text-white">$2,789.00</h3>
-                                                                <p>12.24670982 XRP</p>
+                                                            <div class="mt-5">
+                                                                <h3 class="font-weight-700 text-white">$@Model.CurrentBalance.ToString("#,##0")</h3>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -750,12 +333,12 @@
                                                     <div class="box bg-info bg-brick-dark rounded30 mb-md-30 mt-30 mb-0">
                                                         <div class="box-body">
                                                             <div>
-                                                                <i class="cc USDT text-white" title="USDT"></i>
-                                                                <h4 class="text-white">Tether</h4>
+                                                                <h4 class="text-white">
+                                                                    TOTAL PROFIT
+                                                                </h4>
                                                             </div>
-                                                            <div class="mt-150">
-                                                                <h3 class="font-weight-700 text-white">$3,256.00</h3>
-                                                                <p>1,523.00 USDT</p>
+                                                            <div class="mt-5">
+                                                                <h3 class="font-weight-700 text-white">$@((Model.CurrentBalance - Model.InvestmentAmount).ToString("#,##0"))</h3>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -764,12 +347,12 @@
                                                     <div class="box bg-danger bg-brick-dark rounded30 mb-md-30 mt-30 mb-0">
                                                         <div class="box-body">
                                                             <div>
-                                                                <i class="cc SDC text-white" title="SDC"></i>
-                                                                <h4 class="text-white">SIRIN LABS</h4>
+                                                                <h4 class="text-white">
+                                                                    TOKEN AMOUNT
+                                                                </h4>
                                                             </div>
-                                                            <div class="mt-150">
-                                                                <h3 class="font-weight-700 text-white">$1,523.00</h3>
-                                                                <p>1,523.00 SDC</p>
+                                                            <div class="mt-5">
+                                                                <h3 class="font-weight-700 text-white">@Model.Tokens</h3>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -781,153 +364,44 @@
                             </div>
                         </div>
                         <div class="col-xxxl-9 col-xl-8 col-12">
-                            <div class="box bg-transparent no-shadow">
-                                <div class="box-header">
-                                    <h4 class="box-title">Summary</h4>
-                                </div>
-                                <div class="box-body">
-                                    <div id="summary-chart"></div>
+                            <div class="box no-shadow">
+                                <div class="box-body" style="padding: 0">
+                                    <canvas id="line-chart" width="600" height="250"></canvas>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xxxl-3 col-xl-4">
-                            <div class="box">
-                                <div class="box-body d-flex p-0">
-                                    <div class="flex-grow-1 px-30 pt-30 pb-200 flex-grow-1 bg-img min-h-450" style="background-position: right bottom; background-size: 80% auto; background-image: url(../../assets/admin/images/gallery/img-cy.png)">
-                                        <h3 class="mb-0 font-weight-700">Support</h3>
-                                        <p class="font-size-18">
-                                            We always be in touch!
-                                        </p>
-                                        <a href="#" class="btn btn-success"><i class="ti-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-12">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <div class="box box-body pull-up">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="p-0">
-                                                <div class="text-center">
-                                                    <a href="#"><i class="cc XRP mr-5" title="XRP"></i></a>
-                                                </div>
-                                                <div>
-                                                    <h3 class="no-margin text-bold">Ripple</h3>
-                                                    <span>Real Estate</span>
-                                                </div>
+                            <div class="box" style="height: 250px;">
+                                <div class="box-body d-flex p-25">
+                                    <div class="token-calculator card card-full-height" style="width: 100%">
+                                        <div class="card-innr border-0" style="border: none !important">
+                                            <div class="card-head">
+                                                <h4 class="card-title text-center">Profit Calculator</h4>
+                                                <p class="card-title-text text-center">Enter amount to calculate profit.</p>
                                             </div>
-                                            <div>
-                                                <div>
-                                                    <p class="no-margin font-weight-600"><span class="text-warning">$5.0</span> / $1.0</p>
-                                                    <p class="no-margin">Sponsored</p>
-                                                </div>
-                                                <div class="mt-10">
-                                                    <p class="no-margin font-weight-600"><span class="text-warning">74%</span></p>
-                                                    <p class="no-margin">5d left</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <div class="box box-body pull-up">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="p-0">
-                                                <div class="text-center">
-                                                    <a href="#"><i class="cc EOS mr-5" title="EOS"></i></a>
-                                                </div>
-                                                <div>
-                                                    <h3 class="no-margin text-bold">EOS</h3>
-                                                    <span>Exchange</span>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <p class="no-margin font-weight-600"><span class="text-warning">$2.7</span> / $9.7</p>
-                                                    <p class="no-margin">Sponsored</p>
-                                                </div>
-                                                <div class="mt-10">
-                                                    <p class="no-margin font-weight-600"><span class="text-warning">87%</span></p>
-                                                    <p class="no-margin">5d left</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <div class="box box-body pull-up">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="p-0">
-                                                <div class="text-center">
-                                                    <a href="#"><i class="cc LSK mr-5" title="LSK"></i></a>
-                                                </div>
-                                                <div>
-                                                    <h3 class="no-margin text-bold">Lisk</h3>
-                                                    <span>Trading</span>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <p class="no-margin font-weight-600"><span class="text-warning">$7.9</span> / $7.0</p>
-                                                    <p class="no-margin">Sponsored</p>
-                                                </div>
-                                                <div class="mt-10">
-                                                    <p class="no-margin font-weight-600"><span class="text-warning">74%</span></p>
-                                                    <p class="no-margin">5d left</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="box bg-primary">
-                                <div class="box-body">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-12">
-                                            <h4 class="text-white mb-50">Market Overview </h4>
-                                            <div class="d-flex justify-content-between">
-                                                <div class="d-flex">
-                                                    <div class="icon">
-                                                        <i class="fa fa-trophy"></i>
-                                                    </div>
-                                                    <div class="w-100">
-                                                        <h3 class="font-weight-600 text-white mb-0 mt-0">340</h3>
-                                                        <p class="text-white-50">Market</p>
-                                                        <h5 class="text-white">+34k <span class="ml-10"><i class="fa fa-angle-down mr-5"></i><span class="text-white-50">0.1%</span></span> </h5>
+                                            <div class="token-calc d-flex justify-content-center">
+                                                <div class="token-pay-amount d-flex">
+                                                    <input class="input-bordered w-100 input-with-hint ng-pristine ng-valid ng-touched" id="btc-base-amount1"
+                                                           type="text" value="0" style="border-radius: 10px; padding-left: 5px;">
+                                                    <div class="token-pay-currency" style=" display: flex; align-items: center; margin: 0 2px;">
+                                                        <a class="link ucap link-light toggle-tigger" href="javascript:void(0)">$</a>
                                                     </div>
                                                 </div>
-                                                <div>
-                                                    <div id="apexChart2" class="mx-50 mx-xs-20"></div>
+                                                <div class="token-received mr-5 ml-5">
+                                                    <div class="token-eq-sign">=</div>
+                                                    <div class="token-received-amount"></div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-6 col-12">
-                                            <h4 class="text-white mb-50">Treding Overview </h4>
-                                            <div class="d-flex justify-content-between">
-                                                <div class="d-flex">
-                                                    <div class="icon">
-                                                        <i class="fa fa-trophy"></i>
+                                                <div class="token-pay-amount d-flex">
+                                                    <input class="input-bordered w-100 input-with-hint ng-untouched ng-pristine ng-valid"
+                                                           disabled="" id="token-base-amount1" type="text" value="0"
+                                                           style="border-radius: 10px; padding-left: 5px; color: #fff">
+                                                    <div class="token-pay-currency" style=" display: flex; align-items: center; margin: 0 2px;">
+                                                        <a class="link ucap link-light toggle-tigger" href="javascript:void(0)">$</a>
                                                     </div>
-                                                    <div class="w-100">
-                                                        <h3 class="font-weight-600 text-white mb-0 mt-0">$9.00</h3>
-                                                        <p class="text-white-50">Treding</p>
-                                                        <h5 class="text-white">-6.2k  <span class="ml-10"><i class="fa fa-angle-down mr-5"></i><span class="text-white-50">2%</span></span> </h5>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div id="apexChart3" class="mx-50 mx-xs-20"></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-12">
-                            <div class="box">
-                                <div class="box-body">
-                                    <div class="chart h-350" id="order-chart"></div>
                                 </div>
                             </div>
                         </div>
@@ -1484,6 +958,7 @@
     <script src="~/assets/admin/assets/vendor_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Crypto Admin App -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="~/assets/admin/js/jquery.smartmenus.js"></script>
     <script src="~/assets/admin/js/menus.js"></script>
     <script src="~/assets/admin/js/template.js"></script>
@@ -1494,12 +969,6 @@
         <script>
             var milion =@mil;
 
-            $("#btc-base-amount").keyup(function () {
-                $("#token-base-amount").val(($(this).val() * 50).toFixed(2));
-            });
-            $("#btc-base-amount1").keyup(function () {
-                $("#token-base-amount1").val(($(this).val() * 10).toFixed(2));
-            });
 
         //$("#btc-base-amount").on("keyup", function () {
         //    var inputvalue = $(this).val()
@@ -1556,6 +1025,22 @@
             });
         </script>
     }
+
+    <script>
+        $("#close-modal").on('click', function () {
+            $("#myModal").hide();
+        })
+        $("#modalShow").on('click', function () {
+            $("#myModal").show();
+        })
+
+        $("#btc-base-amount").keyup(function () {
+            $("#token-base-amount").val(($(this).val() * 50).toFixed(2));
+        });
+        $("#btc-base-amount1").keyup(function () {
+            $("#token-base-amount1").val(($(this).val() * 12).toFixed(2));
+        });
+    </script>
 </body>
 
 </html>
