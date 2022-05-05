@@ -80,7 +80,7 @@
                                             </div>
                                             <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
                                                 <ul class="list-unstyled lis-line-height-3">
-                                                    <li style="color: black">oilbeam-ico tokens in portfolio</li>
+                                                    <li style="color: black">SyncSpace-ico tokens in portfolio</li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -99,7 +99,7 @@
                                             </div>
                                             <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
                                                 <ul class="list-unstyled lis-line-height-3">
-                                                    <li>oilbeam-ico tokens in portfolio</li>
+                                                    <li>SyncSpace-ico tokens in portfolio</li>
                                                     <li>Minimum portfolio: $100,000</li>
                                                 </ul>
                                                 <a href="/userdashboard/create/" style="background-color: #28c189;"
@@ -122,7 +122,7 @@
                                             </div>
                                             <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
                                                 <ul class="list-unstyled lis-line-height-3">
-                                                    <li>oilbeam-ico tokens in portfolio</li>
+                                                    <li>SyncSpace-ico tokens in portfolio</li>
                                                     <li>Minimum portfolio: $250,000</li>
                                                 </ul>
                                                 <a href="/userdashboard/create/" style="background-color: #28c189;"
@@ -147,7 +147,7 @@
                                                 <ul class="list-unstyled lis-line-height-3">
 
 
-                                                    <li>oilbeam-ico tokens in portfolio</li>
+                                                    <li>SyncSpace-ico tokens in portfolio</li>
                                                     <li>Minimum portfolio: $500,000</li>
 
                                                 </ul>
@@ -197,9 +197,9 @@
                                     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
                                     {
                                         @Html.AntiForgeryToken()
-                                        <a style="width: 84px" href="javascript:document.getElementById('logoutForm').submit()" data-toggle="control-sidebar" title="Setting">
+                                        <a style="width: 84px" class="d-flex" href="javascript:document.getElementById('logoutForm').submit()">
                                             <i class="fa fa-cog fa-spin"></i>
-                                            <dvi>Log Out</dvi>
+                                            <div>Log Out</div>
                                         </a>
                                     }
                                 }
@@ -662,18 +662,8 @@
             </div>
         </div>
         <!-- /.content-wrapper -->
-        <footer class="main-footer">
-            <div class="pull-right d-none d-sm-inline-block">
-                <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Purchase Now</a>
-                    </li>
-                </ul>
-            </div>
-            &copy; 2020 <a href="https://www.multipurposethemes.com/">Multi-Purpose Themes</a>. All Rights Reserved.
+        <footer class="main-footer d-flex justify-content-center">
+            ©2022 Copyright -All rights reserved by SyncSpace ICO
         </footer>
 
         <!-- Control Sidebar -->
@@ -1038,7 +1028,7 @@
             $("#token-base-amount").val(($(this).val() * 50).toFixed(2));
         });
         $("#btc-base-amount1").keyup(function () {
-            $("#token-base-amount1").val(($(this).val() * 12).toFixed(2));
+            $("#token-base-amount1").val(($(this).val() * 6).toFixed(2));
         });
     </script>
 </body>

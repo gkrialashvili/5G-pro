@@ -17,20 +17,32 @@
 
 
     <title>SyncSpace</title>
-    <!--<base href="/">-->
-    <base href=".">
+
+
+    <!-- Crypto Admin skins -->
+    <!-- Bootstrap 4.0-->
+    <link rel="stylesheet" href="~/assets/admin/assets/vendor_components/bootstrap/dist/css/bootstrap.css">
+
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="~/assets/admin/assets/vendor_plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css">
+
+    <link rel="stylesheet" href="~/assets/admin/css/skin_color.css">
+
+
+    <!--amcharts -->
+    <link href="https://www.amcharts.com/lib/3/plugins/export/export.css" rel="stylesheet" type="text/css" />
+
+    <!-- Data Table-->
+    <link rel="stylesheet" type="text/css" href="~/assets/admin/assets/vendor_components/datatable/datatables.min.css" />
+
+    <!-- theme style -->
+    <link rel="stylesheet" href="~/assets/admin/css/horizontal-menu.css">
+    <link rel="stylesheet" href="~/assets/admin/css/style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="~/assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.26.0/apexcharts.min.css" integrity="sha512-JQIBcZTDAWa1umaHZvCXqHC1xa4jU8NyTWFCV977oIcbcLFdqtRxgoNC1CEv3c9GJWdIj4Vs7jfhgDQSEkpMMQ==" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="~/Content/ico/vendor.bundle.css" id="layoutstyle">
     <link rel="stylesheet" href="~/Content/ico/style.css">
-    <link rel="stylesheet" href="~/assets/admin/source/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    @*<link rel="shortcut icon" type="image/png/ico"
-          href="~/assets/images/favicon.png">*@
     <link href="~/assets/admin/source/extractcssone.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -38,135 +50,123 @@
     <link rel="stylesheet" href="~/assets/login/vendor.bundle.css">
     <link rel="stylesheet" href="~/assets/login/style.css">
     <script src="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/index.min.js"></script>
-    <link rel="stylesheet" href="~/assets/admin/source/vendor.css">
-    <link rel="stylesheet" href="~/assets/admin/source/style.css">
-    <link rel="stylesheet" href="~/assets/admin/source/main.css">
+
+    <!--<base href="/">-->
 
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>
     @*<script src="~/Content/jquery-1.12.4.min.js"></script>*@
 
     <script src="~/Scripts/bootstrap.min.js"></script>
-    <style>
-        .dropbtn {
-            background-image: url('https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/profle-512.png');
-            background-color: #3498DB;
-            color: white;
-            padding: 25px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
-
-            .dropbtn:hover, .dropbtn:focus {
-                background-color: #2980B9;
-            }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 200px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
-                display: block;
-            }
-
-        .dropdown a:hover {
-            background-color: #ddd;
-        }
-
-        .show {
-            display: block;
-        }
-
-
-
-
-
-        .btn-circlee {
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            padding: 6px 0;
-            font-size: 12px;
-            line-height: 1.428571429;
-            border-radius: 15px;
-        }
-
-            .btn-circlee.btn-lg {
-                width: 50px;
-                height: 50px;
-                padding: 10px 16px;
-                font-size: 18px;
-                line-height: 1.33;
-                border-radius: 25px;
-            }
-
-            .btn-circlee.btn-xl {
-                width: 70px;
-                height: 70px;
-                padding: 10px 16px;
-                font-size: 24px;
-                line-height: 1.33;
-                border-radius: 35px;
-            }
-    </style>
 </head>
 
-<body class="no-touch">
+<body class="no-touch layout-top-nav dark-skin theme-classic">
     <app-root>
         <div class="topbar-wrap">
-            <div class="navbar" style="background-image: linear-gradient( 120deg, #01302c, #5983e8) !important; padding: 0 20px; display: flex; align-items: center">
-                <a class="topbar-logo" href="@Url.Action("Dashboard", "UserDashboard")">
-                    <img src="~/images/logos/logo.png" srcset="~/images/logos/logo.png" alt="logo">
-                </a>
-                <div class="container" style="margin: 0; padding: 0">
-                    <div class="navbar-innr" style="justify-content: center">
-                        <ul class="navbar-menu">
+            <header class="main-header" style="background-color: #1a233a">
+                <div class="inside-header">
+                    <div class="d-flex align-items-center logo-box justify-content-between">
+                        <a href="@Url.Action("Dashboard", "UserDashboard")" class="logo">
+                            <div class="logo-lg">
+                                <span class="light-logo"><img src="~/images/logos/logo_new.png" alt="logo"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Header Navbar -->
+                    <nav class="navbar navbar-static-top"  style="background-color: #1a233a">
+                        <!-- Sidebar toggle button-->
+                        <ul id="main-menu" class="sm sm-blue d-flex justify-content-around">
                             @if (User.IsInRole("administrator"))
                             {
-                                <li><a href="~/dashboard/list/"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
-                                <li><a href="@Url.Action("create", "userdashboard")"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
-                                @*<li><a href="javascript: void(0)" id="packages-area"><em class="ikon ikon-distribution"></em> Packages</a></li>*@
-                                <li><a href="~/transactions/list"><em class="ikon ikon-transactions"></em> Transactions</a></li>
-                                <li><a href="~/manage/index/"><em class=0"ikon ikon-user"></em> Profile</a></li>
-                                <li><a href="~/promocodes/list"><em class="ikon ikon-exchange"></em> Promocodes</a></li>
-                                <li><a href="~/users/list"><em class="ikon ikon-user"></em> Users</a></li>
+                                <li>
+                                    <a href="~/dashboard/list/">
+                                        <i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>Dashboard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/transactions/list">
+                                        <i class="icon-Equalizer"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>Transactions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/users/list"><i class="icon-Group"><span class="path1"></span><span class="path2"></span></i>Users</a>
+                                </li>
+                                <li>
+                                    <a href="~/promocodes/list"><i class="icon-Arrows-h"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Promocodes</a>
+                                </li>
+                                <li>
+                                    <a href="~/manage/index/"><i class="icon-Chart-line"><span class="path1"></span><span class="path2"></span></i>Profile</a>
+                                </li>
+                                <li>
+                                    <a href="~/userdashboard/create/">
+                                        <i class="icon-Dollar">
+                                            <span class="path1"></span>
+                                            <span class="path2"></span><span class="path3"></span><span class="path4"></span>
+                                        </i>Buy Tokens
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" id="modalShow"><i class="icon-Box"><span class="path1"></span><span class="path2"></span></i>Packages</a>
+                                </li>
                             }
+
                             else if (Request.IsAuthenticated)
                             {
-                                <li><a href="~/userdashboard/dashboard/"><em class="ikon ikon-dashboard"></em> Dashboard</a></li>
-                                <li><a href="@Url.Action("create", "userdashboard")"><em class="ikon ikon-coins"></em> Buy Tokens</a></li>
-                                <li><a href="javascript: void(0)" id="packages-area"><em class="ikon ikon-distribution"></em> Packages</a></li>
-                                <li><a href="~/userdashboard/list" aria-current="page"><em class="ikon ikon-transactions"></em> Transactions</a></li>
-                                <li><a href="~/manage/index/"><em class=0"ikon ikon-user"></em> Profile</a></li>
+                                <li>
+                                    <a href="~/userdashboard/dashboard/">
+                                        <i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>Dashboard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/userdashboard/list/"><i class="icon-Equalizer"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>Transactions</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-Chart-pie"><span class="path1"></span><span class="path2"></span></i>ICO</a>
+                                </li>
+                                <li><a href="currency_exchange.html"><i class="icon-Repeat"><span class="path1"></span><span class="path2"></span></i>Currency</a></li>
+                                <li>
+                                    <a href="~/users/list"><i class="icon-Group"><span class="path1"></span><span class="path2"></span></i>Users</a>
+                                </li>
+                                <li>
+                                    <a href="~/promocodes/list"><i class="icon-Arrows-h"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>Promocodes</a>
+                                </li>
+                                <li>
+                                    <a href="~/manage/index/"><i class="icon-Chart-line"><span class="path1"></span><span class="path2"></span></i>Profile</a>
+                                </li>
+                                <li>
+                                    <a href="~/userdashboard/create/"><i class="icon-Flower"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>Buy Tokens</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-Bucket"><span class="path1"></span><span class="path2"></span></i>UI</a>
+                                </li>
                             }
+                            <li class="d-flex align-items-center">
+                                @if (Request.IsAuthenticated)
+                                {
+                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <a style="width: 84px" class="d-flex" href="javascript:document.getElementById('logoutForm').submit()">
+                                            <i class="fa fa-cog fa-spin"></i>
+                                            <div>Log Out</div>
+                                        </a>
+                                    }
+                                }
+                            </li>
                         </ul>
-                    </div><!-- .navbar-innr -->
-                </div><!-- .container -->
-                @if (Request.IsAuthenticated)
-                {
-                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
-                    {
-                        @Html.AntiForgeryToken()
-                <div>
-                    <a href="javascript:document.getElementById('logoutForm').submit()"><i class="ti ti-power-off"></i>Logout</a>
+
+                        @*<div class="navbar-custom-menu r-side">
+                            <ul class="nav navbar-nav">
+
+                              
+
+                            </ul>
+                        </div>*@
+                    </nav>
                 </div>
-            }
-        }
-                </div><!-- .navbar -->
-                </div><!-- .topbar-wrap -->
+            </header>
+
+            <!-- .navbar -->
+        </div><!-- .topbar-wrap -->
                 <app-profile>
                     @RenderBody()
                 </app-profile>

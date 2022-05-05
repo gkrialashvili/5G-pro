@@ -80,9 +80,9 @@ $(function () {
     new Chart(document.getElementById("line-chart"), {
         type: 'line',
         data: {
-            labels: ['Private Sale   $0.03', 'Presale $0.06', 'Softcap $0.15', 'Hardcap $0.30'],
+            labels: ['Private Sale   $0.02', 'Presale $0.04', 'Softcap $0.06', 'Hardcap $0.12'],
             datasets: [{
-                data: [0.03, 0.06, 0.15, 0.30],
+                data: [0.02, 0.04, 0.06, 0.12],
                 label: "Token Price",
                 borderColor: "#3e95cd",
                 fill: true

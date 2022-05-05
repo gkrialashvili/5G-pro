@@ -85,7 +85,7 @@ File: horizontal menu scss
   .layout-top-nav.fixed #main-menu {
     width: 95%; }
   .layout-top-nav .main-nav {
-    width: 95%; } }
+    width: 85%; } }
 @media (max-width: 767px) {
   .layout-top-nav .main-nav {
     z-index: 9999;
