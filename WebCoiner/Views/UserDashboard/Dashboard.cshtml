@@ -947,6 +947,11 @@
     <script src="~/assets/admin/assets/vendor_components/Web-Ticker-master/jquery.webticker.min.js"></script>
     <script src="~/assets/admin/assets/vendor_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+
+    <script type="text/javascript"
+            src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script type="text/javascript"
+            src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
     <!-- Crypto Admin App -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="~/assets/admin/js/jquery.smartmenus.js"></script>
@@ -958,47 +963,6 @@
     @section Scripts {
         <script>
             var milion =@mil;
-
-
-        //$("#btc-base-amount").on("keyup", function () {
-        //    var inputvalue = $(this).val()
-        //    values = inputvalue.replace('$', '').replace(',', '').replace('.', '');
-
-        //    //values = values * 12;
-
-        //    //TODO Raised from http://Bitreal-ico.com/dashboard/list/ ...
-        //    //var milion = 14;
-
-        //    if (milion < 15)
-        //        values = values * 10;
-        //    else if (milion > 15 && milion < 49)
-        //        values = values * 4;
-        //    else
-        //        values = values * 2;
-
-
-        //   // if (milion < 5)
-        //   //     values = values * 13;
-        //   //else if (milion < 40)
-        //   //     values = values * 7;
-        //   // else
-        //   //     values = values * 3.5;
-        //    //if (values < 10000)
-        //    //    values = values * 3.9;
-        //    //else if (values < 30000)
-        //    //    values = values * 5.5;
-        //    //else if (values < 60000)
-        //    //    values = values * 7.3;
-        //    //else if (values < 100000)
-        //    //    values = values * 9.6;
-        //    //else if (values < 250000)
-        //    //    values = values * 12.7;
-        //    //else
-        //    //    values = values * 19;
-
-        //    $("#token-base-amount").val(values);
-
-        //})
 
             document.getElementById("packages-area").addEventListener("click", function () {
                 document.getElementById("myModal").style.display = "flex";
@@ -1030,6 +994,29 @@
         $("#btc-base-amount1").keyup(function () {
             $("#token-base-amount1").val(($(this).val() * 6).toFixed(2));
         });
+
+
+        var all_urls = ['eth-usd', 'btc-usd', 'ltc-usd'];
+        const url = "https://api.cryptonator.com/api/ticker/"
+
+        $(document).ready(function () {
+            $.each(all_urls, function (i, u) {
+                $.ajax({
+
+                    url: url + u,
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        alert('Data: ' + data);
+                    },
+                    error: function (request, error) {
+                        console.log("Request: " + JSON.stringify(request));
+                    }
+                });
+            });
+        });
+
+        
     </script>
 </body>
 

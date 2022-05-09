@@ -5163,6 +5163,7 @@
     <Content Include="Content\wc_icon5.png" />
     <Content Include="Content\wc_icon6.png" />
     <Content Include="Content\whitepaper5.png" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="images\banner\banner-bg-2.jpg" />
     <Content Include="images\banner\banner-overlay.png" />
