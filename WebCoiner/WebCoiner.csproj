@@ -3064,6 +3064,9 @@
     <Content Include="assets\home\js\particles.min.js" />
     <Content Include="assets\home\js\popper.js" />
     <Content Include="assets\home\js\scrollreveal.min.js" />
+    <Content Include="assets\images\1.svg" />
+    <Content Include="assets\images\2.svg" />
+    <Content Include="assets\images\3.svg" />
     <Content Include="assets\images\404_img.png" />
     <Content Include="assets\images\about_bg.png" />
     <Content Include="assets\images\about_bg2.png" />
@@ -3418,6 +3421,7 @@
     <Content Include="assets\images\step-icon-2.png" />
     <Content Include="assets\images\step-icon-3.png" />
     <Content Include="assets\images\terms-conditions.png" />
+    <Content Include="assets\images\theme-1-about.svg" />
     <Content Include="assets\images\token-allocation.png" />
     <Content Include="assets\images\token_bg.png" />
     <Content Include="assets\images\token_bg2.png" />

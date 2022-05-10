@@ -18185,7 +18185,10 @@ Height property
 .layout-top-nav .content-wrapper .content {
   padding: 10px 15px 0px 15px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto; 
+  width: 91%;
+
+}
 
 /*---art shape---*/
 .art-bg {

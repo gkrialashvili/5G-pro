@@ -145,7 +145,7 @@
                                     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
                                     {
                                         @Html.AntiForgeryToken()
-                                        <a style="width: 84px" class="d-flex" href="javascript:document.getElementById('logoutForm').submit()">
+                                        <a class="d-flex" href="javascript:document.getElementById('logoutForm').submit()">
                                             <i class="fa fa-cog fa-spin"></i>
                                             <div>Log Out</div>
                                         </a>

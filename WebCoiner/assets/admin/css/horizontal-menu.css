@@ -481,9 +481,10 @@ File: horizontal menu scss
     .sm-blue.sm-rtl ul a.highlighted .sub-arrow::before {
       content: "\f107"; } }
 .dark-skin .main-nav {
-  background: #272e48; }
+  background: #343e4a; }
 .dark-skin .sm-blue ul {
-  background: #272e48; }
+    background: #343e4a;
+}
   .dark-skin .sm-blue ul a {
     color: #8a99b5; }
     .dark-skin .sm-blue ul a:hover, .dark-skin .sm-blue ul a:active, .dark-skin .sm-blue ul a:focus {

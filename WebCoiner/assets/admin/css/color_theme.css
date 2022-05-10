@@ -380,7 +380,8 @@ Theme classic Color
 .dark-skin.theme-classic.fixed .main-header .navbar {
   background-color: #1a233a; }
 .dark-skin.theme-classic .main-header {
-  background-color: #1a233a; }
+    background-color: #343e4a;
+}
 
 @media (max-width: 767px) {
   .theme-classic.fixed .main-header {
