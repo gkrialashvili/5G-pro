@@ -998,6 +998,7 @@
 
         var all_urls = ['eth-usd', 'btc-usd', 'ltc-usd'];
         const url = "https://bitpay.com/api/rates"
+        let filteredData = [];
 
         $(document).ready(function () {
                 $.ajax({
@@ -1009,6 +1010,12 @@
                         $.each(data, function (key, value) {
                             console.log(data[2].rate / value.rate);
                         });
+
+                        filteredData = data.filter(item => {
+                            return item.code == "BTC" || item.code == "BCH";
+                        });
+
+                        console.log(filteredData)
                     },
                     error: function (request, error) {
                         console.log("Request: " + JSON.stringify(request));
