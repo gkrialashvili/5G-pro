@@ -35,7 +35,7 @@
 		// Countdown init
 		if ($('.countdown').length) {
 			$('.countdown').downCount({
-				date: '12/31/2021 12:00:00',
+				date: '06/25/2022 12:00:00',
 				offset: +10
 			});
 		}

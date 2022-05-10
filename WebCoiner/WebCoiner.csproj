@@ -3457,6 +3457,7 @@
     <Content Include="assets\images\whitepaper4.png" />
     <Content Include="assets\images\whitepaper5.png" />
     <Content Include="assets\images\whitepaper_pattern.png" />
+    <Content Include="assets\js\data.js" />
     <Content Include="assets\js\form-validation.js" />
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\vendor\aos\aos.js" />
