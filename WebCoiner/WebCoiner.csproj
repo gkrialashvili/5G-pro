@@ -3016,7 +3016,6 @@
     <Content Include="assets\home\images\dark-top-right-bg.png" />
     <Content Include="assets\home\images\elliptical-bottom.png" />
     <Content Include="assets\home\images\elliptical-top.png" />
-    <Content Include="assets\home\images\favicon.png" />
     <Content Include="assets\home\images\flags\br.png" />
     <Content Include="assets\home\images\flags\en.png" />
     <Content Include="assets\home\images\flags\ru.png" />
