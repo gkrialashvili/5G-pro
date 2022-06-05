@@ -5,8 +5,8 @@
   * Author URI: http://www.themesflat.com
 */
 @import '../bootstrap/css/bootstrap.min.css';
-@import '../../assets/style.css';
-@import '../dist/aos.css';
+@import '../../app/dist/app.css';
+@import '../../app/dist/aos.css';
 @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
@@ -44,8 +44,25 @@ body {
   --font-main: "Oswald";
 }
 
+.roadmap__main::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.roadmap__main::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.roadmap__main::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+.roadmap__main {
+    min-height: 500px;
+}
+
 .home-nft-v2 {
-  --primary-color: #1FD1F9;
+    --primary-color: #1FD1F9;
 }
 
 .home-defi-1 {

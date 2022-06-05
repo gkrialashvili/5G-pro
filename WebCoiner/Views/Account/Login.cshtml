@@ -16,133 +16,132 @@
 <!DOCTYPE html>
 <html lang="en" data-lt-installed="true">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-	<title>Log In</title>
-	@*http://localhost:1457/*@
-	<!--<base href="/">-->
-	<base href=".">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.26.0/apexcharts.min.css" integrity="sha512-JQIBcZTDAWa1umaHZvCXqHC1xa4jU8NyTWFCV977oIcbcLFdqtRxgoNC1CEv3c9GJWdIj4Vs7jfhgDQSEkpMMQ==" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="/Content/ico/vendor.bundle.css" id="layoutstyle">
-	<link rel="stylesheet" href="/Content/ico/style.css">
-	<link rel="stylesheet" href="/assets/admin/source/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="/assets/admin/source/extractcssone.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
-	<link rel="stylesheet" href="/assets/login/vendor.bundle.css">
-	<link rel="stylesheet" href="/assets/login/style.css">
-	<script src="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/index.min.js"></script>
-	<link rel="stylesheet" href="/assets/admin/source/vendor.css">
-	<link rel="stylesheet" href="/assets/admin/source/style.css">
-	<link rel="stylesheet" href="/assets/admin/source/main.css">
-	<!-- Animation CSS -->
-	<link rel="stylesheet" href="~/~/assets/css/style/style/animate.css">
-	<!-- Google Font -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="~/assets/css/style/font-awesome.min.css">
-	<!-- ionicons CSS -->
-	<link rel="stylesheet" href="~/assets/css/style/ionicons.min.css">
-	<!--- owl carousel CSS-->
-	<link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
-	<!-- Magnific Popup CSS -->
-	<link rel="stylesheet" href="~/assets/css/style/magnific-popup.css">
-	<!-- Style CSS -->
-	<link rel="stylesheet" href="~/assets/css/style/style.css">
-	<link rel="stylesheet" href="~/assets/css/style/responsive.css">
-	<!-- Color CSS -->
-	<link id="layoutstyle" rel="stylesheet" href="~/assets/color//theme.css">
-
-	<script src="/Scripts/jquery-3.3.1.min.js"></script>
-
-
-	<script src="/Scripts/bootstrap.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="~/assets/app/dist/app.css">
+    <link rel="stylesheet"
+          href="app/dist/swiper-bundle.min.css" />
+    <!-- end Styles -->
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="~/~/assets/images/logo/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="~/~/assets/images/logo/favicon.png">
 </head>
+
 <body>
-	<!-- START SECTION BANNER -->
-	<section class="section_breadcrumb blue_light_bg" data-z-index="1" data-parallax="scroll" data-image-src="assets/images/home_banner_bg.png">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12">
-					<div class="banner_text text-center">
-						<h1 class="animation" data-animation="fadeInUp" data-animation-delay="1.1s">Login</h1>
-						<ul class="breadcrumb bg-transparent justify-content-center animation m-0 p-0" data-animation="fadeInUp" data-animation-delay="1.3s">
-							<li>@Html.ActionLink("Home", "Index", "home") </li>
-							<li><span>Login</span></li>
-						</ul>
-					</div>
-				</div>
+    <!-- Preloading -->
+    <div class="preloader">
+        <div class=" loader">
+            <div class="square"></div>
+            <div class="path">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p class="text-load">Loading :</p>
+        </div>
+    </div>
+    <!-- End Preloading -->
+    <!-- MAGIC CURSOR -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <!-- /MAGIC CURSOR -->
 
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION BANNER -->
-	<!-- START SECTION LOGIN -->
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="authorize_box">
-						<div class="title_default_dark title_border text-center">
-							<h4 class="animation" data-animation="fadeInUp" data-animation-delay="0.2s">Welcome</h4>
-							<p class="animation" data-animation="fadeInUp" data-animation-delay="0.4s">Sign in to your account</p>
-						</div>
-						<div class="field_form authorize_form">
-							@using (Html.BeginForm("Login", "Account", new { ReturnUrl = returnstring }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-							{
-								@Html.AntiForgeryToken()
-								<div class="form-group col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.6s">
-									@Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-									@Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-									@Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-								</div>
-								@Html.ValidationSummary(true, "", new { @class = "text-danger" })
-								<div class="form-group col-md-12 animation" data-animation="fadeInUp" data-animation-delay="0.7s">
-									@Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-									@Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-									@Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-								</div>
-								<div class="form-group col-md-12 text-center animation" data-animation="fadeInUp" data-animation-delay="0.8s">
-									<button class="btn btn-default btn-radius" type="submit">Submit</button>
-								</div>
-								@*<div class="form-group col-md-12 text-center animation" data-animation="fadeInUp" data-animation-delay="0.9s">
-										<a class="forgot_pass" href="#">Forgot Password?</a>
-									</div>*@
-							}
-						</div>
-					</div>
-					<div class="divider small_divider"></div>
-					<div class="text-center">
-						<span class="animation" data-animation="fadeInUp" data-animation-delay="1s">Don't have an account?<a href="signup.html">  @Html.ActionLink("Register", "Register", null, new { @class = "btn-link" })</a></span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- END SECTION LOGIN -->
+    <section class="sign-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sign-in__top center">
+                        <a href="home/index.html">
+                            <img id="site-logo" src="~/assets/images/logo/logo-main.png"
+                                 alt="Monteno" width="165" height="40"
+                                 data-retina="~/assets/images/logo/logo-main@x2.png" data-width="165"
+                                 data-height="40">
+                        </a>
+                    </div>
+                    <div class="sign-in__main">
+                        <div class="top center">
+                            <h3 class="title">Sign in</h3>
+                            <p class="fs-17">With your ICO Account</p>
+                        </div>
 
-	<script>
-		var base_url = "https://kragx.io/sale",
-			csrf_token = document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
-			layouts_style = "modern";</script>
-	<script src="~/assets/login/jquery.bundle.js"></script>
-	<script src="~/assets/login/script.js"></script>
-	<script type="text/javascript">
-		jQuery(function () {
-			var $frv = jQuery('.validate');
-			if ($frv.length > 0) { $frv.validate({ errorClass: "input-bordered-error error" }); }
-		});</script>
+                            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = returnstring }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+
+                                </div>
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                                    @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-check">
+                                    <div class="left">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-action style-1"><span>Sign In</span> </button>
+                            }
+
+                        <div class="bottom center">
+                            <p class="with">Or Sign in With</p>
+                            <div class="group-btn">
+                                <a href="#" class="fb btn-action style-6"><span class="icon-facebook"></span>Facebook</a>
+                                <a href="#" class="gg btn-action style-6">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.4285 8.11673H18.654V8.07683H10.0002V11.923H15.4343C14.6415 14.1619 12.5112 15.7691 10.0002 15.7691C6.81409 15.7691 4.23092 13.186 4.23092 9.99991C4.23092 6.81385 6.81409 4.23068 10.0002 4.23068C11.4708 4.23068 12.8088 4.78548 13.8276 5.69173L16.5473 2.97202C14.83 1.37154 12.5328 0.384521 10.0002 0.384521C4.69005 0.384521 0.384766 4.68981 0.384766 9.99991C0.384766 15.31 4.69005 19.6153 10.0002 19.6153C15.3102 19.6153 19.6155 15.31 19.6155 9.99991C19.6155 9.3552 19.5492 8.72587 19.4285 8.11673Z" fill="white" />
+                                        <path d="M1.49414 5.52443L4.65328 7.84125C5.50808 5.72491 7.57828 4.23068 10.0009 4.23068C11.4715 4.23068 12.8095 4.78548 13.8283 5.69173L16.548 2.97202C14.8307 1.37154 12.5336 0.384521 10.0009 0.384521C6.3076 0.384521 3.10472 2.46962 1.49414 5.52443Z" fill="white" />
+                                        <path d="M9.99955 19.6153C12.4832 19.6153 14.7399 18.6648 16.4462 17.1192L13.4702 14.6009C12.4724 15.3597 11.2531 15.7702 9.99955 15.7692C7.49859 15.7692 5.37503 14.1745 4.57503 11.949L1.43945 14.3648C3.0308 17.4788 6.26253 19.6153 9.99955 19.6153Z" fill="white" />
+                                        <path d="M19.4284 8.11681H18.6538V8.0769H10V11.9231H15.4341C15.0549 12.9886 14.3718 13.9198 13.4692 14.6014L13.4707 14.6005L16.4466 17.1187C16.2361 17.3101 19.6154 14.8077 19.6154 9.99998C19.6154 9.35527 19.549 8.72594 19.4284 8.11681Z" fill="white" />
+                                    </svg>
+                                    Google
+                                </a>
+                            </div>
+                        </div>
 
 
-	@section Scripts {
-		@Scripts.Render("~/bundles/jqueryval")
-	}
+                    </div>
+
+                    <p class="bottom">Dont have an account? <a href="sign-up.html">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="~/assets/app/js/jquery.min.js"></script>
+    <script src="~/assets/app/js/jquery.easing.js"></script>
+    <script src="~/assets/app/js/app.js"></script>
+    <script src="~/assets/app/js/mouse.js"></script>
+
+    <script>
+        var base_url = "https://kragx.io/sale",
+            csrf_token = document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+            layouts_style = "modern";</script>
+    <script src="~/assets/login/jquery.bundle.js"></script>
+    <script src="~/assets/login/script.js"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            var $frv = jQuery('.validate');
+            if ($frv.length > 0) { $frv.validate({ errorClass: "input-bordered-error error" }); }
+        });</script>
+
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
 </body>
 
 </html>

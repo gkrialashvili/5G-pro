@@ -27,13 +27,29 @@
             color: #F6F6F6;
         }
     }
+
+    .roadmap__main::-webkit-scrollbar {
+        width: 1em;
+    }
+
+    .roadmap__main::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .roadmap__main::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+    }
+
     .roadmap__main {
         display: flex;
         align-items: flex-start;
         position: relative;
         margin-top: 47px;
         padding-left: 255px;
-    
+
+
+
         &::before {
             @include absolute;
             top: 76%;
@@ -42,6 +58,7 @@
             background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
             opacity: 0.1;
         }
+
         &::after {
             @include absolute;
             top: 77%;
@@ -49,27 +66,29 @@
             height: 8px;
             border-top: 2px dashed var(--primary-color);
         }
-    
+
         @include desktop-1900 {
-            padding-left:50px;
+            padding-left: 50px;
         }
-    
+
         @include desktop-1650 {
             overflow-x: auto;
         }
     }
-    
+
     .box-roadmap {
         min-width: 265px;
         width: 265px;
         display: flex;
         flex-direction: column;
+
         .title {
             position: relative;
+
             span {
                 color: var(--primary-color);
             }
-    
+
             &::before {
                 @include absolute;
                 top: 27px;
@@ -79,6 +98,7 @@
                 border-radius: 50%;
                 border: 16px solid rgba(255, 69, 129, 0.1);
             }
+
             &::after {
                 @include absolute;
                 top: 35px;
@@ -86,17 +106,20 @@
                 width: 16px;
                 height: 16px;
                 border-radius: 50%;
-                background:#940030;
+                background: #940030;
             }
         }
+
         &:nth-child(1) {
             .title::after {
                 background: #FF4581;
             }
         }
+
         .content {
             margin-left: 63px;
             position: relative;
+
             &::before {
                 @include absolute;
                 left: -15px;
@@ -105,20 +128,25 @@
                 background: var(--primary-color);
                 opacity: 0.3;
             }
+
             h5 {
                 margin-bottom: 8px
             }
+
             .list {
                 li {
                     @include flex(flex-start,flex-start);
                     margin-bottom: 14px;
+
                     &:last-child {
                         margin-bottom: 0;
                     }
+
                     span {
                         padding-top: 3px;
                         font-size: 20px;
                     }
+
                     p {
                         margin-bottom: 0;
                         margin-left: 8px;
@@ -126,66 +154,80 @@
                 }
             }
         }
-    
+
         &.bottom {
             transform: translateY(184px);
-            
+
             .content {
                 padding-top: 91px;
                 margin-left: 63px;
                 margin-right: -4px;
             }
         }
+
         &.top {
             flex-direction: column-reverse;
             margin-left: -75px;
             margin-right: -36px;
+
             .title {
-    
+
                 &::before {
                     top: -42px;
                 }
+
                 &::after {
                     top: -34px;
                 }
             }
+
             .content {
                 margin-right: -36px;
                 padding-bottom: 114px;
-    
+
                 &::before {
                     height: 90%;
                 }
             }
         }
+
         &:nth-child(3) {
             margin-left: -10px;
+
             .content {
                 margin-right: -160px;
             }
         }
+
         &:nth-child(4) {
             margin-left: -39px;
+
             .content {
                 margin-right: -100px;
                 padding-bottom: 193px;
             }
         }
+
         &:nth-child(5) {
             margin-left: -10px;
+
             .content {
                 margin-right: -40px;
             }
         }
+
         &:nth-child(6) {
             margin-left: -75px;
+
             .content {
                 margin-right: -100px;
                 padding-bottom: 153px;
             }
         }
+
         &:nth-child(7) {
             margin-left: -46px;
+
             .content {
                 margin-right: -40px;
             }
