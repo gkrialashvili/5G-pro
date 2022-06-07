@@ -16,7 +16,6 @@
 
 .btn-action {
     padding: 17px 10px 15px 25px;
-
     position: relative;
     overflow: hidden;
     font-weight: 700;
@@ -25,13 +24,13 @@
     display: flex;
     align-items: center;
     max-width: 326px;
-    
     font-size: 16px;
-    
+
     span {
         position: relative;
         z-index: 2;
     }
+
     span.icon-arrow {
         width: 32px;
         min-width: 32px;
@@ -40,16 +39,16 @@
         background: #fff;
         margin-left: 20px;
         @include flex(center,center);
-
-        &:before {
-            font-size: 15px;
-            font-weight: 900;
-            background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transform: rotate(-90deg);
-        }
     }
+    &:before {
+        font-size: 15px;
+        font-weight: 900;
+        background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: rotate(-90deg);
+    }
+
     &::after {
         @include absolute;
         z-index: 1;
@@ -64,6 +63,7 @@
     &:hover {
         color: $white;
     }
+
     &:hover::after {
         opacity: 1;
     }

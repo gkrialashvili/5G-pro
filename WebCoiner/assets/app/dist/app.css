@@ -1308,7 +1308,7 @@ h3, h5 {
 
 .banner-top.style-1 {
   padding: 231px 0 99px;
-  background: url("./../../assets/images/background/Slider.jpg") no-repeat;
+  background: url("/assets/images/background/Slider.jpg") no-repeat;
   background-size: cover;
 }
 @media only screen and (max-width: 767px) {
@@ -1580,7 +1580,7 @@ h3, h5 {
 
 .banner-top.style-2 {
   padding: 200px 0 140px;
-  background: url("./../../assets/images/background/gradient.png") no-repeat;
+  background: url("/assets/images/background/gradient.png") no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -1743,7 +1743,7 @@ h3, h5 {
 
 .banner-top.style-3 {
   padding: 174px 0 99px;
-  background: url("./../../assets/images/background/banner-music.jpg") no-repeat;
+  background: url("/assets/images/background/banner-music.jpg") no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -1903,7 +1903,7 @@ h3, h5 {
 
 .banner-top.style-4 {
   padding: 189px 0 116px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./../../assets/images/background/bg-banner-top-4.jpg") no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/images/background/bg-banner-top-4.jpg") no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -2047,7 +2047,7 @@ h3, h5 {
 
 .banner-top.style-5 {
   padding: 247px 0 180px;
-  background: url("./../../assets/images/background/banner-top-6.jpg") no-repeat;
+  background: url("/assets/images/background/banner-top-6.jpg") no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -2128,7 +2128,7 @@ h3, h5 {
 
 .banner-top.style-6 {
   padding: 221px 0 33px;
-  background: url("./../../assets/images/background/bg-banner-nft.jpg") no-repeat;
+  background: url("/assets/images/background/bg-banner-nft.jpg") no-repeat;
   background-size: cover;
   overflow: hidden;
 }
@@ -2825,7 +2825,7 @@ h3, h5 {
 
 .road-map.style-2 {
   padding: 80px 0 252px;
-  background: url("./../../assets/images/background/bg-roadmap.jpg");
+  background: url("/assets/images/background/bg-roadmap.jpg");
   background-size: cover;
   overflow: hidden;
 }
@@ -3175,7 +3175,7 @@ h3, h5 {
   position: absolute;
   right: 0;
   top: 0;
-  background: url("./../../assets/images/icon/End.png") no-repeat;
+  background: url("/assets/images/icon/End.png") no-repeat;
   width: 31px;
   height: 31px;
 }
@@ -3258,7 +3258,7 @@ h3, h5 {
 
 .road-map.style-3 {
   padding: 79px 0 85px;
-  background: url("./../../assets/images/background/bg-roadmap-3.jpg") no-repeat;
+  background: url("/assets/images/background/bg-roadmap-3.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -3592,7 +3592,7 @@ h3, h5 {
   z-index: -1;
   content: "";
   bottom: 0;
-  background: url("./../../assets/images/background/bg-roadmap-5.png") no-repeat;
+  background: url("/assets/images/background/bg-roadmap-5.png") no-repeat;
   background-position: center center;
   background-size: cover;
   height: 100%;
@@ -3962,7 +3962,7 @@ h3, h5 {
   left: 0;
   top: 152px;
   left: 0;
-  background: url("./../../assets/images/layout/roadmap-7.1.png") no-repeat;
+  background: url("/assets/images/layout/roadmap-7.1.png") no-repeat;
   width: 100%;
   height: 78px;
 }
@@ -3973,7 +3973,7 @@ h3, h5 {
   left: 0;
   top: 152px;
   left: 0;
-  background: url("./../../assets/images/layout/roadmap-7.png") no-repeat;
+  background: url("/assets/images/layout/roadmap-7.png") no-repeat;
   width: 963px;
   height: 78px;
 }
@@ -4374,7 +4374,7 @@ h3, h5 {
   color: rgba(246, 246, 246, 0.8);
 }
 .document.style-1 .document__main {
-  background: url("./../../assets/images/background/bg-document.png") no-repeat;
+  background: url("/assets/images/background/bg-document.png") no-repeat;
   background-position: top center;
   padding: 61px 64px;
 }
@@ -4399,7 +4399,7 @@ h3, h5 {
   }
 }
 .document.style-1 .box-document {
-  background: url("./../../assets/images/background/bg-document-box.png") no-repeat;
+  background: url("/assets/images/background/bg-document-box.png") no-repeat;
   background-position: top center;
   padding: 16px 20px 16px 24px;
   margin: 0 15px;
@@ -5416,7 +5416,7 @@ h3, h5 {
   position: absolute;
   top: 0;
   left: 0;
-  background: url("./../../assets/images/background/bg-team.png") no-repeat;
+  background: url("/assets/images/background/bg-team.png") no-repeat;
   background-size: contain;
   background-position: top center;
   width: 100%;
@@ -7233,7 +7233,7 @@ form button.btn-action {
 }
 .about.style-2 .about__content {
   position: relative;
-  background: url("./../../assets/images/background/bg-features.png") no-repeat;
+  background: url("/assets/images/background/bg-features.png") no-repeat;
   background-size: contain;
   background-position: center center;
   padding: 80px 58px 60px;
@@ -7262,7 +7262,7 @@ form button.btn-action {
   justify-content: flex-end;
 }
 .about.style-2 .about__content .tf-box .box-icon {
-  background: url("./../../assets/images/background/bg-iconbox.png") no-repeat;
+  background: url("/assets/images/background/bg-iconbox.png") no-repeat;
   background-position: center center;
   padding: 27px 20px;
   text-align: center;
@@ -7344,7 +7344,7 @@ form button.btn-action {
 
 .about.style-4 {
   padding: 81px 0 62px;
-  background: url("./../../assets/images/background/platform-bg.jpg") no-repeat;
+  background: url("/assets/images/background/platform-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -8230,7 +8230,7 @@ img.mfp-img {
 
 .features.style-2 {
   padding: 80px 0 64px;
-  background: url("./../../assets/images/background/bg-choose.jpg") no-repeat;
+  background: url("/assets/images/background/bg-choose.jpg") no-repeat;
 }
 
 .features.style-3 {
@@ -9378,7 +9378,7 @@ img.mfp-img {
 }
 
 .footer.style-2 {
-  background: url("./../../assets/images/background/bg-roadmap.jpg") no-repeat;
+  background: url("/assets/images/background/bg-roadmap.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   background-color: rgba(61, 43, 111, 0.2);
@@ -10578,7 +10578,7 @@ img.mfp-img {
 }
 .home-main .features {
   padding: 80px 0 62px;
-  background: url("./../../assets/images/background/bg-choose.jpg") no-repeat;
+  background: url("/assets/images/background/bg-choose.jpg") no-repeat;
   background-size: cover;
 }
 .home-main .documents.style-2 {
@@ -10586,7 +10586,7 @@ img.mfp-img {
 }
 
 .home-nft {
-  background: url("./../../assets/images/background/bg-bd.png");
+  background: url("/assets/images/background/bg-bd.png");
   background-color: #181818;
 }
 .home-nft p {
@@ -10611,7 +10611,7 @@ img.mfp-img {
   padding: 0 0 153px;
 }
 .home-nft .join-now__main {
-  background: url("./../../assets/images/background/bg-join.png") no-repeat;
+  background: url("/assets/images/background/bg-join.png") no-repeat;
   background-size: contain;
   background-position: top center;
   padding: 61px 100px;
@@ -10786,7 +10786,7 @@ img.mfp-img {
 
 .documents {
   padding: 80px 0;
-  background: url("./../../assets/images/background/bg-document-01.png") no-repeat;
+  background: url("/assets/images/background/bg-document-01.png") no-repeat;
   background-size: cover;
   background-color: rgba(61, 43, 111, 0.2);
 }
@@ -11333,7 +11333,7 @@ img.mfp-img {
 }
 .home-music .join-now.style-3 {
   padding: 80px 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./../../assets/images/background/bg-join-music.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/images/background/bg-join-music.jpg");
   background-size: cover;
   position: relative;
 }
@@ -11392,7 +11392,7 @@ img.mfp-img {
 }
 
 .home-defi-1 {
-  background: url("./../../assets/images/background/bg-4.jpg") no-repeat;
+  background: url("/assets/images/background/bg-4.jpg") no-repeat;
   background-size: cover;
 }
 .home-defi-1 .features.style-4 {
@@ -11707,7 +11707,7 @@ img.mfp-img {
   width: 289px;
 }
 .home-defi-2 .section-team.style-4 {
-  background: url("./../../assets/images/background/bg-team-5.jpg") no-repeat;
+  background: url("/assets/images/background/bg-team-5.jpg") no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -12556,7 +12556,7 @@ img.mfp-img {
 .page-404 {
   width: 100%;
   height: 1080px;
-  background: url("./../../assets/images/background/bg-404.jpg") no-repeat;
+  background: url("/assets/images/background/bg-404.jpg") no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12603,7 +12603,7 @@ img.mfp-img {
 .comingsoon {
   width: 100%;
   height: 1080px;
-  background: url("./../../assets/images/background/bg-comingsoon.jpg") no-repeat;
+  background: url("/assets/images/background/bg-comingsoon.jpg") no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12791,7 +12791,7 @@ img.mfp-img {
 }
 .page-title {
   padding: 162px 0 61px;
-  background: url("./../../assets/images/background/bg-pagetitle.jpg") no-repeat;
+  background: url("/assets/images/background/bg-pagetitle.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
