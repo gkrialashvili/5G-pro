@@ -1,14 +1,12 @@
 //[Master Javascript]
 
 //Project:	Crypto Admin - Responsive Admin Template
-//Primary use:	Crypto Admin - Responsive Admin Template
-
 //should be included in all pages. It controls some layout
 
 
 // Make sure jQuery has been loaded
 if (typeof jQuery === 'undefined') {
-throw new Error('template requires jQuery')
+throw new Error('template requires jQuery');
 }
 
 // Layout()
@@ -21,17 +19,14 @@ throw new Error('template requires jQuery')
 //  to the body tag.
 
 
-
 +function ($) {
-  'use strict'
+  'use strict';
 
-  var DataKey = 'Cryptoadmin.layout'
-
+  var DataKey = 'lion.layout'
   var Default = {
     slimscroll : true,
     resetHeight: true
   }
-
   var Selector = {
     wrapper       : '.wrapper',
     contentWrapper: '.content-wrapper',
@@ -44,7 +39,6 @@ throw new Error('template requires jQuery')
     sidebarMenu   : '.sidebar-menu',
     logo          : '.main-header .logo'
   }
-
   var ClassName = {
     fixed         : 'fixed',
     holdTransition: 'hold-transition'
@@ -55,7 +49,6 @@ throw new Error('template requires jQuery')
     this.bindedResize = false
     this.activate()
   }
-
   Layout.prototype.activate = function () {
     this.fix()
     this.fixSidebar()
@@ -68,7 +61,6 @@ throw new Error('template requires jQuery')
         'min-height': '100%'
       })
     }
-
     if (!this.bindedResize) {
       $(window).resize(function () {
         this.fix()
@@ -118,7 +110,6 @@ throw new Error('template requires jQuery')
         $(Selector.contentWrapper).css('min-height', sidebarHeight)
         postSetHeight = sidebarHeight
       }
-
       // Fix for the control sidebar height
       var $controlSidebar = $(Selector.controlSidebar)
       if (typeof $controlSidebar !== 'undefined') {
@@ -136,7 +127,6 @@ throw new Error('template requires jQuery')
       }
       return
     }
-
     // Enable slimscroll for fixed layout
     if (this.options.slimscroll) {
       if (typeof $.fn.slimScroll !== 'undefined') {
@@ -152,7 +142,6 @@ throw new Error('template requires jQuery')
       }
     }
   }
-
   // Plugin Definition
   function Plugin(option) {
     return this.each(function () {
@@ -163,7 +152,6 @@ throw new Error('template requires jQuery')
         var options = $.extend({}, Default, $this.data(), typeof option === 'object' && option)
         $this.data(DataKey, (data = new Layout(options)))
       }
-
       if (typeof option == 'string') {
         if (typeof data[option] == 'undefined') {
           throw new Error('No method named ' + option)
@@ -188,7 +176,9 @@ throw new Error('template requires jQuery')
   $(window).on('load', function () {
     Plugin.call($('body'))
   });
+	
 }(jQuery)  // End of use strict
+
 
 /* PushMenu()
  * Adds the push menu functionality to the sidebar.
@@ -200,8 +190,7 @@ throw new Error('template requires jQuery')
 +function ($) {
   'use strict'
 
-  var DataKey = 'Cryptoadmin.pushmenu'
-
+  var DataKey = 'lion.pushmenu'
   var Default = {
     collapseScreenSize   : 767,
     expandOnHover        : false,
@@ -374,7 +363,7 @@ throw new Error('template requires jQuery')
 +function ($) {
   'use strict'
 
-  var DataKey = 'Cryptoadmin.tree'
+  var DataKey = 'lion.tree'
 
   var Default = {
     animationSpeed: 500,
@@ -382,7 +371,6 @@ throw new Error('template requires jQuery')
     followLink    : false,
     trigger       : '.treeview a'
   }
-
   var Selector = {
     tree        : '.tree',
     treeview    : '.treeview',
@@ -392,12 +380,10 @@ throw new Error('template requires jQuery')
     data        : '[data-widget="tree"]',
     active      : '.active'
   }
-
   var ClassName = {
     open: 'menu-open',
     tree: 'tree'
   }
-
   var Event = {
     collapsed: 'collapsed.tree',
     expanded : 'expanded.tree'
@@ -414,7 +400,6 @@ throw new Error('template requires jQuery')
 
     this._setUpListeners()
   }
-
   Tree.prototype.toggle = function (link, event) {
     var treeviewMenu = link.next(Selector.treeviewMenu)
     var parentLi     = link.parent()
@@ -434,7 +419,6 @@ throw new Error('template requires jQuery')
       this.expand(treeviewMenu, parentLi)
     }
   }
-
   Tree.prototype.expand = function (tree, parent) {
     var expandedEvent = $.Event(Event.expanded)
 
@@ -449,7 +433,6 @@ throw new Error('template requires jQuery')
       $(this.element).trigger(expandedEvent)
     }.bind(this))
   }
-
   Tree.prototype.collapse = function (tree, parentLi) {
     var collapsedEvent = $.Event(Event.collapsed)
 
@@ -462,7 +445,6 @@ throw new Error('template requires jQuery')
   }
 
   // Private
-
   Tree.prototype._setUpListeners = function () {
     var that = this
 
@@ -515,12 +497,11 @@ throw new Error('template requires jQuery')
 +function ($) {
   'use strict'
 
-  var DataKey = 'Cryptoadmin.controlsidebar'
+  var DataKey = 'lion.controlsidebar'
 
   var Default = {
     slide: true
   }
-
   var Selector = {
     sidebar: '.control-sidebar',
     data   : '[data-toggle="control-sidebar"]',
@@ -535,12 +516,10 @@ throw new Error('template requires jQuery')
     open : 'control-sidebar-open',
     fixed: 'fixed'
   }
-
   var Event = {
     collapsed: 'collapsed.controlsidebar',
     expanded : 'expanded.controlsidebar'
   }
-
   // ControlSidebar Class Definition
   var ControlSidebar = function (element, options) {
     this.element         = element
@@ -549,20 +528,17 @@ throw new Error('template requires jQuery')
 
     this.init()
   }
-
   ControlSidebar.prototype.init = function () {
     // Add click listener if the element hasn't been
     // initialized using the data API
     if (!$(this.element).is(Selector.data)) {
       $(this).on('click', this.toggle)
     }
-
     this.fix()
     $(window).resize(function () {
       this.fix()
     }.bind(this))
   }
-
   ControlSidebar.prototype.toggle = function (event) {
     if (event) event.preventDefault()
 
@@ -574,7 +550,6 @@ throw new Error('template requires jQuery')
       this.collapse()
     }
   }
-
   ControlSidebar.prototype.expand = function () {
     if (!this.options.slide) {
       $('body').addClass(ClassName.open)
@@ -584,12 +559,10 @@ throw new Error('template requires jQuery')
 
     $(this.element).trigger($.Event(Event.expanded))
   }
-
   ControlSidebar.prototype.collapse = function () {
     $('body, ' + Selector.sidebar).removeClass(ClassName.open)
     $(this.element).trigger($.Event(Event.collapsed))
   }
-
   ControlSidebar.prototype.fix = function () {
     if ($('body').is(Selector.boxed)) {
       this._fixForBoxed($(Selector.bg))
@@ -597,7 +570,6 @@ throw new Error('template requires jQuery')
   }
 
   // Private
-
   ControlSidebar.prototype._fixForBoxed = function (bg) {
     bg.css({
       position: 'absolute',
@@ -650,7 +622,7 @@ throw new Error('template requires jQuery')
 +function ($) {
   'use strict'
 
-  var DataKey = 'Cryptoadmin.boxwidget'
+  var DataKey = 'lion.boxwidget'
 
   var Default = {
     animationSpeed : 500,
@@ -660,7 +632,6 @@ throw new Error('template requires jQuery')
     expandIcon     : 'fa-plus',
     removeIcon     : 'fa-times'
   }
-
   var Selector = {
     data     : '.box',
     collapsed: '.collapsed-box',
@@ -668,11 +639,9 @@ throw new Error('template requires jQuery')
     footer   : '.box-footer',
     tools    : '.box-tools'
   }
-
   var ClassName = {
     collapsed: 'collapsed-box'
   }
-
   var Event = {
     collapsed: 'collapsed.boxwidget',
     expanded : 'expanded.boxwidget',
@@ -686,7 +655,6 @@ throw new Error('template requires jQuery')
 
     this._setUpListeners()
   }
-
   BoxWidget.prototype.toggle = function () {
     var isOpen = !$(this.element).is(Selector.collapsed)
 
@@ -696,7 +664,6 @@ throw new Error('template requires jQuery')
       this.expand()
     }
   }
-
   BoxWidget.prototype.expand = function () {
     var expandedEvent = $.Event(Event.expanded)
     var collapseIcon  = this.options.collapseIcon
@@ -715,7 +682,6 @@ throw new Error('template requires jQuery')
         $(this.element).trigger(expandedEvent)
       }.bind(this))
   }
-
   BoxWidget.prototype.collapse = function () {
     var collapsedEvent = $.Event(Event.collapsed)
     var collapseIcon   = this.options.collapseIcon
@@ -733,7 +699,6 @@ throw new Error('template requires jQuery')
         $(this.element).trigger(collapsedEvent)
       }.bind(this))
   }
-
   BoxWidget.prototype.remove = function () {
     var removedEvent = $.Event(Event.removed)
 
@@ -744,7 +709,6 @@ throw new Error('template requires jQuery')
   }
 
   // Private
-
   BoxWidget.prototype._setUpListeners = function () {
     var that = this
 
@@ -789,7 +753,6 @@ throw new Error('template requires jQuery')
     $.fn.boxWidget = old
     return this
   }
-
   // BoxWidget Data API
   $(window).on('load', function () {
     $(Selector.data).each(function () {
@@ -810,8 +773,7 @@ throw new Error('template requires jQuery')
 +function ($) {
   'use strict'
 
-  var DataKey = 'Cryptoadmin.todolist'
-
+  var DataKey = 'lion.todolist'
   var Default = {
     iCheck   : false,
     onCheck  : function () {
@@ -823,7 +785,6 @@ throw new Error('template requires jQuery')
   var Selector = {
     data: '[data-widget="todo-list"]'
   }
-
   var ClassName = {
     done: 'done'
   }
@@ -835,7 +796,6 @@ throw new Error('template requires jQuery')
 
     this._setUpListeners()
   }
-
   TodoList.prototype.toggle = function (item) {
     item.parents(Selector.li).first().toggleClass(ClassName.done)
     if (!item.prop('checked')) {
@@ -913,13 +873,12 @@ throw new Error('template requires jQuery')
 +function ($) {
   'use strict'
 
-  var DataKey = 'Cryptoadmin.directchat'
+  var DataKey = 'lion.directchat'
 
   var Selector = {
     data: '[data-widget="chat-pane-toggle"]',
     box : '.direct-chat'
   }
-
   var ClassName = {
     open: 'direct-chat-contacts-open'
   }
@@ -942,7 +901,6 @@ throw new Error('template requires jQuery')
       if (!data) {
         $this.data(DataKey, (data = new DirectChat($this)))
       }
-
       if (typeof option == 'string') data.toggle($this)
     })
   }
@@ -967,26 +925,16 @@ throw new Error('template requires jQuery')
   // Slim scrolling
   
   $('.inner-content-div').slimScroll({
-    height: '200'
-  });
+    height: 'auto'
+  });	
 
-  $('.sm-scrol').slimScroll({
-    height: '250'
-  });
-	
-  $('.direct-chat-messages').slimScroll({
-    height: '310'
-  });
-
-  
+  // search box
   $(".search-box a, .search-box .app-search .srh-btn").on('click', function() {
         $(".app-search").toggle(200);
-    });
-	
+  });	
 	
 	
   // Close
-    //
     $(document).on('click', '.box-btn-close', function() {
       $(this).parents('.box').fadeOut(600, function() {
         if ($(this).parent().children().length == 1) {
@@ -998,47 +946,27 @@ throw new Error('template requires jQuery')
       });
     });
 
-
-
-    // Slide up/down
-    //
+  // Slide up/down
     $(document).on('click', '.box-btn-slide', function(){
       $(this).toggleClass('rotate-180').parents('.box').find('.box-content, .box-body').slideToggle();
     });
 
-
-
-    // Maximize
-    //
+  // Maximize
     $(document).on('click', '.box-btn-maximize', function(){
       $(this).parents('.box').toggleClass('box-maximize').removeClass('box-fullscreen');
     });
 
-
-
-    // Fullscreen
-    //
+  // Fullscreen
     $(document).on('click', '.box-btn-fullscreen', function(){
       $(this).parents('.box').toggleClass('box-fullscreen').removeClass('box-maximize');
     });
 	
-		
-		// Disable demonstrative links!
-    //
+  // Disable demonstrative links!
     $(document).on('click', 'a[href="#"]', function(e){
       e.preventDefault();
     });
 	
-	
-    // This is for the innerleft sidebar
-    $(".open-left-block").on('click', function() {
-        $('.left-block').toggleClass('open-panel');
-        $('.open-left-block').toggleClass('mdi-menu');
-    });
-	
-	
-    // Upload
-    //
+  // Upload
     $(document).on('click', '.file-browser', function() {
       var $browser = $(this);
       if ( $browser.hasClass('form-control') ) {
@@ -1075,40 +1003,7 @@ throw new Error('template requires jQuery')
     });
     $('.custom-file-control:not([data-input-value])').attr('data-input-value', 'Choose file...');
 	
-		
-
-	/* The todo list plugin */
-	  $('.todo-list').todoList({
-		onCheck  : function () {
-		  window.console.log($(this), 'The element has been checked');
-		},
-		onUnCheck: function () {
-		  window.console.log($(this), 'The element has been unchecked');
-		}
-	  });
 	
 	
 }(jQuery) // End of use strict
 
-// Fullscreen
-	$(function () {
-		'use strict'
-
-			$('[data-provide~="fullscreen"]').on('click', function () {
-				screenfull.toggle($('#container')[0]);
-			});
-
-	}); // End of use strict
-
-	
-+function ($) {
-  'use strict'
-	
-// Dynamic active horizontal menu
-    var path = window.location.pathname.split("/").pop();
-    var target = $('.sm li a[href="'+path+'"]');
-    target.parent().addClass('current');
-    $('.sm li.current').parents('li').addClass('current');
-
-
-}(jQuery) // End of use strict
