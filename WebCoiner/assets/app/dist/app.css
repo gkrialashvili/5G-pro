@@ -695,16 +695,6 @@ body[data-magic-cursor=hide] .mouse-cursor {
   visibility: visible;
   transform: translateY(26px);
 }
-.header .header__right .main-nav .menu li.menu-item-has-children > a:after {
-  color: #fff;
-  font-family: "icomoon";
-  content: "\e900";
-  font-size: 13px;
-  font-weight: 400;
-  position: absolute;
-  right: -20px;
-  top: 4px;
-}
 .header .header__right .group-button {
   display: flex;
   margin-left: 80px;
@@ -1529,9 +1519,9 @@ h3, h5 {
 .banner-top.style-1 .banner-top__sale .sale-content .sale-bottom .list-coin li {
   padding: 0 30px;
 }
-.banner-top.style-1 .banner-top__sale .sale-content .sale-bottom .list-coin li a span {
-  font-size: 24px;
-}
+    .banner-top.style-1 .banner-top__sale .sale-content .sale-bottom .list-coin li span {
+        color: #ff4581;
+    }
 .banner-top.style-1 .banner-top__sale .sale-content .sale-bottom .list-coin li a svg {
   margin-top: -7px;
 }

@@ -899,14 +899,12 @@
 
 .banner-top.style-6 {
     padding: 221px 0 33px;
-
     background: url('../../images/background/bg-banner-nft.jpg') no-repeat;
     background-size: cover;
     overflow: hidden;
 
     .block-text {
         .heading {
-            
             font-family: 'Rowdies';
             font-weight: 700;
             font-size: 56px;
@@ -918,9 +916,8 @@
             margin-bottom: 27px;
         }
 
-        .sub-heading  {
-
-            font-size: 24px;    
+        .sub-heading {
+            font-size: 24px;
             text-transform: capitalize;
         }
     }
@@ -930,22 +927,21 @@
         border: 2px solid #5C1594;
         backdrop-filter: blur(24px);
         border-radius: 12px;
-
         margin-top: 56px;
         padding: 38px 38px 38px 22px;
         @include flex(center,space-between);
-    
+
         .js-countdown {
             width: 40%;
-            .countdown__timer{
-            
+
+            .countdown__timer {
+
                 .countdown__item {
                     font-size: 36px;
                     font-weight: 600;
                     background: linear-gradient(153.06deg, #B621FE -0.31%, #1FD1F9 99.69%);
                     backdrop-filter: blur(10px);
                     border-radius: 8px;
-    
                     max-width: 114px;
                     width: 100%;
                     height: 114px;
@@ -955,12 +951,12 @@
                     margin-left: 16px;
                     text-align: center;
                     color: #fff;
-    
                     position: relative;
+
                     @include mobile {
                         margin-bottom: 20px;
                     }
-    
+
                     &::after {
                         position: absolute;
                         bottom: 21px;
@@ -970,29 +966,33 @@
                         font-size: 17px;
                         color: #fff;
                     }
-    
+
                     &:nth-child(1)::after {
-                        content: 'Days';  
+                        content: 'Days';
                     }
+
                     &:nth-child(2)::after {
-                        content: 'Hours';  
+                        content: 'Hours';
                     }
+
                     &:nth-child(3)::after {
-                        content: 'Minutes';  
+                        content: 'Minutes';
                     }
+
                     &:nth-child(4)::after {
-                        content: 'Seconds';  
+                        content: 'Seconds';
                     }
                 }
             }
         }
 
-        
+
 
         .token-bar {
             margin-top: 9px;
             padding: 0 35px 0 13px;
             width: 40%;
+
             .top {
                 @include flex(center, space-between);
                 padding: 0 13px;
@@ -1000,8 +1000,9 @@
                 h6 {
                     font-size: 14px;
                     font-weight: 400;
+
                     span {
-                        color: #fff ;
+                        color: #ff4581;
                         font-weight: 800;
                     }
                 }
@@ -1013,6 +1014,7 @@
                     backdrop-filter: blur(12px);
                     border-radius: 64px;
                     padding: 4px;
+
                     p {
                         background: linear-gradient(153.06deg, #B621FE -0.31%, #1FD1F9 99.69%);
                         border-radius: 64px;
@@ -1029,6 +1031,7 @@
             .bottom {
                 @include flex(center, center);
                 margin-top: 10px;
+
                 p {
                     padding: 0 47px;
                     position: relative;
@@ -1044,7 +1047,6 @@
                     }
                 }
             }
-            
         }
 
         .list-coin {
@@ -1052,18 +1054,21 @@
             border-radius: 10px;
             height: 60px;
             @include flex(center, center);
+
             li {
                 padding: 0 18px;
+
                 span {
                     font-size: 24px;
                 }
             }
         }
+
         @include desktop-1200 {
             flex-wrap: wrap;
             justify-content: center;
 
-            
+
 
             .js-countdown {
                 width: 100%;
@@ -1072,17 +1077,19 @@
 
             .block-text {
                 width: 100%;
-            } 
+            }
 
             .sale-content {
                 width: 100%;
                 margin-top: 30px;
                 text-align: center;
             }
+
             .token-bar {
                 width: 100%;
                 margin: 40px 0;
             }
+
             .list-coin {
                 width: 100%;
             }
@@ -1091,12 +1098,11 @@
 
     .banner-top__main {
         margin-top: 120px;
-        
+
 
         .buy-token-box {
             position: relative;
             z-index: 1;
-            
             max-width: 690px;
             margin: 0 auto;
             margin-top: -52px;
@@ -1119,10 +1125,12 @@
                 letter-spacing: 0.7px;
                 margin-bottom: 20px;
             }
+
             p {
                 margin-bottom: 38px;
             }
-            a {    
+
+            a {
                 padding: 14px 48px;
             }
 
@@ -1141,27 +1149,28 @@
                     width: 340px;
                     height: 400px;
                     @include flex(center,center);
-                   
-                    
-    
+
+
+
                     &.swiper-slide-visible.swiper-slide-active {
                         width: 380px;
                         height: 400px;
-    
+
                         img {
                             height: 100%;
                         }
                     }
-                    .swiper-slide-shadow-left , .swiper-slide-shadow-right {
+
+                    .swiper-slide-shadow-left, .swiper-slide-shadow-right {
                         display: none;
                     }
-                  }
-            
-                  .swiper-slide img {
+                }
+
+                .swiper-slide img {
                     display: block;
                     width: 100%;
                     border-radius: 24px;
-                  }
+                }
             }
 
             .title {
@@ -1169,11 +1178,10 @@
                 font-weight: 700;
                 margin-bottom: 22px;
             }
+
             p {
                 color: #fff;
             }
-        
-              
         }
     }
 }
