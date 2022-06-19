@@ -18,7 +18,7 @@
             border-radius: 32px;
             max-width: 379px;
             padding: 4px;
-            
+
             a {
                 font-weight: 700;
                 background: #fff;
@@ -26,24 +26,30 @@
                 padding: 3px 19px;
                 border-radius: 32px;
             }
+
             @include mobile {
                 padding-right: 10px;
+
                 a {
                     padding: 3px 10px;
                 }
             }
+
             p {
                 margin-bottom: 0;
                 padding-left: 30px;
             }
         }
+
         .title {
             line-height: 1.25;
             margin-top: 26px;
+
             @include mobile {
                 font-size: 40px;
             }
         }
+
         .desc {
             font-size: 17px;
             margin-top: 12px;
@@ -52,13 +58,14 @@
         }
 
         .button {
-            margin-top: 37px;            
+            margin-top: 37px;
         }
+
         .content-list {
             margin-top: 94px;
             display: flex;
 
-            
+
             li {
                 padding-right: 69px;
                 position: relative;
@@ -67,33 +74,39 @@
                     content: '';
                     width: 2px;
                     height: 60px;
-
                     position: absolute;
                     top: 44%;
                     right: 14%;
                     background: var(--primary-color);
                 }
+
                 &:nth-last-child(1) {
                     padding-right: 0;
+
                     &::after {
                         display: none;
                     }
                 }
+
                 span {
                     font-size: 48px;
                 }
+
                 h5 {
                     margin-top: 16px;
                     letter-spacing: 2px;
                     margin-bottom: 3px;
                 }
+
                 p {
                     font-size: 22px;
                     font-weight: 600;
                 }
             }
+
             @include mobile {
                 flex-wrap: wrap;
+
                 li {
                     padding-right: 0;
                     width: 100%;
@@ -107,23 +120,24 @@
             }
         }
     }
+
     .banner-top__sale {
         text-align: right;
         padding-left: 120px;
-    
-        
+
+
         .sale-content {
             margin-top: -51px;
             padding: 41px 0 0;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(12px);
-            border-radius: 12px;
+            background: #19875445;
+            border-radius: 12px;s
             text-align: center;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-    
-    
-            .countdown__timer{
+            border: 2px solid #19875445;
+
+
+            .countdown__timer {
                 margin-top: 28px;
+
                 .countdown__item {
                     font-size: 36px;
                     font-family: 600;
@@ -137,9 +151,8 @@
                     color: $white;
                     display: inline-block;
                     padding-top: 5px;
-    
                     position: relative;
-    
+
                     &::after {
                         position: absolute;
                         bottom: -37px;
@@ -148,47 +161,58 @@
                         font-size: 16px;
                         font-weight: 700;
                     }
-    
+
                     &:nth-child(1)::after {
-                        content: 'Days';  
+                        content: 'Days';
                     }
+
                     &:nth-child(2)::after {
-                        content: 'Hours';  
+                        content: 'Hours';
                     }
+
                     &:nth-child(3)::after {
-                        content: 'Mins';  
+                        content: 'Mins';
                     }
+
                     &:nth-child(4)::after {
-                        content: 'Secs';  
+                        content: 'Secs';
                     }
                 }
             }
-    
+
             .token-bar {
                 margin-top: 71px;
                 padding: 0 38px;
+
                 .top {
                     @include flex(center, space-between);
                     padding: 0 13px;
-    
+
+                    p {
+                        padding: 0 47px;
+                        position: relative;
+                    }
+
                     h6 {
                         font-size: 14px;
                         font-weight: 400;
+
                         span {
-                            color: var(--primary-color) ;
+                            color: var(--primary-color);
                             font-weight: 800;
                         }
                     }
                 }
-    
+
                 .main {
                     .progress-token {
                         background: rgba(255, 255, 255, 0.1);
                         backdrop-filter: blur(12px);
                         border-radius: 64px;
                         padding: 4px;
+
                         p {
-                            background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+                            background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
                             border-radius: 64px;
                             max-width: 186px;
                             padding: 4px 17px;
@@ -199,14 +223,15 @@
                         }
                     }
                 }
-    
+
                 .bottom {
                     @include flex(center, center);
                     margin-top: 10px;
+
                     p {
                         padding: 0 47px;
                         position: relative;
-    
+
                         &::before {
                             @include absolute;
                             left: 50%;
@@ -217,40 +242,43 @@
                         }
                     }
                 }
-                
             }
-    
+
             .sale-bottom {
                 background: rgba(255, 255, 255, 0.06);
                 padding: 21px 0 11px;
                 margin-top: 17px;
-                
-    
+
+
                 .list-coin {
                     @include flex(center, center);
+
                     li {
                         padding: 0 30px;
+
                         a {
                             span {
                                 font-size: 24px;
                             }
+
                             svg {
                                 margin-top: -7px;
                             }
 
                             @-webkit-keyframes pulse-grow-on-hover {
                                 to {
-                                  -webkit-transform: scale(1.1);
-                                  transform: scale(1.1);
+                                    -webkit-transform: scale(1.1);
+                                    transform: scale(1.1);
                                 }
-                              }
-                              @keyframes pulse-grow-on-hover {
+                            }
+
+                            @keyframes pulse-grow-on-hover {
                                 to {
-                                  -webkit-transform: scale(1.1);
-                                  transform: scale(1.1);
+                                    -webkit-transform: scale(1.1);
+                                    transform: scale(1.1);
                                 }
-                              }
-                    
+                            }
+
                             &:hover {
                                 -webkit-animation-name: pulse-grow-on-hover;
                                 animation-name: pulse-grow-on-hover;
@@ -268,25 +296,25 @@
                 }
             }
         }
-    
+
         @include desktop-1200 {
             padding-left: 0;
             margin-top: 100px;
             padding: 0 100px;
         }
+
         @include mobile {
             padding: 0;
-    
+
             img {
                 width: 100%;
             }
-    
+
             .sale-content .countdown__timer .countdown__item {
                 margin: 0 5px;
             }
         }
     }
-    
 }
 
 .banner-top.style-2 {

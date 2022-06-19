@@ -9269,6 +9269,10 @@
     <Content Include="assets\images\background\Slider.jpg" />
     <Content Include="assets\images\background\texture.jpg" />
     <Content Include="assets\images\bg-body.png" />
+    <Content Include="assets\images\bg\bg.jpg" />
+    <Content Include="assets\images\bg\bg2.jpg" />
+    <Content Include="assets\images\bg\bg3.jpg" />
+    <Content Include="assets\images\bg\bg4.jpg" />
     <Content Include="assets\images\blog\blog-01.jpg" />
     <Content Include="assets\images\blog\blog-02.jpg" />
     <Content Include="assets\images\blog\blog-03.jpg" />
@@ -9388,20 +9392,21 @@
     <Content Include="assets\images\layout\roadmap04.png" />
     <Content Include="assets\images\layout\tokendetails.png" />
     <Content Include="assets\images\layout\worldmap.png" />
-    <Content Include="assets\images\logo\favicon-main.png" />
-    <Content Include="assets\images\logo\favicon.png" />
-    <Content Include="assets\images\logo\logo%402x.png" />
-    <Content Include="assets\images\logo\logo-03.png" />
-    <Content Include="assets\images\logo\logo-04.png" />
-    <Content Include="assets\images\logo\logo-05.png" />
-    <Content Include="assets\images\logo\logo-06.png" />
-    <Content Include="assets\images\logo\logo-main%402x.png" />
-    <Content Include="assets\images\logo\logo-main.png" />
-    <Content Include="assets\images\logo\logo-nft.png" />
+    <Content Include="assets\images\logo\fulllogo.jpg" />
+    <Content Include="assets\images\logo\fulllogo.png" />
+    <Content Include="assets\images\logo\fulllogo_nobuffer.jpg" />
+    <Content Include="assets\images\logo\fulllogo_nobuffer.png" />
+    <Content Include="assets\images\logo\fulllogo_transparent.png" />
     <Content Include="assets\images\logo\logo.png" />
-    <Content Include="assets\images\logo\logo02.png" />
-    <Content Include="assets\images\logo\logo03.png" />
-    <Content Include="assets\images\logo\logo04.png" />
+    <Content Include="assets\images\logo\grayscale.png" />
+    <Content Include="assets\images\logo\grayscale_nobuffer.png" />
+    <Content Include="assets\images\logo\grayscale_transparent.png" />
+    <Content Include="assets\images\logo\grayscale_transparent_nobuffer.png" />
+    <Content Include="assets\images\logo\icononly_nobuffer.png" />
+    <Content Include="assets\images\logo\icononly_transparent.png" />
+    <Content Include="assets\images\logo\favicon.ico" />
+    <Content Include="assets\images\logo\textonly.png" />
+    <Content Include="assets\images\logo\textonly_nobuffer.png" />
     <Content Include="assets\images\nft\nft-01.jpg" />
     <Content Include="assets\images\nft\nft-02.jpg" />
     <Content Include="assets\images\nft\nft-03.jpg" />
@@ -11175,6 +11180,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="assets\admin\vendor\flat-color-icons\PNG\512\A\" />
     <Folder Include="assets\home\" />
+    <Folder Include="assets\images\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

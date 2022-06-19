@@ -8,7 +8,6 @@
     z-index: 1000;
     height: 80px;
     @include flex(center,center);
-
     border-bottom: 1px solid rgba(19,49,107,0.3);
 
     &.is-fixed {
@@ -62,7 +61,7 @@
                 -ms-transform-origin: 50% 50%;
                 transform-origin: 50% 50%;
             }
-            
+
             &::before,
             &::after,
             span {
@@ -71,16 +70,19 @@
                 -moz-transition: all ease 0.3s;
                 transition: all ease 0.3s;
             }
+
             &::before {
                 -webkit-transform: translate3d(0, -7px, 0);
                 -moz-transform: translate3d(0, -7px, 0);
                 transform: translate3d(0, -7px, 0);
             }
+
             &::after {
                 -webkit-transform: translate3d(0, 7px, 0);
                 -moz-transform: translate3d(0, 7px, 0);
                 transform: translate3d(0, 7px, 0);
             }
+
             span {
                 position: absolute;
                 width: 100%;
@@ -97,27 +99,31 @@
                     -moz-transform: rotate3d(0, 0, 1, 45deg);
                     transform: rotate3d(0, 0, 1, 45deg);
                 }
+
                 &::after {
                     -webkit-transform: rotate3d(0, 0, 1, -45deg);
                     -moz-transform: rotate3d(0, 0, 1, -45deg);
                     transform: rotate3d(0, 0, 1, -45deg);
                 }
+
                 span {
                     opacity: 0;
                 }
             }
         }
+
         .main-nav {
             .menu {
                 @include flex(center, flex-start);
+
                 li {
                     position: relative;
                     padding-right: 40px;
-    
+
                     &:nth-last-child(1) {
                         padding-right: 0;
                     }
-                    
+
                     a {
                         position: relative;
                         display: block;
@@ -125,13 +131,15 @@
                         font-weight: 700;
                         font-family: $font-second;
                     }
+
                     @include desktop-1200 {
                         padding-right: 30px;
+
                         a {
                             font-size: 14px;
                         }
                     }
-                    
+
                     .sub-menu {
                         position: absolute;
                         top: 100%;
@@ -154,6 +162,7 @@
                         transform: translateY(35px);
                         background: $white;
                         box-shadow: 0 0 1.25rem rgb(30 34 40 / 6%);
+
                         li {
                             padding: 10px 20px;
                             position: relative;
@@ -162,7 +171,7 @@
                             &:last-child {
                                 border: none;
                             }
-    
+
                             &::before {
                                 content: '';
                                 position: absolute;
@@ -173,20 +182,22 @@
                                 background: var(--primary-color);
                                 transition: width .3s ease-in-out;
                             }
-    
-                            &:hover::before , &.current-item::before  {
+
+                            &:hover::before, &.current-item::before {
                                 width: 100%;
                             }
-                            
-    
+
+
                             a {
                                 color: #000;
                                 font-size: 14px;
+
                                 &::before,
                                 &::after {
                                     display: none;
                                 }
                             }
+
                             &:hover {
                                 a {
                                     color: var(--primary-color);
@@ -197,25 +208,24 @@
                                 color: var(--primary-color);
                             }
                         }
-                        
                     }
-                    &:hover .sub-menu{
+
+                    &:hover .sub-menu {
                         opacity: 1;
                         visibility: visible;
                         transform: translateY(26px);
                     }
-    
-                    &.menu-item-has-children>a {
-        
+
+                    &.menu-item-has-children > a {
                     }
                 }
-            
-                
             }
         }
+
         .group-button {
             display: flex;
             margin-left: 80px;
+
             @include desktop-1200 {
                 margin-left: 20px;
             }
@@ -223,6 +233,7 @@
             @include mobile {
                 display: none;
             }
+
             a {
                 font-family: 'Inter';
                 font-size: 16px;
@@ -254,9 +265,11 @@
             li {
                 border-bottom: 1px solid rgba(0 0 0 / 10%);
                 position: relative;
+
                 &:last-child {
                     border: 0;
                 }
+
                 a {
                     padding: 12px 30px;
                     color: #181818;
@@ -266,9 +279,7 @@
 
                 .arrow {
                     cursor: pointer;
-    
                     font-size: 20px;
-                    
                     line-height: 48px;
                     position: absolute;
                     right: 15px;
@@ -276,6 +287,7 @@
                     top: 0;
                     width: 48px;
                     transition: 0.3s all ease-in-out;
+
                     &::before {
                         font-family: "icomoon";
                         content: "\e900";
@@ -284,19 +296,18 @@
                     }
 
                     &.active {
-                        
-                            &::before {
-                                transform: rotate(-180deg);
-                            }
-                        
+
+                        &::before {
+                            transform: rotate(-180deg);
+                        }
                     }
                 }
 
-                ul>li:first-child {
+                ul > li:first-child {
                     border-top: 1px solid rgba(255 255 255 / 30%);
                 }
 
-                ul li{
+                ul li {
                     padding-left: 20px;
                 }
 
@@ -307,12 +318,13 @@
         }
     }
 
-    .current-menu-item > a ,
+    .current-menu-item > a,
     .current-item a {
-        color: var(--primary-color);
+        color: #6793a1;
     }
+
     .current-menu-item > a::after {
-        color: var(--primary-color) !important;
+        color: #6793a1;
     }
 }
 

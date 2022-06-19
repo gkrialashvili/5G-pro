@@ -95,10 +95,10 @@ a {
   display: inline-block;
   color: #fff;
 }
-a:hover {
-  transition: all 0.3s;
-  color: var(--primary-color);
-}
+    a:hover {
+        transition: all 0.3s;
+        color: #28874f;
+    }
 
 h1,
 .h1,
@@ -528,7 +528,6 @@ body[data-magic-cursor=hide] .mouse-cursor {
   top: 0;
   opacity: 1;
   visibility: visible;
-  background: #050231;
 }
 .header .header__body {
   display: flex;
@@ -777,11 +776,11 @@ body[data-magic-cursor=hide] .mouse-cursor {
 }
 .header .current-menu-item > a,
 .header .current-item a {
-  color: var(--primary-color);
+    color: #28874f;
 }
-.header .current-menu-item > a::after {
-  color: var(--primary-color) !important;
-}
+    .header .current-menu-item > a::after {
+        color: #28874f;
+    }
 
 .header.style-3 {
   height: 88px;
@@ -906,7 +905,7 @@ h3, h5 {
   position: relative;
   overflow: hidden;
   font-weight: 700;
-  background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+  background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
   border-radius: 100px;
   display: flex;
   align-items: center;
@@ -931,7 +930,7 @@ h3, h5 {
 .btn-action span.icon-arrow:before {
   font-size: 15px;
   font-weight: 900;
-  background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+  background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: rotate(-90deg);
@@ -945,7 +944,6 @@ h3, h5 {
   width: 100%;
   height: 100%;
   transition: 0.5s all ease-in-out;
-  background: linear-gradient(-294.72deg, #FF4581 9.05%, #4388DD 79.28%);
   opacity: 0;
   transition: 0.5s all ease-in-out;
 }
@@ -1298,7 +1296,7 @@ h3, h5 {
 
 .banner-top.style-1 {
   padding: 231px 0 99px;
-  background: url("/assets/images/background/Slider.jpg") no-repeat;
+  background: url("/assets/images/bg/bg.jpg");
   background-size: cover;
 }
 @media only screen and (max-width: 767px) {
@@ -1404,15 +1402,12 @@ h3, h5 {
   text-align: right;
   padding-left: 120px;
 }
-.banner-top.style-1 .banner-top__sale .sale-content {
-  margin-top: -51px;
-  padding: 41px 0 0;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(12px);
-  border-radius: 12px;
-  text-align: center;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-}
+    .banner-top.style-1 .banner-top__sale .sale-content {
+        margin-top: -51px;
+        padding: 41px 0 0;
+        border-radius: 12px;
+        text-align: center;
+    }
 .banner-top.style-1 .banner-top__sale .sale-content .countdown__timer {
   margin-top: 28px;
 }
@@ -1456,10 +1451,9 @@ h3, h5 {
   padding: 0 38px;
 }
 .banner-top.style-1 .banner-top__sale .sale-content .token-bar .top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 13px;
+      display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .banner-top.style-1 .banner-top__sale .sale-content .token-bar .top h6 {
   font-size: 14px;
@@ -1476,7 +1470,7 @@ h3, h5 {
   padding: 4px;
 }
 .banner-top.style-1 .banner-top__sale .sale-content .token-bar .main .progress-token p {
-  background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+  background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
   border-radius: 64px;
   max-width: 186px;
   padding: 4px 17px;
@@ -2753,7 +2747,7 @@ h3, h5 {
   justify-content: center;
   min-width: 48px;
   height: 48px;
-  background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+  background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
   border-radius: 50%;
   margin-right: 17px;
 }
@@ -2780,7 +2774,7 @@ h3, h5 {
   width: 66px;
   height: 66px;
   border-radius: 50%;
-  background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+  background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2846,7 +2840,7 @@ h3, h5 {
   top: 76%;
   width: 100%;
   height: 8px;
-  background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+  background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
   opacity: 0.1;
 }
 .road-map.style-2 .roadmap__main::after {
@@ -4444,29 +4438,29 @@ h3, h5 {
 .documents.style-2 {
   padding: 80px 0;
 }
-.documents.style-2 .document-box {
-  background: linear-gradient(180deg, rgba(26, 15, 106, 0) 0%, #1A0F6A 86.87%);
-  border-radius: 10px;
-  position: relative;
-  margin-left: 24px;
-  padding: 40px 25px 50px 30px;
-}
-.documents.style-2 .document-box .card-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: -24px;
-  bottom: 22px;
-  max-width: 140px;
-  height: 180px;
-  margin-bottom: 0;
-  text-align: center;
-  overflow: hidden;
-  padding: 0 30px;
-  border-radius: 10px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(153.06deg, #0652C5 -0.31%, #D4418E 99.69%);
-}
+    .documents.style-2 .document-box {
+        background: linear-gradient(180deg, #198744d 0%, #6a6a6a00 86.87%);
+        border-radius: 10px;
+        position: relative;
+        margin-left: 24px;
+        padding: 40px 25px 50px 30px;
+    }
+    .documents.style-2 .document-box .card-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -24px;
+        bottom: 22px;
+        max-width: 140px;
+        height: 180px;
+        margin-bottom: 0;
+        text-align: center;
+        overflow: hidden;
+        padding: 0 30px;
+        border-radius: 10px;
+        background: linear-gradient(0deg, #0e5a374f, #4256535c), linear-gradient(153.06deg, #dbdbdb00 -0.31%, #ffffff00 99.69%);
+    }
 .documents.style-2 .document-box .card-title img {
   position: absolute;
   transition: 0.3s all ease-in-out;
@@ -8881,7 +8875,7 @@ img.mfp-img {
   padding: 4px;
 }
 .token-details.style-2 .sale-content .token-bar .main .progress-token p {
-  background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+  background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
   border-radius: 64px;
   max-width: 186px;
   padding: 4px 17px;
@@ -9368,7 +9362,6 @@ img.mfp-img {
 }
 
 .footer.style-2 {
-  background: url("/assets/images/background/bg-roadmap.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   background-color: rgba(61, 43, 111, 0.2);
@@ -10568,7 +10561,7 @@ img.mfp-img {
 }
 .home-main .features {
   padding: 80px 0 62px;
-  background: url("/assets/images/background/bg-choose.jpg") no-repeat;
+  background: url("/assets/images/bg/bg4.jpg") no-repeat;
   background-size: cover;
 }
 .home-main .documents.style-2 {
@@ -10647,8 +10640,12 @@ img.mfp-img {
   background-color: #181818;
 }
 
+.chart-bar {
+    position:relative;
+}
+
 .allo-dist {
-  padding: 80px 0 102px;
+    padding: 80px 0 102px;
 }
 .allo-dist .allo-dist__main {
   margin-top: 41px;
@@ -10657,7 +10654,7 @@ img.mfp-img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 380px;
+  max-width: 165px;
   background: rgba(255, 255, 255, 0.1);
   margin: 0 auto;
   padding: 4px;
@@ -10674,7 +10671,7 @@ img.mfp-img {
   color: rgba(255, 255, 255, 0.2);
 }
 .allo-dist .allo-dist__main .menu-tab li.active {
-  background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+  background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
 }
 .allo-dist .allo-dist__main .menu-tab li.active h6 {
   color: white;
@@ -10708,9 +10705,31 @@ img.mfp-img {
 }
 .allo-dist .allo-dist__main .content-tab .content-inner .chart-bar {
   width: 240px;
+  position: relative;
 }
-@media only screen and (max-width: 767px) {
-  .allo-dist .allo-dist__main .content-tab .content-inner {
+.allo-dist .allo-dist__main .content-tab .content-inner .chart-bar span > .first50 {
+        top: 140px;
+        right: 15px;
+}
+.allo-dist .allo-dist__main .content-tab .content-inner .chart-bar span > .first25 {
+        top: 20px;
+}
+
+.allo-dist .allo-dist__main .content-tab .content-inner .chart-bar span > .first15 {
+        top: 20px;
+}
+
+.allo-dist .allo-dist__main .content-tab .content-inner .chart-bar span > .first10 {
+        top: 20px;
+}
+
+.allo-dist .allo-dist__main .content-tab .content-inner .chart-bar span {
+   position: absolute;
+   color: #fff;
+   font-weight: bold;
+}
+    @media only screen and (max-width: 767px) {
+        .allo-dist .allo-dist__main .content-tab .content-inner {
     flex-wrap: wrap;
   }
   .allo-dist .allo-dist__main .content-tab .content-inner .list-progress {
@@ -10776,7 +10795,7 @@ img.mfp-img {
 
 .documents {
   padding: 80px 0;
-  background: url("/assets/images/background/bg-document-01.png") no-repeat;
+  background: url("/assets/images/bg/bg3.jpg") no-repeat;
   background-size: cover;
   background-color: rgba(61, 43, 111, 0.2);
 }
@@ -12678,7 +12697,7 @@ img.mfp-img {
   color: #000 !important;
   font-weight: 700;
   font-size: 16px;
-  background: linear-gradient(294.72deg, #FF4581 9.05%, #4388DD 79.28%);
+  background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

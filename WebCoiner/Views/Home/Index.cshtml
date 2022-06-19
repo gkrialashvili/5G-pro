@@ -8,7 +8,7 @@
     long.TryParse(txRaised.ToString(), out num);
     String finalRaised = num.ToString("N0");
 
-    double percentage = ((double)Model.Raised / 85000000) * 100;
+    double percentage = ((double)Model.Raised / 110000000) * 100;
     //155 = 10M
     double finalRaisedDo = Convert.ToDouble(finalRaised);
     Console.WriteLine("RAISED IS " + finalRaisedDo);
@@ -156,8 +156,6 @@
     <link rel="stylesheet" href="~/assets/style.css" />
     <!-- end Styles -->
     <!-- Favicon and Touch Icons  -->
-    <link rel="shortcut icon" href="~/assets/images/logo/favicon-main.png">
-    <link rel="apple-touch-icon-precomposed" href="~/assets/images/logo/favicon.png">
 
 </head>
 @*<script>
@@ -196,9 +194,9 @@
                     <div class="header__body">
                         <div class="header__logo">
                             <a href="index.html">
-                                <img id="site-logo" src="~/assets/images/logo/logo-main.png"
+                                <img id="site-logo" src="~/assets/images/logo/logo.png"
                                      alt="ICOLand" width="165" height="40"
-                                     data-retina="~/assets/images/logo/logo-main@x2.png" data-width="165"
+                                     data-retina="~/assets/images/logo/logo.png" data-width="165"
                                      data-height="40">
                             </a>
                         </div>
@@ -227,7 +225,7 @@
                                     <li class="menu-item menu-item-has-children">
                                         <a href="#contact">Contact</a>
                                     </li>
-                                    
+
                                 </ul>
                             </nav>
                             <div class="group-button">
@@ -261,12 +259,14 @@
                     <div class="banner-top__sale">
                         <div class="sale-content">
                             <h3>Token sale End In</h3>
-                            <span class="js-countdown" data-timer="1865550"></span>
+                            <span class="js-countdown" data-timer="6765550"></span>
 
                             <div class="token-bar">
                                 <div class="top">
-                                   
-                                    <h6>Target - <span>150,000 Tokens</span></h6>
+                                    <p class="fs-14" style=" padding: 0 47px; position: relative; ">$20M</p>
+                                    <p class="fs-14" style=" padding: 0 47px; position: relative; ">$50M</p>
+                                    <p class="fs-14" style=" padding: 0 47px; position: relative; ">$95M</p>
+                                    <p class="fs-14" style=" padding: 0 47px; position: relative; ">$110M</p>
                                 </div>
                                 <div class="main">
                                     <div class="progress-token">
@@ -420,74 +420,62 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="block-text center">
-                        <h3>Token Allocation & Funds Distribution</h3>
-                        <p class="mt-12">Join the industry leaders to discuss where the markets are heading. We accept token payments.</p>
+                        <h3>Token Allocation</h3>
+                        @*<p class="mt-12">Join the industry leaders to discuss where the markets are heading. We accept token payments.</p>*@
                     </div>
 
                     <div class="allo-dist__main" data-aos="fade-up" data-aos-duration="800">
                         <div class="flat-tabs">
                             <ul class="menu-tab">
                                 <li class="active"><h6 class="fs-16">Distribution</h6></li>
-                                <li><h6 class="fs-16">Funding Allocation</h6></li>
                             </ul>
                             <div class="content-tab">
                                 <div class="content-inner">
                                     <div class="list-progress">
                                         <div class="progress">
                                             <div class="title">
-                                                <p>Marketing: 25%</p>
+                                                <p>Token Sale: 50%</p>
                                             </div>
                                             <div class="barline">
-                                                <div class="countbar s1" data-percentNumber="25"></div>
+                                                <div class="countbar s1" data-percentNumber="50"></div>
                                             </div>
                                         </div>
 
                                         <div class="progress">
                                             <div class="title">
-                                                <p>Bussiness Development: 25%</p>
+                                                <p>Team & Advisors: 25%</p>
                                             </div>
                                             <div class="barline">
                                                 <div class="countbar s2" data-percentNumber="25"></div>
                                             </div>
                                         </div>
-                                        <div class="progress">
-                                            <div class="title">
-                                                <p>Product Development: 10%</p>
-                                            </div>
-                                            <div class="barline">
-                                                <div class="countbar s3" data-percentNumber="10"></div>
-                                            </div>
-                                        </div>
                                     </div>
 
                                     <div class="chart-bar">
+                                        <span class="first50" style=" top: 140px; right: 15px;">50%</span>
+                                        <span class="first25" style="top: 202px; left: 54px;">25%</span>
+                                        <span class="first15" style=" top: 100px; left: 26px;">15%</span>
+                                        <span class="first10" style=" top: 54px; left: 78px;">10%</span>
+
                                         <canvas id="myChart1"></canvas>
                                     </div>
 
                                     <div class="list-progress right">
                                         <div class="progress">
                                             <div class="title">
-                                                <p>Reserve: 10%</p>
+                                                <p>Business Dev: 15%</p>
                                             </div>
                                             <div class="barline">
-                                                <div class="countbar s4" data-percentNumber="10"></div>
+                                                <div class="countbar s4" data-percentNumber="15"></div>
                                             </div>
                                         </div>
 
                                         <div class="progress">
                                             <div class="title">
-                                                <p>Reserve: 10%</p>
+                                                <p>Marketing & Reserve: 10%</p>
                                             </div>
                                             <div class="barline">
                                                 <div class="countbar s5" data-percentNumber="10"></div>
-                                            </div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="title">
-                                                <p>Token Sale: 20%</p>
-                                            </div>
-                                            <div class="barline">
-                                                <div class="countbar s6" data-percentNumber="20"></div>
                                             </div>
                                         </div>
                                     </div>
@@ -708,88 +696,6 @@
         </div>
     </section>
     <!-- End Section Token Details -->
-    <!-- Section Team -->
-    <section class="section-team style-1" id="team">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block-text center">
-                        <h3>Executive team</h3>
-                        <p class="mt-12">
-                            Our team player alway finds effective ways to improve the product and process
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-24">
-                <div class="col-xl-3 col-md-6">
-                    <div class="team-box">
-                        <div class="team-box__image">
-                            <a href="#"><img src="~/assets/images/avt/team-main-01.png" alt="ICOLand"></a>
-                        </div>
-                        <div class="team-box__info">
-                            <a href="#" class="name h5">Charlee Mangar</a>
-                            <p class="position">Co-founder & COO</p>
-                            <ul class="list-social">
-                                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
-                                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="team-box">
-                        <div class="team-box__image">
-                            <a href="#"><img src="~/assets/images/avt/team-main-02.png" alt="ICOLand"></a>
-                        </div>
-                        <div class="team-box__info">
-                            <a href="#" class="name h5">Jason Morales</a>
-                            <p class="position">CTO & Software Engineer</p>
-                            <ul class="list-social">
-                                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
-                                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="team-box">
-                        <div class="team-box__image">
-                            <a href="#"><img src="~/assets/images/avt/team-main-03.png" alt="ICOLand"></a>
-                        </div>
-                        <div class="team-box__info">
-                            <a href="#" class="name h5">Louis Baker</a>
-                            <p class="position">CTO & Software Engineer</p>
-                            <ul class="list-social">
-                                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
-                                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="team-box">
-                        <div class="team-box__image">
-                            <a href="#"><img src="~/assets/images/avt/team-main-04.png" alt="ICOLand"></a>
-                        </div>
-                        <div class="team-box__info">
-                            <a href="#" class="name h5">Dianne Russell</a>
-                            <p class="position">Sr.Backend developer</p>
-                            <ul class="list-social">
-                                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li><a href="#"><span class="icon-LinkedIn"></span></a></li>
-                                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Section Team -->
     <!-- Section Question -->
     <section class="section-faq style-1" id="faq">
         <div class="container">
@@ -922,7 +828,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-67 d-flex justify-content-center" >
+            <div class="row mt-67 d-flex justify-content-center">
                 <div class="col-xl-3 col-md-6">
                     <div class="document-box">
                         <div class="card-title">
@@ -951,15 +857,7 @@
                     <ul class="contact__list">
                         <li>
                             <div class="icon"><span class="icon-message"></span></div>
-                            <h5 class="fs-20">Info@yourcompany.com</h5>
-                        </li>
-                        <li>
-                            <div class="icon"><span class="icon-Calling"></span></div>
-                            <h5 class="fs-20">+84 0977425031</h5>
-                        </li>
-                        <li>
-                            <div class="icon"><span class="icon-telegram"></span></div>
-                            <h5 class="fs-20">Join us on Telegram</h5>
+                            <h5 class="fs-20">support@greenblock.com</h5>
                         </li>
                     </ul>
                 </div>
@@ -981,38 +879,11 @@
     <!-- Section Contact -->
     <!-- Footer -->
     <footer class="footer style-2">
-        <div class="footer__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="content">
-                            <h3 class="">Don't miss out, Stay updated</h3>
-                            <form action="#" id="subscribe-form">
-                                <input type="email" placeholder="Enter your email" required="" id="subscribe-email">
-                                <button class="btn-action s2" type="submit" id="subscribe-button"> <span class="effect">SUBSCRIBE</span></button>
-                            </form>
-                            <p>Don’t hesitate to subscribe to latest news about ICo markets as well as crucial financial knowledge to become successful investors globally</p>
-                            <ul class="list-social">
-                                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li><a href="#"><span class="icon-place"></span></a></li>
-                                <li><a href="#"><span class="icon-youtobe"></span></a></li>
-                                <li><a href="#"><span class="icon-tiktok"></span></a></li>
-                                <li><a href="#"><span class="icon-reddit"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="footer__bottom center">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>© 2022. All rights reserved by <a href="https://themeforest.net/user/themesflat/portfolio">Themesflat</a></p>
+                        <p>© 2022. All rights reserved by GreenBlock ICO</p>
                     </div>
                 </div>
             </div>
@@ -1022,6 +893,7 @@
 
     <script src="~/assets/app/js/jquery.min.js"></script>
     <script src="~/assets/app/js/jquery.easing.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
     <script src="~/assets/app/js/app.js"></script>
     <script src="~/assets/app/js/count-down.js"></script>
     <script src="~/assets/app/js/aos.js"></script>
@@ -1051,23 +923,19 @@
     <script>
         const data1 = {
             labels: [
-                'Marketing',
-                'Bussiness Development',
-                'Product Development',
-                'Reserve',
-                'Reserve',
-                'Token Sale'
+                'Token Sale',
+                'Team & Advisors',
+                'Bussines Dev',
+                'Marketing & Reserve',
             ],
             datasets: [{
                 label: 'My First Dataset',
-                data: [25, 25, 10, 10, 10, 20],
+                data: [50, 25, 15, 10],
                 backgroundColor: [
                     '#3D88FB',
                     '#5637C8',
-                    '#00D199',
                     '#C87B07',
                     '#A92535',
-                    '#9116CD'
                 ],
             }]
         };
