@@ -195,9 +195,8 @@
                         <div class="header__logo">
                             <a href="index.html">
                                 <img id="site-logo" src="~/assets/images/logo/logo.png"
-                                     alt="ICOLand" width="165" height="40"
-                                     data-retina="~/assets/images/logo/logo.png" data-width="165"
-                                     data-height="40">
+                                     alt="ICOLand" style="width: 100%; height: 44px;"
+                                     data-retina="~/assets/images/logo/logo.png">
                             </a>
                         </div>
 
@@ -863,11 +862,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="contact__form">
-                        <form action="#">
-                            <input type="text" placeholder="Full Name">
+                        <form action="mailto:support@greenblock-ico.com" method="GET">
+                            <input name="subject" placeholder="Full Name">
                             <input type="email" placeholder="Email">
                             <input type="tel" placeholder="Phone Number">
-                            <textarea id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+                            <textarea id="exampleFormControlTextarea1" rows="3" name="body" placeholder="Message"></textarea>
 
                             <button type="submit" class="btn-action"><span>SUBMIT YOUR MESSAGE</span></button>
                         </form>
