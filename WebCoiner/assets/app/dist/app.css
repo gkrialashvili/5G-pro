@@ -1246,7 +1246,6 @@ h3, h5 {
   visibility: hidden;
   cursor: pointer;
   overflow: hidden;
-  background: #fff;
 }
 
 #scroll-top.show {
@@ -1267,7 +1266,7 @@ h3, h5 {
 
 #scroll-top:before {
   z-index: -1;
-  background: var(--primary-color);
+  background: linear-gradient(to left, #8635bd, #3dbfbb);;
 }
 
 #scroll-top:after {
@@ -1514,7 +1513,7 @@ h3, h5 {
   padding: 0 30px;
 }
     .banner-top.style-1 .banner-top__sale .sale-content .sale-bottom .list-coin li span {
-        color: #ff4581;
+        color: #fff;
     }
 .banner-top.style-1 .banner-top__sale .sale-content .sale-bottom .list-coin li a svg {
   margin-top: -7px;
@@ -2872,9 +2871,9 @@ h3, h5 {
 .road-map.style-2 .box-roadmap .title {
   position: relative;
 }
-.road-map.style-2 .box-roadmap .title span {
-  color: var(--primary-color);
-}
+    .road-map.style-2 .box-roadmap .title span {
+        color: #59a581;
+    }
 .road-map.style-2 .box-roadmap .title::before {
   content: "";
   position: absolute;
@@ -10773,9 +10772,9 @@ img.mfp-img {
   border-radius: 10px;
   cursor: pointer;
 }
-.info-list li:hover, .info-list li.active {
-  background: linear-gradient(294.72deg, rgba(255, 69, 129, 0.5) 9.05%, rgba(67, 136, 221, 0.5) 79.28%);
-}
+    .info-list li:hover, .info-list li.active {
+        background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
+    }
 .info-list li p {
   margin-bottom: 0;
   color: #fff;
@@ -10836,17 +10835,17 @@ img.mfp-img {
   background: #050231;
   background-clip: padding-box;
 }
-.contact .contact__list li .icon::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  bottom: -2px;
-  left: -2px;
-  right: -2px;
-  background: linear-gradient(to bottom right, #ff4581, #4388dd);
-  z-index: -1;
-  border-radius: 50%;
-}
+    .contact .contact__list li .icon::after {
+        content: "";
+        position: absolute;
+        top: -2px;
+        bottom: -2px;
+        left: -2px;
+        right: -2px;
+        background: linear-gradient(to bottom right, #28874f, #6793a1);
+        z-index: -1;
+        border-radius: 50%;
+    }
 .contact .contact__list li .icon span {
   font-size: 22px;
 }

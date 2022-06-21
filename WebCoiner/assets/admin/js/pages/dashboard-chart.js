@@ -15,7 +15,7 @@
 
 	chart.data = [
 	  {
-		currency: "BTC",
+		currency: "Token Sale",
 		value: 60
 	  },
 	  {
