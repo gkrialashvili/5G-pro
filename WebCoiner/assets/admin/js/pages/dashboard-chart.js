@@ -65,24 +65,20 @@
 			    position: 'top',
 				horizontalAlign: 'left',
 		    },
-			colors:['#fbae1c', '#00c292'],
+			colors:[ '#00c292'],
             stroke: {
                 curve: 'smooth'
             },
             series: [{
-                name: 'EUR',
-                data: [31, 40, 50, 40, 42, 78, 85]
-            }, {
-                name: 'USD',
-                data: [11, 32, 45, 32, 34, 52, 41]
+                data: [0.02, 0.04, 0.10, 0.20]
             }],
-
             xaxis: {
-                type: 'datetime',
-                categories: ["2019-09-19T00:00:00", "2019-09-19T01:30:00", "2019-09-19T02:30:00", "2019-09-19T03:30:00", "2019-09-19T04:30:00", "2019-09-19T05:30:00", "2019-09-19T06:30:00"],                
+				type: 'numeric',
+				categories: [0.02, 0.04, 0.10, 0.20],
             },
             tooltip: {
-                x: {
+				x: {
+					enabled: false,
                     format: 'dd/MM/yy HH:mm'
                 },
             }
