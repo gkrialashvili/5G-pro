@@ -109,8 +109,102 @@
                 <!-- sidebar menu -->
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="nav-devider"></li>
+                    @if (User.IsInRole("administrator"))
+                    {
+                        <li class="">
+                            <a href="~/dashboard/list/">
+                                <i class="icon-home"></i> <span>DASHBOARD</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/transactions/list">
+                                <i class="icon-chart"></i>
+                                <span>TRANSACTIONS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/users/list">
+                                <i class="icon-compass"></i>
+                                <span>USERS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="~/promocodes/list">
+                                <i class="icon-refresh"></i> <span>PROMOCODES</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/manage/index/">
+                                <i class="icon-people"></i>
+                                <span>PROFILE</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/userdashboard/create/">
+                                <i class="icon-equalizer"></i>
+                                <span>BUY TOKENS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                    }
+                    else if (Request.IsAuthenticated)
+                    {
+
+                        <li class="">
+                            <a href="~/userdashboard/create/">
+                                <i class="icon-home"></i> <span>DASHBOARD</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/userdashboard/list/">
+                                <i class="icon-chart"></i>
+                                <span>BUY TOKENS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/users/list">
+                                <i class="icon-compass"></i>
+                                <span>TRANSACTIONS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="~/userdashboard/dashboard/">
+                                <i class="icon-refresh"></i> <span>PROFILE</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+
+                    }
                     <li class="active">
-                        <a href="index.html">
+                        <a href="in~/dashboard/list/">
                             <i class="icon-home"></i> <span>Dashboard</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-right pull-right"></i>
