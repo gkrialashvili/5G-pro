@@ -11,78 +11,81 @@
 	var chart = am4core.create("currency-value", am4charts.PieChart3D);
 	chart.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
-	chart.legend = new am4charts.Legend();
+		chart.legend = new am4charts.Legend();
+
+
+
 
 	chart.data = [
-	  {
-		currency: "Token Sale",
-		value: 60
-	  },
-	  {
-		currency: "XRP",
-		value: 20
-	  },
-	  {
-		currency: "RISE",
-		value: 15
-	  },
-	  {
-		currency: "NEO",
-		value: 21
-	  },
-	  {
-		currency: "LTC",
-		value: 11
-	  },
-	  {
-		currency: "ETH",
-		value: 8
-	  },
-	  {
-		currency: "DASH",
-		value: 17
-	  }
-	];
+		{
+		"country": "Token Sale",
+		"litres": 50
+		},
+		{
+		"country": "Team & Advisors",
+		"litres": 25
+		},
+		{
+			"country": "Bussines Dev",
+			"litres": 15
+		},
+		{
+			"country": "Marketing & Reserve",
+			"litres": 10
+		}
+		];
 
-	var series = chart.series.push(new am4charts.PieSeries3D());
-	series.dataFields.value = "value";
-	series.dataFields.category = "currency";
+		var label = chart.seriesContainer.createChild(am4core.Label);
+		label.horizontalCenter = "middle";
+		label.verticalCenter = "middle";
+		label.fontSize = 15;
+		label.labelRadius = -500;
+
+		var series = chart.series.push(new am4charts.PieSeries3D());
+		series.dataFields.value = "litres";
+		series.dataFields.category = "country";
+		series.slices.template.tooltipText = "{category}: {value.percent.numberFormatter('#.')}%";
 
 	}); // end am4core.ready()
 
 
 
 
-	var options = {
-            chart: {
-                height: 485,
-                type: 'area',
-            },
-            dataLabels: {
-                enabled: false
-            },
-			legend: {
-			    position: 'top',
-				horizontalAlign: 'left',
-		    },
-			colors:[ '#00c292'],
-            stroke: {
-                curve: 'smooth'
-            },
-            series: [{
-                data: [0.02, 0.04, 0.10, 0.20]
-            }],
-            xaxis: {
-				type: 'numeric',
-				categories: [0.02, 0.04, 0.10, 0.20],
-            },
-            tooltip: {
-				x: {
-					enabled: false,
-                    format: 'dd/MM/yy HH:mm'
-                },
-            }
+var options = {
+    series: [{
+        name: "Token Price",
+        data: [0, 0.02, 0.04, 0.10, 0.20]
+    }],
+    chart: {
+        height: 350,
+        type: 'line',
+        zoom: {
+            enabled: true
         }
+    },
+    dataLabels: {
+        enabled: false
+    },
+    stroke: {
+        curve: 'straight'
+    },
+    title: {
+        align: 'left'
+    },
+    fill: {
+        type: "gradient",
+     
+    },
+    grid: {
+        row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+        },
+    },
+    xaxis: {
+        categories: ['','Private Sale', 'Presale', 'Soft Cap', 'Hard Cap',],
+    }
+};
 
         var chart = new ApexCharts(
             document.querySelector("#bitcoin-value"),
@@ -90,6 +93,7 @@
         );
 
         chart.render();
+
 
 
 

@@ -70,9 +70,6 @@
             <!-- Header Navbar -->
             <nav class="navbar navbar-static-top">
                 <!-- Sidebar toggle button-->
-                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                    <span class="sr-only">Toggle navigation</span>
-                </a>
 
                 <div class="navbar-custom-menu">
                 </div>
@@ -94,7 +91,7 @@
                     <div class="image">
                     </div>
                     <div class="info">
-                        <p>Admin Template</p>
+                        <span>Logout</span>
                         @if (Request.IsAuthenticated)
                         {
                             using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
@@ -318,7 +315,7 @@
                     <div class="col-xl-6 col-12">
                         <div class="box">
                             <div class="box-header with-border">
-                                <h4 class="box-title">Value each Currency in Dollar</h4>
+                                <h4 class="box-title">Token Distribution Chart</h4>
                             </div>
                             <div class="box-body">
                                 <div class="chart">
@@ -331,7 +328,7 @@
                     <div class="col-xl-6 col-12">
                         <div class="box">
                             <div class="box-header with-border">
-                                <h4 class="box-title">Today Bitcoin Price Every Hour</h4>
+                                <h4 class="box-title">Token Sale Price</h4>
                             </div>
                             <div class="box-body">
                                 <div class="chart">

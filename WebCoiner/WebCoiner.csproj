@@ -10910,6 +10910,7 @@
     <Content Include="assets\admin\vendor\Web-Ticker-master\readme.md" />
     <Content Include="assets\admin\vendor\Web-Ticker-master\use-cases.md" />
     <Content Include="assets\admin\vendor\Web-Ticker-master\webticker.jquery.json" />
+    <Content Include="Content\GreenBlock_Whitepaper.pdf" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
