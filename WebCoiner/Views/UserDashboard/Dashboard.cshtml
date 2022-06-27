@@ -141,20 +141,27 @@
                                 </span>
                             </a>
                         </li>
+                        <li class="">
+                            <a href="#" id="modalShow">
+                                <span>PACKAGES</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+</li>
                         <li>
-                                @if (Request.IsAuthenticated)
+                            @if (Request.IsAuthenticated)
+                            {
+                                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
                                 {
-                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
-                                    {
-                                        @Html.AntiForgeryToken()
-                            <a href="javascript:document.getElementById('logoutForm').submit()" 
-                               style="width: 100%; display: flex; justify-content: center; align-items: center"
-                               class="link" data-toggle="tooltip" title="" data-original-title="Logout">
-                                <i class="ion ion-power mr-5"></i>
-                                <span>Logout</span>
-                            </a>
-                                    }
+                                    @Html.AntiForgeryToken()
+                                    <a href="javascript:document.getElementById('logoutForm').submit()"
+                                       style="width: 100%; display: flex; justify-content: center; align-items: center"
+                                       class="link" data-toggle="tooltip" title="" data-original-title="Logout">
+                                        <i class="ion ion-power mr-5"></i>
+                                        <span>Logout</span>
+                                    </a>
                                 }
+                            }
                         </li>
                     }
                     else if (Request.IsAuthenticated)
@@ -196,7 +203,7 @@
                         </li>
 
                     }
-                  
+
 
                 </ul>
             </section>
@@ -204,6 +211,123 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+            <div class="modal fade show" id="myModal" style="display: none; background-color: rgba(152, 152, 152, 0.8); overflow: hidden" aria-modal="true">
+                <div class="modal-dialog" style=" width: 90%; max-width: 1200px; min-height: 100%;">
+                    <div class="modal-content" style="background: rgba(0, 0, 0, 0.5);">
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <section class="lis-bg-light">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-10 text-center">
+                                            <div class="heading pb-4">
+                                                <h2>Choose Your Package</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                             style="visibility: visible; animation-name: fadeInUp;">
+                                            <div class="price-table">
+                                                <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light" style="background: #747474;">
+                                                    <h5 class="text-uppercase lis-latter-spacing-2">Basic</h5>
+                                                    <h1 style=" color: #fff;" class="display-4 lis-font-weight-500">1<small>%</small></h1>
+                                                    <p class="mb-0">Basic Membership</p>
+                                                </div>
+                                                <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                    <ul class="list-unstyled lis-line-height-3">
+                                                        <li style="color: black">GreenBlock-ico tokens in portfolio</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                             style="visibility: visible; animation-name: fadeInUp;">
+                                            <div class="price-table" style="color: black">
+                                                <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                                     style="background-color:#e6e4e2; color: black">
+                                                    <h5 class="text-uppercase lis-latter-spacing-2">Silver</h5>
+                                                    <h1 class="display-4 lis-font-weight-500">
+                                                        1<small>%</small>-
+                                                        5<small>%</small>
+                                                    </h1>
+                                                    <p class="mb-0">Silver Membership</p>
+                                                </div>
+                                                <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                    <ul class="list-unstyled lis-line-height-3">
+                                                        <li>GreenBlock-ico tokens in portfolio</li>
+                                                        <li>Minimum portfolio: $100,000</li>
+                                                    </ul>
+                                                    <a href="/userdashboard/create/" style="background-color: #035661; color: #fff"
+                                                       class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                                       data-abc="true">Top Up Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                             style="visibility: visible; animation-name: fadeInUp;">
+                                            <div class="price-table" style="color: black">
+                                                <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                                     style="background-color:#F3AF4C;">
+                                                    <h5 class="text-uppercase lis-latter-spacing-2">Gold</h5>
+                                                    <h1 class="display-4 lis-font-weight-500">
+                                                        6<small>%</small> -
+                                                        12<small>%</small>
+                                                    </h1>
+                                                    <p class="mb-0">Gold Membership</p>
+                                                </div>
+                                                <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                    <ul class="list-unstyled lis-line-height-3">
+                                                        <li>GreenBlock-ico tokens in portfolio</li>
+                                                        <li>Minimum portfolio: $250,000</li>
+                                                    </ul>
+                                                    <a href="/userdashboard/create/" style="background-color: #035661; color: #fff"
+                                                       class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                                       data-abc="true">Top Up Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                             style="visibility: visible; animation-name: fadeInUp;">
+                                            <div class="price-table" style="color: black">
+                                                <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                                     style="        background-color:#a0b2c6;">
+
+                                                    <h5 class="text-uppercase lis-latter-spacing-2">Platinum</h5>
+                                                    <h1 class="display-4 lis-font-weight-500">
+                                                        12<small>%</small>-20<small>%</small>
+                                                    </h1>
+                                                    <p class="mb-0">Platinum Membership</p>
+                                                </div>
+                                                <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                                    <ul class="list-unstyled lis-line-height-3">
+
+
+                                                        <li>GreenBlock-ico tokens in portfolio</li>
+                                                        <li>Minimum portfolio: $500,000</li>
+
+                                                    </ul>
+                                                    <a href="/userdashboard/create/" style="background-color: #035661; color: #fff"
+                                                       class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                                       data-abc="true">Top Up Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" id="close-modal"
+                                    data-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <!-- Main content -->
             <section class="content">
@@ -250,7 +374,7 @@
                         <div class="box">
                             <div class="box-body">
                                 <div class="d-flex justify-content-center align-items-center">
-                                    <div >
+                                    <div>
                                         <h4 class="mb-0">Token Amount</h4>
                                         <h4 class="mb-0 d-flex justify-content-center">@Model.Tokens</h4>
                                     </div>
