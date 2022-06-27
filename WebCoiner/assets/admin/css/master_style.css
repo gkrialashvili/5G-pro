@@ -172,9 +172,17 @@ img {
     padding: 15px;
     color: #455a64;
     border-top: 1px solid #d2d6de;
+    display: flex;
+    justify-content: center;
 }
-.main-footer .nav{
-	margin-top: -10px;
+.nav-nav li a{
+    color: #fff;
+}
+.nav-nav li a:hover {
+    font-weight: bold;
+}
+.main-footer .nav {
+    margin-top: -10px;
 }
 .fixed .left-side, .fixed .main-header, .fixed .main-sidebar {
     position: fixed;

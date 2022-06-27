@@ -16,28 +16,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-    <title>SyncSpace</title>
+    <title>GreenBlock</title>
 
 
-    <!-- Crypto Admin skins -->
     <!-- Bootstrap 4.0-->
-    <link rel="stylesheet" href="~/assets/admin/assets/vendor_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="~/assets/admin/vendor/bootstrap/dist/css/bootstrap.css">
 
-    <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="~/assets/admin/assets/vendor_plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.css">
-
-    <link rel="stylesheet" href="~/assets/admin/css/skin_color.css">
-
-
-    <!--amcharts -->
-    <link href="https://www.amcharts.com/lib/3/plugins/export/export.css" rel="stylesheet" type="text/css" />
-
-    <!-- Data Table-->
-    <link rel="stylesheet" type="text/css" href="~/assets/admin/assets/vendor_components/datatable/datatables.min.css" />
+    <!-- Bootstrap-extend -->
+    <link rel="stylesheet" href="~/assets/admin/css/bootstrap-extend.css">
 
     <!-- theme style -->
-    <link rel="stylesheet" href="~/assets/admin/css/horizontal-menu.css">
-    <link rel="stylesheet" href="~/assets/admin/css/style.css">
+    <link rel="stylesheet" href="~/assets/admin/css/master_style.css">
+
+    <!-- Crypto_Admin skins -->
+    <link rel="stylesheet" href="~/assets/admin/css/skins/_all-skins.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -63,18 +55,18 @@
     <app-root>
         <div class="topbar-wrap">
             <header class="main-header" style="background-color: #1a233a">
-                <div class="inside-header d-flex align-center">
+                <div class="inside-header d-flex align-center container">
                     <div class="d-flex align-items-center logo-box justify-content-between">
-                        <a href="@Url.Action("Dashboard", "UserDashboard")" class="logo">
+                        <a href="@Url.Action("Dashboard", "UserDashboard")" class="logo" style="display: flex">
                             <div class="logo-lg">
                                 <span class="light-logo"><img src="~/assets/images/logo/logo.png" width="160px" height="40" alt="logo"></span>
                             </div>
                         </a>
                     </div>
                     <!-- Header Navbar -->
-                    <nav class="navbar navbar-static-top">
+                    <nav class="navbar navbar-static-top" style="background-color: #1a233a; display: flex; align-items: center">
                         <!-- Sidebar toggle button-->
-                        <ul id="main-menu" class="sm sm-blue d-flex justify-content-around">
+                        <ul id="main-menu" class="sm sm-blue d-flex nav-nav justify-content-around w-100">
                             @if (User.IsInRole("administrator"))
                             {
                                 <li>
@@ -103,9 +95,6 @@
                                             <span class="path2"></span><span class="path3"></span><span class="path4"></span>
                                         </i>Buy Tokens
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="#" id="modalShow"><i class="icon-Box"><span class="path1"></span><span class="path2"></span></i>Packages</a>
                                 </li>
                             }
 
@@ -154,13 +143,8 @@
                             </li>
                         </ul>
 
-                        @*<div class="navbar-custom-menu r-side">
-                            <ul class="nav navbar-nav">
-
-                              
-
-                            </ul>
-                        </div>*@
+                        <div class="navbar-custom-menu">
+                        </div>
                     </nav>
                 </div>
             </header>

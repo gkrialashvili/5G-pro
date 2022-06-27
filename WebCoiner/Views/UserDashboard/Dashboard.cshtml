@@ -40,13 +40,6 @@
     <link rel="stylesheet" href="~/assets/admin/css/skins/_all-skins.css">
 
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 
 </head>
 
@@ -85,22 +78,10 @@
                     <div class="ulogo">
                         <a href="index.html">
                             <!-- logo for regular state and mobile devices -->
-                            <img src="~/assets/images/logo/logo.png" style="height: 42px; width: 85%" class="" alt="User Image">
+                            <img src="~/assets/images/logo/logo.png" style="height: 42px; width: 95%" class="" alt="User Image">
                         </a>
                     </div>
                     <div class="image">
-                    </div>
-                    <div class="info">
-                        <span>Logout</span>
-                        @if (Request.IsAuthenticated)
-                        {
-                            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
-                            {
-                                @Html.AntiForgeryToken()
-                                <a href="javascript:document.getElementById('logoutForm').submit()" class="link" data-toggle="tooltip" title="" data-original-title="Logout"><i class="ion ion-power"></i></a>
-                            }
-                        }
-
                     </div>
                 </div>
                 <!-- sidebar menu -->
@@ -160,6 +141,21 @@
                                 </span>
                             </a>
                         </li>
+                        <li>
+                                @if (Request.IsAuthenticated)
+                                {
+                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                            <a href="javascript:document.getElementById('logoutForm').submit()" 
+                               style="width: 100%; display: flex; justify-content: center; align-items: center"
+                               class="link" data-toggle="tooltip" title="" data-original-title="Logout">
+                                <i class="ion ion-power mr-5"></i>
+                                <span>Logout</span>
+                            </a>
+                                    }
+                                }
+                        </li>
                     }
                     else if (Request.IsAuthenticated)
                     {
@@ -216,10 +212,10 @@
                     <div class="col-xl-3 col-12">
                         <div class="box">
                             <div class="box-body">
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-center align-items-center">
                                     <div>
                                         <h4 class="mb-0">Investment Amount</h4>
-                                        <h4 class="mb-0">$@Model.InvestmentAmount.ToString("#,##0")</h4>
+                                        <h4 class="mb-0 d-flex justify-content-center">$@Model.InvestmentAmount.ToString("#,##0")</h4>
                                     </div>
                                     @*<div><i class="cc BTC font-size-40 m-0" title="BTC"></i></div>*@
                                 </div>
@@ -229,10 +225,10 @@
                     <div class="col-xl-3 col-12">
                         <div class="box">
                             <div class="box-body">
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-center align-items-center">
                                     <div>
                                         <h4 class="mb-0">Current Balance</h4>
-                                        <h4 class="mb-0">$@Model.CurrentBalance.ToString("#,##0")</h4>
+                                        <h4 class="mb-0 d-flex justify-content-center">$@Model.CurrentBalance.ToString("#,##0")</h4>
                                     </div>
                                 </div>
                             </div>
@@ -241,10 +237,10 @@
                     <div class="col-xl-3 col-12">
                         <div class="box">
                             <div class="box-body">
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-center align-items-center">
                                     <div>
                                         <h4 class="mb-0">Profit</h4>
-                                        <h4 class="mb-0">$@((Model.CurrentBalance - Model.InvestmentAmount).ToString("#,##0"))</h4>
+                                        <h4 class="mb-0 d-flex justify-content-center">$@((Model.CurrentBalance - Model.InvestmentAmount).ToString("#,##0"))</h4>
                                     </div>
                                 </div>
                             </div>
@@ -253,10 +249,10 @@
                     <div class="col-xl-3 col-12">
                         <div class="box">
                             <div class="box-body">
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-center align-items-center">
                                     <div >
                                         <h4 class="mb-0">Token Amount</h4>
-                                        <h4 class="mb-0">@Model.Tokens</h4>
+                                        <h4 class="mb-0 d-flex justify-content-center">@Model.Tokens</h4>
                                     </div>
                                 </div>
                             </div>
@@ -347,17 +343,7 @@
         <!-- /.content-wrapper -->
 
         <footer class="main-footer">
-            <div class="pull-right d-none d-sm-inline-block">
-                <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Purchase Now</a>
-                    </li>
-                </ul>
-            </div>
-            &copy; 2019 <a href="https://www.multipurposethemes.com/">Multi-Purpose Themes</a>. All Rights Reserved.
+            &copy; 2019 Multi-Purpose Themes. All Rights Reserved.
         </footer>
 
         <!-- Control Sidebar -->
