@@ -1325,8 +1325,13 @@ header.no-sticky {
     right: 0;
 }
 
-header .navbar-nav a {
+header.nav-fixed .navbar-nav a {
     color: #ffffff;
+}
+
+h1.fadeInUp.animated {
+    font-size: 20px;
+    color: #5957cd;
 }
 
 .navbar-expand-lg .navbar-nav > li {
@@ -1391,16 +1396,7 @@ header a:hover,
         padding: 10px 25px;
     }
 
-.dropdown-toggle::after, .dropdown-toggler::after {
-    border: 0 none;
-    content: "";
-    font-family: ionicons;
-    height: auto;
-    line-height: normal;
-    margin-left: 5px;
-    vertical-align: middle;
-    width: auto;
-}
+
 
 .navbar-nav .dropdown-menu {
     background-color: #4241b8;
@@ -1602,10 +1598,14 @@ header a:hover,
     z-index: -1;
 }
 
+.table-light {
+    padding: 15px;
+}
+
 .section_banner {
     background-position: left bottom;
     background-size: cover;
-    padding: 200px 0 100px;
+    padding: 130px 0 100px;
     position: relative;
     overflow: hidden;
 }
@@ -6388,7 +6388,7 @@ button.btn-white:hover {
 14. ABOUT US PAGE
 *===================================*/
 .section_breadcrumb {
-    padding: 200px 0 100px;
+    padding: 130px 0 100px;
 }
 
 .breadcrumb li a,

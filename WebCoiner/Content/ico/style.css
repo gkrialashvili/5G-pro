@@ -5076,8 +5076,9 @@ select {
 }
 
 .card-token {
-    background-image: linear-gradient(45deg, #1c65c9 0%, #2c80ff 100%);
-    color: #fff
+    /*    background-image: linear-gradient(45deg, #1c65c9 0%, #2c80ff 100%);*/
+    color: #fff;
+    background-color: #394452;
 }
 
     .card-token .card-sub-title {
@@ -6117,7 +6118,7 @@ select {
     line-height: 32px;
     color: #fff;
     border-radius: 50%;
-    background: #2c80ff;
+    background: #f73900 !important;
     text-align: center
 }
 
