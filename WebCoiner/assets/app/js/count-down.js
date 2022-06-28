@@ -60,8 +60,10 @@ Util.setAttributes = function (el, attrs) {
 
     CountDown.prototype.getEndTime = function () {
         // get number of remaining seconds
-        if (this.element.getAttribute('data-timer')) return Number(this.element.getAttribute('data-timer')) * 1000 + new Date().getTime();
-        else if (this.element.getAttribute('data-countdown')) return Number(new Date(this.element.getAttribute('data-countdown')).getTime());
+        var date = new Date("08/15/2022 23:59:00"); // some mock date
+        var milliseconds = date.getTime();
+
+        return milliseconds;
     };
 
     CountDown.prototype.initCountDown = function () {

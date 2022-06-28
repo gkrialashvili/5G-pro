@@ -8,12 +8,12 @@
 <section id="home_section" class="section_banner section_gradiant">
 
 
-    <div class="container animation animated fadeInUp">
+    <div class="animation animated fadeInUp">
 
         @*<p>
                 @Html.ActionLink("Create New", "Create",null, new{@class= "btn btn-white btn-radius create_btn" })
             </p>*@
-        <table class="table table-light">
+        <table class="table d-flex table-light">
             <tr>
                 <th>
                     @Html.DisplayNameFor(model => model.Email)
@@ -161,3 +161,8 @@
     </div>
     <div class="banner_light_gradiant"></div>
 </section>
+
+<script>
+    $('.table-light tr th').css("font-size", "12px");
+    $('.table-light tr td').css("font-size", "12px");
+</script>

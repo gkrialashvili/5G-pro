@@ -58,7 +58,8 @@ html {
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 body {

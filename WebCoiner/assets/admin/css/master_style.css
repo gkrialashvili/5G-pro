@@ -612,13 +612,13 @@ a:active, a:focus, a:hover {
     display: block;
 }
 .sidebar-menu>li>a>.fa, .sidebar-menu>li>a>.glyphicon, .sidebar-menu>li>a>.ion, .sidebar-menu>li>a>i  {
-    width: 40px;
+    width: 30px;
     font-size: 18px;
     display: inline-block;
     vertical-align: middle;
     padding-left: 0;
     margin-right: 10px;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 100px;
@@ -2810,7 +2810,7 @@ select.form-control:not([size]):not([multiple]) {
     box-shadow: none;
 }
 .box-body {
-    padding: 1.25rem;
+    padding: 1.75rem;
     border-radius: 5px;
 	    -ms-flex: 1 1 auto;
     flex: 1 1 auto;

@@ -32,11 +32,11 @@ body {
 }
 
 :root {
-  --primary-color: #FF4581;
+    --primary-color: #59a581;
 }
 
 .home-main {
-  --primary-color: #FF4581;
+    --primary-color: #59a581;
 }
 
 .home-nft, .home-music {
@@ -2896,7 +2896,7 @@ h3, h5 {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #940030;
+  background: #59a581;
 }
 .road-map.style-2 .box-roadmap:nth-child(1) .title::after {
   background: #FF4581;
