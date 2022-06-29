@@ -1449,11 +1449,32 @@ h3, h5 {
   margin-top: 71px;
   padding: 0 38px;
 }
-.banner-top.style-1 .banner-top__sale .sale-content .token-bar .top {
-      display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .banner-top.style-1 .banner-top__sale .sale-content .token-bar .top {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        height: 40px;
+        position: relative;
+    }
+    .banner-top.style-1 .banner-top__sale .sale-content .token-bar .top p {
+        position: absolute;
+    }
+
+        .banner-top.style-1 .banner-top__sale .sale-content .token-bar .top p:first-child {
+            left: 18%;
+        }
+
+        .banner-top.style-1 .banner-top__sale .sale-content .token-bar .top p:nth-child(2) {
+            left: 45%;
+        }
+
+        .banner-top.style-1 .banner-top__sale .sale-content .token-bar .top p:nth-child(3) {
+            left: 86%;
+        }
+
+        .banner-top.style-1 .banner-top__sale .sale-content .token-bar .top p:last-child {
+            left: 97%;
+        }
 .banner-top.style-1 .banner-top__sale .sale-content .token-bar .top h6 {
   font-size: 14px;
   font-weight: 400;
@@ -1467,11 +1488,11 @@ h3, h5 {
   backdrop-filter: blur(12px);
   border-radius: 64px;
   padding: 4px;
+  display: flex;
 }
 .banner-top.style-1 .banner-top__sale .sale-content .token-bar .main .progress-token p {
   background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
   border-radius: 64px;
-  max-width: 186px;
   padding: 4px 17px;
   text-align: right;
   margin-bottom: 0;
@@ -1481,19 +1502,35 @@ h3, h5 {
 .banner-top.style-1 .banner-top__sale .sale-content .token-bar .bottom {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-top: 10px;
-}
-.banner-top.style-1 .banner-top__sale .sale-content .token-bar .bottom p {
-  padding: 0 47px;
+  height: 40px;
   position: relative;
 }
+.banner-top.style-1 .banner-top__sale .sale-content .token-bar .bottom p {
+    font-size: 13px;
+  position: absolute;
+}
+    .banner-top.style-1 .banner-top__sale .sale-content .token-bar .bottom p:first-child {
+        left: 18%;
+    }
+
+    .banner-top.style-1 .banner-top__sale .sale-content .token-bar .bottom p:nth-child(2) {
+        left: 45%;
+    }
+
+    .banner-top.style-1 .banner-top__sale .sale-content .token-bar .bottom p:nth-child(3) {
+        left: 86%;
+    }
+
+    .banner-top.style-1 .banner-top__sale .sale-content .token-bar .bottom p:last-child {
+        left: 97%;
+    }
 .banner-top.style-1 .banner-top__sale .sale-content .token-bar .bottom p::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  left: 50%;
+  left: 10%;
   top: -54px;
   width: 1px;
   height: 48px;

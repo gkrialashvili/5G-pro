@@ -419,11 +419,11 @@
                                 </div>
                             </div>
                             <div class="token-bar">
-                                <div class="top">
-                                    <p class="fs-14" style=" padding: 0 47px; position: relative; ">$20M</p>
-                                    <p class="fs-14" style=" padding: 0 47px; position: relative; ">$50M</p>
-                                    <p class="fs-14" style=" padding: 0 47px; position: relative; ">$95M</p>
-                                    <p class="fs-14" style=" padding: 0 47px; position: relative; ">$110M</p>
+                                <div class="top" style=" height: 40px">
+                                    <p class="fs-14" style="  ">$20M</p>
+                                    <p class="fs-14" style=" ">$50M</p>
+                                    <p class="fs-14" style="  ">$95M</p>
+                                    <p class="fs-14" style=" ">$110M</p>
                                 </div>
                                 <div class="main">
                                     <div class="progress-token">
@@ -431,7 +431,7 @@
                                     </div>
                                 </div>
 
-                                <div class="bottom">
+                                <div class="bottom" style=" height: 40px">
                                     <p class="fs-14">Private Sale</p>
                                     <p class="fs-14">Pre Sale</p>
                                     <p class="fs-14">Softcap</p>
@@ -723,65 +723,106 @@
     .token-bar {
         margin-top: 5px;
         padding: 0 38px;
+        max-width: 570px;
     }
 
-    .token-bar .top {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-        .token-bar .top h6 {
-            font-size: 14px;
-            font-weight: 400;
-        }
-
-            .token-bar .top h6 span {
-                color: var(--primary-color);
-                font-weight: 800;
-            }
-
-    .token-bar .main .progress-token {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(12px);
-        border-radius: 64px;
-        padding: 4px;
-    }
-
-        .token-bar .main .progress-token p {
-            background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
-            border-radius: 64px;
-            max-width: 186px;
-            padding: 4px 17px;
-            text-align: right;
-            margin-bottom: 0;
-            color: #fff;
-            font-weight: 700;
-        }
-
-    .token-bar .bottom {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-        .token-bar .bottom p {
-            padding: 0 47px;
+        .token-bar .top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
         }
 
-            .token-bar .bottom p::before {
-                content: "";
+            .token-bar .top p {
                 position: absolute;
-                top: 0;
-                left: 0;
-                left: 50%;
-                top: -54px;
-                width: 1px;
-                height: 48px;
-                background: #fff;
             }
+
+                .token-bar .top p:first-child {
+                    left: 18%;
+                }
+
+                .token-bar .top p:nth-child(2) {
+                    left: 45%;
+                }
+
+                .token-bar .top p:nth-child(3) {
+                    left: 86%;
+                }
+
+                .token-bar .top p:last-child {
+                    left: 97%;
+                }
+
+            .token-bar .top h6 {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+                .token-bar .top h6 span {
+                    color: var(--primary-color);
+                    font-weight: 800;
+                }
+
+        .token-bar .main .progress-token {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 64px;
+            padding: 4px;
+            display: flex;
+        }
+
+            .token-bar .main .progress-token p {
+                background: linear-gradient(294.72deg, #6793a1 9.05%, #28874f 79.28%);
+                border-radius: 64px;
+                padding: 4px 17px;
+                text-align: right;
+                margin-bottom: 0;
+                color: #fff;
+                font-weight: 700;
+            }
+
+        .token-bar .bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            position: relative;
+        }
+
+            .token-bar .bottom p {
+                position: absolute;
+            }
+
+                .token-bar .bottom p:first-child {
+                    left: 18%;
+                }
+
+                .token-bar .bottom p:nth-child(2) {
+                    left: 45%;
+                }
+
+                .token-bar .bottom p:nth-child(3) {
+                    left: 86%;
+                }
+
+                .token-bar .bottom p:last-child {
+                    left: 97%;
+                }
+
+
+
+
+                .token-bar .bottom p::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    left: 10%;
+                    top: -54px;
+                    width: 1px;
+                    height: 48px;
+                    background: #fff;
+                }
 </style>
 
 
