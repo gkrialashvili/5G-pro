@@ -3,10 +3,10 @@
 }
 
 @*@model WebCoiner.Models.IndexViewModel
-@{
-	ViewBag.Title = "Manage";
-	var user = Model.AspNetUser.UserName;
-}*@
+    @{
+        ViewBag.Title = "Manage";
+        var user = Model.AspNetUser.UserName;
+    }*@
 
 <!DOCTYPE html>
 
@@ -59,7 +59,7 @@
                     <div class="d-flex align-items-center logo-box justify-content-between">
                         <a href="@Url.Action("Dashboard", "UserDashboard")" class="logo" style="display: flex">
                             <div class="logo-lg">
-                                <span class="light-logo"><img src="~/assets/images/logo/logo.png" width="160px" height="40" alt="logo"></span>
+                                <span class="light-logo"><img src="~/assets/images/logo/logo.png" height="40" alt="logo"></span>
                             </div>
                         </a>
                     </div>
@@ -151,10 +151,10 @@
 
             <!-- .navbar -->
         </div><!-- .topbar-wrap -->
-                <app-profile>
-                    @RenderBody()
-                </app-profile>
-            </app-root>
+        <app-profile>
+            @RenderBody()
+        </app-profile>
+    </app-root>
 
     @RenderSection("scripts", required: false)
 
