@@ -19,663 +19,640 @@
 <html lang="en" data-lt-installed="true">
 
 <head>
+    <!--- Basic Page Needs  -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Cryptomio - Bootstrap 4 Admin Template for Cryptocurrency Business</title>
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Green Block</title>
+    <!-- Mobile Specific Meta  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Bootstrap 4.0-->
-    <link rel="stylesheet" href="~/assets/admin/vendor/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="~/assets/app/scss/component/_banner-top.scss">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap-extend -->
-    <link rel="stylesheet" href="~/assets/admin/css/bootstrap-extend.css">
+    <!-- CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets/admin/css/bootstrap.min.css">
+    <!-- Jquery ui CSS -->
+    <link rel="stylesheet" href="~/assets/admin/css/jquery-ui.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="~/assets/admin/css/font-awesome.min.css">
+    <!-- Metismenu CSS -->
+    <link rel="stylesheet" href="~/assets/admin/dist/metismenu/metisMenu.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="~/assets/admin/css/animate.css">
+    <!-- Main StyleSheet CSS -->
+    <link rel="stylesheet" href="~/assets/admin/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/assets/admin/css/responsive.css">
 
-    <!-- theme style -->
-    <link rel="stylesheet" href="~/assets/admin/css/master_style.css">
-
-    <!-- Crypto_Admin skins -->
-    <link rel="stylesheet" href="~/assets/admin/css/skins/_all-skins.css">
-
-
-
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="~/assets/admin/img/favicon.ico">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 </head>
 
-<body class="sidebar-mini fixed sidebar-mini-expand-feature skin-green">
-    <div class="wrapper">
+<body>
+    <div id="preloader"></div>
 
-        <header class="main-header">
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                <!-- mini logo for sidebar mini 50x50 pixels -->
-                <b class="logo-mini">
-                    <span class="light-logo">  <img src="~/assets/images/logo/logo.png" alt="logo" class="light-logo"></span>
-                    <span class="dark-logo">  <img src="~/assets/images/logo/logo.png" alt="logo" class="light-logo"></span>
-                </b>
-                <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg">
-                    <img src="~/assets/images/logo/logo.png" alt="logo" class="light-logo">
-                    <img src="~/assets/images/logo/logo.png" alt="logo" class="dark-logo">
-                </span>
+    <!-- Header Area -->
+    <header class="cryptodash-header cdh-light">
+        <nav class="navbar navbar-expand-lg cryptodash-nav">
+            <a class="navbar-brand" href="#">
+                <div class="logo">
+                    <img src="assets/img/common/logo.png" alt="">
+                </div>
             </a>
-            <!-- Header Navbar -->
-            <nav class="navbar navbar-static-top">
-                <!-- Sidebar toggle button-->
+            <a id="sideNav-toggle" href="#"><span id="main_icon" class="fa fa-bars"></span></a>
+            <div class="collapse navbar-collapse right-nav" id="navbarTogglerDemo02">
 
-                <div class="navbar-custom-menu">
-                </div>
-            </nav>
-        </header>
+                <form class="form-inline my-2 my-lg-0 cryptoH-search">
+                    <input class="form-control" type="search" placeholder="Search Anything">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
 
-        <!-- Left side column. contains the logo and sidebar -->
-        <aside class="main-sidebar">
-            <!-- sidebar -->
-            <section class="sidebar">
-                <!-- Sidebar user panel -->
-                <div class="user-panel">
-                    <div class="ulogo">
-                        <a href="@Url.Action("Dashboard", "UserDashboard")">
-                            <!-- logo for regular state and mobile devices -->
-                            <img src="~/assets/images/logo/logo.png" style="height: 42px; width: 95%" class="" alt="User Image">
+                <ul class="nav navbar-header-nav ml-auto crypto-user-btn">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            <i class="fa fa-fw fa-bell"></i>
+                            <span class="label label-notify b-orange">
+                                5
+                                <span class="waves"></span>
+                            </span>
                         </a>
-                    </div>
-                    <div class="image">
-                    </div>
-                </div>
-                <!-- sidebar menu -->
-                <ul class="sidebar-menu" data-widget="tree">
-                    <li class="nav-devider"></li>
-                    @if (User.IsInRole("administrator"))
-                    {
-                        <li class="">
-                            <a href="~/dashboard/list/">
-                                <i class="icon-home"></i> <span>DASHBOARD</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="~/transactions/list">
-                                <i class="icon-chart"></i>
-                                <span>TRANSACTIONS</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="~/users/list">
-                                <i class="icon-compass"></i>
-                                <span>USERS</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="~/promocodes/list">
-                                <i class="icon-refresh"></i> <span>PROMOCODES</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="~/manage/index/">
-                                <i class="icon-people"></i>
-                                <span>PROFILE</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="~/Content/GreenBlock_Whitepaper.pdf">
-                                <i class="icon-doc"></i>
-                                <span>WHITEPAPER</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="~/userdashboard/create/">
-                                <i class="icon-equalizer"></i>
-                                <span>BUY TOKENS</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="#" id="modalShow">
-                                <i class="icon-wallet"></i>
-                                <span>PACKAGES</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            @if (Request.IsAuthenticated)
-                            {
-                                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
-                                {
-                                    @Html.AntiForgeryToken()
-                                    <a href="javascript:document.getElementById('logoutForm').submit()"
-                                       style="width: 100%; display: flex; justify-content: center; align-items: center"
-                                       class="link" data-toggle="tooltip" title="" data-original-title="Logout">
-                                        <i class="ion ion-power mr-5"></i>
-                                        <span>Logout</span>
-                                    </a>
-                                }
-                            }
-                        </li>
-                    }
-                    else if (Request.IsAuthenticated)
-                    {
+                        <ul class="dropdown-menu pull-right w-sm animated fadeInUp message-note">
+                            <li class="p-tb-5">
+                                <a href="chat.html">
+                                    <div class="clearfix">
+                                        <span class="pull-right text-muted small">7 minutes ago</span>
+                                        <i class="fa fa-envelope fa-fw"></i>
+                                        <span>7 Messages</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="p-tb-5">
+                                <a href="#">
+                                    <div class="clearfix">
+                                        <span class="pull-right text-muted small">6 minutes ago</span>
+                                        <i class="fa fa-twitter fa-fw"></i>
+                                        <span>6 Follower</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li class="p-tb-5 text-center">
+                                <a class="text-btn-note" href="#">
+                                    <i class="fa fa-fw fa-bell"></i> See all Notification
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            <span class="b-wisteria fa fa-fw fa-envelope-o u-posRelative"></span>
+                            <span class="label label-notify b-orange">
+                                6
+                                <span class="waves"></span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInDown w-sm pull-right notification-note">
+                            <li class="b-b">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a class="profile-pic" href="#">
+                                            <img class="media-object" src="assets/img/avatar/profile.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">
+                                            <small class="pull-right">2 hours ago</small>
+                                            <b>Shahadat Hossain</b>
+                                        </h5>
+                                        started following
+                                        <strong>Zonayed</strong>
+                                        <p class="text-muted">2 hours ago at 7:12 pm - 12th March, 2018</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="b-b">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a class="profile-pic" href="#">
+                                            <img class="media-object" src="assets/img/avatar/profile.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="media-heading">
+                                            <small class="pull-right">3 hours ago</small>
+                                            <b>Sharifulgr</b>
+                                        </h5>
+                                        started following
+                                        <strong>Zonayed</strong>
+                                        <p class="text-muted">2 hours ago at 7:12 pm - 12th March, 2018</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="text-center u-block btn-2-all" href="chat.html">
+                                    <i class="fa fa-envelope"></i> Read All Messages
+                                </a>
+                            </li>
+                        </ul>
 
-                        <li class="">
-                            <a href="~/userdashboard/create/">
-                                <i class="icon-home"></i> <span>DASHBOARD</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="~/userdashboard/list/">
-                                <i class="icon-chart"></i>
-                                <span>BUY TOKENS</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a href="~/users/list">
-                                <i class="icon-compass"></i>
-                                <span>TRANSACTIONS</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="~/userdashboard/dashboard/">
-                                <i class="icon-refresh"></i> <span>PROFILE</span>
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-right pull-right"></i>
-                                </span>
-                            </a>
-                        </li>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            <img class="img-circle" src="assets/img/avatar/profile.png" alt="Jone Doe">
 
-                    }
-
-
+                        </a>
+                        <ul class="dropdown-menu animated flipInX pull-right admin-user">
+                            <li>
+                                <b class="user-display-name">John Cena</b>
+                                <a href="#">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Mail Box</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="login.html"><i class="fa fa-fw fa-sign-out"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-            </section>
-        </aside>
-
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <div class="modal fade show" id="myModal" style="display: none; background-color: rgba(152, 152, 152, 0.8); overflow: hidden" aria-modal="true">
-                <div class="modal-dialog" style=" width: 90%; max-width: 1200px; min-height: 100%;">
-                    <div class="modal-content" style="background: rgba(0, 0, 0, 0.5);">
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <section class="lis-bg-light">
-                                <div class="container">
-                                    <div class="row justify-content-center">
-                                        <div class="col-12 col-md-10 text-center">
-                                            <div class="heading pb-4">
-                                                <h2>Choose Your Package</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
-                                             style="visibility: visible; animation-name: fadeInUp;">
-                                            <div class="price-table">
-                                                <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light" style="background: #747474;">
-                                                    <h5 class="text-uppercase lis-latter-spacing-2">Basic</h5>
-                                                    <h1 style=" color: #fff;" class="display-4 lis-font-weight-500">1<small>%</small></h1>
-                                                    <p class="mb-0">Basic Membership</p>
-                                                </div>
-                                                <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
-                                                    <ul class="list-unstyled lis-line-height-3">
-                                                        <li style="color: black">GreenBlock-ico tokens in portfolio</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
-                                             style="visibility: visible; animation-name: fadeInUp;">
-                                            <div class="price-table" style="color: black">
-                                                <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
-                                                     style="background-color:#e6e4e2; color: black">
-                                                    <h5 class="text-uppercase lis-latter-spacing-2">Silver</h5>
-                                                    <h1 class="display-4 lis-font-weight-500">
-                                                        1<small>%</small>-
-                                                        5<small>%</small>
-                                                    </h1>
-                                                    <p class="mb-0">Silver Membership</p>
-                                                </div>
-                                                <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
-                                                    <ul class="list-unstyled lis-line-height-3">
-                                                        <li>GreenBlock-ico tokens in portfolio</li>
-                                                        <li>Minimum portfolio: $100,000</li>
-                                                    </ul>
-                                                    <a href="/userdashboard/create/" style="background-color: #035661; color: #fff"
-                                                       class="btn btn-primary-outline btn-md lis-rounded-circle-50"
-                                                       data-abc="true">Top Up Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
-                                             style="visibility: visible; animation-name: fadeInUp;">
-                                            <div class="price-table" style="color: black">
-                                                <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
-                                                     style="background-color:#F3AF4C;">
-                                                    <h5 class="text-uppercase lis-latter-spacing-2">Gold</h5>
-                                                    <h1 class="display-4 lis-font-weight-500">
-                                                        6<small>%</small> -
-                                                        12<small>%</small>
-                                                    </h1>
-                                                    <p class="mb-0">Gold Membership</p>
-                                                </div>
-                                                <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
-                                                    <ul class="list-unstyled lis-line-height-3">
-                                                        <li>GreenBlock-ico tokens in portfolio</li>
-                                                        <li>Minimum portfolio: $250,000</li>
-                                                    </ul>
-                                                    <a href="/userdashboard/create/" style="background-color: #035661; color: #fff"
-                                                       class="btn btn-primary-outline btn-md lis-rounded-circle-50"
-                                                       data-abc="true">Top Up Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
-                                             style="visibility: visible; animation-name: fadeInUp;">
-                                            <div class="price-table" style="color: black">
-                                                <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
-                                                     style="        background-color:#a0b2c6;">
-
-                                                    <h5 class="text-uppercase lis-latter-spacing-2">Platinum</h5>
-                                                    <h1 class="display-4 lis-font-weight-500">
-                                                        12<small>%</small>-20<small>%</small>
-                                                    </h1>
-                                                    <p class="mb-0">Platinum Membership</p>
-                                                </div>
-                                                <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
-                                                    <ul class="list-unstyled lis-line-height-3">
-
-
-                                                        <li>GreenBlock-ico tokens in portfolio</li>
-                                                        <li>Minimum portfolio: $500,000</li>
-
-                                                    </ul>
-                                                    <a href="/userdashboard/create/" style="background-color: #035661; color: #fff"
-                                                       class="btn btn-primary-outline btn-md lis-rounded-circle-50"
-                                                       data-abc="true">Top Up Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" id="close-modal"
-                                    data-dismiss="modal">
-                                Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
             </div>
+        </nav>
+    </header>
+    <!-- /Header Area -->
+    <!-- Dashboard Full Area -->
+    <div class="cryptodash-full-wrapper">
+        <div class="crypto-dash-sidenav">
+            <div id="sideNavWrapper" class="active">
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper">
+                    <nav class="sidebar-nav">
+                        <ul class="metismenu" id="menu3">
+                            <li class="mm-active">
+                                <a href="index.html">
+                                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                                    <span class="msm-text">Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="buy-sell.html">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span class="msm-text">Buy & Sell</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="transaction.html">
+                                    <i class="fa fa-exchange" aria-hidden="true"></i>
+                                    <span class="msm-text">Transaction</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mining.html">
+                                    <i class="fa fa-cog" aria-hidden="true"></i>
+                                    <span class="msm-text">Start Mining</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="wallet.html">
+                                    <i class="fa fa-google-wallet" aria-hidden="true"></i>
+                                    <span class="msm-text">Wallet</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ico.html">
+                                    <i class="fa fa-cubes" aria-hidden="true"></i>
+                                    <span class="msm-text">ICO Distribution</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="info.html">
+                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    <span class="msm-text">Information</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                    <span class="msm-text">Chat</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-ticket" aria-hidden="true"></i>
+                                    <span class="msm-text">Support</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="settings.html">
+                                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                                    <span class="msm-text">Settings</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="element.html" aria-expanded="false">
+                                    <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                                    <span class="msm-text">Elements</span>
 
-
-            <!-- Main content -->
-            <section class="content">
-
-                <div class="row">
-                    <div class="col-xl-3 col-12">
-                        <div class="box">
-                            <div class="box-body">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div>
-                                        <h4 class="mb-0">Investment Amount</h4>
-                                        <h4 class="mb-0 d-flex justify-content-center">$@Model.InvestmentAmount.ToString("#,##0")</h4>
-                                    </div>
-                                    @*<div><i class="cc BTC font-size-40 m-0" title="BTC"></i></div>*@
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-12">
-                        <div class="box">
-                            <div class="box-body">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div>
-                                        <h4 class="mb-0">Current Balance</h4>
-                                        <h4 class="mb-0 d-flex justify-content-center">$@Model.CurrentBalance.ToString("#,##0")</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-12">
-                        <div class="box">
-                            <div class="box-body">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div>
-                                        <h4 class="mb-0">Profit</h4>
-                                        <h4 class="mb-0 d-flex justify-content-center">$@((Model.CurrentBalance - Model.InvestmentAmount).ToString("#,##0"))</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-12">
-                        <div class="box">
-                            <div class="box-body">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div>
-                                        <h4 class="mb-0">Token Amount</h4>
-                                        <h4 class="mb-0 d-flex justify-content-center">@Model.Tokens</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-6 col-12">
-                        <div class="box">
-                            <div class="box-header with-border">
-                                <h4 class="box-title">Token Distribution Chart</h4>
-                            </div>
-                            <div class="box-body">
-                                <div class="chart">
-                                    <div id="currency-value" style="height:500px;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-6 col-12">
-                        <div class="box">
-                            <div class="box-header with-border">
-                                <h4 class="box-title">Token Sale Price</h4>
-                            </div>
-                            <div class="box-body">
-                                <div class="chart">
-                                    <div id="bitcoin-value"></div>
-                                </div>
-                            </div>
-                            <div class="token-bar">
-                                <div class="top" style=" height: 40px">
-                                    <p class="fs-14" style="  ">$20M</p>
-                                    <p class="fs-14" style=" ">$50M</p>
-                                    <p class="fs-14" style="  ">$95M</p>
-                                    <p class="fs-14" style=" ">$110M</p>
-                                </div>
-                                <div class="main">
-                                    <div class="progress-token">
-                                        <p style="width: @raised%;" class="fs-14"> @Model.Raised.ToString("C2")</p>
-                                    </div>
-                                </div>
-
-                                <div class="bottom" style=" height: 40px">
-                                    <p class="fs-14">Private Sale</p>
-                                    <p class="fs-14">Pre Sale</p>
-                                    <p class="fs-14">Softcap</p>
-                                    <p class="fs-14">Hardcap</p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
+                                </a>
+                                <ul class="mm-has-child">
+                                    <li><a href="#">item 2.1</a></li>
+                                    <li><a href="#">item 2.2</a></li>
+                                    <li><a href="#">item 2.3</a></li>
+                                    <li><a href="#">item 2.4</a></li>
+                                    <li>
+                                        <a class="has-arrow" href="#" aria-expanded="false">Menu 1.5</a>
+                                        <ul class="mm-has-child">
+                                            <li><a href="#">item 1.5.1</a></li>
+                                            <li><a href="#">item 1.5.2</a></li>
+                                            <li><a href="#">item 1.5.3</a></li>
+                                            <li><a href="#">item 1.5.4</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="login.html">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                    <span class="msm-text">Sign Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
+                <!-- /Sidebar -->
+                <!-- Page content -->
+                <div id="page-content-wrapper" class="dashboard-content">
+                    <!-- Keep all page content within the page-content inset div! -->
+                    <div class="page-content inset">
+                        <div class="crypto-container">
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="crypto-overview-wrapper">
+                                        <h2 class="crypto-stitle">Overview</h2>
+                                        <div class="crypto-overview">
+                                            <div class="crypto-current-balance">
+                                                <span>Your Current Balance</span>
+                                                <h3 class="ccb">$254324.00</h3>
+                                                <p>$23024.00<span>( Yearly Total profit )</span><i class="fa fa-line-chart" aria-hidden="true"></i></p>
 
-            </section>
-            <!-- /.content -->
+                                                <a href="#" class="btn-style-a">Buy More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8">
+                                    <div class="crypto-wallet">
+                                        <h2 class="crypto-stitle">Wallet</h2>
+
+                                        <div class="crypto-wallet-tab ">
+                                            <nav class="cw-nav">
+                                                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="nav-bitcoin-tab" data-toggle="tab" href="#nav-bitcoin" role="tab"
+                                                       aria-controls="nav-bitcoin" aria-selected="true">Bitcoin</a>
+                                                    <a class="nav-item nav-link" id="nav-ethereum-tab" data-toggle="tab" href="#nav-ethereum" role="tab"
+                                                       aria-controls="nav-ethereum" aria-selected="false">Ethereum</a>
+                                                    <a class="nav-item nav-link" id="nav-litecoin-tab" data-toggle="tab" href="#nav-litecoin" role="tab"
+                                                       aria-controls="nav-litecoin" aria-selected="false">Litecoin</a>
+                                                    <a class="nav-item nav-link" id="nav-eos-tab" data-toggle="tab" href="#nav-eos" role="tab"
+                                                       aria-controls="nav-eos" aria-selected="false">EOS</a>
+                                                    <a class="nav-item nav-link" id="nav-ripple-tab" data-toggle="tab" href="#nav-ripple" role="tab"
+                                                       aria-controls="nav-ripple" aria-selected="false">Rippple</a>
+                                                    <a class="nav-item nav-link" id="nav-binance-tab" data-toggle="tab" href="#nav-binance" role="tab"
+                                                       aria-controls="nav-binance" aria-selected="false">Binance Coin</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content py-3 px-3 px-sm-0 cw-tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-bitcoin" role="tabpanel" aria-labelledby="nav-bitcoin-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,660.46<span>USD</span></h3>
+                                                        <h5>1.00000000 BTC</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$117,711,477,387</h4>
+                                                                <span>17,626,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,470,072</h4>
+                                                                <span>2,915,578 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,626,900</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,000,000</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-ethereum" role="tabpanel" aria-labelledby="nav-ethereum-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,622.46<span>USD</span></h3>
+                                                        <h5>2.00000000 ETH</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$118,811,478,387</h4>
+                                                                <span>17,666,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,470,092</h4>
+                                                                <span>2,615,578 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,686,900</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,080,000</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-litecoin" role="tabpanel" aria-labelledby="nav-litecoin-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,633.46<span>USD</span></h3>
+                                                        <h5>3.00000000 LTC</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$125,815,478,33</h4>
+                                                                <span>17,346,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,475,092</h4>
+                                                                <span>5,615,548 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,556,900</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,440,000</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-eos" role="tabpanel" aria-labelledby="nav-eos-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,563.46<span>USD</span></h3>
+                                                        <h5>6.003453450 EOS</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$125,818,478,37</h4>
+                                                                <span>17,346,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,475,082,52</h4>
+                                                                <span>5,685,548 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,556,980</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,480,000</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-ripple" role="tabpanel" aria-labelledby="nav-ripple-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,55.46<span>USD</span></h3>
+                                                        <h5>6.005553450 RP</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$125,848,478,37</h4>
+                                                                <span>17,346,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,474,082,52</h4>
+                                                                <span>5,685,548 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,546,980</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,480,040</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-binance" role="tabpanel" aria-labelledby="nav-binance-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,563.46<span>USD</span></h3>
+                                                        <h5>6.003453450 EOS</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$125,818,478,37</h4>
+                                                                <span>17,346,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,475,082,52</h4>
+                                                                <span>5,685,548 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,556,980</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,480,000</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-7">
+                                    <div class="recent-transaction-history">
+                                        <h2 class="crypto-stitle">Recent Transaction History</h2>
+                                        <div class="rth-table">
+                                            <table class="table cryptodash-tableA">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Coins Name</th>
+                                                        <th>Wallet ID</th>
+                                                        <th>Amount</th>
+                                                        <th>Date</th>
+                                                        <th class="text-center">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td><div class="currency-logo-name"><img src="assets/img/currency/btcz-1.png" alt=""> Bitcoin</div></td>
+                                                    <td>#xyz4158745</td>
+                                                    <td>0.00003 BTC</td>
+                                                    <td>05 May 2019</td>
+                                                    <td class="text-center">
+                                                        <a class='btn' href="#">
+                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="currency-logo-name"><img src="assets/img/currency/etc.png" alt="">Ethereum</div></td>
+                                                    <td>#wawesf322</td>
+                                                    <td>0.3 ETH</td>
+                                                    <td>05 May 2019</td>
+                                                    <td class="text-center">
+                                                        <a class='btn' href="#">
+                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="currency-logo-name"><img src="assets/img/currency/eos.png" alt="">EOS</div></td>
+                                                    <td>#xyz4158745</td>
+                                                    <td>2 EOS</td>
+                                                    <td>05 May 2019</td>
+                                                    <td class="text-center">
+                                                        <a class='btn' href="#">
+                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><div class="currency-logo-name"><img src="assets/img/currency/cred.png" alt="">Cred</div></td>
+                                                    <td>#nxedr3324d</td>
+                                                    <td>21 Cred</td>
+                                                    <td>05 May 2019</td>
+                                                    <td class="text-center">
+                                                        <a class='btn' href="#">
+                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5">
+                                    <div class="transaction-status">
+                                        <h2 class="crypto-stitle">Transaction Status</h2>
+                                        <div class="transaction-status-pie">
+                                            <canvas id="pie1" data-p1value="25, 25, 15, 35" data-p1label="In Progeress, In Pending, Cancelled, Completed" data-p1color="#372CC8, #FFA726, #E91E63, #2ACD72" width="420" height="200"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4">
+                                    <div class="tokenCalculation-wrapper">
+                                        <h2 class="crypto-stitle">Token Calculation</h2>
+                                        <div class="token-calculator">
+                                            <form class="tc-form">
+                                                <h4>Enter your amount</h4>
+                                                <div class="tc-input">
+                                                    <input type="text" placeholder="Ex. 1.00000">
+                                                    <select name="currencySymbol" id="currencySymbol">
+                                                        <option value="1">BTC</option>
+                                                        <option value="2">ETH</option>
+                                                        <option value="3">EOC</option>
+                                                    </select>
+                                                </div>
+                                                <h3>= $6,660.46 <span class="currencyName">USD</span></h3>
+                                                <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>The Amount is changeable anytime</p>
+                                                <a href="#" class="btn-style-b">Buy Tokens Now</a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-8">
+                                    <div class="token-distribution-wrapper">
+                                        <h2 class="crypto-stitle">Token Distribution Graph</h2>
+                                        <div class="distribution-graph">
+                                            <!-- <canvas id="chart"></canvas> -->
+                                            <div class="chart-container">
+                                                <canvas id="chart-token-distribution" data-ctdlabel="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /Page content -->
+            </div>
         </div>
-        <!-- /.content-wrapper -->
-
-        <footer class="main-footer">
-            &copy; 2022 All Rights Reserved.
-        </footer>
-
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Create the tabs -->
-            <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-                <li class="nav-item"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-                <li class="nav-item"><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-cog fa-spin"></i></a></li>
-            </ul>
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <!-- Home tab content -->
-                <div class="tab-pane" id="control-sidebar-home-tab">
-                    <h3 class="control-sidebar-heading">Recent Activity</h3>
-                    <ul class="control-sidebar-menu">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-
-                                <div class="menu-info">
-                                    <h4 class="control-sidebar-subheading">Admin Birthday</h4>
-
-                                    <p>Will be July 24th</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="menu-icon fa fa-user bg-yellow"></i>
-
-                                <div class="menu-info">
-                                    <h4 class="control-sidebar-subheading">Jhone Updated His Profile</h4>
-
-                                    <p>New Email : jhone_doe@demo.com</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
-
-                                <div class="menu-info">
-                                    <h4 class="control-sidebar-subheading">Disha Joined Mailing List</h4>
-
-                                    <p>disha@demo.com</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <i class="menu-icon fa fa-file-code-o bg-green"></i>
-
-                                <div class="menu-info">
-                                    <h4 class="control-sidebar-subheading">Code Change</h4>
-
-                                    <p>Execution time 15 Days</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.control-sidebar-menu -->
-
-                    <h3 class="control-sidebar-heading">Tasks Progress</h3>
-                    <ul class="control-sidebar-menu">
-                        <li>
-                            <a href="javascript:void(0)">
-                                <h4 class="control-sidebar-subheading">
-                                    Web Design
-                                    <span class="label label-danger pull-right">40%</span>
-                                </h4>
-
-                                <div class="progress progress-xxs">
-                                    <div class="progress-bar progress-bar-danger" style="width: 40%"></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <h4 class="control-sidebar-subheading">
-                                    Update Data
-                                    <span class="label label-success pull-right">75%</span>
-                                </h4>
-
-                                <div class="progress progress-xxs">
-                                    <div class="progress-bar progress-bar-success" style="width: 75%"></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <h4 class="control-sidebar-subheading">
-                                    Order Process
-                                    <span class="label label-warning pull-right">89%</span>
-                                </h4>
-
-                                <div class="progress progress-xxs">
-                                    <div class="progress-bar progress-bar-warning" style="width: 89%"></div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">
-                                <h4 class="control-sidebar-subheading">
-                                    Development
-                                    <span class="label label-primary pull-right">72%</span>
-                                </h4>
-
-                                <div class="progress progress-xxs">
-                                    <div class="progress-bar progress-bar-primary" style="width: 72%"></div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.control-sidebar-menu -->
-
-                </div>
-                <!-- /.tab-pane -->
-                <!-- Stats tab content -->
-                <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
-                <!-- /.tab-pane -->
-                <!-- Settings tab content -->
-                <div class="tab-pane" id="control-sidebar-settings-tab">
-                    <form method="post">
-                        <h3 class="control-sidebar-heading">General Settings</h3>
-
-                        <div class="form-group">
-                            <input type="checkbox" id="report_panel" class="chk-col-grey">
-                            <label for="report_panel" class="control-sidebar-subheading ">Report panel usage</label>
-
-                            <p>
-                                general settings information
-                            </p>
-                        </div>
-                        <!-- /.form-group -->
-
-                        <div class="form-group">
-                            <input type="checkbox" id="allow_mail" class="chk-col-grey">
-                            <label for="allow_mail" class="control-sidebar-subheading ">Mail redirect</label>
-
-                            <p>
-                                Other sets of options are available
-                            </p>
-                        </div>
-                        <!-- /.form-group -->
-
-                        <div class="form-group">
-                            <input type="checkbox" id="expose_author" class="chk-col-grey">
-                            <label for="expose_author" class="control-sidebar-subheading ">Expose author name</label>
-
-                            <p>
-                                Allow the user to show his name in blog posts
-                            </p>
-                        </div>
-                        <!-- /.form-group -->
-
-                        <h3 class="control-sidebar-heading">Chat Settings</h3>
-
-                        <div class="form-group">
-                            <input type="checkbox" id="show_me_online" class="chk-col-grey">
-                            <label for="show_me_online" class="control-sidebar-subheading ">Show me as online</label>
-                        </div>
-                        <!-- /.form-group -->
-
-                        <div class="form-group">
-                            <input type="checkbox" id="off_notifications" class="chk-col-grey">
-                            <label for="off_notifications" class="control-sidebar-subheading ">Turn off notifications</label>
-                        </div>
-                        <!-- /.form-group -->
-
-                        <div class="form-group">
-                            <label class="control-sidebar-subheading">
-                                <a href="javascript:void(0)" class="text-red margin-r-5"><i class="fa fa-trash-o"></i></a>
-                                Delete chat history
-                            </label>
-                        </div>
-                        <!-- /.form-group -->
-                    </form>
-                </div>
-                <!-- /.tab-pane -->
-            </div>
-        </aside>
-        <!-- /.control-sidebar -->
-        <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
-        <div class="control-sidebar-bg"></div>
-
     </div>
-    <!-- ./wrapper -->
-    <!-- jQuery 3 -->
-    <script src="~/assets/admin/vendor/jquery/dist/jquery.js"></script>
+    <!-- Dashboard Full Area -->
 
-    <!-- popper -->
-    <script src="~/assets/admin/vendor/popper/dist/popper.min.js"></script>
 
-    <!-- Bootstrap 4.0-->
-    <script src="~/assets/admin/vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- Scripts -->
+    <!-- jQuery Plugin -->
+    <script src="~/assets/admin/js/jquery-3.2.0.min.js"></script>
+    <script src="~/assets/admin/js/jquery-ui.js"></script>
+    <!-- Owl Carousel Plugin -->
+    <script src="~/assets/admin/js/owl.carousel.min.js"></script>
+    <!-- Main Counterup Plugin-->
+    <script src="~/assets/admin/js/jquery.counterup.min.js"></script>
+    <script src="~/assets/admin/js/countdown.js"></script>
 
-    <!-- Slimscroll -->
-    <script src="~/assets/admin/vendor/jquery-slimscroll/jquery.slimscroll.js"></script>
-
-    <!-- FastClick -->
-    <script src="~/assets/admin/vendor/fastclick/lib/fastclick.js"></script>
-
-    <!-- Resources -->
-    <script src="https://www.amcharts.com/lib/4/core.js"></script>
-    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
-    <!-- apexcharts -->
-    <script src="~/assets/admin/vendor/apexcharts-bundle/irregular-data-series.js"></script>
-    <script src="~/assets/admin/vendor/apexcharts-bundle/dist/apexcharts.js"></script>
-    <script src="~/assets/admin/js/pages/ohlc.js"></script>
-
-    <!-- webticker -->
-    <script src="~/assets/admin/vendor/Web-Ticker-master/jquery.webticker.min.js"></script>
-
-    <!-- Crypto_Admin App -->
-    <script src="~/assets/admin/js/template.js"></script>
-
-    <!-- Crypto_Admin dashboard demo (This is only for demo purposes) -->
-    <script src="~/assets/admin/js/pages/dashboard.js"></script>
-    <script src="~/assets/admin/js/pages/dashboard-chart.js"></script>
-
-    <!-- Crypto_Admin for demo purposes -->
-    <script src="~/assets/admin/js/demo.js"></script>
+    <script src="~/assets/admin/js/jquery.scrollUp.js"></script>
+    <script src="~/assets/admin/js/jquery.waypoints.min.js"></script>
+    <!-- Chart JS Plugin-->
+    <script src="~/assets/admin/js/Chart.min.js"></script>
+    <script src="~/assets/admin/js/ChartUtils.js"></script>
+    <!-- Metismenu Plugin-->
+    <script src="assets/dist/metismenu/metisMenu.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/assets/admin/js/bootstrap.min.js"></script>
+    <!-- Main Script -->
+    <script src="~/assets/admin/js/graph-chart-activation.js"></script>
+    <script src="~/assets/admin/js/theme.js"></script>
 
     <!-- END CORE TEMPLATE JS - END -->
     @section Scripts {

@@ -190,13 +190,13 @@
                             }
                         </div>
                         @*<form action="/Account/LogOff" class="" id="logoutForm" method="post">
-                                <div class="SignOut">
-                                    <div class="LogOutButton"><a href="javascript:document.getElementById('logoutForm').submit()">LOGOUT</a></div>
-                                </div>
-                            </form>*@
-                        @*<div class="SignOut">
+                            <div class="SignOut">
                                 <div class="LogOutButton"><a href="javascript:document.getElementById('logoutForm').submit()">LOGOUT</a></div>
-                            </div>*@
+                            </div>
+                        </form>*@
+                        @*<div class="SignOut">
+                            <div class="LogOutButton"><a href="javascript:document.getElementById('logoutForm').submit()">LOGOUT</a></div>
+                        </div>*@
                     </div>
                 </div>
                 <div class="Modal" style="display: none;">
@@ -481,6 +481,156 @@
                 </div>
             </div>
         </div>
+
+        <aside class="main-sidebar">
+            <!-- sidebar -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
+                <div class="user-panel">
+                    <div class="ulogo">
+                        <a href="@Url.Action("Dashboard", "UserDashboard")">
+                            <!-- logo for regular state and mobile devices -->
+                            <img src="~/assets/images/logo/logo.png" style="height: 42px; width: 95%" class="" alt="User Image">
+                        </a>
+                    </div>
+                    <div class="image">
+                    </div>
+                </div>
+                <!-- sidebar menu -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="nav-devider"></li>
+                    @if (User.IsInRole("administrator"))
+                    {
+                        <li class="">
+                            <a href="~/dashboard/list/">
+                                <i class="icon-home"></i> <span>DASHBOARD</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/transactions/list">
+                                <i class="icon-chart"></i>
+                                <span>TRANSACTIONS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/users/list">
+                                <i class="icon-compass"></i>
+                                <span>USERS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="~/promocodes/list">
+                                <i class="icon-refresh"></i> <span>PROMOCODES</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/manage/index/">
+                                <i class="icon-people"></i>
+                                <span>PROFILE</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/Content/GreenBlock_Whitepaper.pdf">
+                                <i class="icon-doc"></i>
+                                <span>WHITEPAPER</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/userdashboard/create/">
+                                <i class="icon-equalizer"></i>
+                                <span>BUY TOKENS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#" id="modalShow">
+                                <i class="icon-wallet"></i>
+                                <span>PACKAGES</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            @if (Request.IsAuthenticated)
+                            {
+                                using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <a href="javascript:document.getElementById('logoutForm').submit()"
+                                       style="width: 100%; display: flex; justify-content: center; align-items: center"
+                                       class="link" data-toggle="tooltip" title="" data-original-title="Logout">
+                                        <i class="ion ion-power mr-5"></i>
+                                        <span>Logout</span>
+                                    </a>
+                                }
+                            }
+                        </li>
+                    }
+                    else if (Request.IsAuthenticated)
+                    {
+
+                        <li class="">
+                            <a href="~/userdashboard/create/">
+                                <i class="icon-home"></i> <span>DASHBOARD</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/userdashboard/list/">
+                                <i class="icon-chart"></i>
+                                <span>BUY TOKENS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="~/users/list">
+                                <i class="icon-compass"></i>
+                                <span>TRANSACTIONS</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="~/userdashboard/dashboard/">
+                                <i class="icon-refresh"></i> <span>PROFILE</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                            </a>
+                        </li>
+
+                    }
+
+
+                </ul>
+            </section>
+        </aside>
 
         <a href="#" class="scrollup btn-default" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
     </app-dashboard>
