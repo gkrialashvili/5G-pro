@@ -14,8 +14,6 @@
 		chart.legend = new am4charts.Legend();
 
 
-
-
 	chart.data = [
 		{
 		"country": "Token Sale",
