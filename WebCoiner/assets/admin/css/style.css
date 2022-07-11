@@ -1393,8 +1393,7 @@ table.cryptodash-tableA tr {
     border-color: #01cd8c;
 }
 
-.tc-input select {
-    margin-left: -5px;
+.tc-input .currencySymbol {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     max-width: 80px;
@@ -1402,6 +1401,13 @@ table.cryptodash-tableA tr {
     background-color: #01cd8c;
     color: #fff;
     border-color: #01cd8c;
+    position: absolute;
+    top: 0;
+    right: 78px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .token-calculator h3 {

@@ -66,131 +66,13 @@
     <!-- Header Area -->
     <header class="cryptodash-header cdh-light">
         <nav class="navbar navbar-expand-lg cryptodash-nav">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="@Url.Action("Dashboard", "UserDashboard")">
                 <div class="logo">
                     <img src="~/assets/admin/img/common/logo.png" alt="">
                 </div>
             </a>
             <a id="sideNav-toggle" href="#"><span id="main_icon" class="fa fa-bars"></span></a>
             <div class="collapse navbar-collapse right-nav" id="navbarTogglerDemo02">
-
-                <form class="form-inline my-2 my-lg-0 cryptoH-search">
-                    <input class="form-control" type="search" placeholder="Search Anything">
-                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </form>
-
-                <ul class="nav navbar-header-nav ml-auto crypto-user-btn">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">
-                            <i class="fa fa-fw fa-bell"></i>
-                            <span class="label label-notify b-orange">
-                                5
-                                <span class="waves"></span>
-                            </span>
-                        </a>
-                        <ul class="dropdown-menu pull-right w-sm animated fadeInUp message-note">
-                            <li class="p-tb-5">
-                                <a href="chat.html">
-                                    <div class="clearfix">
-                                        <span class="pull-right text-muted small">7 minutes ago</span>
-                                        <i class="fa fa-envelope fa-fw"></i>
-                                        <span>7 Messages</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="p-tb-5">
-                                <a href="#">
-                                    <div class="clearfix">
-                                        <span class="pull-right text-muted small">6 minutes ago</span>
-                                        <i class="fa fa-twitter fa-fw"></i>
-                                        <span>6 Follower</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li class="p-tb-5 text-center">
-                                <a class="text-btn-note" href="#">
-                                    <i class="fa fa-fw fa-bell"></i> See all Notification
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">
-                            <span class="b-wisteria fa fa-fw fa-envelope-o u-posRelative"></span>
-                            <span class="label label-notify b-orange">
-                                6
-                                <span class="waves"></span>
-                            </span>
-                        </a>
-                        <ul class="dropdown-menu animated fadeInDown w-sm pull-right notification-note">
-                            <li class="b-b">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a class="profile-pic" href="#">
-                                            <img class="media-object" src="~/assets/admin/img/avatar/profile.png" alt="img">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <small class="pull-right">2 hours ago</small>
-                                            <b>Shahadat Hossain</b>
-                                        </h5>
-                                        started following
-                                        <strong>Zonayed</strong>
-                                        <p class="text-muted">2 hours ago at 7:12 pm - 12th March, 2018</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="b-b">
-                                <div class="media">
-                                    <div class="media-left">
-                                        <a class="profile-pic" href="#">
-                                            <img class="media-object" src="~/assets/admin/img/avatar/profile.png" alt="img">
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h5 class="media-heading">
-                                            <small class="pull-right">3 hours ago</small>
-                                            <b>Sharifulgr</b>
-                                        </h5>
-                                        started following
-                                        <strong>Zonayed</strong>
-                                        <p class="text-muted">2 hours ago at 7:12 pm - 12th March, 2018</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <a class="text-center u-block btn-2-all" href="chat.html">
-                                    <i class="fa fa-envelope"></i> Read All Messages
-                                </a>
-                            </li>
-                        </ul>
-
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle profile-pic" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">
-                            <img class="img-circle" src="~/assets/admin/img/avatar/profile.png" alt="Jone Doe">
-
-                        </a>
-                        <ul class="dropdown-menu animated flipInX pull-right admin-user">
-                            <li>
-                                <b class="user-display-name">John Cena</b>
-                                <a href="#">Profile</a>
-                            </li>
-                            <li>
-                                <a href="#">Mail Box</a>
-                            </li>
-                            <li role="separator" class="divider"></li>
-                            <li>
-                                <a href="login.html"><i class="fa fa-fw fa-sign-out"></i> Logout</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
         </nav>
     </header>
@@ -203,93 +85,84 @@
                 <div id="sidebar-wrapper">
                     <nav class="sidebar-nav">
                         <ul class="metismenu" id="menu3">
-                            <li class="mm-active">
-                                <a href="index.html">
-                                    <i class="fa fa-tachometer" aria-hidden="true"></i>
-                                    <span class="msm-text">Dashboard</span>
-                                </a>
-                            </li>
+                            @if (User.IsInRole("administrator"))
+                            {
+                                <li class="mm-active">
+                                    <a href="~/dashboard/list/">
+                                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                                        <span class="msm-text">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/transactions/list">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span class="msm-text">Transaction</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/users/list">
+                                        <i class="fa fa-exchange" aria-hidden="true"></i>
+                                        <span class="msm-text">Users</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/promocodes/list">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                        <span class="msm-text">Promocodes</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/manage/index/">
+                                        <i class="fa fa-google-wallet" aria-hidden="true"></i>
+                                        <span class="msm-text">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/userdashboard/create/">
+                                        <i class="fa fa-cubes" aria-hidden="true"></i>
+                                        <span class="msm-text">Buy</span>
+                                    </a>
+                                </li>
+                            }
+                            else if (Request.IsAuthenticated)
+                            {
+                                <li class="mm-active">
+                                    <a href="~/userdashboard/create/">
+                                        <i class="fa fa-tachometer" aria-hidden="true"></i>
+                                        <span class="msm-text">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/userdashboard/list/">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span class="msm-text">Buy</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/users/list">
+                                        <i class="fa fa-exchange" aria-hidden="true"></i>
+                                        <span class="msm-text">Transaction</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/userdashboard/dashboard/">
+                                        <i class="fa fa-cog" aria-hidden="true"></i>
+                                        <span class="msm-text">Profile</span>
+                                    </a>
+                                </li>
+                            }
                             <li>
-                                <a href="buy-sell.html">
-                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    <span class="msm-text">Buy & Sell</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="transaction.html">
-                                    <i class="fa fa-exchange" aria-hidden="true"></i>
-                                    <span class="msm-text">Transaction</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mining.html">
-                                    <i class="fa fa-cog" aria-hidden="true"></i>
-                                    <span class="msm-text">Start Mining</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="wallet.html">
-                                    <i class="fa fa-google-wallet" aria-hidden="true"></i>
-                                    <span class="msm-text">Wallet</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="ico.html">
-                                    <i class="fa fa-cubes" aria-hidden="true"></i>
-                                    <span class="msm-text">ICO Distribution</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="info.html">
-                                    <i class="fa fa-info-circle" aria-hidden="true"></i>
-                                    <span class="msm-text">Information</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="chat.html">
-                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
-                                    <span class="msm-text">Chat</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-ticket" aria-hidden="true"></i>
-                                    <span class="msm-text">Support</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="settings.html">
-                                    <i class="fa fa-wrench" aria-hidden="true"></i>
-                                    <span class="msm-text">Settings</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="has-arrow" href="element.html" aria-expanded="false">
-                                    <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-                                    <span class="msm-text">Elements</span>
-
-                                </a>
-                                <ul class="mm-has-child">
-                                    <li><a href="#">item 2.1</a></li>
-                                    <li><a href="#">item 2.2</a></li>
-                                    <li><a href="#">item 2.3</a></li>
-                                    <li><a href="#">item 2.4</a></li>
-                                    <li>
-                                        <a class="has-arrow" href="#" aria-expanded="false">Menu 1.5</a>
-                                        <ul class="mm-has-child">
-                                            <li><a href="#">item 1.5.1</a></li>
-                                            <li><a href="#">item 1.5.2</a></li>
-                                            <li><a href="#">item 1.5.3</a></li>
-                                            <li><a href="#">item 1.5.4</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="login.html">
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>
-                                    <span class="msm-text">Sign Out</span>
-                                </a>
+                                @if (Request.IsAuthenticated)
+                                {
+                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <a href="javascript:document.getElementById('logoutForm').submit()">
+                                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                            <span class="msm-text">Sign Out</span>
+                                        </a>
+                                    }
+                                }
                             </li>
                         </ul>
                     </nav>
@@ -307,10 +180,8 @@
                                         <div class="crypto-overview">
                                             <div class="crypto-current-balance">
                                                 <span>Your Current Balance</span>
-                                                <h3 class="ccb">$254324.00</h3>
-                                                <p>$23024.00<span>( Yearly Total profit )</span><i class="fa fa-line-chart" aria-hidden="true"></i></p>
-
-                                                <a href="#" class="btn-style-a">Buy More</a>
+                                                <h3 class="ccb">$@Model.CurrentBalance.ToString("#,##0")</h3>
+                                                <a href="/userdashboard/create/" class="btn-style-a">Buy More</a>
                                             </div>
                                         </div>
                                     </div>
@@ -593,15 +464,13 @@
                                                 <h4>Enter your amount</h4>
                                                 <div class="tc-input">
                                                     <input type="text" placeholder="Ex. 1.00000">
-                                                    <select name="currencySymbol" id="currencySymbol">
-                                                        <option value="1">BTC</option>
-                                                        <option value="2">ETH</option>
-                                                        <option value="3">EOC</option>
-                                                    </select>
+                                                    <div class="currencySymbol" id="currencySymbol">
+                                                       BBC
+                                                    </div>
                                                 </div>
-                                                <h3>= $6,660.46 <span class="currencyName">USD</span></h3>
+                                                <h3>= <span class="cost">0</span> <span class="currencyName">USD</span></h3>
                                                 <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>The Amount is changeable anytime</p>
-                                                <a href="#" class="btn-style-b">Buy Tokens Now</a>
+                                                <a href="~/userdashboard/list/" class="btn-style-b">Buy Tokens Now</a>
                                             </form>
                                         </div>
                                     </div>
@@ -688,6 +557,11 @@
         });
         $("#btc-base-amount1").keyup(function () {
             $("#token-base-amount1").val(($(this).val() * 6).toFixed(2));
+        });
+
+        $('.tc-input input').on('input', e => {
+           const coinAmount = e.target.value;
+            $('.cost').text(coinAmount * 5)
         });
 
 
