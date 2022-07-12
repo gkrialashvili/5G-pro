@@ -314,7 +314,7 @@ blockquote {
 
 blockquote::before {
     color: #4e5665;
-    content: "ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â";
+    content: "";
     font-family: FontAwesome;
     font-size: 36px;
     left: 20px;
@@ -535,7 +535,7 @@ a.btn-style-c-m:hover {
     z-index: 99;
 }
 .cdh-light {
-    background-color: #090C33;
+    background-color: #F8FAFF;
 }
 
 
@@ -593,7 +593,7 @@ a.btn-style-c-m:hover {
 
 .cryptodash-nav .navbar-brand {
     display: block;
-    background-color: #090c33;
+    background-color: #f8faff;
     margin-left: -10px;
     margin-top: -5px;
     padding: 0px;
@@ -608,7 +608,7 @@ a#sideNav-toggle {
     margin-right: 0;
 }
 a#sideNav-toggle:hover {
-    color: #fff;
+    color: #000;
 }
 form.cryptoH-search {
     position: relative;
@@ -618,23 +618,17 @@ form.cryptoH-search input.form-control {
     height: 44px;
     font-size: 16px;
     letter-spacing: 0px;
-    color: #fff;
+    color: #000;
     border: none;
     padding: 0px 20px;
-    background-color: #151844;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
 
 form.cryptoH-search button {
     height: 44px;
     border: none;
-    background-color: #151844;
-    color: #989BAC;
+    background-color: #fff;
     padding: 0px 15px;
     cursor: pointer;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
 }
 form.cryptoH-search button:focus,
 form.cryptoH-search input.form-control:focus {
@@ -658,15 +652,14 @@ form.cryptoH-search input.form-control:focus {
     font-weight: 400;
     text-align: center;
     display: block;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     padding-bottom: 2px;
-    color: #fff;
 }
 
 .admin-user li a {
     font-size: 16px;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: #989bac;
     margin: 0px;
     line-height: 26px;
     display: block;
@@ -699,8 +692,7 @@ form.cryptoH-search input.form-control:focus {
     margin: 0 auto;
 }
 
-.notification-note h5.media-heading {
-}
+.notification-note h5.media-heading {}
 
 .notification-note h5.media-heading b {
     font-size: 14px;
@@ -755,7 +747,7 @@ form.cryptoH-search input.form-control:focus {
     position: relative;
     font-size: 12px;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: #04073b;
 }
 a.btn-2-all:hover {
     color: #000;
@@ -872,7 +864,7 @@ a.btn-2-all:hover {
 }
 #sideNavWrapper.active .metismenu {
     transition: .5s ease;
-    background: #090c33;
+    background: #F8FAFF;
 }
 .sidebar-nav .metismenu {
     background: #04084A;
@@ -942,7 +934,7 @@ a.btn-2-all:hover {
 .sidebar-nav .metismenu .mm-active > a {
     color: #f8f9fa;
     text-decoration: none;
-    background: #384076;
+    background: #1652E8;
 }
 
 #sideNavWrapper.active span.msm-text {
@@ -966,7 +958,7 @@ nav.sidebar-nav {
 }
 #sideNavWrapper.active .sidebar-nav .metismenu a {
     text-align: left;
-    color: #6174B7;
+    color: #04073B;
 }
 #sideNavWrapper .sidebar-nav .metismenu li.mm-active a,
 #sideNavWrapper .sidebar-nav .metismenu li a:hover {
@@ -1013,8 +1005,7 @@ nav.collapseSidenav ul.mm-has-child li a {
 }
 .dashboard-content {
     position: relative;
-    background-color: #101337;
-
+    background-color: #fff;
 }
 .crypto-container {
     position: relative;
@@ -1024,14 +1015,14 @@ h2.crypto-stitle {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0px;
-    color: #fff;
+    color: #39374A;
     font-weight: 500;
 }
 
 p.crypto-subtitle {
     font-size: 14px;
     letter-spacing: 0px;
-    color: #fff;
+    color: #39374A;
     line-height: 22px;
 }
 
@@ -1052,8 +1043,6 @@ p.crypto-subtitle {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
-    
     
 }
 
@@ -1067,7 +1056,7 @@ p.crypto-subtitle {
     line-height: 26px;
     letter-spacing: 0px;
     font-weight: 400;
-    color: #fff;
+    color: #39374A;
 }
 
 .crypto-current-balance h3.ccb {
@@ -1076,13 +1065,12 @@ p.crypto-subtitle {
     font-weight: 400;
     letter-spacing: 0px;
     margin: 12px auto;
-    color: #fff;
 }
 
 .crypto-current-balance p {
     font-size: 22px;
     letter-spacing: 0px;
-    color: #FF728C;
+    color: #01CD8C;
     font-weight: 400;
     margin: 25px auto;
 }
@@ -1096,12 +1084,11 @@ p.crypto-subtitle {
 
 .crypto-current-balance p i {
     color: #01CD8C;
-    background-color: #0E1135;
+    background-color: #0159CD;
     font-size: 22px;
     padding: 12px 10px;
     margin-left: 10px;
     border-radius: 5px;
-    border: 1px solid #01CD8C;
 }
 
 
@@ -1153,9 +1140,7 @@ a.btn-style-a-small:hover {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
     border-bottom: 10px solid #0159cd;
-        background-color: #151844;
 }
 
 .crypto-wallet-tab nav.cw-nav {}
@@ -1168,14 +1153,12 @@ a.btn-style-a-small:hover {
     border: none;
     font-size: 15px;
     letter-spacing: 0px;
-    color: #fff;
+    color: #BDC5E1;
     font-weight: 400;
 }
 
-.crypto-wallet-tab nav.cw-nav .nav-tabs a.active, 
-.crypto-wallet-tab nav.cw-nav .nav-tabs a:hover {
+.crypto-wallet-tab nav.cw-nav .nav-tabs a.active,.crypto-wallet-tab nav.cw-nav .nav-tabs a:hover {
     color: #01cd8c;
-    background-color: #151844;
 }
 
 .crypto-wallet-tab .cw-tab-content {
@@ -1198,7 +1181,6 @@ a.btn-style-a-small:hover {
     font-weight: 400;
     letter-spacing: 0px;
     margin: 0px auto;
-    color: #fff;
 }
 
 .crypto-single-wallet h3 span {
@@ -1243,7 +1225,6 @@ a.btn-style-a-small:hover {
     font-size: 22px;
     letter-spacing: 0px;
     font-weight: 500;
-    color: #fff;
 }
 /* Crypto Wallet CSS END */
 
@@ -1263,8 +1244,6 @@ a.btn-style-a-small:hover {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
-    
 }
 
 table.cryptodash-tableA {}
@@ -1283,7 +1262,7 @@ table.cryptodash-tableA tbody tr td {}
 
 table.cryptodash-tableA thead tr th, table.cryptodash-tableA tbody tr td {
     font-size: 16px;
-    color: #fff;
+    color: #39374A;
     font-weight: 400;
     line-height: 28px;
     letter-spacing: 0px;
@@ -1330,7 +1309,6 @@ table.cryptodash-tableA tr {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 /* Crypto Transaction History END */
@@ -1352,7 +1330,6 @@ table.cryptodash-tableA tr {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .token-calculator h4 {
@@ -1360,7 +1337,7 @@ table.cryptodash-tableA tr {
     line-height: 26px;
     letter-spacing: 0px;
     font-weight: 400;
-    color: #fff;
+    color: #39374A;
 }
 
 
@@ -1388,26 +1365,14 @@ table.cryptodash-tableA tr {
     border-bottom-right-radius: 0px;
     max-width: 240px;
     width: 75%;
-    background-color: #0e1135;
-    color: #fff;
-    border-color: #01cd8c;
 }
 
-.tc-input .currencySymbol {
+.tc-input select {
+    margin-left: -5px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     max-width: 80px;
     width: 25%;
-    background-color: #01cd8c;
-    color: #fff;
-    border-color: #01cd8c;
-    position: absolute;
-    top: 0;
-    right: 78px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .token-calculator h3 {
@@ -1469,7 +1434,6 @@ a.btn-style-b {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 .distribution-graph .chart-container {
     height: 305px;
@@ -1496,7 +1460,6 @@ a.btn-style-b {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 #panalyticsChart {
     max-height: 285px !important;
@@ -1523,7 +1486,6 @@ a.btn-style-b {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 table.buytcn {
@@ -1544,7 +1506,7 @@ table.buytcn thead thead {}
 table.buytcn thead tr th {
     font-size: 16px;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: #8690B4;
     font-weight: 400;
     line-height: 45px;
 }
@@ -1555,8 +1517,8 @@ table.buytcn tbody {
 
 table.buytcn tbody tr {
     position: relative;
-    background-color: #090C33;
-    border-top: 18px solid #151844;
+    background-color: #F8F8F8;
+    border-top: 18px solid #fff;
 }
 
 table.buytcn tbody tr td {
@@ -1601,19 +1563,19 @@ table.buytcn thead tr:before {
     letter-spacing: 0px;
     font-size: 16px;
     font-weight: 500;
-    color: #ffffff;
+    color: #505874;
     line-height: 22px;
 }
 
 .single-crncy .sc-intext p {
     font-size: 12px;
     line-height: 18px;
-    color: #ffffff;
+    color: #505874;
 }
 
 span.sc-wallet {
     font-size: 12px;
-    color: #ffffff;
+    color: #505874;
     line-height: 18px;
 }
 /* Buy Token CSS END */
@@ -1642,16 +1604,10 @@ span.sc-wallet {
 .tc2 .tc-input input {
     max-width: 175px;
     width: 170px;
-    background-color: #151844;
-    border-color: #01cd8c;
-    color: #fff;
 }
 
 .tc2 .tc-input select {
     width: 80px;
-    background-color: #01cd8c;
-    border-color: #01cd8c;
-    color: #fff;
 }
 
 .tc2 h3 {
@@ -1681,7 +1637,6 @@ span.sc-wallet {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 #tokenBuyAnalyticsChart {
     height: 400px !important;
@@ -1709,7 +1664,6 @@ span.sc-wallet {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .rt-received-send-wrapper {
@@ -1727,22 +1681,18 @@ span.sc-wallet {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .rt-received-send select {
     width: 100%;
     margin-bottom: 15px;
-    background-color: #151844;
-    border-color: #01CD8C;
-    color: #6174b7;
 }
 
 .rt-received-send h4 {
     font-size: 16px;
     letter-spacing: 0px;
     font-weight: 500;
-    color: #fff;
+    color: #39374A;
     line-height: 24px;
     margin-bottom: 15px;
 }
@@ -1757,15 +1707,14 @@ table.trs-table {
 }
 
 table.trs-table th,table.trs-table td {
-    border: 1px solid #151950;
+    border: 1px solid #DEDEDE;
     text-align: center;
     font-size: 12px;
     letter-spacing: 0px;
-    color: #fff;
+    color: #39374A;
     line-height: 22px;
     padding: 5px;
     font-weight: 500;
-    background-color: #090C33;
 }
 
 
@@ -1784,7 +1733,6 @@ table.trs-table th,table.trs-table td {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 table.tdt {
@@ -1793,11 +1741,11 @@ table.tdt {
 }
 
 table.tdt th,table.tdt td {
-    border: 1px solid #31389A;
+    border: 1px solid #DBDBDB;
     font-size: 14px;
     letter-spacing: 0px;
     font-weight: 400;
-    color: #ffffff;
+    color: #505874;
     line-height: 22px;
     padding: 20px 5px 0px;
     text-align: center;
@@ -1805,7 +1753,7 @@ table.tdt th,table.tdt td {
 
 table.tdt thead th {
     font-size: 16px;
-    color: #fff;
+    color: #39374A;
     font-weight: 500;
     padding-bottom: 20px;
 }
@@ -1864,7 +1812,6 @@ table.tdt tbody tr:last-child td
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .pichart-box-with-middle-text {
@@ -1886,7 +1833,7 @@ table.tdt tbody tr:last-child td
   .hashpb-chart .pie-2middle h4 {
     position: absolute;
     font-size: 16px;
-    color: #ffffff;
+    color: #373750;
     letter-spacing: 0px;
     font-weight: 700;
     left: calc(50% - 32px);
@@ -1909,7 +1856,6 @@ table.tdt tbody tr:last-child td
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .pricing-single-wrapper {
@@ -1937,7 +1883,7 @@ table.tdt tbody tr:last-child td
 }
 
 .crypto-pricing-a .cp-head h5 {
-    color: #ffffff;
+    color: #373750;
     letter-spacing: 0px;
     font-weight: 400;
     font-size: 16px;
@@ -1950,11 +1896,11 @@ table.tdt tbody tr:last-child td
     margin: 25px auto;
 }
 
-.crypto-pricing-a .cp-price h4 {font-size: 22px;letter-spacing: 0px;color: #ffffff;font-weight: 600;line-height: 32px;}
+.crypto-pricing-a .cp-price h4 {font-size: 22px;letter-spacing: 0px;color: #373750;font-weight: 600;line-height: 32px;}
 
 .crypto-pricing-a .cp-price p {
     font-size: 18px;
-    color: #ffffff;
+    color: #373750;
     line-height: 28px;
 }
 
@@ -1986,7 +1932,6 @@ a.btn-style-b-m:hover {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .addNewCoin-box label {
@@ -2006,7 +1951,7 @@ a.btn-style-b-m:hover {
 .addNewCoin-box h4 {
     font-size: 22px;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: #373750;
     font-weight: 600;
     line-height: 32px;
     margin: 20px auto;
@@ -2026,7 +1971,6 @@ a.btn-style-b-m:hover {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .single-configuration-block .scb-icon {
@@ -2051,7 +1995,7 @@ a.btn-style-b-m:hover {
     display: inline-block;
     margin-left: 60px;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: #373750;
     font-weight: 600;
     font-size: 20px;
     line-height: 36px;
@@ -2084,7 +2028,6 @@ a.btn-style-b-m:hover {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 
@@ -2097,14 +2040,13 @@ a.btn-style-b-m:hover {
 .wallet-details-content-wrapper {
     position: relative;
     padding: 15px 0px;
-    padding-bottom: 65px;
 }
 
 h2.wd-page-title {
     font-size: 28px;
     letter-spacing: 0px;
     font-weight: 500;
-    color: #fff;
+    color: #39374A;
     line-height: 36px;
 }
 
@@ -2118,13 +2060,12 @@ h2.wd-page-title {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #090c33;
     border-radius: 5px;
 }
 
 .w-balance-tavle {
     position: relative;
-    background-color: #151844;
+    background-color: #fff;
     padding: 0px 15px;
 }
 
@@ -2140,7 +2081,7 @@ table.wbt {
 table.wbt tr {}
 
 table.wbt tr td {
-    border: 1px solid #2F3478;
+    border: 1px solid #D2D2D2;
     border-left: 0px;
     border-right: 0px;
     padding: 12px;
@@ -2157,7 +2098,7 @@ table.wbt tr td .wbt-crncy img {
 table.wbt tr td .wbt-crncy span {
     font-size: 18px;
     letter-spacing: 0px;
-    color: #fff;
+    color: #39374A;
     line-height: 26px;
     display: inline-block;
     margin-left: 10px;
@@ -2184,13 +2125,13 @@ table.wbt tr:last-child td {
     line-height: 26px;
     letter-spacing: 0px;
     font-weight: 600;
-    color: #fff;
+    color: #39374A;
 }
 
 .usdt-other p {
     font-size: 16px;
     letter-spacing: 0px;
-    color: #fff;
+    color: #39374A;
     line-height: 22px;
 }
 
@@ -2200,7 +2141,6 @@ table.wbt tr:last-child td {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #090c33;
     border-radius: 5px;
 }
 
@@ -2210,7 +2150,7 @@ table.wbt tr:last-child td {
 
 .wallet-analytics-chart {
     position: relative;
-    background-color: #151844;
+    background-color: #fff;
     padding: 15px;
 }
 
@@ -2233,13 +2173,10 @@ table.wbt tr:last-child td {
     width: 100%;
     max-width: 200px;
     font-size: 22px;
-    background-color: #151844;
-    color: #fff;
-    border-color: #01cd79;
 }
 
 .wallet-analytics-chart h4 {
-    color: #ffffff;
+    color: #04073B;
     font-size: 26px;
     letter-spacing: 0px;
     font-weight: 600;
@@ -2274,7 +2211,6 @@ table.wbt tr:last-child td {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
     border-top: 5px solid #1652E8;
     background-color: #FBFBFB;
 }
@@ -2282,7 +2218,7 @@ table.wbt tr:last-child td {
 .ico-distribution-box .idb-head {
     position: relative;
     padding: 30px 15px;
-    background-color: #151844;
+    background-color: #fff;
 }
 
 .ico-distribution-box .idb-head p {
@@ -2294,7 +2230,7 @@ table.wbt tr:last-child td {
 }
 
 .ico-distribution-box .idb-head h4 {
-    color: #fff;
+    color: #39374A;
     letter-spacing: 0px;
     font-size: 24px;
     line-height: 36px;
@@ -2305,7 +2241,6 @@ table.wbt tr:last-child td {
 .ico-distribution-box .idb-table {
     position: relative;
     padding: 30px 0px 24px;
-    background-color: #090c33;
 }
 
 .ico-distribution-box .idb-table p {
@@ -2332,14 +2267,14 @@ table.idbt tr td {
 }
 
 table.idbt tr td h4 {
-    color: #fff;
+    color: #39374A;
     letter-spacing: 0px;
     font-size: 20px;
     font-weight: 600;
 }
 
 .ico-distribution-box table.idbt tr td p {
-    color: #fff;
+    color: #39374A;
     padding: 0px;
 }
 
@@ -2362,7 +2297,6 @@ table.idbt tr:last-child td {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .ico-distribution-bounceRate-box #icoDbounceRate {
@@ -2385,7 +2319,6 @@ table.idbt tr:last-child td {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .ico-important-info-wrapper {
@@ -2403,11 +2336,10 @@ table.idbt tr:last-child td {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .ico-important-box p {
-    color: #fff;
+    color: #39374A;
     font-size: 14px;
     letter-spacing: 0px;
     line-height: 20px;
@@ -2416,7 +2348,7 @@ table.idbt tr:last-child td {
 
 .ico-ibox {
     position: relative;
-    background-color: #090c33;
+    background-color: #F7F7F7;
     padding: 15px;
     margin: 15px auto;
 }
@@ -2446,12 +2378,12 @@ table.idbt tr:last-child td {
     font-size: 16px;
     letter-spacing: 0px;
     font-weight: 600;
-    color: #fff;
+    color: #39374A;
     line-height: 24px;
 }
 
 .ico-ibox .icibox-left p {
-    color: #fff;
+    color: #39374A;
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
@@ -2468,7 +2400,7 @@ table.idbt tr:last-child td {
 }
 
 .ico-important-box .ico-mi h3 {
-    color: #fff;
+    color: #39374A;
     font-weight: 600;
     font-size: 24px;
     letter-spacing: 0px;
@@ -2481,7 +2413,7 @@ table.idbt tr:last-child td {
 }
 
 .icibox-right p {
-    color: #fff;
+    color: #39374A;
     font-size: 14px;
     margin: 5px auto;
     font-weight: 500;
@@ -2498,22 +2430,13 @@ table.idbt tr:last-child td {
     margin: 15px auto;
 }
 
-.cd-section-text {
-    position: relative;
-    border-radius: 5px;
-    padding: 25px;
-    -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
-}
+.cd-section-text {position: relative;border-radius: 5px;padding: 25px;-webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);-moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);box-shadow: 0 0 90px rgba(14,0,137,0.06);}
 
 .cd-section-text p {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 20px;
     font-weight: 400;
-    color: #fff;
 }
 
 .cd-section-text p:last-child {
@@ -2540,7 +2463,7 @@ table.idbt tr:last-child td {
 
 /* Crypto Dash Inbox CSS */
 .inbox_people {
-    background: #151844;
+    background: #F1F3F9;
     float: left;
     overflow: hidden;
     width: 30%;
@@ -2568,13 +2491,13 @@ table.idbt tr:last-child td {
 }
 .headind_srch {
     overflow: hidden;
-    border-bottom: 1px solid #05728f;
+    border-bottom: 1px solid #c4c4c4;
     padding: 15px;
     position: relative;
 }
 
 .recent_heading h4 {
-    color: #fff;
+    color: #39374a;
     font-size: 18px;
     margin: auto;
     letter-spacing: 0px;
@@ -2591,7 +2514,6 @@ table.idbt tr:last-child td {
     letter-spacing: 0px;
     border-radius: 0px;
     font-weight: 300;
-    color: #fff;
 }
 .srch_bar .input-group-addon button {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -2607,7 +2529,7 @@ table.idbt tr:last-child td {
 
 .chat_ib h5 {
     font-size: 14px;
-    color: #fff;
+    color: #39374a;
     margin: 0 0 8px 0;
     letter-spacing: 0px;
     font-weight: 500;
@@ -2637,7 +2559,7 @@ table.idbt tr:last-child td {
     clear:both;
 }
 .chat_list {
-  border-bottom: 1px solid #05728f;
+  border-bottom: 1px solid #c4c4c4;
   margin: 0;
   padding: 18px 16px 10px;
 }
@@ -2646,8 +2568,8 @@ table.idbt tr:last-child td {
     overflow-y: scroll;
 }
 
-.active_chat{
-    background: #16183a;
+.active_chat{ 
+    background:#ebebeb;
 }
 
 .incoming_msg_img {
@@ -2661,9 +2583,9 @@ table.idbt tr:last-child td {
   width: 92%;
  }
  .received_withd_msg p {
-    background: #151844 none repeat scroll 0 0;
+    background: #ebebeb none repeat scroll 0 0;
     border-radius: 3px;
-    color: #fff;
+    color: #646464;
     font-size: 14px;
     line-height: 22px;
     margin: 0;
@@ -2737,7 +2659,7 @@ table.idbt tr:last-child td {
 .messaging {
     position: relative;
     padding: 0px;
-    background-color: #090C33;
+    background-color: #F8FAFF;
     margin: 15px auto;
 }
 .msg_history {
@@ -2864,7 +2786,6 @@ table.idbt tr:last-child td {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .cc-wrapper {
@@ -2874,7 +2795,6 @@ table.idbt tr:last-child td {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .cc-wrapper h3 {
@@ -2882,15 +2802,14 @@ table.idbt tr:last-child td {
     line-height: 32px;
     letter-spacing: 0px;
     font-weight: 500;
-    color: #ffffff;
+    color: #2A2933;
 }
 
 .cc-box {
     position: relative;
     margin: 15px auto;
-    border: 1px solid #212564;
+    border: 1px solid #E6E6E6;
     padding: 20px;
-    background-color: #101337;
 }
 
 .cfs {
@@ -2901,13 +2820,11 @@ table.idbt tr:last-child td {
     width: 100%;
     padding-left: 80px;
     height: 65px;
-    border: 1px solid #1652E8;
+    border: 1px solid #E6E6E6;
     font-weight: 300;
     font-size: 20px;
     text-align: center;
     color: #292832;
-    background-color: #212564;
-    color: #fff;
 }
 
 .cfs label {
@@ -2934,14 +2851,13 @@ table.idbt tr:last-child td {
     font-weight: 500;
     display: inline-block;
     margin-top: 5px;
-    color: #fff;
 }
 
 .i-custom-file-upload span {
     font-size: 12px;
     display: inline-block;
     margin-left: 10px;
-    color: #ffffff;
+    color: #2A2933;
 }
 
 .i-custom-file-upload i {
@@ -2953,8 +2869,7 @@ table.idbt tr:last-child td {
 .cciu {
     position: relative;
     margin: 0px auto;
-    border: 1px solid #1652E8;
-    background-color: #212564;
+    border: 1px solid #E6E6E6;
 }
 
 .i-custom-file-upload p {
@@ -2979,7 +2894,6 @@ table.idbt tr:last-child td {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .crypto-form-wrapper h3 {
@@ -2987,7 +2901,6 @@ table.idbt tr:last-child td {
     letter-spacing: 0px;
     font-weight: 500;
     margin-bottom: 30px;
-    color: #fff;
 }
 
 form.crypto-form {
@@ -3003,7 +2916,7 @@ form.crypto-form {
     display: block;
     font-size: 14px;
     font-weight: 400;
-    color: #ffffff;
+    color: #2A2933;
     margin-bottom: 15px;
 }
 
@@ -3012,9 +2925,7 @@ form.crypto-form {
     font-size: 16px;
     letter-spacing: 0px;
     font-weight: 300;
-    border: 1px solid #1652E8;
-    background-color: #212564;
-    color: #fff;
+    border: 1px solid #E6E6E6;
 }
 
 /* 2.3 Crypto Page Content CSS END */
@@ -3034,12 +2945,12 @@ form.crypto-form {
     position: relative;
     max-width: 660px;
     margin: 50px auto;
-    background-color: #0826C4;
+    background-color: #fff;
 }
 
 .lr-form {
     margin-left: -30px;
-    background-color: #0826C4;
+    background-color: #fff;
     width: 100%;
     padding: 25px;
 }
@@ -3050,33 +2961,21 @@ form.crypto-form {
     font-weight: 600;
     line-height: 36px;
     margin: 0px auto 10px;
-    color: #ffffff;
+    color: #2A2933;
 }
 
 .lr-form p {
-    color: #ffffff;
+    color: #2A2933;
     font-size: 16px;
     line-height: 24px;
     margin: 10px auto;
 }
-.lr-form ::-webkit-input-placeholder { /* Edge */
-  color: #657EFF;
-}
 
-.lr-form :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #657EFF;
-}
-
-.lr-form ::placeholder {
-  color: #657EFF;
-}
 .lr-form .cfi {}
 
 .lr-form .cfi input {
     font-size: 14px;
     height: 40px;
-    background-color: #1637E3;
-    color: #fff;
 }
 .lr-form .cfi-button {
     padding: 5px 25px;
@@ -3099,7 +2998,7 @@ form.crypto-form {
 .needac-forgetpass a {
     font-size: 13px;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: #2A2933;
     line-height: 20px;
     display: inline-flex;
     margin-bottom: 20px;
@@ -3114,7 +3013,7 @@ form.crypto-form {
 }
 
 .needac-forgetpass a:hover {
-    color: #fff;
+    color: #1652e8;
 }
 /* Login Registration Page CSS END */
 
@@ -3133,7 +3032,6 @@ a#scrollUp {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 .buttons-wrapper button,.buttons-wrapper a {
@@ -3151,7 +3049,6 @@ a#scrollUp {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #151844;
 }
 
 
@@ -3232,42 +3129,11 @@ a#scrollUp {
     background: #dc3545;
   }
 
-  .darkV-select {
-    background-color: #151844;
-    color: #fff;
-    border-color: #01cd79;
-}
-.f-element-wrapper li.list-group-item {
-    background-color: #151844;
-    border-color: #01cd8c;
-    color: #fff;
-}
-.chkbox-wrapper {
-  height: 400px;
-  margin: 25px auto;
-}
-.crypto-user-btn ul.dropdown-menu {
-    background-color: #101338;
-}
-
-.crypto-user-btn ul.dropdown-menu h5 {
-    color: #fff;
-}
-
-.crypto-user-btn ul.dropdown-menu p.text-muted {
-    color: #cacaca !important;
-}
-
-.crypto-user-btn ul.dropdown-menu strong {
-    color: #fff;
-}
-
-.crypto-user-btn ul.dropdown-menu .media-body {
-    color: #fff;
-}
-.message-note li a span {
-    color: #fff !important;
-}
+  
+  .chkbox-wrapper {
+      height: 400px;
+      margin: 25px auto;
+  }
 /* =========== Cryptodash CSS END =========== */
 
 

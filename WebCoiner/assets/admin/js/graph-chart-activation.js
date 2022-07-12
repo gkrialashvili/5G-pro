@@ -31,13 +31,12 @@
                 }]
             },
                 options: { 
-                    scaleFontColor: "#FFFFFF",
                     responsive: true,
                     legend: {
                             position: 'right',
                             padding: '100',
                             labels: {   
-                                fontColor: '#fff',
+                                fontColor: '#39374A',
                                 fontSize: 16,
                                 padding: 20
                             }
@@ -76,13 +75,12 @@
                 }]
             },
                 options: { 
-                    scaleFontColor: "#FFFFFF",
                     responsive: true,
                     legend: {
                             position: 'right',
                             padding: '100',
                             labels: {   
-                                fontColor: '#fff',
+                                fontColor: '#39374A',
                                 fontSize: 16,
                                 padding: 20
                             }
@@ -141,15 +139,9 @@
                         legend: {
                             display: false,
                             position: 'bottom',
-                            labels: {   
-                                fontColor: '#fff',
-                            }
                         },
                         scales: {
                             xAxes: [{
-                                ticks: {
-                                    fontColor: "#fff",
-                                },
                                 display: true,
                                 scaleLabel: {
                                     display: false,
@@ -157,9 +149,6 @@
                                 }
                             }],
                             yAxes: [{
-                                ticks: {
-                                    fontColor: "#fff",
-                                },
                                 display: true,
                                 scaleLabel: {
                                     display: false,
@@ -168,7 +157,6 @@
                             }]
                         },
                         title: {
-                            fontColor: '#fff',
                             display: false
                           
                         }
@@ -217,7 +205,6 @@
             options: {
                 responsive: true,
                 title: {
-                    fontColor: '#fff',
                     display: true,
                     text: '2018 - 2019',
                     position: 'right',
@@ -225,15 +212,9 @@
                 legend: {
                     display: false,
                     position: 'top',
-                    labels: {   
-                        fontColor: '#fff',
-                    }
                 },
                 scales: {
                     xAxes: [{
-                        ticks: {
-                            fontColor: "#fff",
-                        },
                         gridLines: {
                             display: true,
                             drawBorder: true,
@@ -247,7 +228,6 @@
                             drawOnChartArea: false,
                         },
                         ticks: {
-                            fontColor: "#fff",
                             min: 0,
                             max: 200,
                             stepSize: 50
@@ -303,19 +283,14 @@
             ]
         },
             options: {
-
                 responsive: true,
                 title: {
-                    fontColor: '#fff',
                     display: true,
                     text: 'Token Growing Highly - 60% Yearly Revenue.',
                     position: 'top',
                 },
                 scales: {
                     xAxes: [{
-                        ticks: {
-                            fontColor: "#fff",
-                        },
                         gridLines: {
                             display: false,
                             drawBorder: false
@@ -327,7 +302,6 @@
                             drawBorder: false
                         },
                         ticks: {
-                            fontColor: "#fff",
                             min: 0,
                             max: 200,
                             stepSize: 50
@@ -337,9 +311,6 @@
                 legend: {
                     display: false,
                     position: 'top',
-                    labels: {   
-                        fontColor: '#fff',
-                    }
                 }
             }
         });
@@ -374,16 +345,12 @@
         options: {
             responsive: true,
             title: {
-                fontColor: '#fff',
                 display: true,
                 text: 'April, 2019 History - 17 Transections',
                 position: 'top',
             },
             scales: {
                 xAxes: [{
-                    ticks: {
-                            fontColor: "#fff",
-                        },
                     gridLines: {
                         display: false,
                         drawBorder: false
@@ -392,7 +359,6 @@
                 yAxes: [{
                     
                     ticks: {
-                        fontColor: "#fff",
                         min: 0,
                         max: 100,
                         stepSize: 20
@@ -402,9 +368,6 @@
             legend: {
                 display: false,
                 position: 'top',
-                labels: {   
-                    fontColor: '#fff',
-                }
             }
         }
         });
@@ -462,16 +425,12 @@
             options: {
                 responsive: true,
                 title: {
-                    fontColor: '#fff',
                     display: true,
                     text: 'Output in USD',
                     position: 'top',
                 },
                 scales: {
                     xAxes: [{
-                        ticks: {
-                            fontColor: "#fff",
-                        },
                         gridLines: {
                             display: true,
                             drawBorder: true,
@@ -485,7 +444,6 @@
                             drawOnChartArea: false,
                         },
                         ticks: {
-                            fontColor: "#fff",
                             min: 0,
                             max: 5,
                             stepSize: 1
@@ -495,9 +453,6 @@
                 legend: {
                     display: false,
                     position: 'top',
-                    labels: {   
-                        fontColor: '#fff',
-                    }
                 }
             }
         });
@@ -553,16 +508,12 @@
             options: {
                 responsive: true,
                 title: {
-                    fontColor: '#fff',
                     display: true,
                     text: 'Output in USD',
                     position: 'top',
                 },
                 scales: {
                     xAxes: [{
-                        ticks: {
-                            fontColor: "#fff",
-                        },
                         gridLines: {
                             display: true,
                             drawBorder: true,
@@ -576,7 +527,6 @@
                             drawOnChartArea: false,
                         },
                         ticks: {
-                            fontColor: "#fff",
                             min: 0,
                             max: 5,
                             stepSize: 1
@@ -586,9 +536,6 @@
                 legend: {
                     display: false,
                     position: 'top',
-                    labels: {   
-                        fontColor: '#fff',
-                    }
                 }
             }
         });
@@ -621,25 +568,19 @@
         },
         options: {
             title: {
-                fontColor: '#fff',
             display: false,
             text: 'Analytics'
             },
             legend: {
                 display: false,
                 position: 'top',
-                labels: {   
-                    fontColor: '#fff',
-                }
             },
             scales: {
             xAxes: [{
-               
                 gridLines: {
                 color: 'rgba(0,0,0,0)'
                 },
                 ticks: {
-                    fontColor: "#fff",
                 beginAtZero: true
                 }
             }],
@@ -648,7 +589,6 @@
                 color: 'rgba(0,0,0,.1)'
                 },
                 ticks: {
-                    fontColor: "#fff",
                 beginAtZero: true
                 }
             }]
@@ -755,14 +695,9 @@
                     }
                 },
                 scales: {
-                   xAxes: [{
-                        ticks: {
-                            fontColor: "#fff"
-                        }
-                    }],
+                   
                     yAxes: [{
                         ticks: {
-                            fontColor: "#fff",
                             min: 0,
                             max: 100,
                             stepSize: 10
@@ -815,11 +750,7 @@
                 legend: {
                     display: true,
                     position: 'bottom',
-                    labels: {   
-                        fontColor: '#fff',
-                    }
-                },
-                
+                }
             }
            
         });
