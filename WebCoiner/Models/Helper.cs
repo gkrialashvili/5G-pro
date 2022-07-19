@@ -15,5 +15,8 @@ namespace WebCoiner.Models
 
         public int InvestmentAmount { get; set; }
         public int CurrentBalance { get; set; }
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }

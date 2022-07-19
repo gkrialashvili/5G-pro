@@ -394,13 +394,15 @@
                                     <div class="animated" data-animate="fadeInUp" data-delay=".4">
                                         <div class="token-status bg-theme">
                                             <h4 class="title title-md">Token Sale Stages</h4>
-                                            <div class="token-countdown countdown" data-date="2023/11/11"></div>
+                                            <div class="token-countdown countdown" data-date="2022/11/11"></div>
                                             <div class="progress-wrap progress-wrap-point">
-                                                <span class="progress-info">Raised so far <span>$1,830,985</span></span>
+                                                <span class="progress-info">Raised so far <span>@Model.Raised.ToString("C2")</span></span>
                                                 <div class="progress-bar">
-                                                    <div class="progress-percent bg-grad" data-percent="30"></div>
-                                                    <div class="progress-point progress-point-1">Soft Cap <span>$1.75m</span></div>
-                                                    <div class="progress-point progress-point-2">Hard Cap <span>$4.75m</span></div>
+                                                    <div class="progress-percent bg-grad" data-percent=" @raised"></div>
+                                                    <div class="progress-point progress-point-1">Private Sale <span>0</span></div>
+                                                    <div class="progress-point progress-point-2">Pre Sale <span>$20m</span></div>
+                                                    <div class="progress-point progress-point-3">Soft Cap <span>$45m</span></div>
+                                                    <div class="progress-point progress-point-4">Hard Cap <span>$90m</span></div>
                                                 </div>
                                             </div>
                                             <a href="#" class="btn btn-grad">Register &amp; Buy Token Now</a>
@@ -988,7 +990,7 @@
         );
     </script>
 
-    <script src="~/~/assets/home/assets/app/js/mouse.js"></script>
+    <script src="~/assets/home/assets/app/js/mouse.js"></script>
 
 
 
@@ -997,7 +999,7 @@
         var Countdown = {
 
             // Backbone-like structure
-            $el: $('.countdown'),
+            $el: $('.countdown-2'),
 
             // Params
             countdown_interval: null,
@@ -1181,7 +1183,7 @@
         Countdown.init();
         //# sourceURL=pen.js
     </script>
-    <script>
+    @*<script>
 
         // Set the date we're counting down to
         var countDownDate = new Date("jan 25, 2022 23:59:00").getTime();
@@ -1197,15 +1199,15 @@
 
             // Time calculations for days, hours, minutes and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            $('.countdown-time-first').html(days);
+            $('.countdown-time-first1').html(days);
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            $('.countdown-time-second').html(hours);
+            $('.countdown-time-second1').html(hours);
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            $('.countdown-time-third').html(minutes);
+            $('.countdown-time-third1').html(minutes);
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            $('.countdown-time-last').html(seconds);
+            $('.countdown-time-last1').html(seconds);
         }, 1000);
-    </script>
+    </script>*@
 </body>
 
 <!-- Mirrored from www.gridnet.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Jan 2020 09:46:58 GMT -->

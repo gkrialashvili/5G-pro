@@ -50,15 +50,18 @@ namespace WebCoiner.Controllers
             var last = db.GlobalDashboardLists.OrderByDescending(p => p.Id).FirstOrDefault();
             var userDetails = db.AspNetUsers.FirstOrDefault(x => x.Id == user.Id);
 
+
             var model = new Dashboard
             {
                 BTC = list.Count() != 0 ? list.Sum(x => x.BTC) : 0,
                 Tokens = list.Count() != 0 ? list.Sum(x => x.Tokens) : 0,
                 Raised = last.Raised,
                 InvestmentAmount = userDetails.InvestmentAmount ?? 0,
-                CurrentBalance = userDetails.CurrentBalance ?? 0
+                CurrentBalance = userDetails.CurrentBalance ?? 0,
+                FirstName = userDetails.FirstName,
+                LastName = userDetails.LastName
 
-            };
+        };
 
             return View(model);
         }
