@@ -78,6 +78,125 @@
     </header>
     <!-- /Header Area -->
     <!-- Dashboard Full Area -->
+    <div class="modal fade show" id="myModal" style="display: none;" aria-modal="true" background-color:
+         rgba(152, 152, 152, 0.8);>
+        <div class="modal-dialog" style=" width: 90%; max-width: 1200px; min-height: 100%;">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <section class="lis-bg-light">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-10 text-center">
+                                    <div class="heading pb-4">
+                                        <h2>Choose Your Package</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                     style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="price-table">
+                                        <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light">
+                                            <h5 class="text-uppercase lis-latter-spacing-2">Basic</h5>
+                                            <h1 class="display-4 lis-font-weight-500">1<small>%</small></h1>
+                                            <p class="mb-0">Basic Membership</p>
+                                        </div>
+                                        <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                            <ul class="list-unstyled lis-line-height-3">
+                                                <li>Bitreal tokens in portfolio</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                     style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="price-table">
+                                        <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                             style="background-color:#e6e4e2;">
+                                            <h5 class="text-uppercase lis-latter-spacing-2">Silver</h5>
+                                            <h1 class="display-4 lis-font-weight-500">
+                                                1<small>%</small>-
+                                                5<small>%</small>
+                                            </h1>
+                                            <p class="mb-0">Silver Membership</p>
+                                        </div>
+                                        <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                            <ul class="list-unstyled lis-line-height-3">
+                                                <li>Bitreal tokens in portfolio</li>
+                                                <li>Minimum portfolio: $100,000</li>
+                                            </ul>
+                                            <a href="/userdashboard/create/" style="background-color: #28c189;"
+                                               class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                               data-abc="true">Top Up Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                     style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="price-table">
+                                        <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                             style="background-color:#F3AF4C;">
+                                            <h5 class="text-uppercase lis-latter-spacing-2">Gold</h5>
+                                            <h1 class="display-4 lis-font-weight-500">
+                                                6<small>%</small> -
+                                                12<small>%</small>
+                                            </h1>
+                                            <p class="mb-0">Gold Membership</p>
+                                        </div>
+                                        <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                            <ul class="list-unstyled lis-line-height-3">
+                                                <li>Bitreal tokens in portfolio</li>
+                                                <li>Minimum portfolio: $250,000</li>
+                                            </ul>
+                                            <a href="/userdashboard/create/" style="background-color: #28c189;"
+                                               class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                               data-abc="true">Top Up Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 wow fadeInUp mb-5 mb-lg-0 text-center"
+                                     style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="price-table">
+                                        <div class="price-header lis-bg-light lis-rounded-top py-4 border border-bottom-0 lis-brd-light"
+                                             style="        background-color:#a0b2c6;">
+
+                                            <h5 class="text-uppercase lis-latter-spacing-2">Platinum</h5>
+                                            <h1 class="display-4 lis-font-weight-500">
+                                                12<small>%</small>-20<small>%</small>
+                                            </h1>
+                                            <p class="mb-0">Platinum Membership</p>
+                                        </div>
+                                        <div class="border border-top-0 lis-brd-light bg-white py-5 lis-rounded-bottom">
+                                            <ul class="list-unstyled lis-line-height-3">
+
+
+                                                <li>Bitreal tokens in portfolio</li>
+                                                <li>Minimum portfolio: $500,000</li>
+
+                                            </ul>
+                                            <a href="/userdashboard/create/" style="background-color: #28c189;"
+                                               class="btn btn-primary-outline btn-md lis-rounded-circle-50"
+                                               data-abc="true">Top Up Now</a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="close-modal"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="cryptodash-full-wrapper">
         <div class="crypto-dash-sidenav">
             <div id="sideNavWrapper" class="active">
@@ -94,15 +213,22 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="~/transactions/list">
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        <span class="msm-text">Transaction</span>
+                                    <a href="~/manage/index/">
+                                        <i class="fa fa-google-wallet" aria-hidden="true"></i>
+                                        <span class="msm-text">Profile</span>
                                     </a>
                                 </li>
+
                                 <li>
                                     <a href="~/users/list">
                                         <i class="fa fa-exchange" aria-hidden="true"></i>
                                         <span class="msm-text">Users</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="~/transactions/list">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        <span class="msm-text">Transaction</span>
                                     </a>
                                 </li>
                                 <li>
@@ -111,16 +237,18 @@
                                         <span class="msm-text">Promocodes</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="~/manage/index/">
-                                        <i class="fa fa-google-wallet" aria-hidden="true"></i>
-                                        <span class="msm-text">Profile</span>
-                                    </a>
-                                </li>
+
                                 <li>
                                     <a href="~/userdashboard/create/">
                                         <i class="fa fa-cubes" aria-hidden="true"></i>
-                                        <span class="msm-text">Buy</span>
+                                        <span class="msm-text">Buy Tokens</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="" id="modalShow">
+                                        <i class="fa fa-cubes" aria-hidden="true"></i>
+                                        <span class="msm-text">Packages</span>
                                     </a>
                                 </li>
                             }
@@ -181,286 +309,215 @@
                                             <div class="crypto-current-balance">
                                                 <span>Your Current Balance</span>
                                                 <h3 class="ccb">$@Model.CurrentBalance.ToString("#,##0")</h3>
-                                                <a href="/userdashboard/create/" class="btn-style-a">Buy More</a>
+                                                <a href="~/userdashboard/create/" class="btn-style-a">Buy More</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                        @*<div>
-                                            @Model.FirstName
-                                              @Model.FirstName
-                                        </div>*@
-            
-                                        <div class="col-xl-8">
-                                            <div class="crypto-wallet">
-                                                <h2 class="crypto-stitle">Wallet</h2>
+                                @*<div>
+                                        @Model.FirstName
+                                          @Model.FirstName
+                                    </div>*@
 
-                                                <div class="crypto-wallet-tab ">
-                                                    <nav class="cw-nav">
-                                                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                                                            <a class="nav-item nav-link active" id="nav-bitcoin-tab" data-toggle="tab" href="#nav-bitcoin" role="tab"
-                                                               aria-controls="nav-bitcoin" aria-selected="true">Bitcoin</a>
-                                                            <a class="nav-item nav-link" id="nav-ethereum-tab" data-toggle="tab" href="#nav-ethereum" role="tab"
-                                                               aria-controls="nav-ethereum" aria-selected="false">Ethereum</a>
-                                                            <a class="nav-item nav-link" id="nav-litecoin-tab" data-toggle="tab" href="#nav-litecoin" role="tab"
-                                                               aria-controls="nav-litecoin" aria-selected="false">Litecoin</a>
-                                                            <a class="nav-item nav-link" id="nav-eos-tab" data-toggle="tab" href="#nav-eos" role="tab"
-                                                               aria-controls="nav-eos" aria-selected="false">EOS</a>
-                                                            <a class="nav-item nav-link" id="nav-ripple-tab" data-toggle="tab" href="#nav-ripple" role="tab"
-                                                               aria-controls="nav-ripple" aria-selected="false">Rippple</a>
-                                                            <a class="nav-item nav-link" id="nav-binance-tab" data-toggle="tab" href="#nav-binance" role="tab"
-                                                               aria-controls="nav-binance" aria-selected="false">Binance Coin</a>
-                                                        </div>
-                                                    </nav>
-                                                    <div class="tab-content py-3 px-3 px-sm-0 cw-tab-content" id="nav-tabContent">
-                                                        <div class="tab-pane fade show active" id="nav-bitcoin" role="tabpanel" aria-labelledby="nav-bitcoin-tab">
-                                                            <div class="crypto-single-wallet">
-                                                                <h3>$6,660.46<span>USD</span></h3>
-                                                                <h5>1.00000000 BTC</h5>
-                                                                <ul class="market-info">
-                                                                    <li>
-                                                                        <span>Market Cap ( Rank #1)</span>
-                                                                        <h4>$117,711,477,387</h4>
-                                                                        <span>17,626,900 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Vol 24h</span>
-                                                                        <h4>$19,470,072</h4>
-                                                                        <span>2,915,578 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Circulating Supply</span>
-                                                                        <h4>17,626,900</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Max Supply</span>
-                                                                        <h4>21,000,000</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="nav-ethereum" role="tabpanel" aria-labelledby="nav-ethereum-tab">
-                                                            <div class="crypto-single-wallet">
-                                                                <h3>$6,622.46<span>USD</span></h3>
-                                                                <h5>2.00000000 ETH</h5>
-                                                                <ul class="market-info">
-                                                                    <li>
-                                                                        <span>Market Cap ( Rank #1)</span>
-                                                                        <h4>$118,811,478,387</h4>
-                                                                        <span>17,666,900 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Vol 24h</span>
-                                                                        <h4>$19,470,092</h4>
-                                                                        <span>2,615,578 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Circulating Supply</span>
-                                                                        <h4>17,686,900</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Max Supply</span>
-                                                                        <h4>21,080,000</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="nav-litecoin" role="tabpanel" aria-labelledby="nav-litecoin-tab">
-                                                            <div class="crypto-single-wallet">
-                                                                <h3>$6,633.46<span>USD</span></h3>
-                                                                <h5>3.00000000 LTC</h5>
-                                                                <ul class="market-info">
-                                                                    <li>
-                                                                        <span>Market Cap ( Rank #1)</span>
-                                                                        <h4>$125,815,478,33</h4>
-                                                                        <span>17,346,900 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Vol 24h</span>
-                                                                        <h4>$19,475,092</h4>
-                                                                        <span>5,615,548 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Circulating Supply</span>
-                                                                        <h4>17,556,900</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Max Supply</span>
-                                                                        <h4>21,440,000</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="nav-eos" role="tabpanel" aria-labelledby="nav-eos-tab">
-                                                            <div class="crypto-single-wallet">
-                                                                <h3>$6,563.46<span>USD</span></h3>
-                                                                <h5>6.003453450 EOS</h5>
-                                                                <ul class="market-info">
-                                                                    <li>
-                                                                        <span>Market Cap ( Rank #1)</span>
-                                                                        <h4>$125,818,478,37</h4>
-                                                                        <span>17,346,900 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Vol 24h</span>
-                                                                        <h4>$19,475,082,52</h4>
-                                                                        <span>5,685,548 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Circulating Supply</span>
-                                                                        <h4>17,556,980</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Max Supply</span>
-                                                                        <h4>21,480,000</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="nav-ripple" role="tabpanel" aria-labelledby="nav-ripple-tab">
-                                                            <div class="crypto-single-wallet">
-                                                                <h3>$6,55.46<span>USD</span></h3>
-                                                                <h5>6.005553450 RP</h5>
-                                                                <ul class="market-info">
-                                                                    <li>
-                                                                        <span>Market Cap ( Rank #1)</span>
-                                                                        <h4>$125,848,478,37</h4>
-                                                                        <span>17,346,900 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Vol 24h</span>
-                                                                        <h4>$19,474,082,52</h4>
-                                                                        <span>5,685,548 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Circulating Supply</span>
-                                                                        <h4>17,546,980</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Max Supply</span>
-                                                                        <h4>21,480,040</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="tab-pane fade" id="nav-binance" role="tabpanel" aria-labelledby="nav-binance-tab">
-                                                            <div class="crypto-single-wallet">
-                                                                <h3>$6,563.46<span>USD</span></h3>
-                                                                <h5>6.003453450 EOS</h5>
-                                                                <ul class="market-info">
-                                                                    <li>
-                                                                        <span>Market Cap ( Rank #1)</span>
-                                                                        <h4>$125,818,478,37</h4>
-                                                                        <span>17,346,900 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Vol 24h</span>
-                                                                        <h4>$19,475,082,52</h4>
-                                                                        <span>5,685,548 BTC</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Circulating Supply</span>
-                                                                        <h4>17,556,980</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                    <li>
-                                                                        <span>Max Supply</span>
-                                                                        <h4>21,480,000</h4>
-                                                                        <span>...</span>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
+                                <div class="col-xl-8">
+                                    <div class="crypto-wallet">
+
+                                        <div class="crypto-wallet-tab ">
+                                            <div class="tab-content py-3 px-3 px-sm-0 cw-tab-content" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="nav-bitcoin" role="tabpanel" aria-labelledby="nav-bitcoin-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Investment Amount</span>
+                                                                <h4>$@Model.InvestmentAmount.ToString("#,##0")</h4>
+                                                            </li>
+                                                            <li>
+                                                                <span>Profit</span>
+                                                                <h4>$@((Model.CurrentBalance - Model.InvestmentAmount).ToString("#,##0"))</h4>
+                                                            </li>
+                                                            <li>
+                                                                <span>Token Amount</span>
+                                                                <h4>@Model.Tokens</h4>
+                                                            </li>
+                                                        </ul>
                                                     </div>
-
                                                 </div>
-
+                                                <div class="tab-pane fade" id="nav-ethereum" role="tabpanel" aria-labelledby="nav-ethereum-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,622.46<span>USD</span></h3>
+                                                        <h5>2.00000000 ETH</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$118,811,478,387</h4>
+                                                                <span>17,666,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,470,092</h4>
+                                                                <span>2,615,578 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,686,900</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,080,000</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-litecoin" role="tabpanel" aria-labelledby="nav-litecoin-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,633.46<span>USD</span></h3>
+                                                        <h5>3.00000000 LTC</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$125,815,478,33</h4>
+                                                                <span>17,346,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,475,092</h4>
+                                                                <span>5,615,548 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,556,900</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,440,000</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-eos" role="tabpanel" aria-labelledby="nav-eos-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,563.46<span>USD</span></h3>
+                                                        <h5>6.003453450 EOS</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$125,818,478,37</h4>
+                                                                <span>17,346,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,475,082,52</h4>
+                                                                <span>5,685,548 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,556,980</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,480,000</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-ripple" role="tabpanel" aria-labelledby="nav-ripple-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,55.46<span>USD</span></h3>
+                                                        <h5>6.005553450 RP</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$125,848,478,37</h4>
+                                                                <span>17,346,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,474,082,52</h4>
+                                                                <span>5,685,548 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,546,980</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,480,040</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="nav-binance" role="tabpanel" aria-labelledby="nav-binance-tab">
+                                                    <div class="crypto-single-wallet">
+                                                        <h3>$6,563.46<span>USD</span></h3>
+                                                        <h5>6.003453450 EOS</h5>
+                                                        <ul class="market-info">
+                                                            <li>
+                                                                <span>Market Cap ( Rank #1)</span>
+                                                                <h4>$125,818,478,37</h4>
+                                                                <span>17,346,900 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Vol 24h</span>
+                                                                <h4>$19,475,082,52</h4>
+                                                                <span>5,685,548 BTC</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Circulating Supply</span>
+                                                                <h4>17,556,980</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>Max Supply</span>
+                                                                <h4>21,480,000</h4>
+                                                                <span>...</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
+
                                         </div>
+
+                                    </div>
                                 </div>
+                            </div>
                             <div class="row">
                                 <div class="col-xl-7">
-                                    <div class="recent-transaction-history">
-                                        <h2 class="crypto-stitle">Recent Transaction History</h2>
-                                        <div class="rth-table">
-                                            <table class="table cryptodash-tableA">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Coins Name</th>
-                                                        <th>Wallet ID</th>
-                                                        <th>Amount</th>
-                                                        <th>Date</th>
-                                                        <th class="text-center">Action</th>
-                                                    </tr>
-                                                </thead>
-                                                <tr>
-                                                    <td><div class="currency-logo-name"><img src="~/assets/admin/img/currency/btcz-1.png" alt=""> Bitcoin</div></td>
-                                                    <td>#xyz4158745</td>
-                                                    <td>0.00003 BTC</td>
-                                                    <td>05 May 2019</td>
-                                                    <td class="text-center">
-                                                        <a class='btn' href="#">
-                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><div class="currency-logo-name"><img src="~/assets/admin/img/currency/etc.png" alt="">Ethereum</div></td>
-                                                    <td>#wawesf322</td>
-                                                    <td>0.3 ETH</td>
-                                                    <td>05 May 2019</td>
-                                                    <td class="text-center">
-                                                        <a class='btn' href="#">
-                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><div class="currency-logo-name"><img src="~/assets/admin/img/currency/eos.png" alt="">EOS</div></td>
-                                                    <td>#xyz4158745</td>
-                                                    <td>2 EOS</td>
-                                                    <td>05 May 2019</td>
-                                                    <td class="text-center">
-                                                        <a class='btn' href="#">
-                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><div class="currency-logo-name"><img src="~/assets/admin/img/currency/cred.png" alt="">Cred</div></td>
-                                                    <td>#nxedr3324d</td>
-                                                    <td>21 Cred</td>
-                                                    <td>05 May 2019</td>
-                                                    <td class="text-center">
-                                                        <a class='btn' href="#">
-                                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </table>
+                                    <div class="token-distribution-wrapper">
+                                        <h2 class="crypto-stitle">Token Distribution Graph</h2>
+                                        <div class="distribution-graph">
+                                            <!-- <canvas id="chart"></canvas> -->
+                                            <div class="chart-container">
+                                                <canvas id="tokenBuyAnalyticsChart"
+                                                        data-tbadata="0, 0.03, 0.06, 0.15, 0.30"
+                                                        data-tbamonth=" ,Private Sale   $0.03', 'Presale $0.06', 'Softcap $0.15', 'Hardcap $0.30">
+                                                </canvas>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xl-5">
                                     <div class="transaction-status">
-                                        <h2 class="crypto-stitle">Transaction Status</h2>
+                                        <h2 class="crypto-stitle">Token Distribution Chart</h2>
                                         <div class="transaction-status-pie">
-                                            <canvas id="pie1" data-p1value="25, 25, 15, 35" data-p1label="In Progeress, In Pending, Cancelled, Completed" data-p1color="#372CC8, #FFA726, #E91E63, #2ACD72" width="420" height="200"></canvas>
+                                            <canvas id="pie1" data-p1value="60, 8, 15, 4, 7, 6"
+                                                    data-p1label="Token sale Program, Reserve Fund, Team and Founders, Board Advisors, Ecosystem Development, Marketing and Bounty"
+                                                    data-p1color="#372CC8, #FFA726, #E91E63, #2ACD72, #e83e8c, #20c997" width="420" height="300">
+
+                                            </canvas>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            @*<div class="row">
                                 <div class="col-xl-4">
                                     <div class="tokenCalculation-wrapper">
                                         <h2 class="crypto-stitle">Token Calculation</h2>
@@ -470,7 +527,7 @@
                                                 <div class="tc-input">
                                                     <input type="text" placeholder="Ex. 1.00000">
                                                     <div class="currencySymbol" id="currencySymbol">
-                                                       BBC
+                                                        BBC
                                                     </div>
                                                 </div>
                                                 <h3>= <span class="cost">0</span> <span class="currencyName">USD</span></h3>
@@ -481,18 +538,10 @@
                                     </div>
                                 </div>
                                 <div class="col-xl-8">
-                                    <div class="token-distribution-wrapper">
-                                        <h2 class="crypto-stitle">Token Distribution Graph</h2>
-                                        <div class="distribution-graph">
-                                            <!-- <canvas id="chart"></canvas> -->
-                                            <div class="chart-container">
-                                                <canvas id="chart-token-distribution" data-ctdlabel="Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"></canvas>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
 
                                 </div>
-                            </div>
+                            </div>*@
 
                         </div>
 
@@ -503,8 +552,6 @@
         </div>
     </div>
     <!-- Dashboard Full Area -->
-
-
     <!-- Scripts -->
     <!-- jQuery Plugin -->
     <script src="~/assets/admin/js/jquery-3.2.0.min.js"></script>
@@ -553,7 +600,8 @@
         $("#close-modal").on('click', function () {
             $("#myModal").hide();
         })
-        $("#modalShow").on('click', function () {
+        $("#modalShow").on('click', function (e) {
+            e.preventDefault()
             $("#myModal").show();
         })
 
@@ -565,7 +613,7 @@
         });
 
         $('.tc-input input').on('input', e => {
-           const coinAmount = e.target.value;
+            const coinAmount = e.target.value;
             $('.cost').text(coinAmount * 5)
         });
 

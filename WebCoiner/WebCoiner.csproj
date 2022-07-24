@@ -223,6 +223,7 @@
     <Content Include="assets\admin\dist\metismenu\metisMenu.min.js" />
     <Content Include="assets\admin\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\admin\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\admin\img\admin-bg.jpg" />
     <Content Include="assets\admin\img\avatar\inbox-avatar-1.png" />
     <Content Include="assets\admin\img\avatar\inbox-avatar-2.png" />
     <Content Include="assets\admin\img\avatar\NoPath - Copy %2813%29%402x.png" />

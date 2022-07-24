@@ -53,7 +53,7 @@
                                 </div><div class="card-text">
                                     <p>To get tokens please make a payment. You can send payment directly to our address. Once you have paid, you will receive tokens on your Token Balance. </p>
                                 </div><div class="pay-buttons">
-                                    <div class="pay-button"><a class="btn btn-primary btn-between w-100" data-toggle="modal" data-target="#modaltokens" href="javascript:void(0)">Get Address for Payment <em class="ti ti-wallet"></em></a></div>
+                                    <div class="pay-button"><a class="btn w-100 btn-style-b" data-toggle="modal" data-target="#modaltokens" href="javascript:void(0)">Get Address for Payment <em class="ti ti-wallet"></em></a></div>
                                 </div>
                                 <div class="pay-notes">
                                     <div class="note note-plane note-light note-md font-italic">
@@ -67,37 +67,26 @@
                             </div>
                         </div>
                     </div>
-                   <div class="col-xl-4 col-lg-5 token-calculator card card-full-height">
-                    <div class="token-calculator card card-full-height">
-                        <div class="card-innr">
-                            <div class="card-head">
-								<h4 class="card-title">Profit Calculator</h4>
-                                <p class="card-title-text">Enter amount to calculate profit.</p>
-                            </div>
-                            <div class="token-calc">
-                                <div class="token-pay-amount">
-                                    <input class="input-bordered input-with-hint ng-pristine ng-valid ng-touched" id="btc-base-amount1" type="text" value="0">
-                                    <div class="token-pay-currency">
-                                        <a class="link ucap link-light toggle-tigger" href="javascript:void(0)">$</a>
+                    <div class="col-xl-4 col-lg-5 token-calculator card card-full-height">
+                        <div class="tokenCalculation-wrapper">
+                            <h2 class="crypto-stitle">Profit Calculation</h2>
+                            <h3 class="crypto-stitle">Enter amount to calculate profit</h3>
+
+                            <div class="token-calculator">
+                                <form class="tc-form">
+                                    <h4>Enter your amount</h4>
+                                    <div class="tc-input">
+                                        <input type="text" placeholder="Ex. 1.00000">
+                                        <div class="currencySymbol" id="currencySymbol">
+                                            BBC
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="token-received">
-                                    <div class="token-eq-sign">=</div>
-                                    <div class="token-received-amount"></div>
-                                </div>
-                                <div class="token-pay-amount">
-                                    <input class="input-bordered input-with-hint ng-untouched ng-pristine ng-valid" disabled="" id="token-base-amount1" type="text" value="0">
-                                    <div class="token-pay-currency">
-                                        <a class="link ucap link-light toggle-tigger" href="javascript:void(0)">$</a>
-                                    </div>
-                                </div>
+                                    <h3>= <span class="cost">0</span> <span class="currencyName">USD</span></h3>
+                                    <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>The Amount is changeable anytime</p>
+                                </form>
                             </div>
-                            @*<div class="token-buy">
-                                <a href="/userdashboard/create/" class="btn btn-primary">Buy Tokens</a>
-                            </div>*@
                         </div>
                     </div>
-                </div>
                     <div class="aside sidebar-right col-lg-4">
                     </div>
                 </div>
@@ -160,7 +149,12 @@
         });
         $("#btc-base-amount1").keyup(function () {
             $("#token-base-amount1").val(($(this).val() * 10).toFixed(2));
-		});
+        });
+
+        $('.tc-input input').on('input', e => {
+            const coinAmount = e.target.value;
+            $('.cost').text(coinAmount * 5)
+        });
 
 
         function copyToClipBoard(txt) {

@@ -33,11 +33,11 @@
                 options: { 
                     responsive: true,
                     legend: {
-                            position: 'right',
+                            position: 'bottom',
                             padding: '100',
                             labels: {   
                                 fontColor: '#39374A',
-                                fontSize: 16,
+                                fontSize: 12,
                                 padding: 20
                             }
                         }
@@ -286,7 +286,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                    text: 'Token Growing Highly - 60% Yearly Revenue.',
+                    text: 'Token Sale Chart',
                     position: 'top',
                 },
                 scales: {
@@ -303,8 +303,8 @@
                         },
                         ticks: {
                             min: 0,
-                            max: 200,
-                            stepSize: 50
+                            max: 0.3,
+                            stepSize: 50,
                         }
                     }]
                 },
@@ -630,20 +630,6 @@
     
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // ICO Distribution Bounce Rate
     if ($('#icoDbounceRate').length > 0) {
 
@@ -709,20 +695,6 @@
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     if ($('#icosc').length > 0) {

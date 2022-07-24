@@ -32,7 +32,8 @@
     <link rel="stylesheet" href="~/assets/admin/css/skins/_all-skins.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Main StyleSheet CSS -->
+    <link rel="stylesheet" href="~/assets/admin/css/style.css">
     <link rel="stylesheet" href="~/Content/ico/vendor.bundle.css" id="layoutstyle">
     <link rel="stylesheet" href="~/Content/ico/style.css">
     <link href="~/assets/admin/source/extractcssone.css" rel="stylesheet">
@@ -51,22 +52,22 @@
     <script src="~/Scripts/bootstrap.min.js"></script>
 </head>
 
-<body class="no-touch layout-top-nav dark-skin theme-classic">
+<body class="no-touch layout-top-nav dark-skin theme-classic" style="height: 100vh; background-image: url('../../assets/admin/img/admin-bg.jpg')">
     <app-root>
         <div class="topbar-wrap">
-            <header class="main-header" style="background-color: #1a233a">
+            <header class="main-header" style="background-color: #1e2936; display: flex; min-height: 45px">
                 <div class="inside-header d-flex align-center container">
                     <div class="d-flex align-items-center logo-box justify-content-between">
                         <a href="@Url.Action("Dashboard", "UserDashboard")" class="logo" style="display: flex">
                             <div class="logo-lg">
-                                <span class="light-logo"><img src="~/assets/images/logo/logo.png" height="40" alt="logo"></span>
+                                @*<span class="light-logo"><img src="~/assets/images/logo/logo.png" height="40" alt="logo"></span>*@
                             </div>
                         </a>
                     </div>
                     <!-- Header Navbar -->
-                    <nav class="navbar navbar-static-top" style="background-color: #1a233a; display: flex; align-items: center">
+                    <nav class="navbar navbar-static-top justify-content-end" style="background-color: #1e2936; display: flex; align-items: center">
                         <!-- Sidebar toggle button-->
-                        <ul id="main-menu" class="sm sm-blue d-flex nav-nav justify-content-around w-100">
+                        <ul id="main-menu" class="sm sm-blue d-flex nav-nav justify-content-around w-70" style="width: 70%">
                             @if (User.IsInRole("administrator"))
                             {
                                 <li>
@@ -135,7 +136,6 @@
                                     {
                                         @Html.AntiForgeryToken()
                                         <a class="d-flex" href="javascript:document.getElementById('logoutForm').submit()">
-                                            <i class="fa fa-cog fa-spin"></i>
                                             <div>Log Out</div>
                                         </a>
                                     }

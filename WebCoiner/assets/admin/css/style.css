@@ -589,11 +589,12 @@ a.btn-style-c-m:hover {
     border-radius: 50%;
     text-align: center;
 }
-.cryptodash-nav {}
+.cryptodash-nav {
+    background-color: #1e2936;
+}
 
 .cryptodash-nav .navbar-brand {
     display: block;
-    background-color: #f8faff;
     margin-left: -10px;
     margin-top: -5px;
     padding: 0px;
@@ -864,10 +865,11 @@ a.btn-2-all:hover {
 }
 #sideNavWrapper.active .metismenu {
     transition: .5s ease;
-    background: #F8FAFF;
+    /*background: #F8FAFF;*/
+    color: #fff;
 }
 .sidebar-nav .metismenu {
-    background: #04084A;
+    /*background: #04084A;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -919,6 +921,7 @@ a.btn-2-all:hover {
     margin-right: 5px;
     font-size: 20px;
     line-height: 26px;
+    color: #fff;
 }
 .sidebar-nav .metismenu ul a {
     padding: 10px 15px 10px 30px;
@@ -939,6 +942,7 @@ a.btn-2-all:hover {
 
 #sideNavWrapper.active span.msm-text {
     display: inline-block;
+    color: #fff;
     
 }
 #sideNavWrapper span.msm-text {
@@ -998,6 +1002,8 @@ nav.collapseSidenav ul.mm-has-child li a {
 /* 2.3 Crypto Page Content CSS */
 .cryptodash-full-wrapper {
     position: relative;
+    background-image: url('../img/admin-bg.jpg');
+    background-repeat: no-repeat;
 }
 
 .crypto-dash-sidenav {
@@ -1005,7 +1011,7 @@ nav.collapseSidenav ul.mm-has-child li a {
 }
 .dashboard-content {
     position: relative;
-    background-color: #fff;
+    /*background-color: #fff;*/
 }
 .crypto-container {
     position: relative;
@@ -1040,10 +1046,8 @@ p.crypto-subtitle {
     position: relative;
     border-radius: 5px;
     padding: 25px 15px;
-    -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    
+    box-shadow: 0 0 90px rgb(14 0 137 / 6%);
+    border-bottom: 10px solid #0159cd;
 }
 
 .crypto-current-balance {
@@ -1203,6 +1207,7 @@ a.btn-style-a-small:hover {
     position: relative;
     padding: 0;
     list-style-type: none;
+    display: flex;
 }
 
 .crypto-single-wallet ul.market-info li {
@@ -1309,6 +1314,7 @@ table.cryptodash-tableA tr {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
+    background-color: #fff;
 }
 
 /* Crypto Transaction History END */
@@ -1421,6 +1427,7 @@ a.btn-style-b {
 /* Crypto Token Distribution CSS */
 .token-distribution-wrapper {
     position: relative;
+    background-color: #fff;
 }
 
 .token-distribution-wrapper h2.crypto-stitle {
@@ -1638,17 +1645,23 @@ span.sc-wallet {
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
 }
+#main-menu li a {
+    color: #fff;
+    font-size: 15px;
+}
 #tokenBuyAnalyticsChart {
-    height: 400px !important;
+    width: 650px;
+    /*height: 400px !important;*/
+}
+#home_section table {
+    background-color: transparent;
+    border-bottom: 1px solid #20c997;
+}
+#home_section .create_btn {
+    background-color: #01CD8C;
 }
 /* Token Buy Analytics CSS END*/
-
-
-
-
-
 /* Transaction CSS */
-
 .monthly-transaction-history-wrapper {
     position: relative;
 }
