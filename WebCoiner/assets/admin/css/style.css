@@ -1443,7 +1443,7 @@ a.btn-style-b {
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
 }
 .distribution-graph .chart-container {
-    height: 305px;
+    /*height: 305px;*/
 }
 .crypto-container {
     padding: 0px 15px 25px;
