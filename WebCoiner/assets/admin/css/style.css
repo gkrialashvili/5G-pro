@@ -1145,6 +1145,7 @@ a.btn-style-a-small:hover {
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
     border-bottom: 10px solid #0159cd;
+    margin-top: 156px;
 }
 
 .crypto-wallet-tab nav.cw-nav {}
@@ -1314,7 +1315,6 @@ table.cryptodash-tableA tr {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
-    background-color: #fff;
 }
 
 /* Crypto Transaction History END */
@@ -1427,7 +1427,6 @@ a.btn-style-b {
 /* Crypto Token Distribution CSS */
 .token-distribution-wrapper {
     position: relative;
-    background-color: #fff;
 }
 
 .token-distribution-wrapper h2.crypto-stitle {
