@@ -638,6 +638,7 @@
     <Content Include="assets\home\images\bg\bg-b.jpg" />
     <Content Include="assets\home\images\bg\bg-c.jpg" />
     <Content Include="assets\home\images\bg\index.html" />
+    <Content Include="assets\home\images\gfx\gfx-a.png" />
     <Content Include="assets\home\images\blog\a.jpg" />
     <Content Include="assets\home\images\blog\b.jpg" />
     <Content Include="assets\home\images\blog\c.jpg" />
@@ -694,7 +695,7 @@
     <Content Include="assets\home\images\flag-en.jpg" />
     <Content Include="assets\home\images\flag-fr.jpg" />
     <Content Include="assets\home\images\gfx\circle-a.png" />
-    <Content Include="assets\home\images\gfx\gfx-a.png" />
+    <Content Include="assets\home\images\gfx\gfx-a2.png" />
     <Content Include="assets\home\images\gfx\gfx-b-small.png" />
     <Content Include="assets\home\images\gfx\gfx-b.png" />
     <Content Include="assets\home\images\gfx\gfx-c.png" />
@@ -759,7 +760,7 @@
     <Content Include="assets\home\images\gfx\triangle-a.png" />
     <Content Include="assets\home\images\globe-particle.png" />
     <Content Include="assets\home\images\google-play.png" />
-    <Content Include="assets\home\images\header\gfx-a.png" />
+    <Content Include="assets\home\images\header\gfx-a1.png" />
     <Content Include="assets\home\images\header\gfx-b.png" />
     <Content Include="assets\home\images\header\gfx-c.png" />
     <Content Include="assets\home\images\header\gfx-d-dark.png" />

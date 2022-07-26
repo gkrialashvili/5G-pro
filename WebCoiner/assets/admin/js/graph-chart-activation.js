@@ -286,7 +286,7 @@
                 responsive: true,
                 title: {
                     display: true,
-                    text: 'Token Sale Chart',
+                    text: 'Token Price',
                     position: 'top',
                 },
                 scales: {
@@ -303,7 +303,7 @@
                         },
                         ticks: {
                             min: 0,
-                            max: 0.3,
+                            max: 0.2,
                             stepSize: 50,
                         }
                     }]

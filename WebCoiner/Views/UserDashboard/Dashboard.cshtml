@@ -66,14 +66,15 @@
     <!-- Header Area -->
     <header class="cryptodash-header cdh-light">
         <nav class="navbar navbar-expand-lg cryptodash-nav">
+            <a id="sideNav-toggle" href="#"><span id="main_icon" class="fa fa-bars"></span></a>
             <a class="navbar-brand" href="@Url.Action("Dashboard", "UserDashboard")">
                 <div class="logo">
                     <img src="~/assets/admin/img/common/logo.png" alt="">
                 </div>
             </a>
-            <a id="sideNav-toggle" href="#"><span id="main_icon" class="fa fa-bars"></span></a>
             <div class="collapse navbar-collapse right-nav" id="navbarTogglerDemo02">
             </div>
+
         </nav>
     </header>
     <!-- /Header Area -->
@@ -325,7 +326,7 @@
                                           @Model.FirstName
                                     </div>*@
 
-                                <div class="col-xl-8 align-items-end">
+                                <div class="col-xl-8 align-items-end d-flex">
                                     <div class="crypto-wallet">
 
                                         <div class="crypto-wallet-tab ">
@@ -503,8 +504,8 @@
                                             <!-- <canvas id="chart"></canvas> -->
                                             <div class="chart-container">
                                                 <canvas id="tokenBuyAnalyticsChart"
-                                                        data-tbadata="0, 0.03, 0.06, 0.15, 0.30"
-                                                        data-tbamonth=" ,Private Sale   $0.03', 'Presale $0.06', 'Softcap $0.15', 'Hardcap $0.30">
+                                                        data-tbadata="0, 0.01, 0.02, 0.06, 0.12"
+                                                        data-tbamonth=" ,Private Sale   $0.01', 'Presale $0.02', 'Softcap $0.06, 'Hardcap $0.">
                                                 </canvas>
                                             </div>
                                         </div>
@@ -519,6 +520,26 @@
                                                     data-p1color="#372CC8, #FFA726, #E91E63, #2ACD72, #e83e8c, #20c997" width="420" height="300">
 
                                             </canvas>
+                                            <div class="label">
+                                                <span class="label1">
+                                                    60
+                                                </span>
+                                                <span class="label2">
+                                                    8
+                                                </span>
+                                                <span class="label3">
+                                                    15
+                                                </span>
+                                                <span class="label4">
+                                                    4
+                                                </span>
+                                                <span class="label5">
+                                                    7
+                                                </span>
+                                                <span class="label6">
+                                                    6
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -605,8 +605,8 @@ a.btn-style-c-m:hover {
 a#sideNav-toggle {
     font-size: 40px;
     color: #989bac;
-    margin-left: 60px;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 60px;
 }
 a#sideNav-toggle:hover {
     color: #000;
@@ -1131,6 +1131,9 @@ a.btn-style-a-small:hover {
 .crypto-wallet {
     position: relative;
     padding: 5px;
+    display: flex;
+    width: 100%;
+
 }
 
 .crypto-wallet h2.crypto-stitle {
@@ -1145,7 +1148,8 @@ a.btn-style-a-small:hover {
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
     border-bottom: 10px solid #0159cd;
-    margin-top: 156px;
+    width: 100%;
+    /*margin-top: 156px;*/
 }
 
 .crypto-wallet-tab nav.cw-nav {}
@@ -1178,6 +1182,7 @@ a.btn-style-a-small:hover {
 .crypto-single-wallet {
     position: relative;
     padding: 8px 10px;
+
 }
 
 .crypto-single-wallet h3 {
@@ -1315,7 +1320,54 @@ table.cryptodash-tableA tr {
     -webkit-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     -moz-box-shadow: 0 0 90px rgba(14,0,137,0.06);
     box-shadow: 0 0 90px rgba(14,0,137,0.06);
+    display: flex;
+    align-items: center;
 }
+
+.label {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.label span {
+    font-size: 12px;
+    color: #fff;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+}
+
+.label1 {
+    top: -66px;
+    right: 163px;
+}
+
+.label2 {
+    top: -20px;
+    right: 293px;
+}
+
+.label3 {
+    top: -68px;
+    right: 304px;
+}
+
+.label4 {
+    top: -109px;
+    right: 293px;
+}
+
+.label5 {
+    top: -129px;
+    right: 279px;
+}
+.label6 {
+    top: -136px;
+    right: 249px;
+}
+
+
 
 /* Crypto Transaction History END */
 
