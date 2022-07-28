@@ -1,4 +1,5 @@
-    // Doughnut Chart 
+    // Doughnut Chart
+
     if ($('#pie1').length > 0) {
 
         var p1value = $('#pie1').data("p1value");
@@ -38,9 +39,15 @@
                             labels: {   
                                 fontColor: '#39374A',
                                 fontSize: 12,
-                                padding: 20
+                                padding: 20,
                             }
+                        },
+                    plugins: {
+                        labels: {
+                            render: 'percentage',
+                            fontColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff',],
                         }
+                    }
                     }
             });           
         });

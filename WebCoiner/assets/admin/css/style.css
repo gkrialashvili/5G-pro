@@ -1048,6 +1048,7 @@ p.crypto-subtitle {
     padding: 25px 15px;
     box-shadow: 0 0 90px rgb(14 0 137 / 6%);
     border-bottom: 10px solid #0159cd;
+    max-height: 262px;
 }
 
 .crypto-current-balance {
@@ -1133,6 +1134,7 @@ a.btn-style-a-small:hover {
     padding: 5px;
     display: flex;
     width: 100%;
+    height: 262px;
 
 }
 
@@ -1172,6 +1174,7 @@ a.btn-style-a-small:hover {
 
 .crypto-wallet-tab .cw-tab-content {
     position: relative;
+    margin-top:44px;
 }
 
 .crypto-wallet-tab .cw-tab-content .tab-pane {
@@ -1230,12 +1233,15 @@ a.btn-style-a-small:hover {
     font-size: 14px;
     margin: 10px auto;
     display: block;
+    text-align: center
+
 }
 
 .crypto-single-wallet ul.market-info li h4 {
     font-size: 22px;
     letter-spacing: 0px;
     font-weight: 500;
+    text-align: center
 }
 /* Crypto Wallet CSS END */
 
